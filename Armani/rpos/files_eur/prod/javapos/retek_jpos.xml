@@ -1,0 +1,2520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
+                             "../files/prod/javapos/jcl.dtd">
+<JposEntries>
+    <!--Saved by JavaPOS jpos.config/loader (JCL) version 2.0.1 on 2/14/03 3:08 PM-->
+
+    <!--    S T A R T     E P S O N    P R I N T E R S        -->
+
+    <JposEntry logicalName="EPSON_H6000_PRINTER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.H6000"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-H6000 Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-H6000"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000 Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000_PRINTER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.H6000"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-H6000 Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-H6000"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000 Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000_PRINTER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.H6000"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.51"/>
+        <product description="EPSON TM-H6000 Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-H6000"/>
+        <prop name="PortName" type="String" value="TM-H6000"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000 Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_PRINTER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.H6000II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-H6000II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-H6000II"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000II Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_PRINTER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.H6000II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-H6000II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-H6000II"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000II Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_PRINTER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.H6000II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.51"/>
+        <product description="EPSON TM-H6000II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-H6000II"/>
+        <prop name="PortName" type="String" value="TM-H6000II"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000II Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88II_PRINTER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.T88II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-T88II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-T88II"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-T88II Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88II_PRINTER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.T88II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-T88II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-T88II"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-T88II Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88II_PRINTER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.T88II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.51"/>
+        <product description="EPSON TM-T88II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-T88II"/>
+        <prop name="PortName" type="String" value="TM-T88II"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-T88II Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88III_PRINTER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.T88III"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-T88III Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-T88III"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-T88III Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88III_PRINTER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.T88III"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.52"/>
+        <product description="EPSON TM-T88III Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-T88III"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-T88III Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88III_PRINTER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.ptr.T88III"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.51"/>
+        <product description="EPSON TM-T88III Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="TM-T88III"/>
+        <prop name="PortName" type="String" value="TM-T88III"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="InputWait" type="String" value="1"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="TwoColor" type="String" value="0"/>
+        <prop name="U375Compatible" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-T88III Printer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="BufferSize" type="String" value="2"/>
+        <prop name="PaperSize" type="String" value="80"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="0"/>
+        <prop name="ReverseEject" type="String" value="0"/>
+    </JposEntry>
+
+    <!--   E N D    E P S O N    P R I N T E R S        -->
+
+
+
+
+    <!--    S T A R T     I B M    P R I N T E R S        -->
+
+    <JposEntry logicalName="IBM_TI1/2_PRINTER_COM1">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610POSPrinter"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI1/2 RS-232 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610POSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610POSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI1/2_PRINTER_COM2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610POSPrinter"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI1/2 RS-232 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610POSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610POSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM2"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI1/2_PRINTER_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI1/2 USB Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610Imp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI1/2_PRINTER_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI1/2 RS-485 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610Imp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_COM1">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 RS-232 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610POSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610POSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_COM2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 RS-232 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610POSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610POSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM2"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 USB Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610Imp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 RS-485 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610Imp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_COM1_ENHANCED">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610EPOSPrinter"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 RS-232 ENHANCED Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610EPOSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610EPOSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_COM2_ENHANCED">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610EPOSPrinter"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 RS-232 ENHANCED Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610EPOSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610EPOSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM2"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_USB_ENHANCED">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610E"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 USB ENHANCED Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610E"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610EImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+    <JposEntry logicalName="IBM_TI3/4/5_PRINTER_RS485_ENHANCED">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610E"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TI3/4/5 RS-485 ENHANCED Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610E"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610EImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TM/F/6/7_PRINTER_COM1">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610SSTPOSPrinter"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TM/F 6/7 RS-232 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610SSTPOSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610SSTPOSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TM/F/6/7_PRINTER_COM2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610SSTPOSPrinter"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TM/F 6/7 RS-232 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610SSTPOSPrinter"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610SSTPOSPrinterImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="commComPort" type="String" value="COM2"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="truncation" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TM/F/6/7_PRINTER_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610SST"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TM/F 6/7 USB Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610SST"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610SSTImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_TM/F/6/7_PRINTER_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4610SST"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4610 TM/F 6/7 RS-485 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="aspectRatioW" type="String" value="9"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4610SST"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4610SSTImp"/>
+        <prop name="aspectRatioH" type="String" value="3"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="eccLevelL" type="String" value="14"/>
+        <prop name="eccLevelH" type="String" value="14"/>
+        <prop name="truncation" type="String" value="0"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+    <JposEntry logicalName="IBM_MODEL4689_PRINTER">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4689"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM 4689 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x32"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4689"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4689Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_MODEL3F_FISCAL_PRINTER_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter3F"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM Model 3F Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x38"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter3F"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter3FImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_MODEL4_PRINTER_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM Model 4 RS-485 Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x34"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_MODEL4_PRINTER_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.POSPrinter4"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="JavaPOS(TM) POSPrinter Service for IBM Model 4 RS-USB Printer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNdeviceNumber" type="String" value="0x34"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.POSPrinter4"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSPrinter4Imp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+    <!--    E N D     I B M    P R I N T E R S        -->
+
+
+
+    <!--   S T A R T    I B M     M I C R  -->
+
+    <JposEntry logicalName="IBM_4610_MICR_COM1">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610MICR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="JavaPOS(TM) MICR Service for IBM RS232-4610 MICR" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610MICR"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610MICRImp"/>
+        <prop name="exceptionTable4" type="String" value="B778899001D154R"/>
+        <prop name="exceptionTable3" type="String" value="B667788990D153R"/>
+        <prop name="exceptionTable2" type="String" value="P123456780D552R"/>
+        <prop name="exceptionTable1" type="String" value="B445566778D151R"/>
+        <prop name="exceptionTable0" type="String" value="B334455667D150R"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4610_MICR_COM2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610MICR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="JavaPOS(TM) MICR Service for IBM RS232-4610 MICR" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610MICR"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610MICRImp"/>
+        <prop name="exceptionTable4" type="String" value="B778899001D154R"/>
+        <prop name="exceptionTable3" type="String" value="B667788990D153R"/>
+        <prop name="exceptionTable2" type="String" value="P123456780D552R"/>
+        <prop name="exceptionTable1" type="String" value="B445566778D151R"/>
+        <prop name="exceptionTable0" type="String" value="B334455667D150R"/>
+        <prop name="commComPort" type="String" value="COM2"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4610_MICR_RS485">
+        <creation factoryClass="UnknownServiceInstanceFactoryClass" serviceClass="UnknownServiceClass"/>
+        <vendor name="Unknown Vendor Name" url="http://www.UnknownVerdorURL.com"/>
+        <jpos category="BumpBar" version="1.2"/>
+        <product description="Unknown Product Description" name="Unknown Product Name" url="http://www.UnknownProductURL.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4610_MICR_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMMICR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="JavaPOS(TM) MICR Service for IBM MICR Model 4610 (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMMICR"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.IBMMICRImp"/>
+        <prop name="exceptionTable4" type="String" value="B778899001D154R"/>
+        <prop name="exceptionTable3" type="String" value="B667788990D153R"/>
+        <prop name="exceptionTable2" type="String" value="P123456780D552R"/>
+        <prop name="exceptionTable1" type="String" value="B445566778D151R"/>
+        <prop name="exceptionTable0" type="String" value="B334455667D150R"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x35"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_MODEL3/4_MICR_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMMICR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="JavaPOS(TM) MICR Service for IBM MICR - Model 3/4 (RS-485)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMMICR"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.IBMMICRImp"/>
+        <prop name="exceptionTable4" type="String" value="B778899001D154R"/>
+        <prop name="exceptionTable3" type="String" value="B667788990D153R"/>
+        <prop name="exceptionTable2" type="String" value="P123456780D552R"/>
+        <prop name="exceptionTable1" type="String" value="B445566778D151R"/>
+        <prop name="exceptionTable0" type="String" value="B334455667D150R"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x34"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_MODEL3/4_MICR_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMMICR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="JavaPOS(TM) MICR Service for IBM MICR - Model 3/4 (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMMICR"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.IBMMICRImp"/>
+        <prop name="exceptionTable4" type="String" value="B778899001D154R"/>
+        <prop name="exceptionTable3" type="String" value="B667788990D153R"/>
+        <prop name="exceptionTable2" type="String" value="P123456780D552R"/>
+        <prop name="exceptionTable1" type="String" value="B445566778D151R"/>
+        <prop name="exceptionTable0" type="String" value="B334455667D150R"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x34"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+    <!--   E N D    I B M      M I C R  -->
+
+
+    <!--   S T A R T    E P S O N     M I C R  -->
+
+    <JposEntry logicalName="EPSON_H6000_MICR_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.micr.TMH6000MICR"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="MICR" version="1.52"/>
+        <product description="EPSON TM-H6000 MICR Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="VerifyCheckDigit" type="String" value="0"/>
+        <prop name="PhysicalDevice" type="String" value="TM-H6000"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="MICRType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000 MICR"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="CheckDeviceEnabled" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="ResponseTime" type="String" value="40000"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000_MICR_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.micr.TMH6000MICR"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="MICR" version="1.52"/>
+        <product description="EPSON TM-H6000 MICR Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="VerifyCheckDigit" type="String" value="0"/>
+        <prop name="PhysicalDevice" type="String" value="TM-H6000"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="MICRType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000 MICR"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="CheckDeviceEnabled" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="ResponseTime" type="String" value="40000"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_MICR_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.micr.TMH60002MICR"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="MICR" version="1.52"/>
+        <product description="EPSON TM-H6000II MICR Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="VerifyCheckDigit" type="String" value="0"/>
+        <prop name="PhysicalDevice" type="String" value="TM-H6000II"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="MICRType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000II MICR"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="CheckDeviceEnabled" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="ResponseTime" type="String" value="40000"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_MICR_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.micr.TMH60002MICR"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="MICR" version="1.52"/>
+        <product description="EPSON TM-H6000II MICR Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="VerifyCheckDigit" type="String" value="0"/>
+        <prop name="PhysicalDevice" type="String" value="TM-H6000II"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ErrorOption" type="String" value="1"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="MICRType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON TM-H6000II MICR"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="CheckDeviceEnabled" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="ResponseTime" type="String" value="40000"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+    <!--   E N D    E P S O N     M I C R  -->
+
+
+
+
+
+    <!--   S T A R T    I B M    C A S H    D R A W E R  -->
+    <JposEntry logicalName="IBM_4610_1ST_CASH_DRAWER_COM2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610CashDrawer"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="JavaPOS(TM) CashDrawer Service for 1st_RS232-4610 CashDrawer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commSignalsReversed" type="String" value="false"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610CashDrawer"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610CashDrawerImp"/>
+        <prop name="commComPort" type="String" value="COM2"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="commDrawerNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4610_1ST_CASH_DRAWER_COM1">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610CashDrawer"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="JavaPOS(TM) CashDrawer Service for 1st_RS232-4610 CashDrawer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commSignalsReversed" type="String" value="false"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610CashDrawer"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610CashDrawerImp"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="commDrawerNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_CASH_DRAWER">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMCashDrawer"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="JavaPOS(TM) CashDrawer Service for IBM CASH DRAWER" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x54"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMCashDrawer"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.IBMCashDrawerImp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4840_CASH_DRAWER_COM4">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4840CashDrawer"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="JavaPOS(TM) CashDrawer Service for IBM 4840 CASH DRAWER 1 (RS-232)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commDrawerNumber" type="String" value="1"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4840CashDrawer"/>
+        <prop name="commComPort" type="String" value="COM4"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4840CashDrawerImp"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="RS232-4840CashDrawer2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4840CashDrawer"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="JavaPOS(TM) CashDrawer Service for IBM 4840 CASH DRAWER 2 (RS-232)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commDrawerNumber" type="String" value="2"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4840CashDrawer"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4840CashDrawerImp"/>
+        <prop name="commComPort" type="String" value="COM4"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="2nd_RS232-4610CashDrawer">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610CashDrawer"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="JavaPOS(TM) CashDrawer Service for 2nd_RS232-4610 CashDrawer" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="commSignalsReversed" type="String" value="false"/>
+        <prop name="commDrawerNumber" type="String" value="2"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610CashDrawer"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610CashDrawerImp"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+    </JposEntry>
+    <!--   E N  D     I B M    C A S H    D R A W E R  -->
+
+    <!--   S T A R T    E P S O N    C A S H    D R A W E R  -->
+
+    <JposEntry logicalName="EPSON_H6000_CASH_DRAWER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-H6000"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000_CASH_DRAWER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-H6000"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000_CASH_DRAWER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.51"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PortName" type="String" value="TM-H6000"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-H6000"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_CASH_DRAWER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-H6000II"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_CASH_DRAWER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-H6000II"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_H6000II_CASH_DRAWER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.51"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PortName" type="String" value="TM-H6000II"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-H6000II"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+    </JposEntry>
+
+    <JposEntry logicalName="EPSON_T88II_CASH_DRAWER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-T88II"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88II_CASH_DRAWER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-T88II"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88II_CASH_DRAWER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.51"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PortName" type="String" value="TM-T88II"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-T88II"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+    </JposEntry>
+
+    <JposEntry logicalName="EPSON_T88III_CASH_DRAWER_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-T88III"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_T88III_CASH_DRAWER_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.52"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-T88III"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+    <JposEntry logicalName="EPSON_T88III_CASH_DRAWER_USB">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.51"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="Standard"/>
+        <prop name="PortName" type="String" value="TM-T88III"/>
+        <prop name="PulseONTime" type="String" value="100"/>
+        <prop name="ClosedStatusPhase" type="String" value="0"/>
+        <prop name="Uses" type="String" value="TM-T88III"/>
+        <prop name="PulseOFFTime" type="String" value="400"/>
+        <prop name="PortType" type="String" value="2"/>
+        <prop name="DeviceDesc" type="String" value="EPSON Standard CashDrawer"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="RetryTime" type="String" value="500"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="PinNO" type="String" value="0"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+    </JposEntry>
+    <!--   E N D    E P S O N    C A S H    D R A W E R  -->
+
+
+
+    <!--   S T A R T    M S R  -->
+    <JposEntry logicalName="IBM_MSR_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMMSR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MSR" version="1.5"/>
+        <product description="JavaPOS(TM) MSR Service for IBM Magnetic Strip Readers" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x48"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMMSR"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSSMSRServiceImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4840_ISO_MSR_COM3">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4840ISOMSR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MSR" version="1.5"/>
+        <product description="JavaPOS(TM) MSR Service for IBM RS232 ISO Magnetic Strip Readers" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commControlFlow" type="String" value="FLOWCONTROL_NONE"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="commBaudRate" type="String" value="19200"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4840ISOMSR"/>
+        <prop name="commComPort" type="String" value="COM3"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4840ISOMSRImp"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_MSR_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMMSR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MSR" version="1.5"/>
+        <product description="JavaPOS(TM) MSR Service for IBM Magnetic Strip Readers" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x48"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMMSR"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSSMSRServiceImp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_MSR">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMMSR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MSR" version="1.5"/>
+        <product description="JavaPOS(TM) MSR Service for IBM Magnetic Strip Readers" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0"/>
+        <prop name="posNdeviceNumber" type="String" value="0x82"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMMSR"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSSMSRServiceImp"/>
+        <prop name="posNslotNumber" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4840_JUCC_MSR_COM3">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4840JUCCMSR"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="MSR" version="1.5"/>
+        <product description="JavaPOS(TM) MSR Service for IBM RS232 JUCC Magnetic Strip Readers" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commControlFlow" type="String" value="FLOWCONTROL_NONE"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="commBaudRate" type="String" value="19200"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4840JUCCMSR"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4840JUCCMSRImp"/>
+        <prop name="commComPort" type="String" value="COM3"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_DM/MS/123_MSR">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.msr.MSRService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="MSR" version="1.52"/>
+        <product description="EPSON DM-MS-123 MSR Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="DM-MS-123"/>
+        <prop name="PortType" type="String" value="4"/>
+        <prop name="MSRInfo" type="String" value="MS123Info"/>
+        <prop name="MSRTimeout" type="String" value="100"/>
+        <prop name="KeyboardType" type="String" value="101"/>
+        <prop name="DeviceDesc" type="String" value="EPSON DM-MS-123 MSR"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="CheckDeviceEnabled" type="String" value="0"/>
+    </JposEntry>
+    <!--   E N  D    M S R   -->
+
+
+
+    <!-- S T A R T    L I N E    D I S P L A Y  -->
+
+    <JposEntry logicalName="IBMOperatorDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayAnop0"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM Operator Display" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x22"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayAnop0"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayAnop0Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ShopperDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayShopper"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM Shopper Display" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x26"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayShopper"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayShopperImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_VFD_ANOP_LINE_DISPLAY_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM VFD ANOP Display 1 (RS-485)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x24"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayAnop20Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4840APA_LINE_DISPLAY_COM4">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4840APA"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM 4840 APA Display (RS-232)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="commNumberOfRows" type="String" value="5"/>
+        <prop name="commCursorState" type="String" value="ON"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4840APA"/>
+        <prop name="commComPort" type="String" value="COM4"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4840APAImp"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM_4840VFD_LINE_DISPLAY_COM4">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4840VFD"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM 4840 VFD (RS-232)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4840VFD"/>
+        <prop name="commCursorState" type="String" value="ON"/>
+        <prop name="commComPort" type="String" value="COM4"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4840VFDImp"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="VfdAnopDisplay1_USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM VFD ANOP Display 1 (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x24"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayAnop20Imp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="VfdAnopDisplay2USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM VFD ANOP Display 2 (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x25"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayAnop20Imp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="VfdAnopDisplay2_RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM VFD ANOP Display 1 (RS-485)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x25"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayAnop20"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayAnop20Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ApaDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayApa"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM APA Display (RS-485)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x2A"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayApa"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayApaImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ApaJapanDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayApaJapan"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM APA Japan Display (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x2A"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayApaJapan"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayApaJapanImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ApaKoreanDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayApaKorean"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM APA Korean Display (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x2A"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayApaKorean"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayApaJapanImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ApaChinaSimpleDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayApaChinaSimple"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM APA Chinese Simplified Display (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x2A"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayApaChinaSimple"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayApaJapanImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ApaChinaTraditionalDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayApaChinaTraditional"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM APA Chinese Traditional Display (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x2A"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayApaChinaTraditional"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayApaJapanImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="LcdvfdAnopDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayLCVFD"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM LCVFD ANOP Display" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x24"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayLCVFD"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayLCVFDImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="LcdAnopDisplay">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.LineDisplayAnop0"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="JavaPOS(TM) LineDisplay Service for IBM LCD ANOP Display" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="posNdeviceNumber" type="String" value="0x24"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.LineDisplayAnop0"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.LineDisplayAnop0Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD101_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD101"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D101 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D101"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D101 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD102_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD102"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D102 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D102"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D102 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+    <JposEntry logicalName="EPSON_DMD105_LINE_DISPLAY_COM1">
+               <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD105"/>
+               <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+               <jpos category="LineDisplay" version="1.52"/>
+               <product description="EPSON DM-D105 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+               <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+               <prop name="PhysicalDevice" type="String" value="DM-D105"/>
+               <prop name="PortName" type="String" value="COM1"/>
+               <prop name="CharacterMode" type="String" value="4"/>
+               <prop name="PortType" type="String" value="0"/>
+               <prop name="DeviceDesc" type="String" value="EPSON DM-D105 Line Display"/>
+               <prop name="Parity" type="String" value="0"/>
+               <prop name="TimeoutTime" type="String" value="5000"/>
+               <prop name="DataLen" type="String" value="1"/>
+               <prop name="RetryTime" type="String" value="100"/>
+               <prop name="ReceiveTimeout" type="String" value="10"/>
+               <prop name="deviceBus" type="String" value="Unknown"/>
+               <prop name="ConnectionType" type="String" value="0"/>
+               <prop name="TwoByteCharacter" type="String" value="2"/>
+               <prop name="FlowControl" type="String" value="1"/>
+               <prop name="StopBit" type="String" value="1"/>
+               <prop name="BaudRate" type="String" value="7"/>
+               <prop name="OutputLength" type="String" value="10"/>
+           </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD106_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD106"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D106 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D106"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D106 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD110_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD110"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D110 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D110"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D110 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD202_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD202"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D202 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D202"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D202 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD205_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD205"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D205 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D205"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D205 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD206_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD206"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D206 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D206"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D206 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+    <JposEntry logicalName="EPSON_DMD210_LINE_DISPLAY_COM1">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD210"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D210 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D210"/>
+            <prop name="PortName" type="String" value="COM1"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D210 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+
+     <JposEntry logicalName="EPSON_DMD210_LINE_DISPLAY_COM2">
+            <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD210"/>
+            <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+            <jpos category="LineDisplay" version="1.52"/>
+            <product description="EPSON DM-D210 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+            <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+            <prop name="PhysicalDevice" type="String" value="DM-D210"/>
+            <prop name="PortName" type="String" value="COM2"/>
+            <prop name="CharacterMode" type="String" value="4"/>
+            <prop name="PortType" type="String" value="0"/>
+            <prop name="DeviceDesc" type="String" value="EPSON DM-D210 Line Display"/>
+            <prop name="Parity" type="String" value="0"/>
+            <prop name="TimeoutTime" type="String" value="5000"/>
+            <prop name="DataLen" type="String" value="1"/>
+            <prop name="RetryTime" type="String" value="100"/>
+            <prop name="ReceiveTimeout" type="String" value="10"/>
+            <prop name="deviceBus" type="String" value="Unknown"/>
+            <prop name="ConnectionType" type="String" value="0"/>
+            <prop name="TwoByteCharacter" type="String" value="2"/>
+            <prop name="FlowControl" type="String" value="1"/>
+            <prop name="StopBit" type="String" value="1"/>
+            <prop name="BaudRate" type="String" value="7"/>
+            <prop name="OutputLength" type="String" value="10"/>
+        </JposEntry>
+
+    <JposEntry logicalName="EPSON_DMD500_LINE_DISPLAY_COM1">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD500"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="LineDisplay" version="1.52"/>
+        <product description="EPSON DM-D500 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="DM-D500"/>
+        <prop name="PortName" type="String" value="COM1"/>
+        <prop name="CharacterMode" type="String" value="4"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON DM-D500 Line Display"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="ConnectionType" type="String" value="0"/>
+        <prop name="TwoByteCharacter" type="String" value="2"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="EPSON_DMD500_LINE_DISPLAY_COM2">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.disp.DMD500"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="LineDisplay" version="1.52"/>
+        <product description="EPSON DM-D500 Line Display Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PhysicalDevice" type="String" value="DM-D500"/>
+        <prop name="PortName" type="String" value="COM2"/>
+        <prop name="CharacterMode" type="String" value="4"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="DeviceDesc" type="String" value="EPSON DM-D500 Line Display"/>
+        <prop name="Parity" type="String" value="0"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="DataLen" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="TwoByteCharacter" type="String" value="2"/>
+        <prop name="ConnectionType" type="String" value="0"/>
+        <prop name="FlowControl" type="String" value="1"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="BaudRate" type="String" value="7"/>
+        <prop name="OutputLength" type="String" value="10"/>
+    </JposEntry>
+
+    <!-- E N D    L I N E    D I S P L A Y  -->
+
+
+    <JposEntry logicalName="POS Adaptor HardTotals">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMHardTotals"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="HardTotals" version="1.5"/>
+        <product description="JavaPOS(TM) HardTotals Service for IBM HardTotals" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0"/>
+        <prop name="posNdeviceNumber" type="String" value="0x85"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMHardTotals"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.IBMHardTotalsImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM4697Scanner">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scanner4697"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM 4697 Scanner" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4a"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scanner4697"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scanner4697Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="4610 TM/TF 6/7 Printer Attached ToneIndicator RS-232">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBM4610SSTToneIndicator"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="ToneIndicator" version="1.5"/>
+        <product description="JavaPOS(TM) ToneIndicator Service for IBM 4610 TM/TF 6/7 Printer (RS-232)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="commControlFlow" type="String" value="XON/XOFF"/>
+        <prop name="commBaudRate" type="String" value="9600"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBM4610SSTToneIndicator"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.jcomm.IBM4610SSTToneIndicatorImp"/>
+        <prop name="commComPort" type="String" value="COM1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM4686ScannerModels3And4">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scanner4686_3_4"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM 4686 Scanner Models 3 and 4" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4a"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scanner4686_3_4"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scanner4686_3_4Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBMHandHeldBarCodeReader-2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.ScannerHHBCR_2"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM Hand-Held Code Reader Model 2" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4b"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.ScannerHHBCR_2"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.ScannerHHBCR_2Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBMHandHeldBarCodeReader-1">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.ScannerHHBCR_1"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM Hand-Held Code Reader Model 1" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4b"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.ScannerHHBCR_1"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.ScannerHHBCR_1Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="defaultScanner">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scanner1520_A02"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM 1520-A02 Scanner" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4b"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scanner1520_A02"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scanner1520_A02Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="NANPOS Keyboard - USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSKeyboard" version="1.5"/>
+        <product description="JavaPOS(TM) POSKeyboard Service for IBM POS Keyboard (USB)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x1C"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <prop name="KeyTranslationFile" type="String" value="NULL"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSKeyboardRS485Imp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="Keylock">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.lock.KeylockService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="Keylock" version="1.52"/>
+        <product description="EPSON IM-310 Keylock Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="PhysicalDevice" type="String" value="IM-310"/>
+        <prop name="PositionCount" type="String" value="7"/>
+        <prop name="PositionMap" type="String" value="1245637"/>
+        <prop name="KeylockInfo" type="String" value="IM310Info"/>
+        <prop name="PortType" type="String" value="4"/>
+        <prop name="DeviceDesc" type="String" value="EPSON IM-310 Keylock"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="NANPOS Keyboard - System Attached">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSKeyboard" version="1.5"/>
+        <product description="JavaPOS(TM) POSKeyboard Service for IBM System Keyboard" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0"/>
+        <prop name="posNdeviceNumber" type="String" value="0x81"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <prop name="KeyTranslationFile" type="String" value="NULL"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSKeyboardPS2Imp"/>
+        <prop name="posNslotNumber" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ToneIndicator USB">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMToneIndicator"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="ToneIndicator" version="1.5"/>
+        <product description="JavaPOS(TM) ToneIndicator Service for IBM System Keyboard" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x1C"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMToneIndicator"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSSToneIndicatorServiceImp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="PLUToneIndicator">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMToneIndicator"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="ToneIndicator" version="1.5"/>
+        <product description="JavaPOS(TM) ToneIndicator Service for IBM PLU Keyboard" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x19"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMToneIndicator"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSSToneIndicatorServiceImp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+        <prop name="devCat" type="String" value="ToneIndicator"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ToneIndicator System Attached">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMToneIndicator"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="ToneIndicator" version="1.5"/>
+        <product description="JavaPOS(TM) ToneIndicator Service for IBM System Keyboard" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0"/>
+        <prop name="posNdeviceNumber" type="String" value="0x81"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMToneIndicator"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSSToneIndicatorServiceImp"/>
+        <prop name="posNslotNumber" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM4686ScannerModels1And2">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scanner4686_1_2"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM 4686 Scanner Models 1 and 2" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4a"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scanner4686_1_2"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scanner4686_1_2Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="USBScanner">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.ScannerUSBOEM"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for USB OEM Scanner" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4a"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.ScannerUSBOEM"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.ScannerUSBOEMImp"/>
+        <prop name="posNslotNumber" type="String" value="8"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM4698Scanner">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scanner4698"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM 4698 Scanner" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4a"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scanner4698"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scanner4698Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="defaultScale">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scale4687"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scale" version="1.5"/>
+        <product description="JavaPOS(TM) Scale Service for IBM Scale 4687" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x6E"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scale4687"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scale4687Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM4687Scanner">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scanner4687"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM 4687 Scanner" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4a"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scanner4687"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scanner4687Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="IBM4696Scanner">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.Scanner4696"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="JavaPOS(TM) Scanner Service for IBM 4696 Scanner" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x4a"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.Scanner4696"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.Scanner4696Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="Scanner">
+        <creation factoryClass="jp.co.epson.jpos152.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos152.scan.Ze84rmv"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="Scanner" version="1.52"/>
+        <product description="Panasonic ZE-84RMSMV Scanner Device Service" name="EPSON Services for JavaPOS(TM) Standard" url="http://www.epson.co.jp"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="UPCE" type="String" value="0x45"/>
+        <prop name="CODE128" type="String" value="0x4B"/>
+        <prop name="LRCEnabled" type="String" value="0"/>
+        <prop name="UPCA" type="String" value="0x41"/>
+        <prop name="UPCD3" type="String" value="0x44,0x33"/>
+        <prop name="LineHighOnTransmission" type="String" value="0"/>
+        <prop name="Head" type="String" value="0x00"/>
+        <prop name="SymbologyIDPresent" type="String" value="1"/>
+        <prop name="EAN13" type="String" value="0x46"/>
+        <prop name="Parity" type="String" value="2"/>
+        <prop name="deviceBus" type="String" value="Unknown"/>
+        <prop name="DataLen" type="String" value="0"/>
+        <prop name="ITF" type="String" value="0x49"/>
+        <prop name="TimeoutTime" type="String" value="5000"/>
+        <prop name="Term" type="String" value="0x0D"/>
+        <prop name="PortType" type="String" value="0"/>
+        <prop name="StopBit" type="String" value="1"/>
+        <prop name="RetryTime" type="String" value="100"/>
+        <prop name="CheckDeviceEnabled" type="String" value="0"/>
+        <prop name="CODE39" type="String" value="0x4D"/>
+        <prop name="LRCOnSecondByte" type="String" value="0"/>
+        <prop name="Codabar" type="String" value="0x4E"/>
+        <prop name="CODE93" type="String" value="0x4C"/>
+        <prop name="EAN8" type="String" value="0x46,0x46"/>
+        <prop name="OutputLength" type="String" value="10"/>
+        <prop name="DeviceDesc" type="String" value="Panasonic ZE-84RMSMV Scanner"/>
+        <prop name="PortName" type="String" value="/dev/ttyS0"/>
+        <prop name="ReceiveTimeout" type="String" value="10"/>
+        <prop name="TF" type="String" value="0x48"/>
+        <prop name="PhysicalDevice" type="String" value="ZE-84RMSMV"/>
+        <prop name="BaudRate" type="String" value="6"/>
+        <prop name="FlowControl" type="String" value="2"/>
+        <prop name="DataLengthPresent" type="String" value="0"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="NANPOS Keyboard - RS485">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSKeyboard" version="1.5"/>
+        <product description="JavaPOS(TM) POSKeyboard Service for IBM POS Keyboard (RS-485)" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x1C"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <prop name="KeyTranslationFile" type="String" value="NULL"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSKeyboardRS485Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+
+    <JposEntry logicalName="ANPOSKeyboard">
+        <creation factoryClass="com.ibm.jpos.services.IBMJposServiceInstanceFactory" serviceClass="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <vendor name="IBM, Corp." url="http://www.ibm.com"/>
+        <jpos category="POSKeyboard" version="1.5"/>
+        <product description="JavaPOS(TM) POSKeyboard Service for IBM ANPOS Keyboard" name="IBM Point of Sale API, JavaPOS(TM) Technology Edition" url="http://www.ibm.com/solutions/retail/store/"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="posNportNumber" type="String" value="0x11"/>
+        <prop name="posNdeviceNumber" type="String" value="0x1A"/>
+        <prop name="abstractionClass" type="String" value="com.ibm.jpos.services.IBMPOSKeyboard"/>
+        <prop name="KeyTranslationFile" type="String" value="NULL"/>
+        <prop name="impClass" type="String" value="com.ibm.jpos.services.poss.POSKeyboardRS485Imp"/>
+        <prop name="posNslotNumber" type="String" value="1"/>
+    </JposEntry>
+
+	<JposEntry logicalName="ArmaniJPOSDM110">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonDM110Service"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="LineDisplay"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM1"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="portspeed"	value="9600"	type="Integer"	/>
+		<prop name="flowin"		value="RTS/CTS In"	type="String"   />
+		<prop name="flowout"	value="RTS/CTS out"	type="String"	/>
+		<prop name="timeout"	value="1000"	type="Integer"	/>
+		<prop name="databits"	value="8"		type="Integer"	/>
+		<prop name="stopbits"	value="1"		type="Integer"	/>
+		<prop name="parity"		value="none"	type="String"	/>
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+		<prop name="charset"	value="1252" 	type="String"/>
+	</JposEntry>
+	
+	<JposEntry logicalName="ArmaniJPOSFPDisplay">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonFPDisplayService"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="LineDisplay"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM1"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="portspeed"	value="57600"	type="Integer"	/>
+		<prop name="flowin"		value="RTS/CTS In"	type="String"   />
+		<prop name="flowout"	value="RTS/CTS out"	type="String"	/>
+		<prop name="timeout"	value="1000"	type="Integer"	/>
+		<prop name="databits"	value="8"		type="Integer"	/>
+		<prop name="stopbits"	value="1"		type="Integer"	/>
+		<prop name="parity"		value="none"	type="String"	/>
+		<prop name="loglevel"	value="LOG_APPL_PDU"	type="String"  />
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+	</JposEntry>
+
+</JposEntries>

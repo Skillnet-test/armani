@@ -1,0 +1,8 @@
+Wincor Java POS configuration README
+1.  Install IBM JDK to default location.  The JDK can be found on the Red Hat CDs.
+2   Copy the jpos folder and all its contents to the classes sub-folder. 
+3.  Copy retek_jpos.xml to the javapos folder
+4.  Copy javaenv.sh, startPOS.sh, and pos.sh to the bin folder.
+5.  Make changes as needed to shell scripts.
+
+As of this writing, the cash drawer has not been tested. (09/03/03)

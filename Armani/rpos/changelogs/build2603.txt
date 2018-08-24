@@ -1,0 +1,8 @@
+Modifications to consider for 2.6.0.3
+
+1. Many database changes. Be sure to rebuild.
+   - Added field emp_sale_net_amount to chelsea_emp_sale table.
+   - Several field changes to chelsea_txn_type_summary table.
+   - Field changes to chelsea_sales_summary table.
+   
+2. Modified credit_auth.cfg to point to CMSCreditAuthDefaultServices.

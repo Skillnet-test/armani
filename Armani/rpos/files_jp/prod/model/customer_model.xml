@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <APPLET_MODEL id="Customer">
+        <appletModelHome>com.chelseasystems.cs.swing.menu.InitialCustMenuApplet</appletModelHome>
+        <appletModelLocation>458,17</appletModelLocation>
+        <appletModelDesc>An applet navigation model of the customer
+            management menu.</appletModelDesc>
+        <appletModelCreated>08/06/2001 18:23:20.028 CDT</appletModelCreated>
+        <appletModelModified></appletModelModified>
+        <APPLET appletId="com.chelseasystems.cs.swing.transaction.TxnDetailApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.ViewTxnApplet</appletModelHolderClass>
+                <appletModelHolderPoint>435,750</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.transaction.TxnHistoryApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.TxnDetailApplet</appletModelHolderClass>
+                <appletModelHolderPoint>435,570</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.customer.FindCustomerApplet</appletModelHolderClass>
+                <appletModelHolderPoint>615,570</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.customer.FindCustomerApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.customer.CustomerListApplet</appletModelHolderClass>
+                <appletModelHolderPoint>30,390</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.TxnHistoryApplet</appletModelHolderClass>
+                <appletModelHolderPoint>525,390</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.menu.InitialCustMenuApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.customer.FindCustomerApplet</appletModelHolderClass>
+                <appletModelHolderPoint>277,210</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.customer.MergeCustomerApplet</appletModelHolderClass>
+                <appletModelHolderPoint>457,210</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.login.InitialLoginApplet</appletModelHolderClass>
+                <appletModelHolderPoint>637,210</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.TxnListApplet</appletModelHolderClass>
+                <appletModelHolderPoint>570,1290</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.transaction.ViewTxnApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.TxnDetailApplet</appletModelHolderClass>
+                <appletModelHolderPoint>210,930</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.TxnListApplet</appletModelHolderClass>
+                <appletModelHolderPoint>480,930</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.login.InitialLoginApplet</appletModelHolderClass>
+                <appletModelHolderPoint>660,930</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.transaction.TxnListApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.ViewTxnApplet</appletModelHolderClass>
+                <appletModelHolderPoint>390,1110</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet</appletModelHolderClass>
+                <appletModelHolderPoint>570,1110</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+    </APPLET_MODEL>
+</CMS_OBJECT>

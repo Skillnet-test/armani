@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN" "../files/prod/javapos/jcl.dtd">
+
+<JposEntries>
+    <JposEntry logicalName="Form">
+        <creation factoryClass="services.IngenicoServiceInstanceFactory" serviceClass="services.et1k.form.FormService"/>
+        <vendor name="Ingenico" url="http://www.ingenico-us.com"/>
+        <jpos category="Form" version="1.5.2"/>
+        <product description="ET1K POS Form JavaPOS Service from Ingenico, Inc." name="Ingenico ET1K Form Service for JavaPOS(TM) Standard" url="http://www.ingenico-us.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="COM1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="9600"/>
+        <prop name="parity" value="0"/>
+        <prop name="StoreLogo" value="chel1_logo.icf"/>      
+        <prop name="ScanCard" value="chel2_scan.icf"/>
+        <prop name="CreditOrDebit" value="chel3_type.icf"/>
+        <prop name="YesOrNo" value="chel4_yes.icf"/>        
+        <prop name="Auth" value="chel5_auth.icf"/>        
+        <prop name="Signature" value="chel6_sig.icf"/>
+        <prop name="Approved" value="chel7_approved.icf"/>
+        <prop name="SigCompression" value="2byte"/>
+        <prop name="ConfigPath" value="..\files\prod\javapos\ingenico\"/>
+	</JposEntry>
+    
+  <JposEntry logicalName="MyMSR">
+        <creation factoryClass="services.IngenicoServiceInstanceFactory" serviceClass="services.et1k.msr.MSRService"/>
+        <vendor name="Ingenico" url="http://www.ingenico-us.com"/>
+        <jpos category="MSR" version="1.5.2"/>
+        <product description="ET1K POS MSR JavaPOS Service from Ingenico, Inc." name="Ingenico ET1K MSR Service for JavaPOS(TM) Standard" url="http://www.ingenico-us.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="COM1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="9600"/>
+        <prop name="parity" value="0"/>
+	</JposEntry>
+
+  <JposEntry logicalName="PINPad">
+        <creation factoryClass="services.IngenicoServiceInstanceFactory" serviceClass="services.et1k.pinpad.PINPadService"/>
+        <vendor name="Ingenico" url="http://www.ingenico-us.com"/>
+        <jpos category="PinPad" version="1.5.2"/>
+        <product description="ET1K POS PINPad JavaPOS Service from Ingenico, Inc." name="Ingenico ET1K PINPad Service for JavaPOS(TM) Standard" url="http://www.ingenico-us.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="COM1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="9600"/>
+        <prop name="parity" value="0"/>
+	</JposEntry>
+  
+</JposEntries>  
+    
+
+

@@ -1,0 +1,1 @@
+@alter_stg_table_delta_1.0.5.10.sql

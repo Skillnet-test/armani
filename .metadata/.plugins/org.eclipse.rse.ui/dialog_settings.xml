@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="RemoteSearchPage">
+		<item value="false" key="stringRegex"/>
+		<item value="false" key="includeSubfolders"/>
+		<item value="2" key="dataSize"/>
+		<item value="true" key="fileNameCaseSensitive"/>
+		<item value="false" key="caseSensitive"/>
+		<item value="false" key="fileNameRegex"/>
+		<item value="false" key="includeArchives"/>
+	</section>
+	<section name="RemoteSearchPage.data0">
+		<item value="*" key="fileNames"/>
+		<item value="false" key="stringRegex"/>
+		<item value="false" key="includeSubfolders"/>
+		<item value="main" key="searchString"/>
+		<item value="true" key="fileNameCaseSensitive"/>
+		<item value="false" key="caseSensitive"/>
+		<item value="false" key="fileNameRegex"/>
+		<item value="D:\ArmaniProject\Armani\rpos" key="folderName"/>
+		<item value="SNSL-295" key="profileName"/>
+		<item value="Local" key="connectionName"/>
+		<item value="false" key="includeArchives"/>
+	</section>
+	<section name="RemoteSearchPage.data1">
+		<item value="*" key="fileNames"/>
+		<item value="false" key="includeSubfolders"/>
+		<item value="false" key="stringRegex"/>
+		<item value="ENTERING PRINT PAPER METHOD" key="searchString"/>
+		<item value="true" key="fileNameCaseSensitive"/>
+		<item value="false" key="caseSensitive"/>
+		<item value="D:\ArmaniProject\Armani\rpos\src" key="folderName"/>
+		<item value="false" key="fileNameRegex"/>
+		<item value="false" key="includeArchives"/>
+		<item value="Local" key="connectionName"/>
+		<item value="SNSL-295" key="profileName"/>
+	</section>
+</section>

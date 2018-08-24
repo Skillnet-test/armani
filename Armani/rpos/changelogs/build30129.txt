@@ -1,0 +1,37 @@
+This release includes several bug fixes.
+
+POS project:
+===================================================================
+MODIFIED - 
+NotVATDependentFeature.java, VATDependentFeature.java - Reworked static initialization of these classes to prevent Exception from occuring during start of AppBuilder if these classes cannot find desired config file.  AppBuilder should now be able to start correctly.
+
+
+Platform project:
+MODIFIED -
+CompInstanceThread.java, ShutdownThread.java - Fixed issue where container instances never actually shutdown when requested beacuse although they begin the remove components within them in order to shutdown, the CompInstanceThread keeps adding new components to replace those removed.  The container should successfully exit now.
+
+Manifest.java - Fixed issue where file size was being parsed as hard-coded string "SIZE".  Client should now be able to correctly read file size from manifest file.
+
+ScrollableTableModel.java - Fixed issue where the any call to ScrollableTableModel#lastPage would cause an error if there are zero pages currently.  This fixes the IndexOutOfBoundsException with zero elements in the model.
+
+LinuxProcessStats.java - Fixed process information including process ID and stats.
+Added missing RMI stub that transferred application server log files to mission control.
+
+
+
+Common project:
+DELETED - 
+LineItemTransfer.java
+TransactionTransfer.java
+TransactionTransferIn.java
+TransactionTransferOut.java
+TransactionTransferServices.java
+
+This source code was not being used and keeping it around only confuses those learning the actual Transfer API.  The decision was made to delete these files.  Please refer to 2.0 codebase to learn more about these files.
+
+Classes such as TransferLineItem, Transfer, TransferIn, TransferOut, and TransferServices have replaced these files.
+
+CMSStoreAuthorization and StoreAuthorization were moved from SIM to common.
+
+ECom project:
+Method signatures for Authorize.java and OperatorCart.java where changed.

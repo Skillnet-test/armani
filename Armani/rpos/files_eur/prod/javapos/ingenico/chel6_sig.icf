@@ -1,0 +1,7 @@
+IVI Checkmate Form Generator - Version 1.0 (Java)
+FormNumber->[formnumber:6]
+FormType->[formtype:3]
+Text->[x:2][y:12][font:1][style:0][text:PLEASE SIGN BELOW]
+Signature->[x:2][y:14][cx:36][cy:10]
+Text->[x:20][y:28][font:0][style:0][text:Touch when done]
+Button->[x:37][y:26][cx:2][cy:2][id:1]

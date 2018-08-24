@@ -1,0 +1,20 @@
+Modifications to consider for 3.0.0.1
+
+
+Renamed the ra.bat file in "bin" to rb.bat, make sure we copy this into the 2.6.0.7 releases as well
+ 
+Core has not been split into Core/Platform.
+
+BIG CHANGE.  There are now more jar files due to the project split:
+   OLD            NEW
+   ---            ---
+   cms_core       retek_platform
+                  retek_common
+                  retek_pos
+                  retek_time
+   chelsea_store  retek_shared_common
+                  retek_shared_pos
+                  retek_shared_time
+
+
+com.chelseasystems.cr.download.update.UdapteRMIServerImpl and com.chelseasystems.cr.download.update.UpdateRMIPeerImpl need to be RMI compiled

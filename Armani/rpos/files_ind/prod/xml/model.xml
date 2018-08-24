@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <MASTER_MODEL>
+        <masterModelHomeAppletTag>com.chelseasystems.cs.swing.login.InitialLoginApplet</masterModelHomeAppletTag>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.collections.CollectionsApplet">
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.CustomerLookupApplet">
+		<!--Previous code for EUR
+		<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+		-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+		<!--Ended code for IND by neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.CustomerManagementApplet</masterAppletHolderApplet>
+		<!-- Previos Code for EUR
+		<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+		-->
+		<!--Added New code for IND by Neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+		<!--Ended New code for IND by Neeti on 2/7/2008-->
+		<!-- Previos Code for EUR
+		<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.returns.ReturnSaleApplet_EUR</masterAppletHolderApplet>
+		-->
+		<!--Added New code for IND by Neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.returns.ReturnSaleApplet_IND</masterAppletHolderApplet>
+		<!--Ended New code for IND by Neeti on 2/7/2008-->
+
+		<masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.pos.ShippingHeaderApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.transaction.SelectItemsApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.collections.CollectionsApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.returns.ReturnTxnHistApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="10">com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="11">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="12">com.chelseasystems.cs.swing.returns.OriginalConsultantApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="13">com.chelseasystems.cs.swing.pos.PrintFiscalDocumentApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="14">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="15">com.chelseasystems.cs.swing.paidouts.PaidoutApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="16">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+		<masterAppletHolderApplet index="17">com.chelseasystems.cs.swing.customer.CustomerDefaultSearchApplet</masterAppletHolderApplet>
+
+           <!-- <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerListApplet</masterAppletHolderApplet>
+	<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnHistoryApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.InitialCustMenuApplet</masterAppletHolderApplet>-->
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.CustomerDefaultSearchApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.CustomerDefaultSearchApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.RedeemableInquiryApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.DepositHistoryApplet">
+	            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerManagementApplet</masterAppletHolderApplet>
+	            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+				<!--Previos code for EUR
+	            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+				-->
+				<!--Added New Code for IND by Neeti on 2/7/2008-->
+				<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+				<!--Ended New Code for IND by Neeti on 2/7/2008-->
+
+            
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.goaling.GoalingEntryApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.goaling.ViewGoalingApplet2</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.layaway.LayPhoneApplet">
+         <!--   <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerListApplet</masterAppletHolderApplet> -->
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.layaway.LayawayPaymentApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.layaway.LayawayReturnApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.layaway.LayawayPaymentApplet">
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="1">null</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.layaway.LayPhoneApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.layaway.LayawayReturnApplet">
+		<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.layaway.LayPhoneApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">null</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.login.InitialLoginApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.timecard.TimecardApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+      <!--     <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.customer.CustomerListApplet</masterAppletHolderApplet> -->
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.menu.InitialInventoryMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.login.ConsultantSalesApplet</masterAppletHolderApplet>
+            <!--Previos code for EUR
+            <masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!-- Added New code for IND by Neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended New code for IND by NEeti on 2/7/2008-->
+            <masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.pos.EvenExchangeApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.layaway.LayawayPaymentApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="10">com.chelseasystems.cs.swing.session.EndofDayApplet_EUR</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="11">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="12">com.chelseasystems.cs.swing.pos.ParkApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="13">com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="14">com.chelseasystems.cs.swing.session.EndOfSession</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="15">com.chelseasystems.cs.swing.readings.SalesByPeriodApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="16">com.chelseasystems.cs.swing.menu.InitialMerchandiseMenuApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="17">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>	
+			<!--
+				<masterAppletHolderApplet index="17">com.chelseasystems.cs.swing.item.ItemDetailApplet</masterAppletHolderApplet>
+
+			<masterAppletHolderApplet index="18">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+			-->
+			<masterAppletHolderApplet index="18">com.chelseasystems.cs.swing.customer.RedeemableInquiryApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="19">com.chelseasystems.cs.swing.report.StoreDetailReportApplet</masterAppletHolderApplet>	
+        	<masterAppletHolderApplet index="20">com.chelseasystems.cs.swing.item.ItemLookupListApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="21">com.chelseasystems.cs.swing.menu.TransactionMgmtMenuApplet</masterAppletHolderApplet>
+	    <masterAppletHolderApplet index="22">com.chelseasystems.cs.swing.item.NoUnitPriceItemsListApplet</masterAppletHolderApplet>
+		 </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.EmployeeMgmtMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.employee.EmploymentApplicationApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.employee.W4Applet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.employee.I9Applet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.scheduling.EmployeeResourceApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.scheduling.SchedulingApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.employee.EmployeeAccessApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.InitialCustMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.FindCustomerApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">null</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.customer.CreditApplicationApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.customer.SpecialOrderApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">null</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.InitialInventoryMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transfer.TransferOutApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transfer.TransferInApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.transfer.PendingTransfersReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.transfer.TransferVoidApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.InitialLayawayMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.layaway.LayawayReturnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.layaway.OutstandingLayawayApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.layaway.OverdueLayawayApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.InitialMerchandiseMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.report.FindItApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.report.MerchandiseLookUpApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.menu.InitialLayawayMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.TransactionMgmtMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.menu.EmployeeMgmtMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.menu.ReportsMgmtMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.session.EndOfSession</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.session.EndofDayApplet_EUR</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.timecard.IdentifyEmployeeApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.report.ReceiptLogViewerApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.goaling.GoalingEntryApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="10">com.chelseasystems.cs.swing.management.SystemUtilitiesApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="11">com.chelseasystems.cs.swing.employee.EmployeeAccessApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="12">com.chelseasystems.cs.swing.transaction.RedeemableBuyBackApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.PosMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.EvenExchangeApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.pos.ParkApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.layaway.LayawayPaymentApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="7">null</masterAppletHolderApplet>
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for INF by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended new code for INF by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="9">null</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="10">com.chelseasystems.cs.swing.customer.RedeemableInquiryApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="11">com.chelseasystems.cs.swing.session.OperatorEndofSessionApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="12">com.chelseasystems.cs.swing.session.EndofDayApplet_EUR</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.ReportsMgmtMenuApplet">
+            <masterAppletHolderApplet index="0">com.ga.cs.swing.report.assocreport.AssociateReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.ga.cs.swing.report.depreport.DepartmentReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.ga.cs.swing.report.clasreport.ClassReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.ga.cs.swing.report.itemreport.GaItemReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.ga.cs.swing.report.mediareport.MediaReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.ga.cs.swing.report.consolidatedovershort.ConsolidatedOverShortReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="6">com.ga.cs.swing.report.fiscalreport.GaFiscalReportApplet</masterAppletHolderApplet>
+            <!--masterAppletHolderApplet index="7">com.ga.cs.swing.report.transactionanalysis.TransactionReportApplet</masterAppletHolderApplet-->
+            <masterAppletHolderApplet index="7">com.ga.cs.swing.report.consignmentdetails.ConsignmentDetailsReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="8">com.ga.cs.swing.report.consignmentsummary.ConsignmentSummaryReportApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="10">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+         </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.menu.TransactionMgmtMenuApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.paidouts.PaidoutApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.collections.CollectionsApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.transaction.VoidTransactionApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.transaction.RedeemableBuyBackApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.session.EndofDayApplet_EUR</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.paidouts.PaidoutApplet">
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>            
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.CustSaleApplet">
+		<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+		-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+		     <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+		<!--Ended code for IND by neeti on 2/7/2008-->
+
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet</masterAppletHolderApplet>
+          <!--  <masterAppletHolderApplet
+			index="2">com.chelseasystems.cs.swing.customer.CustomerListApplet</masterAppletHolderApplet> -->
+            <masterAppletHolderApplet
+			index="2">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.EvenExchangeApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet">
+		<!--
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.CustSaleApplet</masterAppletHolderApplet>-->
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+		<!--Previous code for EUR
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR">
+		-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+		 <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND">
+		<!--Ended code for IND by neeti on 2/7/2008-->
+		<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.pos.ShippingHeaderApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.item.ItemDetailApplet</masterAppletHolderApplet>			
+			<masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.timecard.TimecardApplet</masterAppletHolderApplet>			
+			<masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="10">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="11">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="12">com.chelseasystems.cs.swing.customer.RedeemableInquiryApplet</masterAppletHolderApplet>	
+			<masterAppletHolderApplet index="13">com.chelseasystems.cs.swing.report.StoreDetailReportApplet</masterAppletHolderApplet>	
+			<masterAppletHolderApplet index="14">com.chelseasystems.cs.swing.menu.TransactionMgmtMenuApplet</masterAppletHolderApplet>	
+	        <masterAppletHolderApplet index="15">com.chelseasystems.cs.swing.management.SystemUtilitiesApplet</masterAppletHolderApplet>	
+			<masterAppletHolderApplet index="16">com.chelseasystems.cs.swing.transaction.InitialPreSalesApplet</masterAppletHolderApplet>	
+			<masterAppletHolderApplet index="17">com.chelseasystems.cs.swing.transaction.InitialConsignmentApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="18">com.chelseasystems.cs.swing.item.ItemLookupListApplet</masterAppletHolderApplet>	
+			<masterAppletHolderApplet index="19">com.chelseasystems.cs.swing.alteration.AlterationApplet</masterAppletHolderApplet>	    
+			<masterAppletHolderApplet index="20">com.chelseasystems.cs.swing.pos.ParkApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="21">com.chelseasystems.cs.swing.customer.DepositHistoryApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="22">com.chelseasystems.cs.swing.pos.PrintFiscalDocumentApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+			<masterAppletHolderApplet index="23">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="23">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="24">com.chelseasystems.cs.swing.transaction.SelectItemsApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="25">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+            		<masterAppletHolderApplet index="26">com.chelseasystems.cs.swing.paidouts.PaidoutApplet</masterAppletHolderApplet>
+            		<masterAppletHolderApplet index="27">com.chelseasystems.cs.swing.collections.CollectionsApplet</masterAppletHolderApplet>		
+		</MASTER_APPLET_HOLDER>
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.InitialPreSalesApplet">
+	<!--Previous code for EUR
+		<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+		-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+		<!--Ended code for IND by neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.SelectItemsApplet</masterAppletHolderApplet>
+	</MASTER_APPLET_HOLDER>
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.InitialConsignmentApplet">
+		<!--Previous code for EUR
+		<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+		-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+		<!--Ended code for IND by neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.SelectItemsApplet</masterAppletHolderApplet>
+	</MASTER_APPLET_HOLDER>	
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.item.ItemDetailApplet">
+	<!--Previous code for EUR
+              <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>	  	
+	-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+		<!--Ended code for IND by neeti on 2/7/2008-->
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.ParkApplet">
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+		<!--Previous code for EUR
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.PaymentApplet_EUR">
+		-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+		<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.PaymentApplet_IND">
+		<!--Ended code for IND by neeti on 2/7/2008-->
+
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.collections.CollectionsApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.paidouts.PaidoutApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.transaction.RedeemableBuyBackApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.pos.PrintFiscalDocumentApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet</masterAppletHolderApplet>	
+			<!--<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.pos.CustSaleApplet</masterAppletHolderApplet> -->
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.ShippingDetailApplet">
+		<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet">
+	            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+				<!--Previous code for EUR
+	            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+				-->
+				<!--Added new code for IND by neeti on 2/7/200-->
+				 <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>8-->
+				<!--Ended code for IND by neeti on 2/7/2008-->
+	            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.collections.CollectionsApplet</masterAppletHolderApplet>
+	             <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.paidouts.PaidoutApplet</masterAppletHolderApplet>
+	             <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+	             <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.transaction.CustomerAsisTxnHistoryApplet</masterAppletHolderApplet>
+	             
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.ShippingHeaderApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.ShippingDetailApplet</masterAppletHolderApplet>
+	   <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.ViewCustomerAddressApplet</masterAppletHolderApplet>         <!--Previous code for EUR   
+  	<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>            	   
+	-->
+	<!--Added new code for IND by neeti on 2/7/2008-->
+		<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>   
+	<!--Ended code for IND by neeti on 2/7/2008-->
+	<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>            	     	
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.InitialReturnApplet">
+		<!--Previous code for EUR 
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.returns.OriginalConsultantApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR 
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.returns.ReturnSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.returns.ReturnSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.returns.TxnHistCustApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.returns.ReturnTxnHistoryApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.returns.ReturnTxnHistApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet> 
+			<masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.OriginalConsultantApplet">
+            <!--masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.returns.ReturnCustomerApplet</masterAppletHolderApplet-->
+		<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>            
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.ReturnCustomerApplet">
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.returns.ReturnSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.returns.ReturnSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended new code for IND by neeti on 2/7/2008-->
+
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <!--<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.customer.CustomerListApplet</masterAppletHolderApplet> -->
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+		<!--Previous code for EUR
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.ReturnSaleApplet_EUR">
+		-->
+		<!--Added new code for IND by neeti on 2/7/2008-->
+		<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.ReturnSaleApplet_IND">
+		<!--Ended code for IND by neeti on 2/7/2008-->
+
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.ReturnTxnDetailApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.returns.ReturnTxnHistApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+		</MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.ReturnTxnHistoryApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.returns.TxnHistCustApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.returns.ReturnTxnDetailApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">null</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.TxnHistCustApplet">			
+           <!-- <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerListApplet</masterAppletHolderApplet> -->
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.returns.ReturnTxnHistoryApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.session.EndOfSession">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.ParkApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.session.EndofDayApplet_EUR">
+            <masterAppletHolderApplet index="0">null</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.ParkApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.session.OperatorEndofSessionApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.menu.PosMenuApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.pos.ParkApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.timecard.IdentifyEmployeeApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.timecard.TimecardManagementApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.timecard.TimecardManagementApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.timecard.TimecardBenefitApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.timecard.TimecardAdjustApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.timecard.IdentifyEmployeeApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.RedeemableBuyBackApplet">
+		<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+            <masterAppletHolderApplet index="1">null</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.TransactionMgmtMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.TxnListApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.menu.ReportsMgmtMenuApplet</masterAppletHolderApplet>	
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.TxnDetailApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">null</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.ShippingHeaderApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.item.ItemDetailApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.transaction.TxnListApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.pos.PrintFiscalDocumentApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.transaction.ViewTxnListApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="8">com.chelseasystems.cs.swing.customer.DepositHistoryApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="9">com.chelseasystems.cs.swing.customer.CustomerManagementApplet</masterAppletHolderApplet>			
+			<masterAppletHolderApplet index="10">com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="11">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+			<masterAppletHolderApplet index="12">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>			
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="12">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+			<masterAppletHolderApplet index="13">com.chelseasystems.cs.swing.pos.ShippingHeaderApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="14">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.TxnHistoryApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.FindCustomerApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.TxnListApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.ViewTxnApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.ViewTxnListApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+           <!-- <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.customer.CustomerListApplet</masterAppletHolderApplet> -->
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.transaction.OtherTxnHistLookupApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transfer.PendingTransfersReportApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transfer.TransferOutApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.management.SystemUtilitiesApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+
+    <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.CustReferralLookUpApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerManagementApplet</masterAppletHolderApplet>
+    </MASTER_APPLET_HOLDER>
+
+    <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.CustomerManagementApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.CustReferralLookUpApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index ="2">com.chelseasystems.cs.swing.loyalty.LoyaltyManagementApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index ="3">com.chelseasystems.cs.swing.transaction.CustomerTxnHistoryApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index ="4">com.chelseasystems.cs.swing.pos.PrintFiscalDocumentApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index ="5">com.chelseasystems.cs.swing.customer.DepositHistoryApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index ="6">com.chelseasystems.cs.swing.customer.CreditTenderHistoryApplet</masterAppletHolderApplet>
+    </MASTER_APPLET_HOLDER>
+    
+    <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.loyalty.LoyaltyManagementApplet">
+                <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.loyalty.LoyaltyTransactionDetailApplet</masterAppletHolderApplet>
+                <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.RedeemableInquiryApplet</masterAppletHolderApplet>
+                <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.customer.CustomerManagementApplet</masterAppletHolderApplet>
+
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.transaction.CustomerTxnHistoryApplet</masterAppletHolderApplet>
+
+    </MASTER_APPLET_HOLDER>
+    
+    <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.loyalty.LoyaltyTransactionDetailApplet">
+                    <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.loyalty.LoyaltyManagementApplet</masterAppletHolderApplet>
+                    <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+    </MASTER_APPLET_HOLDER>
+    
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.ViewCustomerAddressApplet">
+           <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.ShippingHeaderApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index ="1">com.chelseasystems.cs.swing.pos.PrintFiscalDocumentApplet</masterAppletHolderApplet>
+
+        </MASTER_APPLET_HOLDER>        
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.SelectItemsApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.ShippingHeaderApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			 <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.transaction.ViewOpenTxnApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.transaction.InitialPreSalesApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.transaction.InitialConsignmentApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="6">com.chelseasystems.cs.swing.transaction.ViewTxnListApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="7">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+   </MASTER_APPLET_HOLDER>   
+
+
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.ViewOpenTxnApplet">
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.SelectItemsApplet</masterAppletHolderApplet>	
+   </MASTER_APPLET_HOLDER>   
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.item.ItemLookupListApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.item.ItemLookupDetailApplet_EUR</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.item.ItemDetailApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.item.ItemLookupDetailApplet_EUR">
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+        </MASTER_APPLET_HOLDER>
+   
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.CustomerTxnHistoryApplet">
+				<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.OtherTxnHistLookupApplet</masterAppletHolderApplet>
+				<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+	</MASTER_APPLET_HOLDER>
+  <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.CustomerAsisTxnHistoryApplet">
+				<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.ASISTxnDataApplet</masterAppletHolderApplet>
+  </MASTER_APPLET_HOLDER>
+
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.returns.ReturnTxnHistApplet">
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>   
+			<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.OtherTxnHistLookupApplet</masterAppletHolderApplet>
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.returns.ReturnTxnDetailApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.returns.InitialReturnApplet</masterAppletHolderApplet>
+	</MASTER_APPLET_HOLDER>
+
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.transaction.ViewTxnListApplet">
+            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.transaction.ViewTxnApplet</masterAppletHolderApplet>
+            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.transaction.SelectItemsApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.pos.PrintFiscalDocumentApplet">
+			<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerLookupApplet</masterAppletHolderApplet>   
+			<masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.customer.ViewCustomerAddressApplet</masterAppletHolderApplet>    
+			<masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.customer.CustomerManagementApplet</masterAppletHolderApplet>   
+
+			<!--Previous code for EUR
+            <masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.pos.PaymentApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="3">com.chelseasystems.cs.swing.pos.PaymentApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+			<!--Previous code for EUR
+			<masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+			-->
+			<!--Added new code for IND by neeti on 2/7/2008-->
+			<masterAppletHolderApplet index="4">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+			<!--Ended code for IND by neeti on 2/7/2008-->
+
+			<masterAppletHolderApplet index="5">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>	
+        </MASTER_APPLET_HOLDER>
+
+	<MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.customer.CreditTenderHistoryApplet">
+	            <masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.customer.CustomerManagementApplet</masterAppletHolderApplet>
+	            <masterAppletHolderApplet index="1">com.chelseasystems.cs.swing.transaction.TxnDetailApplet</masterAppletHolderApplet>
+				<!--Previous code for EUR
+	            <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_EUR</masterAppletHolderApplet>
+				-->
+				<!--Added new code for IND by neeti on 2/7/2008-->
+				 <masterAppletHolderApplet index="2">com.chelseasystems.cs.swing.pos.InitialSaleApplet_IND</masterAppletHolderApplet>
+				<!--Ended code for IND by neeti on 2/7/2008-->            
+        </MASTER_APPLET_HOLDER>
+        <MASTER_APPLET_HOLDER name="com.chelseasystems.cs.swing.item.NoUnitPriceItemsListApplet">
+        	<masterAppletHolderApplet index="0">com.chelseasystems.cs.swing.login.InitialLoginApplet</masterAppletHolderApplet>
+        </MASTER_APPLET_HOLDER>
+	
+    </MASTER_MODEL>
+</CMS_OBJECT>

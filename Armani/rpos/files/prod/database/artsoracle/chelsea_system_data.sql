@@ -1,0 +1,110 @@
+insert into PA_PRTY (ID_PRTY) values ('retek');
+insert into PA_ORGN (ID_PRTY_ORGN, NM_ORGN) values ('retek', 'Retek');
+
+insert into LO_CRDN_TYP (TY_CRDN, DE_CRDN_TYP) values ('PY', 'Default Coordinate Type');
+insert into LO_LCN_PHY (TY_CRDN, CD_LCN_PHY) values ('PY', 'PHYLCN');
+
+insert into LO_PH_TYP (ID_PH_TYP, DE_PH_TYP) values ('0', 'UNKNOWN_PHONE');
+insert into LO_PH_TYP (ID_PH_TYP, DE_PH_TYP) values ('1', 'HOME_PHONE');   
+insert into LO_PH_TYP (ID_PH_TYP, DE_PH_TYP) values ('2', 'WORK_PHONE');   
+insert into LO_PH_TYP (ID_PH_TYP, DE_PH_TYP) values ('3', 'CELL_PHONE');                  
+
+insert into PA_RO_PRTY_TYP (TY_RO_PRTY, NM_RO_PRTY, DE_RO_PRTY) values ('ST', 'STORE', '');
+insert into PA_RO_PRTY_TYP (TY_RO_PRTY, NM_RO_PRTY, DE_RO_PRTY) values ('EM', 'EMPLOYEE', '');
+insert into PA_RO_PRTY_TYP (TY_RO_PRTY, NM_RO_PRTY, DE_RO_PRTY) values ('CU', 'CUSTOMER', '');
+
+insert into RK_EMPLOYMENT_STATUS (EMPLOYMENT_STATUS_ID, EMPLOYMENT_STATUS_DESC) values ('0', 'ACTIVE');
+insert into RK_EMPLOYMENT_STATUS (EMPLOYMENT_STATUS_ID, EMPLOYMENT_STATUS_DESC) values ('1', 'TERMINATED');
+
+insert into TR_DSC (TY_DSC, NM_DSC, DE_DSC) values ('BD', 'BASIC DISCOUNT', 'GENERAL TYPE OF DISCOUNT');
+insert into TR_DSC (TY_DSC, NM_DSC, DE_DSC) values ('ED', 'EMPLOYEE DISCOUNT', 'DISCOUNT FOR EMPLOYEES');
+
+insert into RK_POS_LINE_ITEM_TYPE (POS_LINE_ITEM_TYPE_ID, POS_LINE_ITEM_TYPE_DESC) values (1, 'SALE');
+insert into RK_POS_LINE_ITEM_TYPE (POS_LINE_ITEM_TYPE_ID, POS_LINE_ITEM_TYPE_DESC) values (2, 'RETURN');
+insert into RK_POS_LINE_ITEM_TYPE (POS_LINE_ITEM_TYPE_ID, POS_LINE_ITEM_TYPE_DESC) values (3, 'LAYAWAY');
+
+insert into RK_FORM_TYPE (FORM_TYPE_ID, FORM_TYPE_DESC) values (1, 'W4');
+insert into RK_FORM_TYPE (FORM_TYPE_ID, FORM_TYPE_DESC) values (2, 'I9');
+insert into RK_FORM_TYPE (FORM_TYPE_ID, FORM_TYPE_DESC) values (3, 'VACATION_REQUEST');
+
+insert into RK_ID_DOC_TYPE (ID_DOC_TYPE_ID, ID_DOC_TYPE_DESC) values (1, 'I9_PRIMARY');
+insert into RK_ID_DOC_TYPE (ID_DOC_TYPE_ID, ID_DOC_TYPE_DESC) values (2, 'I9_SECONDARY');
+insert into RK_ID_DOC_TYPE (ID_DOC_TYPE_ID, ID_DOC_TYPE_DESC) values (3, 'I9_REHIRE');
+
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('100', 'TRNUNK');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('101', 'TRNSOS');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('102', 'TRNEOS');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('103', 'TRNEOD');
+
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('140', 'TRNFER');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('141', 'TRNRIN');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('142', 'TRNOUT');
+
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('150', 'TRNPAY');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('151', 'TRNPOS');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('152', 'TRNRTS');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('153', 'TRNLPA');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('154', 'TRNCOL');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('155', 'TRNPOT');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('156', 'TRNVOD');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('157', 'TRNNOS');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('158', 'TRNBBK');
+
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('160', 'TRNTCD');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('161', 'TRNTCI');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('162', 'TRNTCO');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('163', 'TRNTCT');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('164', 'TRNTCB');
+insert into CO_TYP_TRN (ID_RS, TY_TRN) values ('165', 'TRNTCM');
+
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('????', 'UNKNOWN');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('CASH', 'CASH');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('CAD_CASH', 'CAD_CASH');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('CHECK', 'CHECK');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('EMPLOYEE_CHECK', 'EMPLOYEE_CHECK');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('BANK_CHECK', 'BANK_CHECK');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('CAD_BANK_CHECK', 'CAD_BANK_CHECK');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('BUSINESS_CHECK', 'BUSINESS_CHECK');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('CAD_BUSINESS_CHECK', 'CAD_BUSINESS_CHECK');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('MONEY_ORDER', 'MONEY_ORDER');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('TRAVELLERS_CHECK', 'TRAVELLERS_CHECK');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('CREDIT_CARD', 'CREDIT_CARD');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('AMEX', 'AMEX');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('DISCOVER', 'DISCOVER');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('MASTER_CARD', 'MASTER_CARD');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('VISA', 'VISA');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('DEBIT_CARD', 'DEBIT_CARD');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('REDEEMABLE', 'REDEEMABLE');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('GIFT_CERTIFICATE', 'GIFT_CERTIFICATE');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('DUE_BILL', 'DUE_BILL');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('DUE_BILL_ISSUE', 'DUE_BILL_ISSUE');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('STORE_VALUE_CARD', 'STORE_VALUE_CARD');
+insert into CO_CLS_TND (LU_CLS_TND, DE_CLS_TND) values ('MANUFACTURE_COUPON', 'MANUFACTURE_COUPON');
+
+insert into CO_CLS_GF_CF (TY_GF_CF, DE_TYP_GF_CF) values ('REDEEMABLE', 'REDEEMABLE');               
+insert into CO_CLS_GF_CF (TY_GF_CF, DE_TYP_GF_CF) values ('GIFT_CERTIFICATE', 'GIFT_CERTIFICATE');   
+insert into CO_CLS_GF_CF (TY_GF_CF, DE_TYP_GF_CF) values ('DUE_BILL', 'DUE_BILL');                   
+insert into CO_CLS_GF_CF (TY_GF_CF, DE_TYP_GF_CF) values ('DUE_BILL_ISSUE', 'DUE_BILL_ISSUE');       
+insert into CO_CLS_GF_CF (TY_GF_CF, DE_TYP_GF_CF) values ('STORE_VALUE_CARD', 'STORE_VALUE_CARD');
+
+insert into RK_EMP_RESOURCE_ROLE_TYPE (EMP_RESOURCE_ROLE_TYPE_ID, EMP_RESOURCE_ROLE_TYPE_DESC) values (1, 'PREFERRED');
+insert into RK_EMP_RESOURCE_ROLE_TYPE (EMP_RESOURCE_ROLE_TYPE_ID, EMP_RESOURCE_ROLE_TYPE_DESC) values (2, 'BACKUP');
+
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (10, 'PREFERRED_SUNDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (11, 'PREFERRED_MONDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (12, 'PREFERRED_TUESDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (13, 'PREFERRED_WEDNESDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (14, 'PREFERRED_THURSDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (15, 'PREFERRED_FRIDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (16, 'PREFERRED_SATURDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (20, 'UNAVAILABLE_SUNDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (21, 'UNAVAILABLE_MONDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (22, 'UNAVAILABLE_TUESDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (23, 'UNAVAILABLE_WEDNESDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (24, 'UNAVAILABLE_THURSDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (25, 'UNAVAILABLE_FRIDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (26, 'UNAVAILABLE_SATURDAY');
+insert into RK_TIME_RANGE_TYPE (TIME_RANGE_TYPE_ID, TIME_RANGE_TYPE_DESC) values (29, 'UNAVAILABLE_SPECIAL_REQUESTS');
+
+
+commit;

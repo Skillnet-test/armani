@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <com.chelseasystems.cr.node.ContainerVitalsHolder>
+        <UID>1505971695828</UID>
+        <componentVitals length="1">
+            <com.chelseasystems.cr.node.ComponentVitals>
+                <UID>13330</UID>
+                <available>true</available>
+                <componentName>rns</componentName>
+                <createDate>2017-09-21T10:58:19.582 IST</createDate>
+                <currentConnection>0</currentConnection>
+                <maxConnection>0</maxConnection>
+                <maxConnectionTime/>
+                <millisUp>3464</millisUp>
+                <performanceVitals length="0"/>
+                <totalTxnCount>0</totalTxnCount>
+                <txnPerPeriod>0</txnPerPeriod>
+            </com.chelseasystems.cr.node.ComponentVitals>
+        </componentVitals>
+        <containerName>rns</containerName>
+        <containerVitals length="1">
+            <com.chelseasystems.cr.node.ContainerVitals>
+                <PID>0</PID>
+                <UID>1505971695828</UID>
+                <actualMemory>0</actualMemory>
+                <componentInstanceCount>0</componentInstanceCount>
+                <containerName>rns</containerName>
+                <cpuPercent>0.0</cpuPercent>
+                <createDate>2017-09-21T10:58:19.582 IST</createDate>
+                <exceptionOccured>false</exceptionOccured>
+                <freeHeapMemory>13756672</freeHeapMemory>
+                <memoryPercent>0.0</memoryPercent>
+                <millisUp>3464</millisUp>
+                <totalHeapMemory>16318464</totalHeapMemory>
+                <totalTxns>0</totalTxns>
+            </com.chelseasystems.cr.node.ContainerVitals>
+        </containerVitals>
+        <hoursOfVitalsHistory>4.0</hoursOfVitalsHistory>
+    </com.chelseasystems.cr.node.ContainerVitalsHolder>
+</CMS_OBJECT>

@@ -1,0 +1,8 @@
+IVI Checkmate Form Generator - Version 1.1 (Java)
+FormNumber->[formnumber:4]
+FormType->[formtype:3]
+Text->[x:11][y:8][font:1][style:0][text:ACCEPT.]
+Text->[x:11][y:18][font:1][style:0][text:NO,]
+Text->[x:11][y:21][font:0][style:0][text:I WANT TO CHANGE THE AMOUNT.]
+Button->[x:5][y:7][cx:4][cy:4][id:7]
+Button->[x:5][y:17][cx:4][cy:4][id:8]

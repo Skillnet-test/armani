@@ -1,0 +1,139 @@
+
+SQL*Loader: Release 10.1.0.3.0 - Production on Thu May 12 17:00:29 2005
+
+Copyright (c) 1982, 2004, Oracle.  All rights reserved.
+
+Control File:   stg_txn_hist.ctl
+Data File:      /u01/app/armanir2b1/retek/cif/cifroot/Txn_Hist/Inbound/ARM_STG_TXN_HIST_1.dat
+  Bad File:     stg_txn_hist.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     64 rows, maximum of 256000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table ARM_STG_TXN_HIST, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+RECORD_TYPE                         FIRST     *   |  O(") CHARACTER            
+TRANSACTION_ID                       NEXT     *   |  O(") CHARACTER            
+TRANSACTION_TYPE                     NEXT     *   |  O(") CHARACTER            
+TRANSACTION_DATE                     NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "to_date(:TRANSACTION_DATE,'YYYYMMDDHHMISS')"
+STORE_ID                             NEXT     *   |  O(") CHARACTER            
+REGISTER_NO                          NEXT     *   |  O(") CHARACTER            
+OPERATOR_ID                          NEXT     *   |  O(") CHARACTER            
+ASSOCIATE_ID                         NEXT     *   |  O(") CHARACTER            
+TXN_NET_AMOUNT                       NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:TXN_NET_AMOUNT)"
+LINE_ITEM_TYPE                       NEXT     *   |  O(") CHARACTER            
+ITEM_ID                              NEXT     *   |  O(") CHARACTER            
+MISC_ITEM_ID                         NEXT     *   |  O(") CHARACTER            
+QUANTITY                             NEXT     *   |  O(") CHARACTER            
+CURRENCY_CD                          NEXT     *   |  O(") CHARACTER            
+RETAIL_PRICE                         NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:RETAIL_PRICE)"
+SELLING_PRICE                        NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:SELLING_PRICE)"
+MANUAL_MARKDOWN_AMT                  NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:MANUAL_MARKDOWN_AMT)"
+MANUAL_UNIT_PRICE                    NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:MANUAL_UNIT_PRICE)"
+REDUCTION_AMT                        NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:REDUCTION_AMT)"
+REDUCTION_REASON                     NEXT     *   |  O(") CHARACTER            
+LN_ITM_NET_AMT                       NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:LN_ITM_NET_AMT)"
+LN_ITM_TAX_AMT                       NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:LN_ITM_TAX_AMT)"
+TAX_EXEMPT_ID                        NEXT     *   |  O(") CHARACTER            
+MANUAL_TAX_AMT                       NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "ARM_TO_NUMBER(:MANUAL_TAX_AMT)"
+RETURN_REASON_ID                     NEXT     *   |  O(") CHARACTER            
+RETURN_COMMENTS                      NEXT     *   |  O(") CHARACTER            
+ORIG_TRANSACTION_ID                  NEXT     *   |  O(") CHARACTER            
+ORIG_STORE_ID                        NEXT     *   |  O(") CHARACTER            
+ORIG_PROCESS_DT                      NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "to_date(:ORIG_PROCESS_DT,'YYYYMMDDHHMISS')"
+ORIG_OPERATOR_ID                     NEXT     *   |  O(") CHARACTER            
+ORIG_REGISTER_ID                     NEXT     *   |  O(") CHARACTER            
+CUST_ROLE                            NEXT     *   |  O(") CHARACTER            
+EXT_CUST_ID                          NEXT     *   |  O(") CHARACTER            
+CUST_FIRST_NAME                      NEXT     *   |  O(") CHARACTER            
+CUST_LAST_NAME                       NEXT     *   |  O(") CHARACTER            
+CUST_ADDR_LINE_1                     NEXT     *   |  O(") CHARACTER            
+CUST_ADDR_LINE_2                     NEXT     *   |  O(") CHARACTER            
+CUST_CITY                            NEXT     *   |  O(") CHARACTER            
+CUST_STATE                           NEXT     *   |  O(") CHARACTER            
+CUST_COUNTRY                         NEXT     *   |  O(") CHARACTER            
+CUST_PCODE                           NEXT     *   |  O(") CHARACTER            
+CUST_PHONE_1                         NEXT     *   |  O(") CHARACTER            
+CUST_PHONE_2                         NEXT     *   |  O(") CHARACTER            
+TND_TYPE                             NEXT     *   |  O(") CHARACTER            
+TND_AMOUNT                           NEXT     *   |  O(") CHARACTER            
+TND_ID_ACNT_NMB                      NEXT     *   |  O(") CHARACTER            
+TND_RESP_AUTH                        NEXT     *   |  O(") CHARACTER            
+TND_APPROVAL_DATE                    NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "to_date(:TND_APPROVAL_DATE,'YYYYMMDD')"
+TND_EXPIRATION_DT                    NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "to_date(:TND_EXPIRATION_DT,'YYYYMMDD')"
+TND_HOLDER_NAME                      NEXT     *   |  O(") CHARACTER            
+CC_CVV_CODE                          NEXT     *   |  O(") CHARACTER            
+CC_AMEX_CID_NUM                      NEXT     *   |  O(") CHARACTER            
+TND_SWIPE_IND                        NEXT     *   |  O(") CHARACTER            
+TND_RESP_ADDRESS_VERIF               NEXT     *   |  O(") CHARACTER            
+TND_RESP_JOURNAL_KEY                 NEXT     *   |  O(") CHARACTER            
+TND_RESP_MSG                         NEXT     *   |  O(") CHARACTER            
+TND_RESP_MSG_NUM                     NEXT     *   |  O(") CHARACTER            
+TND_MERCHANT_ID                      NEXT     *   |  O(") CHARACTER            
+TND_CARD_IDNFR                       NEXT     *   |  O(") CHARACTER            
+CC_CARD_PLAN                         NEXT     *   |  O(") CHARACTER            
+TND_MANUAL_OVERRIDE                  NEXT     *   |  O(") CHARACTER            
+CHK_ABA_NUM                          NEXT     *   |  O(") CHARACTER            
+CHK_ROUTING_NUM                      NEXT     *   |  O(") CHARACTER            
+CHK_BANK                             NEXT     *   |  O(") CHARACTER            
+CHK_IS_SCANNED                       NEXT     *   |  O(") CHARACTER            
+RDM_TYPE                             NEXT     *   |  O(") CHARACTER            
+RDM_CONTROL_NUMBER                   NEXT     *   |  O(") CHARACTER            
+RDM_TND_ID_STR_RT                    NEXT     *   |  O(") CHARACTER            
+RDM_DC_CPN_SCAN_CODE                 NEXT     *   |  O(") CHARACTER            
+RDM_TND_PRM_CODE                     NEXT     *   |  O(") CHARACTER            
+RDM_EXPIRATION_DATE                  NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "to_date(:RDM_EXPIRATION_DATE,'YYYYMMDD')"
+STG_LOAD_DATE                        NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "SYSDATE"
+STG_EVENT_ID                         NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "STG_EVENT_ID_S.nextval"
+STG_STATUS                           NEXT     *   |  O(") CHARACTER            
+    SQL string for column : "NVL(:STG_STATUS,0)"
+
+value used for ROWS parameter changed from 64 to 13
+
+Table ARM_STG_TXN_HIST:
+  4 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 248196 bytes(13 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:             4
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Thu May 12 17:00:29 2005
+Run ended on Thu May 12 17:00:30 2005
+
+Elapsed time was:     00:00:00.46
+CPU time was:         00:00:00.01

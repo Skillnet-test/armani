@@ -1,0 +1,4 @@
+Modifications to consider for 2.5.0.5
+
+1. a new config file has been added to the server digital_receipt.cfg- DAVID
+2. Modifications to DB for Shipping - DAVID

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT JposEntry (creation,vendor,jpos,product,prop*)>
+<!ATTLIST JposEntry
+logicalName CDATA #REQUIRED
+>
+<!ELEMENT JposEntries (JposEntry*)>
+<!ELEMENT creation (#PCDATA)>
+<!ATTLIST creation
+factoryClass CDATA #REQUIRED
+>
+<!ATTLIST creation
+serviceClass CDATA #REQUIRED
+>
+<!ELEMENT vendor (#PCDATA)>
+<!ATTLIST vendor
+name CDATA #REQUIRED
+>
+<!ATTLIST vendor
+url CDATA #REQUIRED
+>
+<!ELEMENT jpos (#PCDATA)>
+<!ATTLIST jpos
+category (BumpBar|CashChanger|CashDrawer|CheckScanner|CAT|CoinDispenser|FiscalPrinter|HardTotals|Keylock|LineDisplay|MICR|MotionSensor|MSR|PINPad|PointCardRW|POSKeyboard|POSPower|POSPrinter|RemoteOrderDisplay|Scale|Scanner|SignatureCapture|ToneIndicator) #REQUIRED
+>
+<!ATTLIST jpos
+version (1.4a|1.5|1.6|1.7) #REQUIRED
+>
+<!ELEMENT product (#PCDATA)>
+<!ATTLIST product
+description CDATA #REQUIRED
+>
+<!ATTLIST product
+name CDATA #REQUIRED
+>
+<!ATTLIST product
+url CDATA #REQUIRED
+>
+<!ELEMENT prop (#PCDATA)>
+<!ATTLIST prop
+name CDATA #REQUIRED
+>
+<!ATTLIST prop
+value CDATA #REQUIRED
+>
+<!ATTLIST prop
+type (String|Boolean|Character|Integer|Long|Byte|Short|Double|Float|URI) #IMPLIED
+>
+

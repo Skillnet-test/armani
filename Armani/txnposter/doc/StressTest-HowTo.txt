@@ -1,0 +1,44 @@
+How to run stress test for Armani:
+===================================
+
+1.  Have the same setup as TxnPoster.
+2.  Run the posting of transactions or other business objects(Customer, Employee) in a loop.
+See CustomerStressTestUtil or TransactionStressTestUtil for examples.
+3.  Enter appropriate config parameters in stresstest.cfg. 
+4.  Create the required business objects by writing those objects to file instead of DB from the POS. See following code fragment for an example:
+	ObjectStore objStore = new ObjectStore(".\\" + "Cust" + cmsCustomer.getFirstName() + "_" 
+			+ cmsCustomer.getLastName());
+	objStore.write(cmsCustomer);
+
+5.  Place the business object in a directory from where you are running the stress test. Start the stress test using the following command:
+java -Djava.security.policy=../../library/policy -DUSER_CONFIG=client_master.cfg $STRESSTEST_MAIN_CLASSNAME $BUSINESS_OBJECT_LOCATION
+
+Ex:
+java -Djava.security.policy=../../library/policy -DUSER_CONFIG=client_master.cfg com.ga.util.stresstest.txn.TransactionStressTestUtil ..\txns\Txn1
+
+Note: The business object may have to modified each time before persisting to avoid DB Constraint errors.
+
+========================================================================================
+Prerequisites:
+==============
+1. Add the following lines in your Container1.xml files under the node <commandLineArgs>
+	<java.lang.String>com.sun.management.jmxremote.port=2603</java.lang.String>
+	<java.lang.String>com.sun.management.jmxremote.ssl=false</java.lang.String>
+	<java.lang.String>com.sun.management.jmxremote.authenticate=false</java.lang.String>
+
+   Set the "length" parameter of <commandLineArgs> accordingly. The port can be changed.
+
+2. The appserver should be running and should include the CMSTransactionPosterService if you are testing txn posting. This is the same service that TxnPoster uses, so start the services in the same manner as for TxnPoster.
+
+========================================================================================
+Monitoring:
+===========
+Start jconsole and the use the "remote" connection to connect to the server on the port(ex:2603) to monitor the container. jconsole is a .exe included with java.
+
+========================================================================================
+Notes:
+======
+For more info about jconsole:
+http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html
+http://java.sun.com/j2se/1.5.0/docs/guide/management/jconsole.html
+

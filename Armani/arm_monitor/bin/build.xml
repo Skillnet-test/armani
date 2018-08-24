@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+
+<project name="armani" default="jar">
+
+    <property name="verMajor"         value="3" />
+    <property name="verMinor"         value="0" />
+    <property name="verPatch"         value="0" />
+    <property name="verBuild"         value="0" />
+    <property name="verDelimiter"     value="." />
+    <property name="baseVersion"      value="3010GA" />
+
+    <property name="newVersion"       value="${verMajor}${verDelimiter}${verMinor}${verDelimiter}${verPatch}${verDelimiter}${verBuild}" />
+    <property name="newVersionDirName"       value="Armani${newVersion}" />
+    
+    <!-- <tstamp> <format property="DSTAMP" pattern="MMddyy" locale="en" /> </tstamp> -->
+    <!-- property file="build.properties"/ -->
+   
+	<property name="armmonitorDir.name"      value="../../arm_monitor" />
+	<property name="armmonitor.jar.name"      value="armmonitor.jar" />
+	<property name="ammonitor.src.dir"          value="${armmonitorDir.name}/src"/>
+	<property name="ammonitor.classes.dir"  value="${armmonitorDir.name}/classes"/>
+	<property name="armmonitor.jar.dir"      value="${armmonitorDir.name}/jarfiles" />
+	<property name="dev.library.dir"  value="../../library" />
+    
+    <path id="class.path">
+        <pathelement location="../classes" />
+        <pathelement location="${dev.library.dir}/armanirpos.jar" />
+        <pathelement location="${dev.library.dir}/retek_3.0.0.GA_patch.jar" />
+        <pathelement location="${dev.library.dir}/retek_platform.jar" />
+        <pathelement location="${dev.library.dir}/retek_shared_common.jar" />
+        <pathelement location="${dev.library.dir}/retek_common.jar" />
+        <pathelement location="${dev.library.dir}/retek_shared_pos.jar" />
+        <pathelement location="${dev.library.dir}/retek_pos.jar" />
+        <pathelement location="${dev.library.dir}/retek_shared_time.jar" />
+        <pathelement location="${dev.library.dir}/retek_time.jar" />
+        <pathelement location="${dev.library.dir}/retek_app.jar" />
+        <pathelement location="${dev.library.dir}/retek_sys.jar" />
+        <pathelement location="${dev.library.dir}/retek_tax.jar" />
+        <pathelement location="${dev.library.dir}/xerces.jar" />
+        <pathelement location="${dev.library.dir}/jpos15.jar" />
+        <pathelement location="${dev.library.dir}/jdom.jar" />
+        <pathelement location="${dev.library.dir}/et1000jpos15201.jar" />
+        <pathelement location="${dev.library.dir}/FPJni.jar" />
+        <pathelement location="${dev.library.dir}/mailapi.jar" />
+        <pathelement location="${dev.library.dir}/activation.jar" />
+        <pathelement location="${dev.library.dir}/jcchart451K.jar" />
+        <pathelement location="${dev.library.dir}/jcpagelayout451K.jar" />
+        <pathelement location="${dev.library.dir}/jcfield451K.jar" />
+        <pathelement location="${dev.library.dir}/ejb.jar" />
+        <pathelement location="${dev.library.dir}/jmf.jar" />
+        <pathelement location="${dev.library.dir}/classes12.jar" />
+        <pathelement location="${dev.library.dir}/jt400.jar" />
+        <pathelement location="${dev.library.dir}/jdbc2_0-stdext.jar" />
+        <pathelement location="${dev.library.dir}/jxl.jar" />
+        <pathelement location="${dev.library.dir}/jce1_2_2.jar" />
+        <pathelement location="${dev.library.dir}/local_policy.jar" />
+    	<pathelement location="${dev.library.dir}/log4j-1.2.14.jar" />
+        <pathelement location="${dev.library.dir}/sunjce_provider.jar" />
+        <pathelement location="${dev.library.dir}/US_export_policy.jar" />
+		<pathelement location="${dev.library.dir}/axis.jar" />
+		<pathelement location="${dev.library.dir}/commons-discovery.jar" />
+		<pathelement location="${dev.library.dir}/commons-lang-2.0.jar" />
+		<pathelement location="${dev.library.dir}/commons-logging.jar" />
+		<pathelement location="${dev.library.dir}/crimson.jar" />
+		<pathelement location="${dev.library.dir}/jaxrpc.jar" />
+		<pathelement location="${dev.library.dir}/proweb.jar" />
+		<pathelement location="${dev.library.dir}/saaj.jar" />
+		<pathelement location="${dev.library.dir}/wsdl4j.jar"/>
+   	
+        <!-- Europe specific jars -->
+        <pathelement location="${dev.library.dir}/armanipackage.jar" />
+		<pathelement location="${dev.library.dir}/armaniext.jar" />
+        <pathelement location="${dev.library.dir}/jcl.jar" />
+        <pathelement location="${dev.library.dir}/jpos18.jar" />
+        <pathelement location="${dev.library.dir}/setefipackage.jar" />
+        <pathelement location="${dev.library.dir}/armani/informix/ifxjdbc.jar" />
+        <pathelement location="${dev.library.dir}/armani/oracle/classes12.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/ibmas400.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/jt400.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/jt400jdbc.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/jt400Proxy.jar" />
+
+        <pathelement location="${dev.library.dir}/armani/util/commons-beanutils.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-collections.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-digester.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-logging.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-logging-api.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/imap.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/ejee.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jcmdline-1.0.2.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jcommon-0.9.6.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jcpagelayout451K.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jdom.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jdt-compiler.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jfreechart-0.9.21.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jta-spec1_0_1.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jxl.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/javaxsecur.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/looks-1.2.2.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/mail.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/mailapi.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/poi.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/pop3.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/smtp.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/tar.jar" />
+
+        <pathelement location="${dev.library.dir}/armani/report/iReport.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/itext-1.02b.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jasperreports-0.6.4.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-api.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-impl.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-libs.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-xjc.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jax-qname.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/log4j-1.2.8.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/log4j-1.2.9.jar" />
+
+        <pathelement location="${dev.library.dir}/armani/xml/namespace.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xalan-2.4.1.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xmlparserv2.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/sax2r2.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/relaxngDatatype.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xalan.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xercesImpl.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xercesImpl-2.2.1.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xml-apis.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xml-apis2.6.0.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xmlParserAPIs.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xmlUpdate.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xerces1.3.0.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xerces.jar" />
+        <!-- Europe specific jars -->
+        </path>
+
+    <property name="class_path" refid="class.path"/>
+
+    <!-- ====================================================================== -->
+    <!-- Targets                                                                -->
+    <!-- ====================================================================== -->
+
+    <target name="clean">
+        <delete dir="${ammonitor.classes.dir}/com" />
+        <delete file="${ammonitor.jar.dir}/${ammonitor.jar.name}" />
+    </target>
+
+    <target name="compile" description="Compile (without jar-ing)">        
+        <echo message="*** Compiling ARMMONITOR module code... ***"/>
+        <mkdir dir="${ammonitor.classes.dir}" />
+        <javac  classpath="${class_path}" srcdir="${ammonitor.src.dir}" destdir="${ammonitor.classes.dir}" debug="on">
+            <include name="**/*.java" />
+        </javac>
+        <rmic base="${ammonitor.classes.dir}" stubversion="1.2" classpath="${class_path}" includes="**/*RMIServerImpl*"/>
+    </target>
+
+    <target name="jar" depends="compile" description="Jar (and compile as necessary)">  
+    	<echo message="*** Jar-ing Arm Process Monitor Jar ***"/>
+        <mkdir dir="${armmonitor.jar.dir}" />
+        <jar jarfile="${armmonitor.jar.dir}/${armmonitor.jar.name}" filesonly="true" index="true">
+            <fileset dir="${ammonitor.classes.dir}">
+ <!--               <include name="com/ga/util/monitor/" />
+            	<include name="com/ga/util/operation/" />
+            	<include name="com/ga/util/appmgr/" />	-->
+            	<include name="com/"/>
+            </fileset>
+        </jar>
+        <copy file="${armmonitor.jar.dir}/${armmonitor.jar.name}" todir="${dev.library.dir}" />        
+    </target>
+   
+    <target name="rebuild" depends="clean,jar" description="Rebuild"/>
+    
+ </project>

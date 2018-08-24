@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <RULE_REPOSITORY>
+        <ruleExecutionLoggingRequested>false</ruleExecutionLoggingRequested>
+        <ruleFailureLoggingRequested>false</ruleFailureLoggingRequested>
+          <RULE_ASSIGNMENT name="DUMMY_CUST.isShowable">
+	        <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.HideIfTransactionAmountOverTheLimit</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="CUST_DEFAULT.isShowable">
+	        <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.HideIfTransactionAmountOverTheLimit</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>        
+                
+        <RULE_ASSIGNMENT name="REFRESH.isShowable">
+	        <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.ShowIfOnline</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        
+        <RULE_ASSIGNMENT name="MOD_CUST.isShowable">
+	        <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.customer.ShowIfCustomerSelected</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>       
+        <!-- Commented as per PCR PCR_SAP-POS_CRM : NEW_CUST button should be visible on second page of the search          
+        <RULE_ASSIGNMENT name="NEW_CUST.isShowable">
+	            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.ShowIfCustomerReferred</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="NEW_CUST.isShowable">
+	            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.ShowAfterCustomerSearch</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>        
+        -->
+        <RULE_ASSIGNMENT name="ISSUE_REWARD.isShowable">
+		            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.NotEligibleForRewardCard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ADDITIONAL_EMP_INFO.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.AdditionalEmpInfoButtonShows</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ADDITIONAL_EMP_INFO_PREV.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.StandardEmpInfoButtonShows</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ADD_BENEFIT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOtherStoresTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ADD_IN.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ADD_OUT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ADD_PRIOR_BENEFIT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.timecard.PPAMustApplyToOldestOpenTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOtherStoresTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="CASHIER_EOS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CashierSessionIsOn</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="CASHIER_SESSION.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CashierSessionIsOff</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="DELETE_BENEFIT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOtherStoresTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="DEL_IN_OUT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ENTER_COMMENT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOtherStoresTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="FINALIZE.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.FinalizeTimecardButtonShows</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="INS_IN_OUT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOtherStoresTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <!--RULE_ASSIGNMENT name="ITEM_DETAIL.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.NotVATDependentFeature</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT-->
+        <RULE_ASSIGNMENT name="LOG_OFF.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CashierSessionIsOn</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="MODIFY_BENEFIT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="MOD_IN.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="MOD_OUT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="POST_AND_PACK.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.VATDependentFeature</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="PRINT_EXPORT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.VATDependentFeature</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="PRINT_VAT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.VATDependentFeature</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+	   <RULE_ASSIGNMENT name="PRINT_FISCAL.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowPrintFiscalIfCompositePOSTransaction</ruleAssignmentRuleClass>
+      </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="REMOVE_PRIOR_BENEFIT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOwnTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.timecard.PPAMustApplyToOldestOpenTimecard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.timecard.EmployeeMayNotModOtherStoresTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="SKIP.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.HideWhenCustIsRequired</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.customer.HideIfTransactionAmountOverTheLimit</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="STORE_CLOSEOUT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.store.EndOfDayForStoreCompleted</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		
+        <!--RULE_ASSIGNMENT name="TAX_EXEMPT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.NotVATDependentFeature</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT-->
+        <!--RULE_ASSIGNMENT name="TOGGLE_DETAIL.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.NotVATDependentFeature</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT-->
+        
+        
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.customer.Customer.setBirthDate">
+	            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.DateMustBeInMMDDYYYY</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.customer.Customer.setEMail">
+	            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.EmailAddressIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        
+        
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setIssueDate">
+		            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.DateMustBeInMMDDYYYY</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setSpecialEventDate">
+			            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.DateMustBeInMMDDYYYY</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.discount.Discount.setReason">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.paidout.PaidOutTransaction.setAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.PaidoutAmountHasToBeMoreThanZero</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.Cash.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CashNotValidAsRefundOrChange_EUR</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+			
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.Check.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CheckNotValidAsChange_EUR</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.RoundPayment.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.RoundPaymentNotValidAsRefundOrChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.RoundPayment.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.RoundPaymentNotValidAsRefundOrChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.RoundPayment.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.RoundPaymentNotValidAsPayment</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>        
+      <!--  <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.Check.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CheckIsValidAsChange</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.payment.ForeignCheckNotValidAsRefundOrChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>-->
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.OutOfAreaCheck.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.OutOfAreaCheckIsNotValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT> 
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.OutOfAreaCheck.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.OutOfAreaCheckIsNotValidAsPayment</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT> 
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.LocalCheck.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.LocalCheckIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.LocalCheck.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.LocalCheckIsValidAsPayment</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.Check.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CheckIsValidAsRefund</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.payment.ForeignCheckNotValidAsRefundOrChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.CheckRequest.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CheckRequestIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.CreditCard.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CreditCardIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.HouseAccount.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.HouseAccountIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.DebitCard.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.DebitCardIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.DueBill.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.DueBillisValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.DueBill.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.DueBillIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.DueBillIssue.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CreditMemoIssueIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.DueBillIssue.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.DueBillIssueIsValidAsPayment</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.EmployeeCheck.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.EmployeeCheckIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.MallCert.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.MallCertIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.MallCert.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.MallCertIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.LayawayAccount.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.LayawayAccountIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.ManufacturerCoupon.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.ManufacturerCouponIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.ManufacturerCoupon.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.ManufacturerCouponIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.MoneyOrder.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.MoneyOrderIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.MoneyOrder.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.MoneyOrderIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.StoreValueCard.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.StoreValueCardIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+			
+		 <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.StoreValueCard.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.StoreValueCardIdValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.TravellersCheck.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.TravellersCheckIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.TravellersCheck.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.TravellersCheckIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<!--Added by SonaliRaina to check the visibility of Travellers Check Button-->
+		 <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.TravellersCheck.isValidAsPayment">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.TravellersCheckIsValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.pos.CompositePOSTransaction.testIsVoidable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.layaway.LayawayTransactionIsVoidable</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.pos.LayawayTransaction.setDesiredTotalAmountDue">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.layaway.ProposedDepositCannotBeWithinOneDollarOfTotalAmountDue</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.pos.PaymentTransaction.testIsVoidable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ReedemableTransactionIsVoidable</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.transaction.TransactionWithRedeemableAsPaymentIsVoidable</ruleAssignmentRuleClass>
+			<ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.transaction.PaidInIsVoidable</ruleAssignmentRuleClass>
+                  <ruleAssignmentRuleClass index="3">com.chelseasystems.cs.rules.transaction.NoSaleIsNotVoidable</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <!--<RULE_ASSIGNMENT name="com.chelseasystems.cr.pos.RedeemableBuyBackTransaction.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>-->
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.pos.Transaction.testIsVoidable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.TransactionCannotBeVoidedTwice</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.transaction.TransactionCannotBeVoidedAfterEOD</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.scheduling.Schedule.setTimeRange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.scheduling.ScheduleStartsOnDesignatedDay</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.scheduling.TimeRange.setReason">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.TimeRangeReasonLessThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.store.Store.testEndOfDayRequired">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.store.EndOfDayRequired</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.timecard.EmployeeTimecard.testAddBenefitTime">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.ValidateBenefitTime</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.timecard.EmployeeTimecard.testIsAdjustable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.TimecardAdjustable</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.timecard.EmployeeCannotAdjustOwnTimecard</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.timecard.TransactionTimecardIn.setTimeStamp">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.ClockInIsNotInFuture</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cr.timecard.TransactionTimecardMod.setReason">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.FieldNotLessThanFour</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.collection.CMSMiscCollection.addPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.PaymentTxnAddPaymentIsValid</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.payment.ManufacturerCouponCannotBeGreaterThanAmountDue</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.collection.CMSMiscCollection.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setAlternatePhone">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.CustomerPhoneNumberIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setFirstName">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.CustomerAttributeIsRequired</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setLastName">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.CustomerAttributeIsRequired</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setSecondaryEmail">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.EmailAddressIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setPhone">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.CustomerAttributeIsRequired</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.customer.CustomerPhoneNumberIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setPhoneUnknown">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.CustomerPhoneUnknownNotAllowed</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.customer.CMSCustomer.setZipCode">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.CustomerAttributeIsRequired</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.employee.CMSEmployee.setAccessRole">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.EmployeeMustHaveatLeastOneAccessRole</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.employee.CMSEmployee.setFirstName">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.NewEmployeeRequiredInformation</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.employee.CMSEmployee.setLastName">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.NewEmployeeRequiredInformation</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.employee.CMSEmployee.setSSN">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.EmployeeSSNMustBeValid</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.employee.EmployeesMustHaveUniqueSSN</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.employee.CMSEmployee.setShortName">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.NewEmployeeRequiredInformation</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.employee.EmployeesMustHaveUniqueShortName</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.employee.CMSEmployee.testCanBeOperator">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.OperatorCannotBeTerminated</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.employee.CMSEmployee.testIsLoggedOffUponGoHome">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.ManagersAreNotLoggedOffUponGoHome</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.layaway.CMSLayawayPaymentTransaction.addPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.PaymentTxnAddPaymentIsValid</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.payment.ManufacturerCouponCannotBeGreaterThanAmountDue</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.layaway.CMSLayawayRTSTransaction.addPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.PaymentTxnAddPaymentIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.layaway.CMSLayawayRTSTransaction.setRestockingFee">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.layaway.RestockingFeeNotGreaterThanDeposit</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.paidout.CMSCashDropPaidOut.addPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.PaymentTxnAddPaymentIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.paidout.CMSCashDropPaidOut.removePayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.CannotRemovePaymentFromCashDrop</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.paidout.CMSCashDropPaidOut.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.paidout.CMSMiscPaidOut.addPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.PaymentTxnAddPaymentIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.paidout.CMSMiscPaidOut.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addDiscount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.discount.DiscountEmployeeIsNotTerminated</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addEntireSaleLineItemAsReturn">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.MiscItemsNotEligibleReturn</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addEntireSaleTransactionAsReturn">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.MiscItemsNotElgibleReturnEntireSale</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addLayawayItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.layaway.LayawayCustomerIsValid</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.layaway.LayawayGiftCertificateNotAllowed</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.transaction.CompositePOSCannotHaveMoreThan100Items</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addLayawayMiscItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.MiscItemsNotEligibleAddLayaway</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.PaymentTxnAddPaymentIsValid</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.payment.ManufacturerCouponCannotBeGreaterThanAmountDue</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.payment.RedeemablesCreatedInForeignCurrencyNotAllowedAsPayment</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="3">com.chelseasystems.cs.rules.payment.StoredValueCardIncreaseCannotBePaidWithSameCard</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="4">com.chelseasystems.cs.rules.payment.PaymentTxnAddCouponIsValid</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="5">com.chelseasystems.cs.rules.customer.DummyOrDefaultCustomerNotAllowed</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addReturnItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.CompositePOSCannotHaveMoreThan100Items</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addSaleItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.CompositePOSCannotHaveMoreThan100Items</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addPresaleItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addConsignmentItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addReservationItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addNoSaleItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addNoReturnItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addNoReservationLineItemAsSale">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addNoReservationLineItemAsReturn">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ZeroUnitPriceNotAllowedForLineItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addSaleLineItemAsReturn">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.MiscItemsNotEligibleReturn</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.addSaleSpecificItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.AddStoredValueCardItem</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.testIsReturnable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.TransactionCannotBeReturnedAcrossCurrencyTypes</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.transaction.VoidedTransactionCannotBeReturned</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.layaway.LayawayTransactionCannotBeReturned</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ALTERATIONS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfReservationsOpen</ruleAssignmentRuleClass>
+
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.store.HideIfStoreIsOutlet</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+
+        <RULE_ASSIGNMENT name="PRICING_PRICE_OVERRIDE.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.store.HideIfStoreIsOutlet</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+
+        <RULE_ASSIGNMENT name="PRICE_OVERRIDE.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.store.ShowIfStoreIsOutlet</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="OPTIONS_ALTERATIONS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.store.ShowIfStoreIsOutlet</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.testIsSuspendable">
+            <!--<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ReturnLineItemsCannotBeSuspended</ruleAssignmentRuleClass>-->
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.testIsVoidable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ReturnedTransactionCannotBeVoided</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.layaway.CompositePOSLayawayCantVoidIfRTS</ruleAssignmentRuleClass>
+            <!--ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.transaction.ReturnTransactionCannotBeVoided</ruleAssignmentRuleClass-->
+            <ruleAssignmentRuleClass index="3">com.chelseasystems.cs.rules.transaction.PreSalesOpenIsVoidable</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="4">com.chelseasystems.cs.rules.transaction.ConsignmentopenIsVoidable</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="5">com.chelseasystems.cs.rules.transaction.TransactionCannotVoidIfRedeemablePayment</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="6">com.chelseasystems.cs.rules.transaction.TransactionCannotVoidIfRewardDiscount</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="7">com.chelseasystems.cs.rules.transaction.ReservationCloseIsNotVoidable</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="8">com.chelseasystems.cs.rules.transaction.ReservationOpenIsNotVoidable</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayLineItem.adjustMarkdownAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.AdjustUnitPriceIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayLineItem.adjustUnitPrice">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.AdjustManualUnitPriceIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayLineItem.setManualMarkdownAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemManualMarkdownAmountIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayLineItem.setManualMarkdownPercent">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemManualMarkdownPercentIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayLineItem.setQuantity">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.MiscItemsNotEligibleForQtyChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayLineItemDetail.setManualRegionalTaxAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedMoreThanLayawaySellingPrice</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayLineItemDetail.setManualTaxAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedMoreThanLayawaySellingPrice</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSLayawayTransaction.setDesiredTotalAmountDue">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.layaway.LayawayDepositIsNotGreaterThanAmountDue</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.layaway.DesiredLayawayTotalAmtDueNotLessThanMinimum</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSMiscItem.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.MiscItemCommentsCannotBeMoreThan200Chars</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSNoSaleTransaction.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <!--<RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItem.addDiscount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemAddDiscountIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>-->
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItem.adjustMarkdownAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemMarkdownIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItem.adjustUnitPrice">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.AdjustManualUnitPriceIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItem.setComments">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.lineitem.ReturnLineItemCommentLessThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItem.setManualMarkdownAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemMarkdownIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItem.setManualMarkdownPercent">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemMarkdownIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItem.setQuantity">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.ReturnLineItemSetQtyIsValid</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.item.MiscItemsNotEligibleForQtyChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItemDetail.clearManualTaxAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeClearedOnReturnLineDetail</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItemDetail.setManualRegionalTaxAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedMoreThanReturnSellingPrice</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedOnReturnLineDetail</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSReturnLineItemDetail.setManualTaxAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedOnReturnLineDetail</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedMoreThanReturnSellingPrice</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItem.adjustMarkdownAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.AdjustUnitPriceIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItem.adjustUnitPrice">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.AdjustManualUnitPriceIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItem.makeLayawayLineItem">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.layaway.LayawayLineItemAllowedOnTxn</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItem.setManualMarkdownAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemManualMarkdownAmountIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItem.setManualMarkdownPercent">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemManualMarkdownPercentIsValid</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItem.setQuantity">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.GiftCertificateQuantityIsAllowed</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.item.MiscItemsNotEligibleForQtyChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItem.testIsReturnable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.SaleLineItemCanBeReturned</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.lineitem.LineItemsSoldInDifferentCurrencyCannotBeReturned</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItemDetail.setManualRegionalTaxAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedMoreThanSaleSellingPrice</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleLineItemDetail.setManualTaxAmount">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.TaxAmountCannotBeModifiedMoreThanSaleSellingPrice</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSSaleTransaction.makeLayawayLineItems">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.MiscItemsNotElgibleForLayaway</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.layaway.LayawayGiftCertificateNotAllowedWhenConvertingToLayaway</ruleAssignmentRuleClass>
+            <ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.transaction.SaleTransactionHasValidCustomer</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSShippingRequest.setGiftMessage">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.ShippingRequestGIftMessageLessThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSShippingRequest.setSpecialInstructions">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.item.ShippingRequestSpecialInstructionsNotMoreThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSVoidTransaction.setReason">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.scheduling.CMSSchedule.setComment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.sos.CMSTransactionSOS.setTheOperator">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.SOSTransactionCannotBePostedByATerminatedEmployee</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.timecard.CMSBenefitTime.setDateUnderRules">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.timecard.ValidateBenefitDate</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.transfer.CMSTransferIn.setComments">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.transfer.CMSTransferIn.setTransferOut">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.TransferInCannotReceiveAVoidedTransferOut</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.transfer.CMSTransferOut.setComments">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.CommentsFieldNotGreaterThan200</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="com.chelseasystems.cs.transfer.CMSTransferOut.testIsVoidable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.TransferOutCannotBeVoidedIfCompleted</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.MailCheck.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.MailCheckIsValidAsPayment</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.MailCheck.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.MailCheckIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.Coupon.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CouponIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.Coupon.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CouponIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<!-- Added by Satin for New Coupon Management PCR. CouponIsValidAsPayment.java makes the 'COUPON' button invisible in Offline mode. CouponisValidAsChange and CouponisValidAsRefund rules added for CMSCoupon Object. -->
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSCoupon.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CouponIsValidAsRefund</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSCoupon.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CouponIsValidAsPayment</ruleAssignmentRuleClass>
+		</RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSCoupon.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CouponIsValidAsChange</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+		<RULE_ASSIGNMENT name="ACCOUNT_LOOKUP.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.collection.ShowIfReasonCodeMiscPaidIn</ruleAssignmentRuleClass>
+			 <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.collection.ShowIfReasonCodeNFSCheckPayment</ruleAssignmentRuleClass>
+      </RULE_ASSIGNMENT>
+	  <!--<RULE_ASSIGNMENT name="CUST_LOOKUP.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.collection.ShowIfReasonCodeMiscPaidIn</ruleAssignmentRuleClass>
+			<ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.collection.ShowIfReasonCodeNFSCheckPayment</ruleAssignmentRuleClass>
+      </RULE_ASSIGNMENT>-->
+	   <RULE_ASSIGNMENT name="ADD_CUSTOMER.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.collection.ShowIfReasonCodeMiscPaidIn</ruleAssignmentRuleClass>
+			 <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.collection.ShowIfReasonCodeHouseAccountPayment</ruleAssignmentRuleClass>
+      </RULE_ASSIGNMENT>
+	  <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.MallCert.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.MallCertIsValidAsPayment</ruleAssignmentRuleClass>
+      </RULE_ASSIGNMENT>
+	  <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.Coupon.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CouponIsValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.Credit.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CreditNotValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.Credit.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CreditNotValidAsChange</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>     
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.Credit.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CreditNotValidAsRefund</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>     
+	
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.HouseAccount.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.HouseAccountIsValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.CreditCard.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CreditCardIsValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSBankCheck.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CheckIsValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSBankCheck.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CheckIsValidAsChange</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.DueBill.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.DueBillisValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSForeignCash.isValidAsPayment">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.ForeignCashIsValidAsPayment</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSForeignCash.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.ForeignCashNotValidAsRefundOrChange_EUR</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSForeignCash.isValidAsRefund">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.ForeignCashNotValidAsRefundOrChange_EUR</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	  <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.HouseAccount.isValidAsChange">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.HouseAccountIsValidAsChange</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="TRANS_MGMT_LOGIN.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.ShowIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="MANAGEMENT_LOGIN.isShowable">
+          <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.ShowIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="POST_VOID.isShowable">
+          <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT> 
+	  <RULE_ASSIGNMENT name="COLLECTIONS.isShowable">
+          <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="PAIDOUTS.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="NO_SALE.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	  <RULE_ASSIGNMENT name="BUY_BACK.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	   <RULE_ASSIGNMENT name="TIMECARD_MGMT.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="VIEW_RECEIPT_LOG.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	  <RULE_ASSIGNMENT name="SYSTEM_UTILS.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.register.HideIfBackOfficeRegister</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSRedeemable.isValidAsChange">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.RedeemableIsValidAsChange</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.payment.CMSRedeemable.isValidAsRefund">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.RedeemableIsValidAsRefund</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+
+        <RULE_ASSIGNMENT name="DEPOSIT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfReservationsOpen</ruleAssignmentRuleClass>			
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="ADJUST_DEPOSIT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfReservationsClose</ruleAssignmentRuleClass>			
+        </RULE_ASSIGNMENT>
+
+        <RULE_ASSIGNMENT name="SALE_TXN_RESERVATIONS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfReservationsOpen</ruleAssignmentRuleClass>			
+        </RULE_ASSIGNMENT>
+
+        <RULE_ASSIGNMENT name="ALTERATIONS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfReservationsOpen</ruleAssignmentRuleClass>		
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.transaction.HideIfReservationsClose</ruleAssignmentRuleClass>
+			<ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>		
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="SERVICES.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfReservationsOpen</ruleAssignmentRuleClass>			
+            <!--<ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.transaction.HideIfReservationsClose</ruleAssignmentRuleClass>-->	
+			<ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+
+				
+        <RULE_ASSIGNMENT name="SEND_SALE.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfReservationsOpen</ruleAssignmentRuleClass>			
+            <ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.transaction.HideIfReservationsClose</ruleAssignmentRuleClass>
+			<ruleAssignmentRuleClass index="2">com.chelseasystems.cs.rules.transaction.HideIfNoSaleMode</ruleAssignmentRuleClass>
+			<ruleAssignmentRuleClass index="3">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>	
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="RETURN_ITEM.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfReservationsOpen</ruleAssignmentRuleClass>			
+            <!--<ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.transaction.HideIfNoSaleMode</ruleAssignmentRuleClass>-->	
+			<ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>			
+        </RULE_ASSIGNMENT>
+
+        <RULE_ASSIGNMENT name="TENDER.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfNoSaleMode</ruleAssignmentRuleClass>
+			<ruleAssignmentRuleClass index="1">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="PRINT_FISCAL_NOSALE.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfNoSaleMode</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="PRINT_FISCAL_RECEIPT_NOSALE.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfNoSaleMode</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="CLEAR.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfFiscalModeIsDDT</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+        <RULE_ASSIGNMENT name="CHANGE_FISCAL_ADDRESS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfFiscalModeIsDDT</ruleAssignmentRuleClass>
+        </RULE_ASSIGNMENT>
+	   <RULE_ASSIGNMENT name="MODIFY_FISCAL_NUM.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfTxnDetailApplet</ruleAssignmentRuleClass>
+      </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="MODIFY_FISCAL_NUM.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfMasterRegister</ruleAssignmentRuleClass>
+      	</RULE_ASSIGNMENT>     
+		<RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSPresaleLineItem.testIsReturnable">
+			<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.lineitem.LineItemCanBeReturned</ruleAssignmentRuleClass>
+		</RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="NEW_TRANSACTION.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.ShowIfCustomerSession</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>	
+     <RULE_ASSIGNMENT name="UPDATE_TXN_DATA.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.employee.HideIfDummyOperator</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>	
+     <RULE_ASSIGNMENT name="UPDATE_ITEM_DETAIL.isShowable">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.HideIfTransactionNotSameBusinessDate</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>	
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.isUpdateCustomerForTransactionAllowed">
+        <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.IsUpdateCustomerForTransactionAllowed</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.validateEmployeeRuleForCurrentTransaction">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.ValidateEmployeeRuleForCurrentTransaction</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.setCustomer">
+         <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.customer.DummyOrDefaultCustomerNotAllowed</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+     <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.validateDiscountRule">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.discount.ValidateDiscountRule</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <RULE_ASSIGNMENT name="com.chelseasystems.cs.pos.CMSCompositePOSTransaction.validateFiscalDocumentPresent">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.transaction.MandatoryAddFiscalDocument</ruleAssignmentRuleClass>
+     </RULE_ASSIGNMENT>
+	 <!--Added by SonaliRaina to check the visibility of Store value Card Button-->
+		<RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.StoreValueCard.isValidAsPayment">
+		<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.StoreValueCardIsValidAsPayment</ruleAssignmentRuleClass>
+		</RULE_ASSIGNMENT>
+	<!--Added by SonaliRaina to check the visibility of Cash Button-->
+	<RULE_ASSIGNMENT name="com.chelseasystems.cr.payment.Cash.isValidAsPayment">
+	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.payment.CashIsValidAsPayment</ruleAssignmentRuleClass></RULE_ASSIGNMENT>
+	<!--added by shushma for duty free management PCR-->
+	<RULE_ASSIGNMENT name="PRICING.isShowable">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="SUBTOTAL_DISCOUNT.isShowable">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="DEL_ITEM.isShowable">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="RESERVATIONS.isShowable">
+     	<ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="TAX_EXEMPT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="OTHER_TXN.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="CHANGE_ASSOCIATE.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="MOD_QTY.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="ITEM_DETAILS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="OPTIONS.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="MANAGEMENT.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	<RULE_ASSIGNMENT name="INQUIRIES.isShowable">
+            <ruleAssignmentRuleClass index="0">com.chelseasystems.cs.rules.airport.HideIfBoardingPass</ruleAssignmentRuleClass>
+    </RULE_ASSIGNMENT>
+	 </RULE_REPOSITORY>
+</CMS_OBJECT>

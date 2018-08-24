@@ -1,0 +1,132 @@
+# Implementation Information
+#CLIENT_IMPL=com.chelseasystems.cs.pos.CMSTransactionPOSEJBServices
+CLIENT_IMPL=com.chelseasystems.cs.pos.CMSTransactionPOSRMIClient
+CLIENT_DOWNTIME=com.chelseasystems.cs.pos.CMSTransactionPOSNullServices
+SERVER_IMPL=com.chelseasystems.cs.pos.CMSTransactionPOSJDBCServices
+
+# Remote Object Lookup Name
+REMOTE_NAME=TransactionPOSServices
+
+# Optional EJB Lookup Name
+#REMOTE_NAME=TransactionPOSServices
+
+# Collect Performance Statistics
+PERFORMANCE=true
+
+# Logging
+LOGGING_IMPL=com.chelseasystems.cr.logging.LoggingFileServices
+LOGGING_FILE_NAME=../log/pos.log
+LOGGING_LEVEL=4
+LOGGING_PAUSE=5000
+LOGGING_SYSTEM_OUT=true
+LOGGING_SYSTEM_ERR=true
+
+#From the following transaction types,list the types that will be implemented.
+#(SALE,RETURN,LAYAWAY,LAYAWAY_PAYMENT,LAYAWAY_RETURN_TO_STOCK,COLLECTION,PAIDOUT,VOID,NO_SALE,SALE/RETN) 
+
+TRANS_TYPES=SALE,RETURN,SALE/RETN,COLLECTION,PAIDOUT,NO_SALE,REDEEMABLE,VOID,PRESALE,CONSIGNMENT,REWD,POINTS,RESERVATION,NOSALE,RESERVATION/SALE,CONSIGNMENT/SALE
+
+# DO NOT CHANGE the CODE value without changing the business objects in Core
+# DESC and SHORTDESC may be changed at will
+
+SALE.CODE=SALE
+SALE.DESC_KEY=Sale
+SALE.SHORT_DESC=SALE
+
+RETURN.CODE=RETN
+RETURN.DESC_KEY=Return
+RETURN.SHORT_DESC=RETN
+
+#A combination sale and return or exchange
+SALE/RETN.CODE=SALE/RETN
+SALE/RETN.DESC_KEY=Sale/Return
+SALE/RETN.SHORT_DESC=SALE/RETURN
+
+LAYAWAY.CODE=LAWI
+LAYAWAY.DESC_KEY=Layaway
+LAYAWAY.SHORT_DESC=LAWY
+
+LAYAWAY_PAYMENT.CODE=LAWP
+LAYAWAY_PAYMENT.DESC_KEY=Layaway Payment
+LAYAWAY_PAYMENT.SHORT_DESC=LAWP
+
+LAYAWAY_RETURN_TO_STOCK.CODE=LAWR
+LAYAWAY_RETURN_TO_STOCK.DESC_KEY=Layaway Return To Stock
+LAYAWAY_RETURN_TO_STOCK.SHORT_DESC=LAWR
+
+COLLECTION.CODE=COLL
+COLLECTION.DESC_KEY=Paidin
+COLLECTION.SHORT_DESC=COLL
+
+PAIDOUT.CODE=PDOT
+PAIDOUT.DESC_KEY=Paidout
+PAIDOUT.SHORT_DESC=PDOT
+
+VOID.CODE=VOID
+VOID.DESC_KEY=Void
+VOID.SHORT_DESC=VOID
+
+NO_SALE.CODE=NOSL
+NO_SALE.DESC_KEY=No Sale
+NO_SALE.SHORT_DESC=NOSL
+
+REWD.CODE=REWD
+REWD.DESC_KEY=Isssue Loyalty Reward
+REWD.SHORT_DESC=REWD
+
+POINTS.CODE=POINTS
+POINTS.DESC_KEY=Loyalty Points
+POINTS.SHORT_DESC=POINTS
+
+REDEEMABLE.CODE=RBBT
+REDEEMABLE.DESC_KEY=Redeemable Buy Back
+REDEEMABLE.SHORT_DESC=RBBT
+
+#New Transaction types for Armani
+PRESALE.CODE=PRSO
+PRESALE.DESC_KEY=Pre-Sale
+PRESALE.SHORT_DESC=PRSO
+
+CONSIGNMENT.CODE=CSGO
+CONSIGNMENT.DESC_KEY=Consignment
+CONSIGNMENT.SHORT_DESC=CSGO
+
+CONSIGNMENT/SALE.CODE=CSGO/SALE
+CONSIGNMENT/SALE.DESC_KEY=Consignment/Sale
+CONSIGNMENT/SALE.SHORT_DESC=CSGO/SALE
+
+#Transaction type for ASIS Transaction Fiscal
+#Printing
+NOSALE.CODE=NFNS
+NOSALE.DESC_KEY=Non-Fiscal No Sale
+NOSALE.SHORT_DESC=NFNS
+
+RESERVATION.CODE=RSVO
+RESERVATION.DESC_KEY=Reservation
+RESERVATION.SHORT_DESC=RSVO
+
+RESERVATION/SALE.CODE=RSVO/SALE
+RESERVATION/SALE.DESC_KEY=Reservation/Sale
+RESERVATION/SALE.SHORT_DESC=RSVO/SALE
+
+CASHIER_SESSION_HOME_APPLET=com.chelseasystems.cs.swing.menu.PosMenuApplet
+
+#set to true if you want an xml file for each composite transaction write to the tmp directory.
+#this is a switch for the app servers
+WRITE_TXN_TO_XML=false
+
+
+#Define the number of days for Consignment Open to determine the expiration date
+CONSIGNMENT_EXPIRY_NUMBER_OF_DAYS=30
+
+#Define the number of days for Presale Open to determine the expiration date
+PRESALE_EXPIRY_NUMBER_OF_DAYS=30
+
+#Define the number of days for Reservation Open to determine the expiration date
+RESERVATION_EXPIRY_NUMBER_OF_DAYS=30
+
+#Previous code for EUR
+#TRANSACTION.TXN_HIST_PANEL=com.chelseasystems.cs.swing.panel.TxnHistPanel_EUR
+#Added code for IND by neeti on 2/7/2008
+TRANSACTION.TXN_HIST_PANEL=com.chelseasystems.cs.swing.panel.TxnHistPanel_IND
+#Ended code for IND by neeti on 2/7/2008

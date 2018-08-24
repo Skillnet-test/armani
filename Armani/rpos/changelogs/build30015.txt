@@ -1,0 +1,15 @@
+Refer to previous changelog for previous build notes.
+
+
+Issues around setting appropriate security permissions.
+    -Printing to a receipt printer will not work.
+     This is the result of permissions not assigned in policy file.
+
+    -Messaging is not allowed access to secure sockets.
+     This is the result of permissions not assigned in policy file.
+
+    -Application will not start. An access denied, security exception is thrown.
+     This is the result of an unsigned jar.
+
+These issues are currently being taken care of. IF these issues arise, fall back to previous(weak) policy 
+files.

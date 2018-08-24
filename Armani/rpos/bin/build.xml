@@ -1,0 +1,731 @@
+<?xml version="1.0"?>
+
+<project name="pier" default="jar">
+
+    <property name="verMajor"         value="3" />
+    <property name="verMinor"         value="0" />
+    <property name="verPatch"         value="0" />
+    <property name="verBuild"         value="0" />
+    <property name="verDelimiter"     value="." />
+    <property name="baseVersion"      value="3010GA" />
+
+    <property name="newVersion"       value="${verMajor}${verDelimiter}${verMinor}${verDelimiter}${verPatch}${verDelimiter}${verBuild}" />
+    <property name="newVersionDirName"       value="Armani${newVersion}" />
+    
+    <!-- <tstamp> <format property="DSTAMP" pattern="MMddyy" locale="en" /> </tstamp> -->
+    <!-- property file="build.properties"/ -->
+   
+    <property name="cifDir.name"      value="../../cif" />
+    <property name="jar.name"         value="armanirpos.jar" />
+    <property name="cif.jar.name"     value="cif.jar" />
+	<property name="version.jar.name" value="armversion.jar" />
+    <property name="src.dir"          value="../src"/>
+    <property name="cif.src.dir"      value="${cifDir.name}/src"/>
+    <property name="classes.dir"      value="../classes"/>
+    <property name="cif.classes.dir"  value="${cifDir.name}/classes"/>
+    <property name="jar.dir"          value="../jarfiles" />
+    <property name="cif.jar.dir"      value="${cifDir.name}/jarfiles" />
+    <property name="dist.dir"         value="../../dist/${newVersionDirName}" />
+    <property name="dev.library.dir"  value="../../library" />
+    <property name="dist.base.dir"    value="" />
+    <property name="dist.upload.dir"  value="../../distCD" />
+    <property name="dist.Inbound.dir" value="Inbound" />
+    <property name="dist.Processed.dir" value="Processed" />
+    
+    <!--<property name="distdir" value="${dist.upload.dir}${DSTAMP}" /> -->
+    <property name="distdir" value="${dist.upload.dir}" />
+    <!-- If need to timestamp the build comment the line above and uncomment the line below -->
+    <!-- property name="distdir" value="${dist.upload.dir}${DSTAMP}$(TSTAMP)" / -->
+    
+    <property name="dist.linux.dir"         value="${dist.dir}/clientLinux" />
+    <property name="dist.win.dir"           value="${dist.dir}/clientWindows1.5" />
+    <property name="dist.developer.dir"     value="${dist.dir}/developer" />
+    <property name="dist.winserver.dir"     value="${dist.dir}/serverWindows" />
+    <property name="dist.linuxserver.dir"   value="${dist.dir}/serverLinux" />
+    <property name="dist.unixserver.dir"    value="${dist.dir}/serverUnix" />
+    <property name="dist.aixserver.dir"     value="${dist.dir}/serverAix" />
+    
+    <path id="class.path">
+        <pathelement location="../classes" />
+        <pathelement location="${dev.library.dir}/retek_3.0.0.GA_patch.jar" />
+        <pathelement location="${dev.library.dir}/retek_platform.jar" />
+        <pathelement location="${dev.library.dir}/retek_shared_common.jar" />
+        <pathelement location="${dev.library.dir}/retek_common.jar" />
+        <pathelement location="${dev.library.dir}/retek_shared_pos.jar" />
+        <pathelement location="${dev.library.dir}/retek_pos.jar" />
+        <pathelement location="${dev.library.dir}/retek_shared_time.jar" />
+        <pathelement location="${dev.library.dir}/retek_time.jar" />
+        <pathelement location="${dev.library.dir}/retek_app.jar" />
+        <pathelement location="${dev.library.dir}/retek_sys.jar" />
+        <pathelement location="${dev.library.dir}/retek_tax.jar" />
+        <pathelement location="${dev.library.dir}/xerces.jar" />
+        <pathelement location="${dev.library.dir}/jpos15.jar" />
+        <pathelement location="${dev.library.dir}/jdom.jar" />
+        <pathelement location="${dev.library.dir}/et1000jpos15201.jar" />
+        <pathelement location="${dev.library.dir}/FPJni.jar" />
+        <pathelement location="${dev.library.dir}/mailapi.jar" />
+        <pathelement location="${dev.library.dir}/activation.jar" />
+        <pathelement location="${dev.library.dir}/jcchart451K.jar" />
+        <pathelement location="${dev.library.dir}/jcpagelayout451K.jar" />
+        <pathelement location="${dev.library.dir}/jcfield451K.jar" />
+        <pathelement location="${dev.library.dir}/ejb.jar" />
+        <pathelement location="${dev.library.dir}/jmf.jar" />
+        <pathelement location="${dev.library.dir}/classes12.jar" />
+        <pathelement location="${dev.library.dir}/jt400.jar" />
+        <pathelement location="${dev.library.dir}/jdbc2_0-stdext.jar" />
+        <pathelement location="${dev.library.dir}/jxl.jar" />
+        <pathelement location="${dev.library.dir}/jce1_2_2.jar" />
+        <pathelement location="${dev.library.dir}/local_policy.jar" />
+        <pathelement location="${dev.library.dir}/sunjce_provider.jar" />
+        <pathelement location="${dev.library.dir}/US_export_policy.jar" />
+		<pathelement location="${dev.library.dir}/axis.jar" />
+		<pathelement location="${dev.library.dir}/commons-discovery.jar" />
+		<pathelement location="${dev.library.dir}/commons-lang-2.0.jar" />
+		<pathelement location="${dev.library.dir}/commons-logging.jar" />
+		<pathelement location="${dev.library.dir}/crimson.jar" />
+		<pathelement location="${dev.library.dir}/jaxrpc.jar" />
+		<pathelement location="${dev.library.dir}/proweb.jar" />
+		<pathelement location="${dev.library.dir}/saaj.jar" />
+		<pathelement location="${dev.library.dir}/wsdl4j.jar"/>
+		<!--Added ISD specific jar - US Region -->
+        <pathelement location="${dev.library.dir}/ISD/commons-logging-1.0.4.jar" />
+        <pathelement location="${dev.library.dir}/ISD/IMSRTRIBSpecSDK-290.jar" />
+        <pathelement location="${dev.library.dir}/ISD/isdcrypt-6.3.0.008.jar" />
+        <pathelement location="${dev.library.dir}/ISD/jec-6.1.0.jar" />
+        <pathelement location="${dev.library.dir}/ISD/log4j-1.2.9.jar" />
+		<!--Changes ends-->
+    	<!--Added Base64 and jai jar for image decoding for AJB-->
+    	<pathelement location="${dev.library.dir}/base64.jar"/>
+        <pathelement location="${dev.library.dir}/jai_codec-1.1.3.jar"/>
+        <pathelement location="${dev.library.dir}/sun-jai_core.jar"/>
+    	<!--Changes ends-->
+
+        <!--Added for Puerto Rico Fiscal changes-->
+    	<pathelement location="${dev.library.dir}/bcprov-ext-jdk15on-1.46.jar"/>
+        <pathelement location="${dev.library.dir}/commons-codec-1.10.jar"/>
+        <pathelement location="${dev.library.dir}/sqlite-jdbc-3.8.11.2.jar"/>
+		<pathelement location="${dev.library.dir}/ivu.jar"/>
+    	<!--Changes end-->
+        
+        <!-- Europe specific jars -->
+        <pathelement location="${dev.library.dir}/armanipackage.jar" />
+		<pathelement location="${dev.library.dir}/armaniext.jar" />
+        <pathelement location="${dev.library.dir}/jcl.jar" />
+        <pathelement location="${dev.library.dir}/jpos18.jar" />
+        <pathelement location="${dev.library.dir}/setefipackage.jar" />
+        <pathelement location="${dev.library.dir}/armani/informix/ifxjdbc.jar" />
+        <pathelement location="${dev.library.dir}/armani/oracle/classes12.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/ibmas400.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/jt400.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/jt400jdbc.jar" />
+        <pathelement location="${dev.library.dir}/armani/as400/jt400Proxy.jar" />
+
+        <pathelement location="${dev.library.dir}/armani/util/commons-beanutils.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-collections.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-digester.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-logging.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/commons-logging-api.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/imap.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/ejee.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jcmdline-1.0.2.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jcommon-0.9.6.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jcpagelayout451K.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jdom.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jdt-compiler.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jfreechart-0.9.21.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jta-spec1_0_1.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/jxl.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/javaxsecur.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/looks-1.2.2.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/mail.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/mailapi.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/poi.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/pop3.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/smtp.jar" />
+        <pathelement location="${dev.library.dir}/armani/util/tar.jar" />
+
+        <pathelement location="${dev.library.dir}/armani/report/iReport.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/itext-1.02b.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jasperreports-0.6.4.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-api.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-impl.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-libs.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jaxb-xjc.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/jax-qname.jar" />
+    	<!--Commented for ISD-->
+      <!--  <pathelement location="${dev.library.dir}/armani/report/log4j-1.2.8.jar" />
+        <pathelement location="${dev.library.dir}/armani/report/log4j-1.2.9.jar" /> -->
+
+        <pathelement location="${dev.library.dir}/armani/xml/namespace.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xalan-2.4.1.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xmlparserv2.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/sax2r2.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/relaxngDatatype.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xalan.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xercesImpl.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xercesImpl-2.2.1.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xml-apis.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xml-apis2.6.0.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xmlParserAPIs.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xmlUpdate.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xerces1.3.0.jar" />
+        <pathelement location="${dev.library.dir}/armani/xml/xerces.jar" />
+        <!-- Europe specific jars -->
+        </path>
+
+    <property name="class_path" refid="class.path"/>
+
+    <!-- ====================================================================== -->
+    <!-- Targets                                                                -->
+    <!-- ====================================================================== -->
+
+    <target name="clean">
+        <delete dir="${classes.dir}/com" />
+        <delete dir="${cif.classes.dir}/com" />
+        <delete dir="${dist.dir}" />
+        <delete file="${jar.dir}/${jar.name}" />
+        <delete file="${cif.jar.dir}/${cif.jar.name}" />
+    </target>
+
+    <target name="posVersion">
+        <copy file="${src.dir}/com/chelseasystems/cs/util/Version.java" tofile="${src.dir}/com/chelseasystems/cs/util/Version.java.ant" overwrite="yes" /> 
+        <replace file="${src.dir}/com/chelseasystems/cs/util/Version.java" token="@DELIM@" value="${verDelimiter}" /> 
+        <replace file="${src.dir}/com/chelseasystems/cs/util/Version.java" token="@MAJOR@" value="${verMajor}" /> 
+        <replace file="${src.dir}/com/chelseasystems/cs/util/Version.java" token="@MINOR@" value="${verMinor}" /> 
+        <replace file="${src.dir}/com/chelseasystems/cs/util/Version.java" token="@UPDATE@" value="${verPatch}" /> 
+        <replace file="${src.dir}/com/chelseasystems/cs/util/Version.java" token="@BUILD@" value="${verBuild}" />
+        <replace file="${src.dir}/com/chelseasystems/cs/util/Version.java" token="@CURRENT_REGION@" value="${currentRegion}" />
+    	
+    </target>
+    
+	<target name="cifVersion">	
+        <copy file="${cif.src.dir}/com/cif/Version.java" tofile="${cif.src.dir}/com/cif/Version.java.ant" overwrite="yes" /> 
+        <replace file="${cif.src.dir}/com/cif/Version.java" token="@DELIM@" value="${verDelimiter}" /> 
+        <replace file="${cif.src.dir}/com/cif/Version.java" token="@MAJOR@" value="${verMajor}" /> 
+        <replace file="${cif.src.dir}/com/cif/Version.java" token="@MINOR@" value="${verMinor}" /> 
+        <replace file="${cif.src.dir}/com/cif/Version.java" token="@UPDATE@" value="${verPatch}" /> 
+        <replace file="${cif.src.dir}/com/cif/Version.java" token="@BUILD@" value="${verBuild}" />
+ 
+    </target>
+	
+    <target name="compileVersion" description="Compile POS Version Info (without jar-ing)">
+        <echo message="*** Compiling Armani Version Info code... ***"/>
+        <mkdir dir="${classes.dir}" />
+        <javac  srcdir="${src.dir}" destdir="${classes.dir}" deprecation="off" debug="on" 
+                fork="yes" memoryInitialSize="512m" memoryMaximumSize="512m">
+            <include name="**/**/Version.java" />
+		</javac>
+        <copy todir="${classes.dir}/com/chelseasystems/cs/util/">
+            <fileset dir="../src/com/chelseasystems/cs/util/">
+                <include name="version.properties" />
+            </fileset>
+        </copy>
+		
+    <copy  todir="${classes.dir}">
+			  <fileset dir="${src.dir}" includes="**/*.properties"/>
+    </copy>
+
+		<!--End of the code--> 
+    </target>
+
+    <target name="compile" description="Compile (without jar-ing)" depends="deleteCurrency" >
+        <echo message="*** Compiling Armani Customizations code... ***"/>
+        <mkdir dir="${classes.dir}" />
+        <javac  classpath="${class_path}" srcdir="${src.dir}" destdir="${classes.dir}" deprecation="off" debug="on" 
+                fork="yes" memoryInitialSize="512m" memoryMaximumSize="512m">
+            <include name="**/*.java" />
+        	<!--<exclude name="**/**/Version.java" />-->
+        </javac>
+    	<!--<delete file="${classes.dir}/com/chelseasystems/cs/util/Version.class" />-->
+        <rmic base="${classes.dir}" stubversion="1.2" classpath="${class_path}" includes="**/*RMIServerImpl*"/>
+        <exec dir="." executable="cmd" os="Windows_NT">
+            <arg line="/c resource.bat"/>
+        </exec>
+        <copy todir="${classes.dir}/com/chelseasystems/cs/util/">
+            <fileset dir="../src/com/chelseasystems/cs/util/">
+                <include name="*.properties" />
+            </fileset>
+        </copy>
+		<!--Vivek Mishra : Added to include log4j in classes.-->
+		<copy todir="${classes.dir}/" overwrite="yes">
+            <fileset dir="../src/">
+                <include name="log4j.properties" />
+            </fileset>
+        </copy>
+		<!--Ends-->
+        <echo message="*** Compiling CIF module code... ***"/>
+        <mkdir dir="${cif.classes.dir}" />
+        <javac  classpath="${class_path}" srcdir="${cif.src.dir}" destdir="${cif.classes.dir}" debug="on">
+            <include name="**/*.java" />
+        </javac>
+    </target>
+	
+<!--	<target name="versionJar" depends="posVersion,compileVersion" description="Jar Armani Version Info"> -->
+	<target name="versionJar" description="Jar Armani Version Info">
+		<antcall target="posVersion" >
+			<param name="currentRegion" value="${currentRegion}" />
+		</antcall>
+		<antcall target="compileVersion" />
+		
+		<echo message="*** Jar-ing armVersion Jar for ${currentRegion} region"/>
+        
+        <copy file="version.properties" todir="${classes.dir}" overwrite="yes" />
+        <replace file="${classes.dir}/version.properties" token="@VERSION@" value="${newVersion}" />
+        <copy file="${src.dir}/com/chelseasystems/cs/util/Version.java.ant" tofile="${src.dir}/com/chelseasystems/cs/util/Version.java" overwrite="yes" />
+		<!--Vivek Mishra : Commented for adding Version.class in the Jar-->
+        <!--<delete file="${src.dir}/com/chelseasystems/cs/util/Version.java.ant" />--> 
+
+        <mkdir dir="${jar.dir}" />
+        <jar jarfile="${jar.dir}/${version.jar.name}" filesonly="true" index="true">
+            <fileset dir="${classes.dir}">
+                <include name="com/chelseasystems/cs/util/Version.class" />
+                <include name="version.properties" />
+            	<!--exclude name="**/**/*.*" /-->
+            </fileset>
+        </jar>
+        <copy file="${jar.dir}/${version.jar.name}" todir="${dev.library.dir}" />
+		<!--Vivek Mishra : Commented for adding Version.class in the Jar-->
+	    <!--delete file="${classes.dir}/com/chelseasystems/cs/util/Version.class" /-->
+	</target>
+	
+    <target name="jar" depends="cifVersion,compile" description="Jar (and compile as necessary)">
+        <echo message="*** Jar-ing armanirpos Jar ***"/>
+        
+        <copy file="version.properties" todir="${classes.dir}" overwrite="yes" />
+        <replace file="${classes.dir}/version.properties" token="@VERSION@" value="${newVersion}" />
+ <!--      <copy file="${src.dir}/com/chelseasystems/cs/util/Version.java.ant" tofile="${src.dir}/com/chelseasystems/cs/util/Version.java" overwrite="yes" failonerror="false"/> 
+        <delete file="${src.dir}/com/chelseasystems/cs/util/Version.java.ant" /> 
+ -->
+
+        <mkdir dir="${jar.dir}" />
+        <jar jarfile="${jar.dir}/${jar.name}" filesonly="true" index="true">
+            <fileset dir="${classes.dir}">
+                <include name="com/" />
+            	<!--Vivek Mishra : Commented for adding Version.class in the Jar-->
+            	<!--<exclude name="com/chelseasystems/cs/util/Version.class" />-->
+                <include name="version.properties" />
+            	<!--Vivek Mishra : Added to implement lo4j logging for POS-AJB integration-->
+            	<include name="log4j.properties" />
+            </fileset>
+        	<fileset dir="${src.dir}">
+                <include name="jpos/" />
+            </fileset>
+        </jar>
+    	
+        <copy file="${jar.dir}/${jar.name}" todir="${dev.library.dir}" />
+		
+		<copy file="${jar.dir}/${jar.name}" todir="C:/clientwindows1.5/US/retek/library"/>
+		<copy file="${jar.dir}/${jar.name}" todir="C:/clientwindows1.5/EUROPE/retek/library"/>
+
+        <echo message="*** Jar-ing cif Jar ***"/>
+        
+        <copy file="cifversion.properties" tofile="${cif.classes.dir}/version.properties" overwrite="yes" />
+        <replace file="${cif.classes.dir}/version.properties" token="@VERSION@" value="${newVersion}" />
+        <copy file="${cif.src.dir}/com/cif/Version.java.ant" tofile="${cif.src.dir}/com/cif/Version.java" overwrite="yes"  failonerror="false"/> 
+        <delete file="${cif.src.dir}/com/cif/Version.java.ant" /> 
+
+        <mkdir dir="${cif.jar.dir}" />
+        <jar jarfile="${cif.jar.dir}/${cif.jar.name}" filesonly="true" index="true">
+            <fileset dir="${cif.classes.dir}">
+                <include name="com/" />
+                <include name="version.properties" />
+            </fileset>
+        </jar>
+        <copy file="${cif.jar.dir}/${cif.jar.name}" todir="${dev.library.dir}" />
+    </target>
+
+    <target name="win_client">
+        <mkdir dir="${dist.win.dir}" />
+		
+    	<copy todir="${dist.win.dir}/retek/jre" overwrite="yes" >
+        	<fileset dir="../../jdk1.5.0/jre"/>
+    	</copy>
+    	
+        <copy todir="${dist.win.dir}/retek/rpos/files/prod" overwrite="yes" >
+            <fileset dir="../files/prod"/>
+        </copy>
+        
+        <copy todir="${dist.win.dir}/retek/rpos/files_eur/prod" overwrite="yes" >
+            <fileset dir="../files_eur/prod"/>
+        </copy>
+    	
+        <copy todir="${dist.win.dir}/retek/rpos/files_jp/prod" overwrite="yes" >
+            <fileset dir="../files_jp/prod"/>
+        </copy>
+		
+		 <copy todir="${dist.win.dir}/retek/rpos/files_ind/prod" overwrite="yes" >
+            <fileset dir="../files_ind/prod"/>
+        </copy>
+
+        <copy todir="${dist.win.dir}/retek/rpos/images" overwrite="yes" >
+            <fileset dir="../images"/>
+        </copy>
+
+        <copy todir="${dist.win.dir}/retek/library" overwrite="yes" >
+            <fileset dir="../../library"/>
+        </copy>
+        
+        <copy todir="${dist.win.dir}/retek/rpos/bin" overwrite="yes" >
+            <fileset dir="../bin"/>
+        </copy>
+
+        <delete file="${dist.win.dir}/retek/rpos/bin/build.xml" />
+        <delete> <fileset dir="${dist.win.dir}/retek/rpos/bin/" includes="**/*.sh" /> </delete> 
+        <delete> <fileset dir="${dist.win.dir}/retek/rpos/bin/" includes="**/rmic*" /> </delete> 
+        <delete dir="${dist.win.dir}/retek/rpos/files/prod/tuning" />
+       
+        <mkdir dir="${dist.win.dir}/retek/rpos/files/prod/item_dnld" />
+        <mkdir dir="${dist.win.dir}/retek/rpos/files/prod/item_dnld/data" />        
+        <mkdir dir="${dist.win.dir}/retek/rpos/files/prod/item_dnld/log" />   
+        
+        <delete dir="${dist.win.dir}/retek/rpos/files/prod/database" />
+    </target>
+
+    <target name="linux_client">
+        <mkdir dir="${dist.linux.dir}" />
+    </target>
+
+    <target name="linux_server">
+        <mkdir dir="${dist.linuxserver.dir}" />
+
+        <copy todir="${dist.linuxserver.dir}/retek/library" overwrite="yes" >
+            <fileset dir="../../library"/>
+        </copy>
+        
+        <copy todir="${dist.linuxserver.dir}/retek/rpos/files/prod" overwrite="yes" >
+            <fileset dir="../files/prod"/>
+        </copy>
+        
+        <copy todir="${dist.linuxserver.dir}/retek/rpos/files_eur/prod" overwrite="yes" >
+            <fileset dir="../files_eur/prod"/>
+        </copy>
+        <copy todir="${dist.linuxserver.dir}/retek/rpos/files_jp/prod" overwrite="yes" >
+            <fileset dir="../files_jp/prod"/>
+        </copy>  
+			
+		 <copy todir="${dist.linuxserver.dir}/retek/rpos/files_ind/prod" overwrite="yes" >
+            <fileset dir="../files_ind/prod"/>
+        </copy> 
+        <copy file="javaenvServer.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="javaenvServer.sh" todir="${dist.linuxserver.dir}/retek/cif/cifroot" overwrite="yes" />
+        <copy file="itemdownload.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="msg_monitor.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="node.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="node_rns.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="rns.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="startJMS.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="stopemall.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="startemall.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="version.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+        <copy file="createdb.sh" todir="${dist.linuxserver.dir}/retek/rpos/bin" overwrite="yes" />
+                
+        <copy file="../files/prod/config/jdbc.cfg" todir="${dist.linuxserver.dir}/retek/cif/files/prod/config" overwrite="yes" />
+        <copy file="../files/prod/config/telephone.cfg" todir="${dist.linuxserver.dir}/retek/cif/files/prod/config" overwrite="yes" />
+        <copy file="../files/prod/config/currency.cfg" todir="${dist.linuxserver.dir}/retek/cif/files/prod/config" overwrite="yes" />
+        
+        <copy todir="${dist.linuxserver.dir}/retek/cif/cifroot" overwrite="yes" >
+            <fileset dir="${cifDir.name}/cifroot/"/>
+        </copy>
+        
+        <copy todir="${dist.linuxserver.dir}/retek/cif/util" overwrite="yes" >
+            <fileset dir="${cifDir.name}/util/" excludes="*.bat"/>
+        </copy>
+        
+        <copy todir="${dist.linuxserver.dir}/retek/Interfaces" overwrite="yes" >
+            <fileset dir="../../Interfaces/"/>
+        </copy>
+        
+        <copy todir="${dist.linuxserver.dir}/retek/Reports" overwrite="yes" >
+            <fileset dir="../../Reports/"/>
+        </copy>
+        
+        <delete file="${dist.linuxserver.dir}/retek/rpos/bin/build.xml" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/model" />
+        <delete> <fileset dir="${dist.linuxserver.dir}/retek/rpos/bin/" includes="**/*.bat" /> </delete>
+        <delete> <fileset dir="${dist.linuxserver.dir}/retek/rpos/bin/" includes="**/*.dll" /> </delete> 
+        <delete> <fileset dir="${dist.linuxserver.dir}/retek/rpos/bin/" includes="**/*.EXE" /> </delete> 
+        <delete> <fileset dir="${dist.linuxserver.dir}/retek/rpos/bin/" includes="**/rmic*" /> </delete> 
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/displaymgr" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/merchandise" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/corp" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/journal" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/javapos" />
+        <delete dir="${dist.linuxserver.dir}/retek/library/fujitsu" />
+        <delete dir="${dist.linuxserver.dir}/retek/library/preh" />
+        <delete dir="${dist.linuxserver.dir}/retek/library/symbol" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/database/artsoracle" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/receiptblueprints" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/repository" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/xml" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files/prod/register" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/images" />
+        
+        <mkdir dir="${dist.linuxserver.dir}/retek/rpos/files/prod/item_dnld" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/rpos/files/prod/item_dnld/data" />        
+        <mkdir dir="${dist.linuxserver.dir}/retek/rpos/files/prod/item_dnld/log" />
+        
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/rpos/bin" includes="**/*.sh" eol="lf" eof="remove" />
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/rpos/files/prod/config" includes="**/*.cfg" eol="lf" eof="remove" />
+        
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/cif/cifroot" includes="**/*.sh" eol="lf" eof="remove" />
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/cif/cifroot" includes="**/*.sql" eol="lf" eof="remove" />
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/cif/cifroot" includes="**/*.ctl" eol="lf" eof="remove" />
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/cif/files/prod/config" includes="**/*.cfg" eol="lf" eof="remove" />
+
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/Interfaces" includes="**/*.sh" eol="lf" eof="remove" />
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/Interfaces" includes="**/*.sql" eol="lf" eof="remove" />
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/Interfaces" includes="**/*.ctl" eol="lf" eof="remove" />
+        
+        <fixcrlf srcdir="${dist.linuxserver.dir}/retek/Reports" includes="**/*.sql" eol="lf" eof="remove" />
+       
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/CurrencyRT/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/CurrencyRT/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Employee/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Employee/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Promotion/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Promotion/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Register/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Register/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Store/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Store/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Item/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Item/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Tax/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Tax/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Customer/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Customer/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Inventory/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Inventory/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Redeemable/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Redeemable/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/RSVO_CSGO/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/RSVO_CSGO/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Txn_Hist/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Txn_Hist/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Class/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Class/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Color/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Color/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Dept/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Dept/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Season/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Season/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Size/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Size/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Subclass/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Subclass/${dist.Processed.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Sups/${dist.Inbound.dir}" />
+        <mkdir dir="${dist.linuxserver.dir}/retek/cif/cifroot/Sups/${dist.Processed.dir}" />
+          
+        <delete>
+            <fileset dir="${dist.linuxserver.dir}/retek/" includes="CVS" />
+        </delete>
+    </target>
+
+    <target name="devbuild">
+        <mkdir dir="${dist.developer.dir}" />
+        <!--<mkdir dir="${dist.developer.dir}/retek/rpos/classes" />-->
+    	
+    	<copy todir="${dist.developer.dir}/retek/jre" overwrite="yes" >
+    	   	<fileset dir="../../jdk1.5.0/jre"/>
+    	</copy>
+    	
+        <copy todir="${dist.developer.dir}/retek/rpos/files/prod" overwrite="yes" >
+            <fileset dir="../files/prod"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/rpos/files_eur/prod" overwrite="yes" >
+            <fileset dir="../files_eur/prod"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/rpos/files_jp/prod" overwrite="yes" >
+            <fileset dir="../files_jp/prod"/>
+        </copy>
+		
+		<copy todir="${dist.developer.dir}/retek/rpos/files_ind/prod" overwrite="yes" >
+            <fileset dir="../files_ind/prod"/>
+        </copy>
+
+        <copy todir="${dist.developer.dir}/retek/rpos/src" overwrite="yes" >
+            <fileset dir="../src"/>
+        </copy>
+        <!--<copy todir="${dist.developer.dir}/retek/docs" overwrite="yes" >
+            <fileset dir="../../docs"/>
+        </copy>-->
+        <copy todir="${dist.developer.dir}/retek/rpos/images" overwrite="yes" >
+            <fileset dir="../images"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/rpos/bin" overwrite="yes" >
+            <fileset dir="../bin"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/library" overwrite="yes" >
+            <fileset dir="../../library"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/cif/cifroot" overwrite="yes" >
+            <fileset dir="../../cif/cifroot"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/cif/src" overwrite="yes" >
+            <fileset dir="../../cif/src"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/cif/util" overwrite="yes" >
+            <fileset dir="../../cif/util"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/Interfaces" overwrite="yes" >
+            <fileset dir="../../Interfaces"/>
+        </copy>
+        <copy todir="${dist.developer.dir}/retek/Reports" overwrite="yes" >
+            <fileset dir="../../Reports"/>
+        </copy>
+    </target>
+
+    <target name="win_server">
+        <mkdir dir="${dist.winserver.dir}" />
+    </target>
+
+    <target name="unix_server">
+        <mkdir dir="${dist.unixserver.dir}" />
+        <mkdir dir="${dist.unixserver.dir}/retek/rpos/classes" />
+        <copy todir="${dist.unixserver.dir}/retek/rpos/files/prod" overwrite="yes" >
+            <fileset dir="../files/prod"/>
+        </copy>
+        <copy todir="${dist.unixserver.dir}/retek/rpos/bin" overwrite="yes" >
+            <fileset dir="../bin"/>
+        </copy>
+        <copy todir="${dist.unixserver.dir}/retek/library" overwrite="yes" >
+            <fileset dir="../../library"/>
+        </copy>
+        <delete file="${dist.unixserver.dir}/retek/rpos/bin/build.xml" />
+        <delete> <fileset dir="${dist.unixserver.dir}/retek/rpos/bin/" includes="**/*.bat" /> </delete>
+        <delete> <fileset dir="${dist.unixserver.dir}/retek/rpos/bin/" includes="**/*.dll" /> </delete> 
+        <delete> <fileset dir="${dist.unixserver.dir}/retek/rpos/bin/" includes="**/*.EXE" /> </delete> 
+        <delete> <fileset dir="${dist.unixserver.dir}/retek/rpos/bin/" includes="**/rmic*" /> </delete> 
+        <delete dir="${dist.unixserver.dir}/retek/rpos/files/prod/displaymgr" />
+        <delete dir="${dist.unixserver.dir}/retek/rpos/files/prod/javapos" />
+        <delete dir="${dist.unixserver.dir}/retek/rpos/files/prod/receiptblueprints" />
+        <fixcrlf srcdir="${dist.unixserver.dir}/retek/rpos/bin" includes="**/*.sh" eol="crlf" eof="remove" />
+        <fixcrlf srcdir="${dist.unixserver.dir}/retek/rpos/files/prod/config" includes="**/*.cfg" eol="crlf" eof="remove" />
+    </target>
+
+    <target name="aix_server">
+        <mkdir dir="${dist.aixserver.dir}" />
+        <mkdir dir="${dist.aixserver.dir}/retek/rpos/classes" />
+        <copy todir="${dist.aixserver.dir}/retek/rpos/files/prod" overwrite="yes" >
+            <fileset dir="../files/prod"/>
+        </copy>
+        <copy todir="${dist.aixserver.dir}/retek/rpos/bin" overwrite="yes" >
+            <fileset dir="../bin"/>
+        </copy>
+        <copy todir="${dist.aixserver.dir}/retek/library" overwrite="yes" >
+            <fileset dir="../../library"/>
+        </copy>
+        <delete file="${dist.aixserver.dir}/retek/rpos/bin/build.xml" />
+        <delete> <fileset dir="${dist.aixserver.dir}/retek/rpos/bin/" includes="**/*.bat" /> </delete>
+        <delete> <fileset dir="${dist.aixserver.dir}/retek/rpos/bin/" includes="**/*.dll" /> </delete> 
+        <delete> <fileset dir="${dist.aixserver.dir}/retek/rpos/bin/" includes="**/*.EXE" /> </delete> 
+        <delete> <fileset dir="${dist.aixserver.dir}/retek/rpos/bin/" includes="**/rmic*" /> </delete> 
+        <delete dir="${dist.aixserver.dir}/retek/rpos/files/prod/displaymgr" />
+        <delete dir="${dist.aixserver.dir}/retek/rpos/files/prod/javapos" />
+        <delete dir="${dist.aixserver.dir}/retek/rpos/files/prod/receiptblueprints" />
+        <delete dir="${dist.aixserver.dir}/retek/rpos/files/prod/corp" />
+        <delete dir="${dist.aixserver.dir}/retek/rpos/files/prod/model" />
+        <delete> <fileset dir="${dist.aixserver.dir}/retek/rpos/files/prod/merchandise" includes="**/*.jpg" /> </delete>
+        <fixcrlf srcdir="${dist.aixserver.dir}/retek/rpos/bin" includes="**/*.sh" eol="crlf" eof="remove" />
+        <fixcrlf srcdir="${dist.aixserver.dir}/retek/rpos/files/prod/config" includes="**/*.cfg" eol="crlf" eof="remove" />
+    </target>
+    
+    <target name="dist_eu" depends="armversion,dist">
+        <delete dir="${dist.win.dir}/retek/rpos/files" />
+		<delete dir="${dist.win.dir}/retek/rpos/files_jp" />
+        <copy file="${dist.win.dir}/retek/rpos/bin/javaenv_eur.bat" tofile="${dist.win.dir}/retek/rpos/bin/javaenv.bat" overwrite="yes" />
+		<delete file="${dist.win.dir}/retek/rpos/bin/javaenv_jp.bat"/>
+		<delete file="${dist.win.dir}/retek/rpos/bin/javaenv_eur.bat"/>
+        <move todir="${dist.win.dir}/retek/rpos/files">
+            <fileset dir="${dist.win.dir}/retek/rpos/files_eur"/>
+        </move>
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files" />
+		<delete dir="${dist.linuxserver.dir}/retek/rpos/files_jp" />
+        <move todir="${dist.linuxserver.dir}/retek/rpos/files">
+            <fileset dir="${dist.linuxserver.dir}/retek/rpos/files_eur"/>
+        </move>
+    </target>
+    <target name="dist_jp" depends="armversion,dist">
+        <delete dir="${dist.win.dir}/retek/rpos/files" />
+		<delete dir="${dist.win.dir}/retek/rpos/files_eur" />
+
+        <copy file="${dist.win.dir}/retek/rpos/bin/javaenv_jp.bat" tofile="${dist.win.dir}/retek/rpos/bin/javaenv.bat" overwrite="yes" />
+		<delete file="${dist.win.dir}/retek/rpos/bin/javaenv_jp.bat"/>
+		<delete file="${dist.win.dir}/retek/rpos/bin/javaenv_eur.bat"/>
+        <move todir="${dist.win.dir}/retek/rpos/files">
+            <fileset dir="${dist.win.dir}/retek/rpos/files_jp"/>
+        </move>
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files" />
+		<delete dir="${dist.linuxserver.dir}/retek/rpos/files_eur" />
+        <move todir="${dist.linuxserver.dir}/retek/rpos/files">
+            <fileset dir="${dist.linuxserver.dir}/retek/rpos/files_jp"/>
+        </move>
+    </target>
+    
+    <target name="dist_us" depends="armversion,dist">
+        <delete dir="${dist.win.dir}/retek/rpos/files_eur" />
+	       <delete dir="${dist.linuxserver.dir}/retek/rpos/files_eur" />
+        <delete dir="${dist.win.dir}/retek/rpos/files_jp" />
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files_jp" />
+
+    </target>
+	
+			<!-- start code for dist_ind by neeti on 30/06/2008-->	
+	
+	<target name="dist_ind" depends="armversion,dist">
+        <delete dir="${dist.win.dir}/retek/rpos/files" />
+		<delete dir="${dist.win.dir}/retek/rpos/files_jp" />
+		<delete dir="${dist.win.dir}/retek/rpos/files_eur" />
+		
+        <copy file="${dist.win.dir}/retek/rpos/bin/javaenv_ind.bat" tofile="${dist.win.dir}/retek/rpos/bin/javaenv.bat" overwrite="yes" />
+		<delete file="${dist.win.dir}/retek/rpos/bin/javaenv_ind.bat"/>	
+		<delete file="${dist.win.dir}/retek/rpos/bin/javaenv_jp.bat"/>
+		<delete file="${dist.win.dir}/retek/rpos/bin/javaenv_eur.bat"/>			
+   
+		 <move todir="${dist.win.dir}/retek/rpos/files">
+            <fileset dir="${dist.win.dir}/retek/rpos/files_ind"/>
+        </move>
+        <delete dir="${dist.linuxserver.dir}/retek/rpos/files" />
+		<delete dir="${dist.linuxserver.dir}/retek/rpos/files_jp" />
+		<delete dir="${dist.linuxserver.dir}/retek/rpos/files_eur" />		
+        <move todir="${dist.linuxserver.dir}/retek/rpos/files">
+            <fileset dir="${dist.linuxserver.dir}/retek/rpos/files_ind"/>
+        </move>
+    </target>
+	
+	<!-- End code for dist_ind by neeti on 30/06/2008-->
+    
+    
+    <!--<target name="dist" depends="rebuild,win_client,linux_client,win_server,unix_server,linux_server,devbuild" />-->
+<!--	<target name="armversion_us" depends="version_us,versionJar" description="Generate version info for US" />
+		<target name="armversion_eu" depends="version_eur,versionJar" description="Generate version info for Europe" />
+		<target name="armversion_jp" depends="version_jp,versionJar" description="Generate version info for Japan" />
+-->
+	<target name="armversion" description="Generate version info for US" >
+		<antcall target="versionJar" >
+			<param name="version.jar.name" value="armversion_us.jar" />
+			<param name="currentRegion" value="US" />
+		</antcall>
+		<antcall target="versionJar" >
+			<param name="version.jar.name" value="armversion_eur.jar" />
+			<param name="currentRegion" value="EUR" />
+		</antcall>
+		<antcall target="versionJar" >
+			<param name="version.jar.name" value="armversion_jp.jar" />
+			<param name="currentRegion" value="JP" />
+		</antcall>
+		<!--start code for dist_ind by neeti on 30/06/2008-->
+		<antcall target="versionJar" >
+			<param name="version.jar.name" value="armversion_ind.jar" />
+			<param name="currentRegion" value="IND" />
+		</antcall>
+		<!--End code for dist_ind by neeti on 30/06/2008-->	
+	</target>
+	
+    <target name="dist" depends="rebuild,win_client,linux_server,devbuild" />
+    <target name="rebuild" depends="clean,jar" description="Rebuild"/>
+    <target name="deleteCurrency">
+		<delete file="${src.dir}/com/chelseasystems/cr/currency/Currency.java"/>
+    </target>
+ </project>

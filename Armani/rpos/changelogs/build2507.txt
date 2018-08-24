@@ -1,0 +1,6 @@
+Modifications to consider for 2.5.0.7
+
+Add new "JMS: librarie, jms.jar and sonic_mqclient.jar
+
+Add new packages to cms_core and compile- cms_core/messaging; cms_core/messaging-grouping 
+

@@ -1,0 +1,14 @@
+<?xml encoding="UTF-8"?>
+<!ELEMENT iSeries (signed,address,user,password,libraries,timeout, secure, procedure, proxy, proxyaddress)>
+<!ELEMENT signed (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT user (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT libraries (#PCDATA)>
+<!ELEMENT timeout (#PCDATA)>
+<!ELEMENT secure (#PCDATA)>
+<!ELEMENT procedure (#PCDATA)>
+<!ELEMENT proxy (#PCDATA)>
+<!ELEMENT proxyaddress (#PCDATA)>
+
+

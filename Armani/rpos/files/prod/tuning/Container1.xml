@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <com.chelseasystems.cr.node.ContainerTuning>
+        <bootStraps length="0"/>
+        <commandLineArgs length="6">
+            <java.lang.String>CONTAINER_FILE=Container1</java.lang.String>
+            <java.lang.String>STATS_CLASS=com.chelseasystems.cr.node.LinuxProcessStats</java.lang.String>
+            <java.lang.String>DEFAULT_GROUP=RTK.USA.Server</java.lang.String>
+            <java.lang.String>DEVICE_TYPE=1</java.lang.String>
+            <java.lang.String>DEVICE_ID=Container1</java.lang.String>
+			<java.lang.String>CONFIG_FILE=credit_auth.cfg</java.lang.String>
+        </commandLineArgs>
+        <componentInstancePause>1</componentInstancePause>
+        <componentTunings length="28">
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.customer.CMSCustomerRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>CustomerServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=customer.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.scheduling.CMSScheduleRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>ScheduleServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=schedule.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.scheduling.CMSRoleRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>RoleServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=role.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.timecard.CMSTimecardRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>TimecardServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=timecard.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.scheduling.CMSEmployeeResourceRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>EmpResourceServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=emp_resource.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.filetransfer.CMSFileTransferRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>FileTransferServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=filetransfer.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.forms.CMSFormRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>FormServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=form.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.inventory.CMSInventoryRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>InventoryServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=inventory.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.transfer.CMSTransferRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>TransferServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=transfer.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.merchandise.CMSMerchandiseRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>MerchandiseServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=merchandise.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.item.CMSItemRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>ItemServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=item.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.payment.CMSRedeemableRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>RedeemServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=redeemable.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.readings.CMSReadingsRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>ReadingsServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=readings.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.store.CMSStoreRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>StoreServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=store.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.register.CMSRegisterRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>RegisterServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=register.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.goaling.CMSGoalingRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>GoalServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=goal.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.tax.CMSTaxRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>TaxServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=tax.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.authorization.bankcard.CMSCreditAuthRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>CreditAuthServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=credit_auth.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.pos.CMSTransactionPOSRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>TransactionPOSServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=pos.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.eod.CMSTransactionEODRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>EODServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=eod.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.layaway.CMSLayawayRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>LayawayServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=layaway.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.sos.CMSTransactionSOSRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>SOSServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=sos.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cr.download.update.UpdateRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>UpdateServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=update.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.employee.CMSEmployeeRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>EmployeeServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=employee.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.pricing.CMSPromotionRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>PromotionServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=promotion.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.currency.CMSExchangeRateRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>CMSExchangeRateServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=currency.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.loyalty.LoyaltyRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>LoyaltyServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=loyalty.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.ga.cs.pos.GAReportRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>GAReportServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=gareport.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+                <componentClassName>com.chelseasystems.cs.download.ArmaniDownloadRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>ArmaniDownloadServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=armaniDownload.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+            <com.chelseasystems.cr.node.ComponentTuning>
+            	<componentClassName>com.chelseasystems.cs.address.CMSAddressVerifyRMIServerImpl</componentClassName>
+                <defaultMaxCount>1</defaultMaxCount>
+                <defaultMinCount>1</defaultMinCount>
+                <instanceOverrides length="0"/>
+                <name>CMSAddressVerifyServices</name>
+                <propertyPairs length="1">
+                    <java.lang.String>CONFIG_FILE=addressverify.cfg</java.lang.String>
+                </propertyPairs>
+            </com.chelseasystems.cr.node.ComponentTuning>
+
+        </componentTunings>
+        <containerName>Container1</containerName>
+        <daemons length="0"/>
+        <defaultInstanceCount>1</defaultInstanceCount>
+        <hoursOfHistory>1</hoursOfHistory>
+        <instanceOverrides length="0"/>
+        <messengers length="0">
+        </messengers>
+        <minutesPauseVitals>5</minutesPauseVitals>
+        <processStats>com.chelseasystems.cr.node.LinuxProcessStats</processStats>
+    </com.chelseasystems.cr.node.ContainerTuning>
+</CMS_OBJECT>

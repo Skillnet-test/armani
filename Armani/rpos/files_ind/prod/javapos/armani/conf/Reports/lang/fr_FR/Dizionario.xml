@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"  ?>
+<Language>
+	    <Message Key="DOCNAME" Value="  " />
+		<Message Key="CLIENTE" Value="Client" />
+		<Message Key="FATTURA" Value="Facture" />
+		<Message Key="NOTA_CREDITO" Value="Nota Credito" />
+		<Message Key="TAXFREE" Value="Tax Free" />
+		<Message Key="PREZZO" Value="Prix" />
+		<Message Key="ARTICOLO" Value="Article" />
+		<Message Key="DESCRIZIONE" Value="Description" />
+		<Message Key="SCONTO" Value="Escompte" />
+		<Message Key="VETTORE" Value="Vecteur" />
+		<Message Key="DOCUMENTO" Value="Document" />
+</Language>

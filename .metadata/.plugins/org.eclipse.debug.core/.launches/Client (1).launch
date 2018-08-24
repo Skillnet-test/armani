@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="net.genady.rmi.rmiServer">
+<booleanAttribute key="net.genady.rmi.launchInspectLater" value="false"/>
+<intAttribute key="net.genady.rmi.launchRegistryAction" value="0"/>
+<stringAttribute key="net.genady.rmi.launchRegistryPort" value=""/>
+<booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_START_ON_FIRST_THREAD" value="true"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Client"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RMI-Client"/>
+</launchConfiguration>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Armani Reports XML configuration -->
+<!--  (C) C.S.A. s.r.l. -->
+<!--  Author : Vincenzo Amoruso -->
+<conf>
+<class name="com.armani.reports.invoice.InvoiceReport"         Code="FAT" reportFileName="Invoice.jasper"    />
+<class name="com.armani.reports.creditnote.CreditNoteReport"   Code="NCR" reportFileName="CreditNote.jasper" />
+<class name="com.armani.reports.ddt.DDTReport"            	   Code="DDT" reportFileName="DDT.jasper"        />
+<class name="com.armani.reports.taxfree.TaxFreeReport"         Code="TAX" reportFileName="TaxFree.jasper"    />
+<class name="com.armani.reports.receipt.ReceiptReport"         Code="SCF" reportFileName="Receipt.jasper"    />
+<class name="com.armani.reports.oth.OtherReport"          	   Code="OTH" reportFileName="Other.jasper"      />
+<class name="com.armani.reports.document.decoding.ARMFATDecoder"   Code="FAT" reportFileName="Invoice.jasper"    />
+<class name="com.armani.reports.document.decoding.ARMCREDecoder"   Code="NCR" reportFileName="CreditNote.jasper" />
+<class name="com.armani.reports.document.decoding.ARMDDTDecoder"   Code="DDT" reportFileName="DDT.jasper"        />
+<class name="com.armani.reports.document.decoding.ARMTAXDecoder"   Code="TAX" reportFileName="TaxFree.jasper"    />
+<rowRecordPath>/Document/Row</rowRecordPath>
+</conf>

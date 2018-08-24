@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <HELP key="com.chelseasystems.cs.swing.employee.EmploymentApplicationApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>257,573</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Employee_Management/Entering_New_Employee_Data.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.menu.PosMenuApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>357,45</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/POS_Menu_Overview/POS_Menu.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>357,57</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Management_Menu_Overview.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.timecard.TimecardApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>282,577</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Clock_In_and_Out/Clocking_In_and_Out.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transfer.TransferOutApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>419,586</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Inventory_Menu/Processing_Outgoing_Inventory.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.menu.InitialLayawayMenuApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>363,44</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Layaway_Management/Printing_Layaway_Reports.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transfer.TransferInApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>478,579</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Inventory_Menu/Processing_Incoming_Inventory.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.report.PaymentSalesReportApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>415,577</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Reports/Net_Sales_by_Tender_Type.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.paidouts.PaidoutApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>494,574</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Transaction_Management/Recording_Store_Funds_Paid_Out_for_Store_Expenses.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.goaling.ViewGoalingApplet2">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>308,577</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Store_Goals/Viewing_Store_Goal_Progress.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="test">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>4</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>54,153</contextHelpPointTag>
+            <contextHelpMediaFileTag>Sound1.wav</contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Customer_Menu/Customer_Menu.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>3</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>221,208</contextHelpPointTag>
+            <contextHelpMediaFileTag>granny.mpg</contextHelpMediaFileTag>
+            <contextHelpTextFileTag></contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>2</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>312,54</contextHelpPointTag>
+            <contextHelpMediaFileTag>lostinspace.mov</contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Introduction/Global_Bar_Overview.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>62,12</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>number1text</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transaction.ViewTxnApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>474,569</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Viewing_Transaction/Viewing_Transactions.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.returns.OriginalConsultantApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>165,-32</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Ring_A_Sale/Ringing_a_Sale/Sale.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.session.EndofDayApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>867,537</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/End_of_Day/Performing_End_of_Day_Totals_and_Deposits.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.layaway.LayawayPaymentApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>314,576</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Layaway_Payments/Processing_Layaway_Payments.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.report.TransactionSalesReportApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>462,574</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Reports/Net_Sales_By_Transaction_Type.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.employee.I9Applet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>414,575</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Employee_Management/Viewing_I-9_Data.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.customer.FindCustomerApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>425,575</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Customer_Menu/Customer_Lookup/Customer_Lookup.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.session.EndOfSession">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>353,79</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/End_of_Session/Closing_a_Register.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transaction.TxnDetailApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>323,579</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Customer_Menu/Customer_Lookup/Viewing_a_Customer_s_Transaction_History.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.pos.InitialSaleApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>2</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>805,-35</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Ring_A_Sale/Transaction_Options/Transaction_Options.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>444,571</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Ring_A_Sale/Ringing_a_Sale/Using_the_Merchandise_Search_Function.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.goaling.GoalingEntryApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>319,581</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Store_Goals/Store_Goals.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.employee.W4Applet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>404,566</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Employee_Management/Viewing_W-2_Data.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.timecard.IdentifyEmployeeApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>3</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>914,548</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Timecard_Management/Modifying_a_Time_Card.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>2</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>853,611</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Timecard_Management/Modifying_Benefit_Hours.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>851,549</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Timecard_Management/Adjusting_a_Past_Timecard.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transaction.TxnListApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>375,570</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Viewing_Transaction/Viewing_Transactions.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transaction.TxnAdHocQueryApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>505,567</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Adhoc_Query/Building_an_AdHoc_Transaction_Query.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.readings.SalesByPeriodApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>426,576</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Sales_Per_Period.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.employee.EmployeeAccessApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>494,569</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Employee_Management/Viewing_an_Employee_s_Data.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.returns.TxnHistCustApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>420,574</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Returning_Merchandise/Transaction_History.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.pos.IdentifyConsultantApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>37,-24</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Ring_A_Sale/Ringing_a_Sale/Select_a_Sales_Associate.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.returns.ReturnSaleApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>433,569</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Returning_Merchandise/Returning_Merchandise.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.receipts.ReceiptLogViewerApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>844,254</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/View_Receipt_Log/Viewing_the_Receipt_Log.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.login.InitialLoginApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>4</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>705,69</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Logging_On/Weekly_Store_Sales_Goal.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>3</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>387,293</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Logging_On/Store_Sales.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>2</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>483,194</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Logging_On/Email_Launcher.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>6</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>188,585</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Logging_On/Log_On_Overview.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>448,-4</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Logging_On/Corporate_Information.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>5</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>865,366</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Logging_On/Main_Menu_Screen.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.returns.InitialReturnApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>458,573</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Returning_Merchandise/Returning_Merchandise.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.returns.ReturnTxnDetailApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>297,569</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Returning_Merchandise/Return_Transaction_Detail.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.report.ItemSalesReportApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>469,572</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Reports/Itemcode_Net_Sales.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.menu.InitialInventoryMenuApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>347,82</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Inventory_Menu/Inventory_Menu.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.layaway.LayPhoneApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>362,571</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Layaway_Payments/Processing_Layaway_Payments.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.pos.PaymentApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>775,-26</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Ring_A_Sale/Processing_Transaction/Processing_Payments.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.timecard.TimecardAdjustApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>383,574</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Timecard_Management/Adjusting_a_Past_Timecard.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.pos.EvenExchangeApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>241,-14</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Even_Exchanges/Even_Exchanges.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.scheduling.EmployeeResourceApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>477,572</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Employee_Management/Scheduling_a_Resource.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.collections.CollectionsApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>845,571</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Transaction_Management/Collecting_Monies.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transaction.TxnHistoryApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>453,574</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Customer_Menu/Customer_Lookup/Viewing_a_Customer_s_Transaction_History.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.menu.InitialCustMenuApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>365,49</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Customer_Menu/Customer_Menu.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.pos.CustSaleApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>294,-24</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Ring_A_Sale/Ringing_a_Sale/Enter_New_or_Modify_Customer_Information.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.returns.ReturnTxnHistoryApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>437,569</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Returning_Merchandise/Transaction_History.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.transaction.VoidTransactionApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>344,570</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Transaction_Management/Voiding_a_Transaction.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.timecard.TimecardManagementApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>335,567</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Timecard_Management/Modifying_a_Time_Card.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.scheduling.SchedulingApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>439,576</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Employee_Management/Generating_a_Schedule.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.pos.ParkApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>399,574</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/POS_Menu/Recalling_Transactions/Recalling_Transactions.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.timecard.TimecardBenefitApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>862,578</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Timecard_Management/Modifying_Benefit_Hours.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.employee.VacationRequestApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>434,572</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Employee_Management/Entering_a_Vacation_Request.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+    <HELP key="com.chelseasystems.cs.swing.report.ConsultantSalesReportApplet">
+        <CONTEXT_HELP>
+            <contextHelpKeyStrokeTag>1</contextHelpKeyStrokeTag>
+            <contextHelpPointTag>446,577</contextHelpPointTag>
+            <contextHelpMediaFileTag></contextHelpMediaFileTag>
+            <contextHelpTextFileTag>/Management_Menu/Reports/Consultant_Net_Sales.htm</contextHelpTextFileTag>
+        </CONTEXT_HELP>
+    </HELP>
+</CMS_OBJECT>

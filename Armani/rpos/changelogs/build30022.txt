@@ -1,0 +1,18 @@
+
+1.  Date format
+
+The format of dates in the XML files has changed.  
+The old format was 
+
+	MM/DD/YYYY hh:mm:ss.sss, 
+
+which is unclear to people in Great Britain.  
+The new format uses the International Standard ISO 8601
+
+	YYYY-MM-DDThh:mm:ss.sss  
+
+2.  Deal is replaced by Promotion
+
+Old deals was removed.  Deal Services and XML files are removed
+Promotion Services is added.  Since Promotion is still under 
+development, no promotion for this label.

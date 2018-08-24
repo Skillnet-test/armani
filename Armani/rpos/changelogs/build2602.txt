@@ -1,0 +1,14 @@
+Modifications to consider for 2.6.0.2
+
+1.  Sale Tax changes: We have moved sale tax implementations to a new jar 
+file - cms_tax.jar.  Currently, we have the following implementations:
+-	com.chelseasystems.cs.tax.flatrate.CMSTaxFixedRateServices
+-	com.chelseasystems.cs.tax.flatrate.CMSTaxStoreRateServices
+-	com.chelseasystems.cs.tax.canada.CMSTaxCanadianServices
+-	com.chelseasystems.cs.tax.taxware.CMSTaxTaxwareServices
+ChelseaStore should be complied independent of cms_tax.jar.
+CMSTaxStoreRateServices is the default implementation.
+
+2.  Database changes: Regional Tax attributes are added to the item, 
+line item detail and store tables.
+

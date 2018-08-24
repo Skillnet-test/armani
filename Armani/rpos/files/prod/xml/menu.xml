@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+	<MENU id="Customer_lookup_sale">
+		<menuOptionTag index="0">SKIP</menuOptionTag>
+		<menuOptionTag index="1">SEARCH</menuOptionTag>
+		<menuOptionTag index="2">REFRESH</menuOptionTag>
+		<menuOptionTag index="3">CUST_PHONE</menuOptionTag>
+		<menuOptionTag index="4">CUST_NO</menuOptionTag>
+		<menuOptionTag index="5">REWARD_CARD</menuOptionTag>
+		<menuOptionTag index="6">VIEW_CUST_DETAILS</menuOptionTag>
+		<!--
+    <menuOptionTag index="7">ADVANCED_SEARCH</menuOptionTag>
+		-->
+		<menuOptionTag index="8">OK</menuOptionTag>
+		<menuOptionTag index="9">NEW_CUST</menuOptionTag>
+		<menuOptionTag index="10">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="Customer_lookup_init">
+		<!--
+	<menuOptionTag index="0">SKIP</menuOptionTag>
+		-->
+		<menuOptionTag index="0">SEARCH</menuOptionTag>
+		<menuOptionTag index="1">CUST_PHONE</menuOptionTag>
+		<menuOptionTag index="2">CUST_NO</menuOptionTag>
+		<menuOptionTag index="3">REWARD_CARD</menuOptionTag>
+		<!--
+ <menuOptionTag index="4">ADVANCED_SEARCH</menuOptionTag> 
+		-->
+		<!--
+menuOptionTag index="5">OK</menuOptionTag
+		-->
+		<menuOptionTag index="4">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="Customer_lookup_init_OK">
+		<!--
+	<menuOptionTag index="0">SKIP</menuOptionTag>
+		-->
+		<menuOptionTag index="0">SEARCH</menuOptionTag>
+		<menuOptionTag index="1">CUST_PHONE</menuOptionTag>
+		<menuOptionTag index="2">CUST_NO</menuOptionTag>
+		<menuOptionTag index="3">REWARD_CARD</menuOptionTag>
+		<!--
+ <menuOptionTag index="4">ADVANCED_SEARCH</menuOptionTag> 
+		-->
+		<menuOptionTag index="4">OK</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="INQUIRIES">
+		<menuOptionTag index="0">VIEW_TXN</menuOptionTag>
+		<menuOptionTag index="1">REDEEMABLE_INQUIRY</menuOptionTag>
+		<menuOptionTag index="2">STORE_LOCATOR</menuOptionTag>
+		<menuOptionTag index="3">ITEM_LOOKUP</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="DEPOSIT_PREV">
+		<menuOptionTag index="0">DEPOSIT_DETAILS</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="loyalty">
+		<menuOptionTag index="0">LOYALTY_DETAILS</menuOptionTag>
+		<menuOptionTag index="1">LOYALTY_ENROLL</menuOptionTag>
+		<menuOptionTag index="2">ISSUE_REWARD_NORULE</menuOptionTag>
+		<menuOptionTag index="3">VOID_REWARD</menuOptionTag>
+		<menuOptionTag index="4">ACCOUNT_MAINTENANCE</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="POST_TXN_EU">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">PRINT_RECEIPT</menuOptionTag>
+		<menuOptionTag index="2">PRINT_GIFT</menuOptionTag>
+		<menuOptionTag index="3">DDT</menuOptionTag>
+		<menuOptionTag index="4">TAX_FREE_FORM</menuOptionTag>
+	</MENU>
+	<MENU id="POST_TXN_JAPAN">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">PRINT_DUPLICATE_RECEIPT</menuOptionTag>
+		<menuOptionTag index="2">PRINT_GIFT</menuOptionTag>
+	</MENU>
+	<MENU id="POST_TXN_US">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">PRINT_DUPLICATE_RECEIPT</menuOptionTag>
+		<menuOptionTag index="2">PRINT_GIFT</menuOptionTag>
+		<menuOptionTag index="3">ISSUE_LOYALTY_REWARD</menuOptionTag>
+	</MENU>
+	<MENU id="TENDER_MENU_EU">
+		<menuOptionTag index="0">CREDIT_CARD</menuOptionTag>
+		<menuOptionTag index="1">DEBIT_CARD</menuOptionTag>
+		<menuOptionTag index="2">CASH</menuOptionTag>
+		<menuOptionTag index="3">CHECK_LOCAL</menuOptionTag>
+		<menuOptionTag index="4">CHECK_OUT_OF_AREA</menuOptionTag>
+		<menuOptionTag index="5">HOUSE_ACCOUNT</menuOptionTag>
+		<menuOptionTag index="6">TRAVEL_CHECKS</menuOptionTag>
+		<menuOptionTag index="7">CREDIT_NOTE</menuOptionTag>
+		<menuOptionTag index="8">FOREIGN_CASH</menuOptionTag>
+		<menuOptionTag index="9">ROUND_PAYMENT</menuOptionTag>
+		<menuOptionTag index="10">COUPON</menuOptionTag>
+		<menuOptionTag index="11">DELETE_TENDER</menuOptionTag>
+		<menuOptionTag index="12">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="TENDER_MENU_JAPAN">
+		<menuOptionTag index="0">CREDIT_CARD</menuOptionTag>
+		<menuOptionTag index="1">CASH</menuOptionTag>
+		<menuOptionTag index="2">CHECK</menuOptionTag>
+		<menuOptionTag index="3">REWARD_CARD</menuOptionTag>
+		<menuOptionTag index="4">HOUSE_ACCOUNT</menuOptionTag>
+		<menuOptionTag index="5">TRAVEL_CHECKS</menuOptionTag>
+		<menuOptionTag index="6">CREDIT_NOTE</menuOptionTag>
+		<menuOptionTag index="7">COUPON</menuOptionTag>
+		<menuOptionTag index="8">ROUND_PAYMENT</menuOptionTag>
+		<menuOptionTag index="9">DELETE_TENDER</menuOptionTag>
+		<menuOptionTag index="10">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="TENDER_MENU_US">
+		<menuOptionTag index="0">CREDIT_CARD</menuOptionTag>
+		<menuOptionTag index="1">CASH</menuOptionTag>
+		<menuOptionTag index="2">CHECK</menuOptionTag>
+		<menuOptionTag index="3">GIFT_CARD</menuOptionTag>
+		<menuOptionTag index="4">HOUSE_ACCOUNT</menuOptionTag>
+		<menuOptionTag index="5">TRAVEL_CHECKS</menuOptionTag>
+		<menuOptionTag index="6">CREDIT_NOTE</menuOptionTag>
+		<menuOptionTag index="7">MALL_CERT</menuOptionTag>
+		<menuOptionTag index="8">COUPON</menuOptionTag>
+		<menuOptionTag index="9">JPY_CASH</menuOptionTag>
+		<menuOptionTag index="10">DELETE_TENDER</menuOptionTag>
+		<menuOptionTag index="11">PREV</menuOptionTag>
+		<menuOptionTag index="12">DEBIT_CARD</menuOptionTag>
+	</MENU>
+	<MENU id="account_maintenance">
+		<menuOptionTag index="0">ADD_POINTS</menuOptionTag>
+		<menuOptionTag index="1">REMOVE_POINTS</menuOptionTag>
+		<menuOptionTag index="2">REISSUE_LOYALTY_CARD</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="add_item_menu">
+		<menuOptionTag index="0">MULTI_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="1">LINE_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="2">RETURN_ITEM</menuOptionTag>
+		<menuOptionTag index="3">SALE_TXN_RESERVATIONS</menuOptionTag>
+		<menuOptionTag index="4">DEL_ITEM</menuOptionTag>
+		<menuOptionTag index="5">SERVICES</menuOptionTag>
+		<menuOptionTag index="6">ALTERATIONS</menuOptionTag>
+		<!--
+<menuOptionTag index="5">PRICE_OVERRIDE</menuOptionTag>
+		-->
+		<menuOptionTag index="7">BY_PRICE_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="8">SEND_SALE</menuOptionTag>
+		<menuOptionTag index="9">DEPOSIT</menuOptionTag>
+		<menuOptionTag index="10">ADJUST_DEPOSIT</menuOptionTag>
+		<menuOptionTag index="11">TENDER</menuOptionTag>
+		<menuOptionTag index="12">OTHER_TXN</menuOptionTag>
+		<menuOptionTag index="13">OPTIONS</menuOptionTag>
+		<menuOptionTag index="14">PRICING</menuOptionTag>
+		<menuOptionTag index="15">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="16">CANCEL_ACTION</menuOptionTag>
+		<menuOptionTag index="17">INQUIRIES</menuOptionTag>
+		<!--
+<menuOptionTag index="14">SHIPPING</menuOptionTag>
+		-->
+		<!--
+menuOptionTag index="14">TRANS_MGMT</menuOptionTag
+		-->
+		<menuOptionTag index="18">MANAGEMENT</menuOptionTag>
+		<menuOptionTag index="19">SYSTEM_UTILS</menuOptionTag>
+		<menuOptionTag index="20">DOLCI</menuOptionTag>
+		<!--
+		<menuOptionTag index="17">TAX_EXEMPT</menuOptionTag>
+		-->
+	</MENU>
+	<MENU id="add_return_menu">
+		<menuOptionTag index="0">MULTI_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="1">LINE_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="2">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="3">DEL_ITEM</menuOptionTag>
+		<menuOptionTag index="4">SERVICES</menuOptionTag>
+		<menuOptionTag index="5">ALTERATIONS</menuOptionTag>
+		<menuOptionTag index="6">BY_PRICE_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="7">SEND_SALE</menuOptionTag>
+		<menuOptionTag index="8">TENDER</menuOptionTag>
+		<menuOptionTag index="9">OTHER_TXN</menuOptionTag>
+		<menuOptionTag index="10">OPTIONS</menuOptionTag>
+		<menuOptionTag index="11">PRICING</menuOptionTag>
+		<menuOptionTag index="12">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="13">CANCEL_ACTION</menuOptionTag>
+		<menuOptionTag index="14">INQUIRIES</menuOptionTag>
+		<!--
+menuOptionTag index="14">TRANS_MGMT</menuOptionTag
+		-->
+		<menuOptionTag index="15">MANAGEMENT</menuOptionTag>
+		<menuOptionTag index="16">SYSTEM_UTILS</menuOptionTag>
+	</MENU>
+	<MENU id="adhoc_query_txn">
+		<menuOptionTag index="0">ADD_CONSTRAINT</menuOptionTag>
+		<menuOptionTag index="1">EDIT_CONSTRAINT</menuOptionTag>
+		<menuOptionTag index="2">REMOVE_CONSTRAINTS</menuOptionTag>
+		<menuOptionTag index="3">CLEAR_ALL</menuOptionTag>
+		<menuOptionTag index="4">SAVE</menuOptionTag>
+		<menuOptionTag index="5">SUBMIT</menuOptionTag>
+		<menuOptionTag index="6">PREV</menuOptionTag>
+		<menuOptionTag index="7">OK</menuOptionTag>
+	</MENU>
+	<MENU id="cancel_only">
+		<menuOptionTag index="0">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="chart_options">
+		<menuOptionTag index="0">ZOOM_IN</menuOptionTag>
+		<menuOptionTag index="1">ZOOM_OUT</menuOptionTag>
+	</MENU>
+	<MENU id="clear_only">
+		<menuOptionTag index="0">CLEAR</menuOptionTag>
+	</MENU>
+	<MENU id="clock_in">
+		<menuOptionTag index="0">CLOCK_IN</menuOptionTag>
+		<menuOptionTag index="1">PW_TIME</menuOptionTag>
+	</MENU>
+	<MENU id="clock_in_out">
+		<menuOptionTag index="0">CLOCK_IN</menuOptionTag>
+		<menuOptionTag index="1">CLOCK_OUT</menuOptionTag>
+		<menuOptionTag index="2">PW_TIME</menuOptionTag>
+	</MENU>
+	<MENU id="clock_out">
+		<menuOptionTag index="0">CLOCK_OUT</menuOptionTag>
+		<menuOptionTag index="1">PW_TIME</menuOptionTag>
+	</MENU>
+	<MENU id="consignments">
+		<menuOptionTag index="0">CONSIGNMENTS_IN</menuOptionTag>
+		<menuOptionTag index="1">CONSIGNMENTS_OUT</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="consultant">
+		<!--
+<menuOptionTag index="0">HOUSE_ID</menuOptionTag>
+		-->
+	</MENU>
+	<MENU id="consultant_line">
+		<menuOptionTag index="0">CHANGE_LINE_CONS</menuOptionTag>
+		<menuOptionTag index="1">RESTORE_CONS</menuOptionTag>
+		<menuOptionTag index="2">MODIFY_TAX</menuOptionTag>
+		<menuOptionTag index="3">MODIFY_TAX_PERCENT</menuOptionTag>
+		<menuOptionTag index="4">RESTORE_TAX</menuOptionTag>
+		<menuOptionTag index="5">RETURN_TRANS</menuOptionTag>
+	</MENU>
+	<MENU id="cust_mgmt">
+		<!--
+menuOptionTag index="0">NEW_CUST</menuOptionTag>
+        <menuOptionTag index="1">MOD_CUST</menuOptionTag
+		-->
+		<menuOptionTag index="2">VIEW_CARD_DETAILS</menuOptionTag>
+		<menuOptionTag index="3">VIEW_ADDRESSES</menuOptionTag>
+		<menuOptionTag index="4">VIEW_COMMENTS</menuOptionTag>
+		<menuOptionTag index="5">TXN_HIST</menuOptionTag>
+		<!--
+menuOptionTag index="6">LOYALTY</menuOptionTag
+		-->
+		<menuOptionTag index="7">OK</menuOptionTag>
+		<menuOptionTag index="8">PURCHASE_HISTORY</menuOptionTag>
+		<menuOptionTag index="9">VIEW_DEPOSITS</menuOptionTag>
+		<menuOptionTag index="10">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="cust_name"/>
+	<MENU id="back_office"/>
+	<MENU id="cust_only">
+		<menuOptionTag index="0">CUSTOMER</menuOptionTag>
+	</MENU>
+	<MENU id="deselect_allonly">
+		<menuOptionTag index="0">DE_SELECT_ALL</menuOptionTag>
+	</MENU>
+	<MENU id="emp_maintain_hours">
+		<menuOptionTag index="0">MAX</menuOptionTag>
+		<menuOptionTag index="1">TARGET</menuOptionTag>
+		<menuOptionTag index="2">OK</menuOptionTag>
+	</MENU>
+	<MENU id="emp_mgmt">
+		<menuOptionTag index="0">EMP_APPLICATION</menuOptionTag>
+		<menuOptionTag index="1">W4</menuOptionTag>
+		<menuOptionTag index="2">I9</menuOptionTag>
+		<menuOptionTag index="3">SCHEDULE_RESOURCE</menuOptionTag>
+		<menuOptionTag index="4">SCHEDULE</menuOptionTag>
+		<menuOptionTag index="5">EMP_SECURITY</menuOptionTag>
+	</MENU>
+	<MENU id="emp_resource_avail">
+		<menuOptionTag index="0">NOT_AVAILABLE</menuOptionTag>
+		<menuOptionTag index="1">ADD_PREFER</menuOptionTag>
+		<menuOptionTag index="2">DELETE_AVAILABLE</menuOptionTag>
+		<menuOptionTag index="3">MODIFY_REASON</menuOptionTag>
+		<menuOptionTag index="4">OK</menuOptionTag>
+		<menuOptionTag index="5">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="emp_resource_employees">
+		<menuOptionTag index="0">EMPLOYEE_SHORTNAME</menuOptionTag>
+		<menuOptionTag index="1">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="emp_resource_init">
+		<menuOptionTag index="0">EMPLOYEE_SHORTNAME</menuOptionTag>
+		<menuOptionTag index="1">EMPLOYEE_SEARCH</menuOptionTag>
+		<menuOptionTag index="2">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="emp_resource_requests">
+		<menuOptionTag index="0">ADD_REQUEST</menuOptionTag>
+		<menuOptionTag index="1">DELETE_REQUEST</menuOptionTag>
+		<menuOptionTag index="2">MODIFY_REASON</menuOptionTag>
+		<menuOptionTag index="3">OK</menuOptionTag>
+		<menuOptionTag index="4">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="emp_resource_role">
+		<menuOptionTag index="0">ADD_ROLE_PREFER</menuOptionTag>
+		<menuOptionTag index="1">ADD_ROLE_BACKUP</menuOptionTag>
+		<menuOptionTag index="2">DELETE_ROLE</menuOptionTag>
+		<menuOptionTag index="3">OK</menuOptionTag>
+		<menuOptionTag index="4">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="emp_resource_summary">
+		<menuOptionTag index="0">AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">MAINTAIN_HOURS</menuOptionTag>
+		<menuOptionTag index="2">REQUESTS</menuOptionTag>
+		<menuOptionTag index="3">ROLE</menuOptionTag>
+		<menuOptionTag index="4">PRINT</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+		<menuOptionTag index="6">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="empl_application">
+		<menuOptionTag index="0">CLEAR</menuOptionTag>
+		<menuOptionTag index="1">ADD_EMPL_HIST</menuOptionTag>
+		<menuOptionTag index="2">ADD_REFERENCE</menuOptionTag>
+		<menuOptionTag index="3">ADD_RELATED</menuOptionTag>
+	</MENU>
+	<MENU id="employee_access">
+		<menuOptionTag index="0">EMPLOYEE_SEARCH</menuOptionTag>
+		<menuOptionTag index="1">NEW_EMPLOYEE</menuOptionTag>
+	</MENU>
+	<MENU id="employee_access_found">
+		<menuOptionTag index="0">MODIFY_EMPLOYEE</menuOptionTag>
+		<menuOptionTag index="1">ADDITIONAL_EMP_INFO</menuOptionTag>
+		<menuOptionTag index="2">ADDITIONAL_EMP_INFO_PREV</menuOptionTag>
+	</MENU>
+	<MENU id="employee_access_inquire">
+		<menuOptionTag index="0">ADDITIONAL_EMP_INFO</menuOptionTag>
+		<menuOptionTag index="1">ADDITIONAL_EMP_INFO_PREV</menuOptionTag>
+	</MENU>
+	<MENU id="employee_access_modify">
+		<menuOptionTag index="0">ADD_ROLE</menuOptionTag>
+		<menuOptionTag index="1">DELETE_ROLE</menuOptionTag>
+		<!--
+<menuOptionTag index="2">REGISTER_FINGERPRINT</menuOptionTag>
+		-->
+		<menuOptionTag index="3">RESET_PASSWORD</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+		<menuOptionTag index="5">ADDITIONAL_EMP_INFO_PREV</menuOptionTag>
+		<menuOptionTag index="6">ADDITIONAL_EMP_INFO</menuOptionTag>
+	</MENU>
+	<MENU id="enter_comment">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">ENTER_COMMENT</menuOptionTag>
+	</MENU>
+	<MENU id="eod_reprint">
+		<menuOptionTag index="0">COMPLETE_EOD</menuOptionTag>
+	</MENU>
+	<MENU id="find_it">
+		<menuOptionTag index="0">FIND_ITEM</menuOptionTag>
+		<menuOptionTag index="1">PRINT</menuOptionTag>
+	</MENU>
+	<MENU id="find_name_phone">
+		<menuOptionTag index="0">FIND_NAME</menuOptionTag>
+		<menuOptionTag index="1">FIND_PHONE</menuOptionTag>
+	</MENU>
+	<MENU id="find_phoneonly">
+		<menuOptionTag index="0">FIND_PHONE</menuOptionTag>
+	</MENU>
+	<MENU id="found_cust">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">NEW_CUST</menuOptionTag>
+		<menuOptionTag index="2">MOD_CUST</menuOptionTag>
+		<menuOptionTag index="3">SKIP</menuOptionTag>
+	</MENU>
+	<MENU id="gift_receipts">
+		<menuOptionTag index="0">PRINT_ALL_GIFT</menuOptionTag>
+		<menuOptionTag index="1">PRINT_SELECT_ITEMS</menuOptionTag>
+		<menuOptionTag index="2">RETURN_TO_PAYMENTS</menuOptionTag>
+	</MENU>
+	<MENU id="goal_main">
+		<menuOptionTag index="0">ENTER_GOAL</menuOptionTag>
+		<menuOptionTag index="1">MODIFY_GOAL</menuOptionTag>
+		<menuOptionTag index="2">DELETE_GOAL</menuOptionTag>
+		<menuOptionTag index="3">RESTORE_GOAL</menuOptionTag>
+		<menuOptionTag index="4">VIEW_GRAPH</menuOptionTag>
+	</MENU>
+	<MENU id="house_idonly">
+		<menuOptionTag index="0">HOUSE_ID</menuOptionTag>
+	</MENU>
+	<MENU id="inventory_menu">
+		<menuOptionTag index="0">TRANSFER_IN</menuOptionTag>
+		<menuOptionTag index="1">TRANSFER_OUT</menuOptionTag>
+		<menuOptionTag index="2">VIEW_PENDING_TRANSFERS</menuOptionTag>
+		<menuOptionTag index="3">VOID_TRANSFER</menuOptionTag>
+	</MENU>
+	<MENU id="item_lookup">
+		<menuOptionTag index="0">SEARCH</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="item_lookup_found">
+		<menuOptionTag index="0">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="1">LOCATE</menuOptionTag>
+		<!--
+ <menuOptionTag index="2">LAUNCH_BACKOFFICE</menuOptionTag> 
+		-->
+		<menuOptionTag index="2">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="lay_mgmt">
+		<menuOptionTag index="0">RETURN_STOCK</menuOptionTag>
+		<menuOptionTag index="1">OUTSTANDING</menuOptionTag>
+		<menuOptionTag index="2">OVERDUE</menuOptionTag>
+	</MENU>
+	<MENU id="locate">
+		<menuOptionTag index="0">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="locate_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="loyalty_details">
+		<menuOptionTag index="0">DATE</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+		<menuOptionTag index="2">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="main">
+		<menuOptionTag index="0">ITEM_LOOKUP</menuOptionTag>
+		<menuOptionTag index="1">CUST_LOOKUP</menuOptionTag>
+		<menuOptionTag index="2">INQUIRIES</menuOptionTag>
+		<menuOptionTag index="3">TRANS_MGMT_LOGIN</menuOptionTag>
+		<menuOptionTag index="4">MANAGEMENT_LOGIN</menuOptionTag>
+		<menuOptionTag index="5">LAUNCH_BROWSER</menuOptionTag>
+	</MENU>
+	<!--
+ <MENU id="management_login">
+       <menuOptionTag index="0">REPORT_MENU</menuOptionTag>
+       <menuOptionTag index="1">SECURITY</menuOptionTag>
+   </MENU>
+   <MENU id="trans_mgmt_login">
+      <menuOptionTag index="0">END_DAY</menuOptionTag>
+   </MENU> 
+	-->
+	<MENU id="markdown_menu">
+		<menuOptionTag index="0">MOD_PRICE</menuOptionTag>
+		<menuOptionTag index="1">MARK_AMT</menuOptionTag>
+		<menuOptionTag index="2">MARK_PCT</menuOptionTag>
+	</MENU>
+	<MENU id="merch_menu">
+		<menuOptionTag index="0">FIND_IT</menuOptionTag>
+		<menuOptionTag index="1">MERCH_LOOKUP</menuOptionTag>
+	</MENU>
+	<MENU id="management">
+		<menuOptionTag index="0">TRANS_MGMT</menuOptionTag>
+		<menuOptionTag index="1">REPORT_MENU</menuOptionTag>
+		<menuOptionTag index="2">SECURITY</menuOptionTag>
+		<menuOptionTag index="3">VIEW_RECEIPT_LOG</menuOptionTag>
+	</MENU>
+	<MENU id="mod_restock_feeonly">
+		<menuOptionTag index="0">MOD_RESTOCK_FEE</menuOptionTag>
+	</MENU>
+	<MENU id="modify_formonly">
+		<menuOptionTag index="0">MOD_FORM</menuOptionTag>
+	</MENU>
+	<MENU id="name_lookuponly">
+		<menuOptionTag index="0">NAME_LOOKUP</menuOptionTag>
+	</MENU>
+	<MENU id="net_sales_type">
+		<menuOptionTag index="0">OPERATOR_VIEW</menuOptionTag>
+		<menuOptionTag index="1">PRINT</menuOptionTag>
+	</MENU>
+	<MENU id="net_sales_type_store">
+		<menuOptionTag index="0">STORE_VIEW</menuOptionTag>
+		<menuOptionTag index="1">ENTER_DATE</menuOptionTag>
+		<menuOptionTag index="2">PRINT</menuOptionTag>
+	</MENU>
+	<MENU id="new_custonly">
+		<menuOptionTag index="0">NEW_CUST</menuOptionTag>
+	</MENU>
+	<MENU id="new_formonly">
+		<menuOptionTag index="0">NEW_FORM</menuOptionTag>
+	</MENU>
+	<MENU id="newcust_hist">
+		<menuOptionTag index="0">NEW_CUST</menuOptionTag>
+		<menuOptionTag index="1">MOD_CUST</menuOptionTag>
+		<menuOptionTag index="2">TXN_HIST</menuOptionTag>
+	</MENU>
+	<MENU id="newmod_cust">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">NEW_CUST</menuOptionTag>
+		<menuOptionTag index="2">MOD_CUST</menuOptionTag>
+	</MENU>
+	<MENU id="newskip_cust">
+		<menuOptionTag index="0">NEW_CUST</menuOptionTag>
+		<menuOptionTag index="1">SKIP</menuOptionTag>
+	</MENU>
+	<MENU id="next_prev_txn_details">
+		<menuOptionTag index="0">PRINT_RECEIPT</menuOptionTag>
+		<menuOptionTag index="1">PRINT_GIFT</menuOptionTag>
+		<menuOptionTag index="2">TOGGLE_DETAIL</menuOptionTag>
+		<menuOptionTag index="3">PREV_DETAIL</menuOptionTag>
+		<menuOptionTag index="4">PREV_TXN</menuOptionTag>
+		<menuOptionTag index="5">NEXT_TXN</menuOptionTag>
+		<menuOptionTag index="6">SEND_SALE_DETAILS</menuOptionTag>
+		<!--
+menuOptionTag index="3">ITEM_DETAILS</menuOptionTag>
+		-->
+	</MENU>
+	<MENU id="next_prev_txn_line_item_details">
+		<menuOptionTag index="0">PRINT_RECEIPT</menuOptionTag>
+		<menuOptionTag index="1">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="2">TOGGLE_DETAIL</menuOptionTag>
+		<menuOptionTag index="3">PREV_DETAIL</menuOptionTag>
+		<menuOptionTag index="4">PREV_TXN</menuOptionTag>
+		<menuOptionTag index="5">NEXT_TXN</menuOptionTag>
+		<menuOptionTag index="6">SEND_SALE_DETAILS</menuOptionTag>
+		<!--
+menuOptionTag index="3">ITEM_DETAILS</menuOptionTag> 
+		-->
+	</MENU>
+	<MENU id="no_buttons"/>
+	<MENU id="ok_cancel">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="ok_previous">
+		<menuOptionTag index="0">ok_REFUND</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="ok_cancel_previous">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+		<menuOptionTag index="2">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="PAID_IN">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="PAID_OUT_CUST">
+		<menuOptionTag index="0">CUST_LOOKUP</menuOptionTag>
+		<menuOptionTag index="2">OK</menuOptionTag>
+	</MENU>
+	<MENU id="PAID_OUT">
+		<menuOptionTag index="1">OK</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="ok_only">
+		<menuOptionTag index="0">OK</menuOptionTag>
+	</MENU>
+	<MENU id="options">
+		<menuOptionTag index="0">MOD_QTY</menuOptionTag>
+		<menuOptionTag index="1">CANCEL_TXN</menuOptionTag>
+		<menuOptionTag index="2">SUSPEND_TXN</menuOptionTag>
+		<menuOptionTag index="3">RECALL_TXN</menuOptionTag>
+		<menuOptionTag index="4">CHANGE_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="5">ADD_CUSTOMER</menuOptionTag>
+		<menuOptionTag index="6">TAX_EXEMPT</menuOptionTag>
+		<menuOptionTag index="7">ITEM_DETAIL</menuOptionTag>
+		<menuOptionTag index="8">OPTIONS_ALTERATIONS</menuOptionTag>
+		<menuOptionTag index="9">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="other_txns_menu">
+		<menuOptionTag index="0">CONSIGNMENTS</menuOptionTag>
+		<menuOptionTag index="1">PRESALES</menuOptionTag>
+		<menuOptionTag index="2">RESERVATIONS</menuOptionTag>
+		<menuOptionTag index="2">EMPLOYEE_SALE</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="pending_transactions">
+		<menuOptionTag index="0">TRANSFERS_IN</menuOptionTag>
+		<menuOptionTag index="1">TRANSFERS_OUT</menuOptionTag>
+		<menuOptionTag index="2">PRINT</menuOptionTag>
+		<menuOptionTag index="3">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="pos">
+		<menuOptionTag index="0">SALE</menuOptionTag>
+		<menuOptionTag index="1">EVEN_EXCHANGE</menuOptionTag>
+		<menuOptionTag index="2">LAY_PAYMENT</menuOptionTag>
+		<menuOptionTag index="3">MERCH_RETURN</menuOptionTag>
+		<menuOptionTag index="4">VIEW_TXN</menuOptionTag>
+		<menuOptionTag index="5">RECALL_TXN</menuOptionTag>
+		<menuOptionTag index="6">REDEEMABLE_INQUIRY</menuOptionTag>
+		<menuOptionTag index="7">NO_SALE</menuOptionTag>
+		<menuOptionTag index="8">CASHIER_SESSION</menuOptionTag>
+		<menuOptionTag index="9">SALES_PER_PERIOD</menuOptionTag>
+	</MENU>
+	<MENU id="pos_cashier_session">
+		<menuOptionTag index="0">SALE_EXPRESS</menuOptionTag>
+		<menuOptionTag index="1">SALE</menuOptionTag>
+		<menuOptionTag index="2">LAY_PAYMENT</menuOptionTag>
+		<menuOptionTag index="3">MERCH_RETURN</menuOptionTag>
+		<menuOptionTag index="4">VIEW_TXN</menuOptionTag>
+		<menuOptionTag index="5">RECALL_TXN</menuOptionTag>
+		<menuOptionTag index="6">REDEEMABLE_INQUIRY</menuOptionTag>
+		<menuOptionTag index="7">NO_SALE</menuOptionTag>
+		<menuOptionTag index="8">LOG_OFF</menuOptionTag>
+		<menuOptionTag index="9">CASHIER_EOS</menuOptionTag>
+	</MENU>
+	<MENU id="pos_continue">
+		<menuOptionTag index="0">CONTINUE</menuOptionTag>
+	</MENU>
+	<MENU id="pos_layaway">
+		<menuOptionTag index="0">MOD_QTY</menuOptionTag>
+		<menuOptionTag index="1">MOD_UNIT_PRICE</menuOptionTag>
+		<menuOptionTag index="2">MARKDOWNS</menuOptionTag>
+		<menuOptionTag index="3">DEL_ITEM</menuOptionTag>
+		<menuOptionTag index="4">SALE</menuOptionTag>
+		<menuOptionTag index="5">DISCOUNT</menuOptionTag>
+		<menuOptionTag index="6">CHANGE_DEPOSIT</menuOptionTag>
+		<menuOptionTag index="7">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="8">TOTAL</menuOptionTag>
+		<menuOptionTag index="9">TAX_EXEMPT</menuOptionTag>
+		<menuOptionTag index="10">SUSPEND</menuOptionTag>
+		<menuOptionTag index="11">CHANGE_CONS</menuOptionTag>
+		<menuOptionTag index="12">CHANGE_CUST</menuOptionTag>
+		<menuOptionTag index="13">ITEM_DETAIL</menuOptionTag>
+		<menuOptionTag index="14">SHOW_MISC_ITEMS</menuOptionTag>
+		<menuOptionTag index="15">CANCEL_TXN</menuOptionTag>
+	</MENU>
+	<MENU id="pos_reenter">
+		<menuOptionTag index="0">RING_SALE</menuOptionTag>
+		<menuOptionTag index="1">MERCH_RETURN</menuOptionTag>
+		<menuOptionTag index="2">COLLECTIONS</menuOptionTag>
+	</MENU>
+	<MENU id="pos_return">
+		<menuOptionTag index="0">MOD_QTY</menuOptionTag>
+		<menuOptionTag index="1">MOD_UNIT_PRICE</menuOptionTag>
+		<menuOptionTag index="2">MARKDOWNS</menuOptionTag>
+		<menuOptionTag index="3">DEL_ITEM</menuOptionTag>
+		<menuOptionTag index="4">SALE</menuOptionTag>
+		<menuOptionTag index="5">RETURN_ITEM</menuOptionTag>
+		<menuOptionTag index="6">DISCOUNT</menuOptionTag>
+		<menuOptionTag index="7">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="8">TOTAL</menuOptionTag>
+		<menuOptionTag index="9">TAX_EXEMPT</menuOptionTag>
+		<menuOptionTag index="10">SUSPEND</menuOptionTag>
+		<menuOptionTag index="11">CHANGE_CONS</menuOptionTag>
+		<menuOptionTag index="12">CHANGE_CUST</menuOptionTag>
+		<menuOptionTag index="13">ITEM_DETAIL</menuOptionTag>
+		<menuOptionTag index="14">SHOW_MISC_ITEMS</menuOptionTag>
+		<menuOptionTag index="15">CANCEL_TXN</menuOptionTag>
+	</MENU>
+	<MENU id="pos_sale">
+		<menuOptionTag index="0">MOD_QTY</menuOptionTag>
+		<menuOptionTag index="1">MOD_UNIT_PRICE</menuOptionTag>
+		<menuOptionTag index="2">MARKDOWNS</menuOptionTag>
+		<menuOptionTag index="3">DEL_ITEM</menuOptionTag>
+		<menuOptionTag index="4">RETURN_ITEM</menuOptionTag>
+		<menuOptionTag index="5">LAYAWAY</menuOptionTag>
+		<menuOptionTag index="6">DISCOUNT</menuOptionTag>
+		<menuOptionTag index="7">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="8">TOTAL</menuOptionTag>
+		<menuOptionTag index="9">TAX_EXEMPT</menuOptionTag>
+		<menuOptionTag index="10">SUSPEND</menuOptionTag>
+		<menuOptionTag index="11">CHANGE_CONS</menuOptionTag>
+		<menuOptionTag index="12">CHANGE_CUST</menuOptionTag>
+		<menuOptionTag index="13">ITEM_DETAIL</menuOptionTag>
+		<menuOptionTag index="14">SHOW_MISC_ITEMS</menuOptionTag>
+		<menuOptionTag index="15">SHIPPING</menuOptionTag>
+		<menuOptionTag index="16">POST_AND_PACK</menuOptionTag>
+		<menuOptionTag index="17">CANCEL_TXN</menuOptionTag>
+	</MENU>
+	<MENU id="post">
+		<menuOptionTag index="0">POST_TXN</menuOptionTag>
+		<menuOptionTag index="1">DEL_PAY</menuOptionTag>
+		<menuOptionTag index="2">CANCEL_TXN</menuOptionTag>
+	</MENU>
+	<MENU id="post_auth">
+		<menuOptionTag index="0">POST_TXN</menuOptionTag>
+		<menuOptionTag index="1">MAN_OVERRIDE</menuOptionTag>
+		<menuOptionTag index="2">DEL_PAY</menuOptionTag>
+		<menuOptionTag index="3">CANCEL_TXN</menuOptionTag>
+	</MENU>
+	<MENU id="presales">
+		<menuOptionTag index="0">PRESALE_OPEN</menuOptionTag>
+		<menuOptionTag index="1">PRESALE_CLOSE</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="Pre_Sale_Open">
+		<menuOptionTag index="0">SALE_TXN</menuOptionTag>
+		<menuOptionTag index="1">DEL_ITEM</menuOptionTag>
+		<menuOptionTag index="2">SERVICES</menuOptionTag>
+		<menuOptionTag index="3">ALTERATIONS</menuOptionTag>
+		<menuOptionTag index="4">SEND_SALE</menuOptionTag>
+		<menuOptionTag index="5">TENDER</menuOptionTag>
+		<menuOptionTag index="6">OTHER_TXN</menuOptionTag>
+		<menuOptionTag index="7">OPTIONS</menuOptionTag>
+		<menuOptionTag index="8">PRICING</menuOptionTag>
+		<menuOptionTag index="9">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="10">CANCEL_ACTION</menuOptionTag>
+		<menuOptionTag index="11">INQUIRIES</menuOptionTag>
+		<menuOptionTag index="12">TRANS_MGMT</menuOptionTag>
+		<menuOptionTag index="13">MANAGEMENT</menuOptionTag>
+		<menuOptionTag index="14">SYSTEM_UTILS</menuOptionTag>
+	</MENU>
+	<MENU id="consignment_in">
+		<menuOptionTag index="0">SALE_TXN</menuOptionTag>
+		<menuOptionTag index="1">DEL_ITEM</menuOptionTag>
+		<menuOptionTag index="2">SERVICES</menuOptionTag>
+		<menuOptionTag index="3">ALTERATIONS</menuOptionTag>
+		<menuOptionTag index="4">SEND_SALE</menuOptionTag>
+		<menuOptionTag index="5">TENDER</menuOptionTag>
+		<menuOptionTag index="6">OTHER_TXN</menuOptionTag>
+		<menuOptionTag index="7">OPTIONS</menuOptionTag>
+		<menuOptionTag index="8">PRICING</menuOptionTag>
+		<menuOptionTag index="9">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="10">CANCEL_ACTION</menuOptionTag>
+		<menuOptionTag index="11">INQUIRIES</menuOptionTag>
+		<menuOptionTag index="12">TRANS_MGMT</menuOptionTag>
+		<menuOptionTag index="13">MANAGEMENT</menuOptionTag>
+		<menuOptionTag index="14">SYSTEM_UTILS</menuOptionTag>
+	</MENU>
+	<MENU id="Pre_Sale_Close">
+		<menuOptionTag index="0">VIEW_PRESALES</menuOptionTag>
+		<menuOptionTag index="1">CUST_LOOKUP</menuOptionTag>
+		<menuOptionTag index="2">OK</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="consignment_out">
+		<menuOptionTag index="0">CUST_LOOKUP</menuOptionTag>
+		<!--
+menuOptionTag index="1">DDT</menuOptionTag
+		-->
+		<menuOptionTag index="1">OK</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="ViewPreSales">
+		<!--
+menuOptionTag index="0">CANCEL_PRE_SALE</menuOptionTag
+		-->
+		<menuOptionTag index="1">OK</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="ConsSellReturnItems">
+		<menuOptionTag index="0">SELECT_ALL</menuOptionTag>
+		<menuOptionTag index="1">SELL</menuOptionTag>
+		<menuOptionTag index="2">RETURN</menuOptionTag>
+		<menuOptionTag index="3">OK</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+		<menuOptionTag index="5">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="PresaleSelected">
+		<menuOptionTag index="0">CUST_LOOKUP</menuOptionTag>
+		<menuOptionTag index="1">SELL_RETURN_ITEMS</menuOptionTag>
+		<menuOptionTag index="2">EXPIRE_DATE</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="SellReturnItems">
+		<menuOptionTag index="0">DE_SELECT_ALL</menuOptionTag>
+		<menuOptionTag index="1">SELL</menuOptionTag>
+		<menuOptionTag index="2">RETURN</menuOptionTag>
+		<menuOptionTag index="3">ADD_ITEM_TENDER</menuOptionTag>
+		<menuOptionTag index="4">EMPLOYEE_SALE</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+		<menuOptionTag index="6">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="prev_only">
+		<menuOptionTag index="0">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="prev_only_txn">
+		<menuOptionTag index="0">PRINT_RECEIPT</menuOptionTag>
+		<menuOptionTag index="1">PRINT_GIFT</menuOptionTag>
+		<menuOptionTag index="2">PRINT_FISCAL</menuOptionTag>
+		<menuOptionTag index="3">TOGGLE_DETAIL</menuOptionTag>
+		<menuOptionTag index="4">SEND_SALE_DETAILS</menuOptionTag>
+		<menuOptionTag index="5">PREV_TXN</menuOptionTag>
+		<menuOptionTag index="6">NEXT_TXN</menuOptionTag>
+		<menuOptionTag index="7">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="prev_print">
+		<menuOptionTag index="0">PREV</menuOptionTag>
+		<menuOptionTag index="1">PRINT</menuOptionTag>
+	</MENU>
+	<MENU id="pricing">
+		<menuOptionTag index="0">SUBTOTAL_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="1">TRANS_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="2">REWARD_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="3">PRICING_PRICE_OVERRIDE</menuOptionTag>
+		<menuOptionTag index="4">OVERRIDE_EMPLOYEE_DISCOUNT</menuOptionTag>
+		<menuOptionTag index="5">REMOVE_PROMOTION</menuOptionTag>
+		<menuOptionTag index="6">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="print_fiscal">
+		<menuOptionTag index="0">PRINT_DDT</menuOptionTag>
+		<menuOptionTag index="1">PRINT_TAX_FREE</menuOptionTag>
+		<menuOptionTag index="2">PRINT_VAT</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="print_gift_receipt">
+		<menuOptionTag index="0">PRINT_ALL_GIFT</menuOptionTag>
+		<menuOptionTag index="1">PRINT_SELECT_ITEMS</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="print_only">
+		<menuOptionTag index="0">PRINT</menuOptionTag>
+	</MENU>
+	<MENU id="print_receipt">
+		<menuOptionTag index="0">OK</menuOptionTag>
+		<menuOptionTag index="1">PRINT_RECEIPT</menuOptionTag>
+		<menuOptionTag index="2">PRINT_GIFT</menuOptionTag>
+		<menuOptionTag index="3">PRINT_VAT</menuOptionTag>
+		<menuOptionTag index="4">PRINT_EXPORT</menuOptionTag>
+		<menuOptionTag index="5">ISSUE_REWARD</menuOptionTag>
+	</MENU>
+	<MENU id="process_eod">
+		<menuOptionTag index="0">PROCESS</menuOptionTag>
+		<menuOptionTag index="1">PRINT_TRIAL</menuOptionTag>
+		<menuOptionTag index="2">MODIFY_TOTALS</menuOptionTag>
+		<menuOptionTag index="3">MOD_FUND</menuOptionTag>
+	</MENU>
+	<MENU id="query_management">
+		<menuOptionTag index="0">CREATE_NEW</menuOptionTag>
+		<menuOptionTag index="1">SELECT_EXISTING</menuOptionTag>
+		<menuOptionTag index="2">REMOVE_EXISTING</menuOptionTag>
+		<menuOptionTag index="3">OK</menuOptionTag>
+	</MENU>
+	<MENU id="recall_sus_trans">
+		<menuOptionTag index="0">DELETE_ALL_SUSPENDED_TRANSACTIONS</menuOptionTag>
+		<menuOptionTag index="1">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="receipt_log">
+		<menuOptionTag index="0">SEARCH</menuOptionTag>
+		<menuOptionTag index="1">REGISTER</menuOptionTag>
+		<menuOptionTag index="2">DATE</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="receipt_log_again">
+		<menuOptionTag index="0">SEARCH</menuOptionTag>
+		<menuOptionTag index="1">SEARCH_AGAIN</menuOptionTag>
+		<menuOptionTag index="2">REGISTER</menuOptionTag>
+		<menuOptionTag index="3">DATE</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="redeemable_buy_back">
+		<menuOptionTag index="0">BUY_BACK</menuOptionTag>
+		<menuOptionTag index="1">LOOK_UP</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="register_closeout_complete">
+		<!--
+menuOptionTag index="0">STORE_CLOSEOUT</menuOptionTag
+		-->
+		<menuOptionTag index="0">SHUTDOWN</menuOptionTag>
+		<menuOptionTag index="1">ITEM_LOOKUP</menuOptionTag>
+		<menuOptionTag index="2">CUST_LOOKUP</menuOptionTag>
+		<menuOptionTag index="3">INQUIRIES</menuOptionTag>
+		<menuOptionTag index="4">MANAGEMENT</menuOptionTag>
+		<!--
+menuOptionTag index="5">TRANS_MGMT_LOGIN</menuOptionTag>
+        <menuOptionTag index="6">MANAGEMENT_LOGIN</menuOptionTag
+		-->
+	</MENU>
+	<MENU id="reports">
+		<menuOptionTag index="0">SALES_BY_CONS_REPORT</menuOptionTag>
+		<menuOptionTag index="1">SALES_BY_DEPT_REPORT</menuOptionTag>
+		<menuOptionTag index="2">SALES_BY_CLASS_REPORT</menuOptionTag>
+		<menuOptionTag index="3">SALES_BY_ITEM_REPORT</menuOptionTag>
+		<menuOptionTag index="4">SALES_BY_MEDIA_REPROT</menuOptionTag>
+		<menuOptionTag index="5">OVER_SHORT_REPORT</menuOptionTag>
+		<!--
+<menuOptionTag index="6">SALES_BY_PERIOD_REPORT</menuOptionTag>
+		-->
+		<!--
+menuOptionTag index="7">SALES_BY_TXN_TYPE_REPROT</menuOptionTag
+		-->
+		<menuOptionTag index="7">COSIGNMENT_DETAIL_REPORT</menuOptionTag>
+		<menuOptionTag index="8">COSIGNMENT_AGEING_REPORT</menuOptionTag>
+		<menuOptionTag index="9">ADHOC_QUERY</menuOptionTag>
+		<menuOptionTag index="10">RESERVATION_DETAIL_REPORT</menuOptionTag>
+		<menuOptionTag index="11">PRESALE_DETAIL_REPORT</menuOptionTag>
+	</MENU>
+	<MENU id="consignment_detail_report">
+		<menuOptionTag index="0">PRINT</menuOptionTag>
+		<menuOptionTag index="1">ALL_CONSIGNMENT_DETAIL</menuOptionTag>
+		<menuOptionTag index="2">CLOSED_CONSIGNMENT_DETAIL_ONLY</menuOptionTag>
+		<menuOptionTag index="3">OPEN_CONSIGNMENT_DETAIL_ONLY</menuOptionTag>
+		<menuOptionTag index="4">ALL_CONSIGNMENT_DETAIL_BY_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="5">CLOSED_CONSIGNMENT_DETAIL_BY_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="6">OPEN_CONSIGNMENT_DETAIL_BY_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="7">SELL_THROUGH</menuOptionTag>
+		<menuOptionTag index="8">SELL_THROUGH_BY_ASSOCIATE</menuOptionTag>
+	</MENU>
+	<MENU id="reservations">
+		<menuOptionTag index="0">RESERVATIONS_OPEN</menuOptionTag>
+		<menuOptionTag index="1">RESERVATIONS_CLOSE</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="return_hist">
+		<menuOptionTag index="0">TXN_HIST</menuOptionTag>
+		<menuOptionTag index="1">MERCH_RETURN</menuOptionTag>
+	</MENU>
+	<MENU id="return_txnonly">
+		<menuOptionTag index="0">RETURN_TXN</menuOptionTag>
+	</MENU>
+	<MENU id="run_eod">
+		<!--
+menuOptionTag index="0">END_SESSION</menuOptionTag
+		-->
+		<menuOptionTag index="0">END_DAY</menuOptionTag>
+		<menuOptionTag index="1">CONTINUE_PROCESSING</menuOptionTag>
+    </MENU>
+		<!-- Start: Added by Himani Verma for register close out to be done forcefully -->
+	<MENU id="run_eod_only">
+		<menuOptionTag index="0">END_DAY</menuOptionTag>
+	</MENU>
+	<!-- End: Added by Himani Verma for register close out to be done forcefully -->
+    <MENU id="sched">
+        <menuOptionTag index="0">MODIFY</menuOptionTag>
+        <menuOptionTag index="1">PRINT_EMPLOYEE</menuOptionTag>
+        <menuOptionTag index="2">PRINT_PREVIEW</menuOptionTag>
+        <menuOptionTag index="3">PRINT_CHART</menuOptionTag>
+        <menuOptionTag index="4">ADD_COMMENTS</menuOptionTag>
+        <menuOptionTag index="5">CLONE</menuOptionTag>
+        <menuOptionTag index="6">OK</menuOptionTag>
+        <menuOptionTag index="7">CANCEL</menuOptionTag>
+    </MENU>
+    <MENU id="sched_init">
+        <menuOptionTag index="0">CREATE_NEW</menuOptionTag>
+        <menuOptionTag index="1">DELETE_SCHEDULE</menuOptionTag>
+        <menuOptionTag index="2">CANCEL</menuOptionTag>
+    </MENU>
+    <MENU id="sched_modify">
+        <menuOptionTag index="0">ADD_SHIFT</menuOptionTag>
+        <menuOptionTag index="1">MODIFY_SHIFT</menuOptionTag>
+        <menuOptionTag index="2">DELETE_SHIFT</menuOptionTag>
+        <menuOptionTag index="3">ASSIGN_SHIFT</menuOptionTag>
+        <menuOptionTag index="4">UNASSIGN_SHIFT</menuOptionTag>
+        <menuOptionTag index="5">UNASSIGN_ALL_EMPLOYEES</menuOptionTag>
+        <menuOptionTag index="6">GENERATE</menuOptionTag>
+        <menuOptionTag index="7">OK</menuOptionTag>
+        <menuOptionTag index="8">CANCEL</menuOptionTag>
+        <menuOptionTag index="9">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="sched_print_preview">
+        <menuOptionTag index="0">PRINT_CHART</menuOptionTag>
+        <menuOptionTag index="1">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="search">
+        <menuOptionTag index="0">LOCATE</menuOptionTag>
+        <menuOptionTag index="1">ITEM_DETAILS</menuOptionTag>
+        <menuOptionTag index="2">CLEAR</menuOptionTag>
+        <menuOptionTag index="3">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="search_and_prev">
+        <menuOptionTag index="0">SEARCH</menuOptionTag>
+        <menuOptionTag index="1">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="search_and_search_again">
+        <menuOptionTag index="0">SEARCH</menuOptionTag>
+        <menuOptionTag index="1">SEARCH_AGAIN</menuOptionTag>
+    </MENU>
+    <MENU id="search_new_search_prev">
+        <menuOptionTag index="0">SEARCH</menuOptionTag>
+        <menuOptionTag index="1">NEW_SEARCH</menuOptionTag>
+        <menuOptionTag index="2">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="search_only">
+        <menuOptionTag index="0">SEARCH</menuOptionTag>
+    </MENU>
+    <MENU id="select_allonly">
+        <menuOptionTag index="0">SELECT_ALL</menuOptionTag>
+    </MENU>
+    <MENU id="shipping_detail_select_all">
+    	<menuOptionTag index="0">SELECT_ALL</menuOptionTag>
+        <menuOptionTag index="1">OK</menuOptionTag>
+        <menuOptionTag index="2">PREV</menuOptionTag>
+        <menuOptionTag index="3">CANCEL</menuOptionTag>
+    </MENU>
+    <MENU id="shipping_detail_deselect_all">
+    	<menuOptionTag index="0">DE_SELECT_ALL</menuOptionTag>
+        <menuOptionTag index="1">OK</menuOptionTag>
+        <menuOptionTag index="2">PREV</menuOptionTag>
+        <menuOptionTag index="3">CANCEL</menuOptionTag>
+    </MENU>
+    <MENU id="shipping_header_inquiry">
+        <menuOptionTag index="0">ITEMS</menuOptionTag>
+        <menuOptionTag index="1">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="shipping_header">
+        <menuOptionTag index="0">CLEAR</menuOptionTag>
+        <menuOptionTag index="1">CHANGE_ADDRESS</menuOptionTag>
+        <menuOptionTag index="2">SPECIAL_INSTRUCTIONS</menuOptionTag>
+        <menuOptionTag index="3">ITEMS</menuOptionTag>
+        <menuOptionTag index="4">PREV</menuOptionTag>
+        <menuOptionTag index="5">CANCEL</menuOptionTag>        
+    </MENU>
+    <MENU id="shutdown_only">
+        <menuOptionTag index="0">SHUTDOWN</menuOptionTag>
+    </MENU>
+    <MENU id="skip_only">
+        <menuOptionTag index="0">SKIP</menuOptionTag>
+    </MENU>
+    <MENU id="special_order">
+        <menuOptionTag index="0">CHANGE_QTY</menuOptionTag>
+        <menuOptionTag index="1">DEL_ITEM</menuOptionTag>
+        <menuOptionTag index="2">MODIFY_INFO</menuOptionTag>
+    </MENU>
+    <MENU id="start_eod">
+        <menuOptionTag index="0">MEDIA_TOTALS</menuOptionTag>
+        <menuOptionTag index="1">PREV</menuOptionTag>
+        <menuOptionTag index="2">CANCEL</menuOptionTag>
+    </MENU>
+    <MENU id="subtotal_disc">
+        <menuOptionTag index="0">DISCOUNT_PERCENTAGE</menuOptionTag>
+        <menuOptionTag index="1">DISCOUNT_AMOUNT</menuOptionTag>
+        <menuOptionTag index="2">DISCOUNT_PRICE</menuOptionTag>
+        <menuOptionTag index="3">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="system_utils">
+        <menuOptionTag index="0">CALIBRATE_SCREEN</menuOptionTag>
+        <menuOptionTag index="1">MAGSTRIPE_TEST</menuOptionTag>
+        <menuOptionTag index="2">PRINTER_TEST</menuOptionTag>
+        <menuOptionTag index="3">RESEND_BROKEN_TXNS</menuOptionTag>
+        <menuOptionTag index="4">UPDATE_EMPLOYEE_FILE</menuOptionTag>
+        <menuOptionTag index="5">UPDATE_ITEM_FILE</menuOptionTag>
+        <menuOptionTag index="6">SCRIPTS</menuOptionTag>
+        <!--menuOptionTag index="7">PREV</menuOptionTag-->
+    </MENU>
+    <MENU id="timecard_benefit">
+        <menuOptionTag index="0">ADD_BENEFIT</menuOptionTag>
+        <menuOptionTag index="1">MODIFY_BENEFIT</menuOptionTag>
+        <menuOptionTag index="2">DELETE_BENEFIT</menuOptionTag>
+        <menuOptionTag index="3">ADD_PRIOR_BENEFIT</menuOptionTag>
+        <menuOptionTag index="4">REMOVE_PRIOR_BENEFIT</menuOptionTag>
+    </MENU>
+    <MENU id="timecard_benefit_list">
+        <menuOptionTag index="0">BENEFIT_SICK</menuOptionTag>
+        <menuOptionTag index="1">BENEFIT_VACATION</menuOptionTag>
+        <menuOptionTag index="2">BENEFIT_JURY</menuOptionTag>
+        <menuOptionTag index="3">BENEFIT_FUNERAL</menuOptionTag>
+        <menuOptionTag index="4">BENEFIT_OTHER</menuOptionTag>
+    </MENU>
+    <MENU id="timecard_in">
+        <menuOptionTag index="0">ADD_IN</menuOptionTag>
+        <menuOptionTag index="1">MOD_IN</menuOptionTag>
+        <menuOptionTag index="2">MOD_OUT</menuOptionTag>
+        <menuOptionTag index="3">INS_IN_OUT</menuOptionTag>
+        <menuOptionTag index="4">DEL_IN_OUT</menuOptionTag>
+        <menuOptionTag index="5">BENEFIT</menuOptionTag>
+        <menuOptionTag index="6">VIEW_ADJUSTMENTS</menuOptionTag>
+        <menuOptionTag index="7">PRINT</menuOptionTag>
+        <menuOptionTag index="8">ENTER_COMMENT</menuOptionTag>
+        <menuOptionTag index="9">OTHER_EMPLOYEE</menuOptionTag>
+        <menuOptionTag index="10">OTHER_TIMECARD</menuOptionTag>
+    </MENU>
+    <MENU id="timecard_mgmt">
+        <menuOptionTag index="0">CW_TIME</menuOptionTag>
+        <menuOptionTag index="1">PW_TIME</menuOptionTag>
+        <menuOptionTag index="2">FINALIZE</menuOptionTag>
+    </MENU>
+    <MENU id="timecard_out">
+        <menuOptionTag index="0">ADD_OUT</menuOptionTag>
+        <menuOptionTag index="1">MOD_IN</menuOptionTag>
+        <menuOptionTag index="2">MOD_OUT</menuOptionTag>
+        <menuOptionTag index="3">INS_IN_OUT</menuOptionTag>
+        <menuOptionTag index="4">DEL_IN_OUT</menuOptionTag>
+        <menuOptionTag index="5">BENEFIT</menuOptionTag>
+        <menuOptionTag index="6">VIEW_ADJUSTMENTS</menuOptionTag>
+        <menuOptionTag index="7">PRINT</menuOptionTag>
+        <menuOptionTag index="8">ENTER_COMMENT</menuOptionTag>
+        <menuOptionTag index="9">OTHER_EMPLOYEE</menuOptionTag>
+        <menuOptionTag index="10">OTHER_TIMECARD</menuOptionTag>
+    </MENU>
+    <MENU id="timecard_sales">
+        <menuOptionTag index="0">VIEW_ADJUSTMENTS</menuOptionTag>
+        <menuOptionTag index="1">BENEFIT</menuOptionTag>
+        <menuOptionTag index="2">OTHER_EMPLOYEE</menuOptionTag>
+        <menuOptionTag index="3">OTHER_TIMECARD</menuOptionTag>
+        <menuOptionTag index="4">PRINT</menuOptionTag>
+        <menuOptionTag index="5">PREV</menuOptionTag>
+    </MENU>
+    <MENU id="trans_mgmt">
+        <menuOptionTag index="0">POST_VOID</menuOptionTag>
+        <menuOptionTag index="1">COLLECTIONS</menuOptionTag>
+        <menuOptionTag index="2">PAIDOUTS</menuOptionTag>
+        <menuOptionTag index="3">NO_SALE</menuOptionTag>
+        <menuOptionTag index="4">BUY_BACK</menuOptionTag>
+        <menuOptionTag index="5">END_DAY</menuOptionTag>
+        <!--menuOptionTag index="6">PREV</menuOptionTag-->
+    </MENU>
+    <MENU id="transfer_in">
+        <menuOptionTag index="0">CHANGE_QTY</menuOptionTag>
+        <menuOptionTag index="1">DEL_ITEM</menuOptionTag>
+        <menuOptionTag index="2">PARTIAL</menuOptionTag>
+        <menuOptionTag index="3">COMPLETE</menuOptionTag>
+    </MENU>
+    <MENU id="transfer_out">
+        <menuOptionTag index="0">CHANGE_QTY</menuOptionTag>
+        <menuOptionTag index="1">DEL_ITEM</menuOptionTag>
+        <menuOptionTag index="2">ENTER_STORE_ID</menuOptionTag>
+        <menuOptionTag index="3">ENTER_COMMENT</menuOptionTag>
+    </MENU>
+	<MENU id = "CUST_TXN_HIST">
+        <menuOptionTag index="0">TENDER_TYPE</menuOptionTag>
+        <menuOptionTag index="1">SHIPPING</menuOptionTag>
+        <menuOptionTag index="2">OTHER</menuOptionTag>
+        <menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="RETN_TXN_HIST">
+		<menuOptionTag index="0">CUST_LOOKUP</menuOptionTag>
+		<menuOptionTag index="1">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="2">TENDER_TYPE</menuOptionTag>
+		<menuOptionTag index="3">OTHER</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="txn_hist">
+		<menuOptionTag index="0">TENDER_TYPE</menuOptionTag>
+		<menuOptionTag index="1">SEND_SALE</menuOptionTag>
+		<menuOptionTag index="2">OTHER</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="txn_mgmt">
+		<menuOptionTag index="0">STORE_CLOSEOUT</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="vac_request">
+		<menuOptionTag index="0">ADD_TIME</menuOptionTag>
+		<menuOptionTag index="1">DEL_ROW</menuOptionTag>
+		<menuOptionTag index="2">CLEAR</menuOptionTag>
+	</MENU>
+	<MENU id="verify_eod">
+		<menuOptionTag index="0">VERIFY_DEPOSIT</menuOptionTag>
+		<menuOptionTag index="1">MOD_FUND</menuOptionTag>
+		<menuOptionTag index="2">CLEAR_TOTALS</menuOptionTag>
+	</MENU>
+	<MENU id="view_card_details">
+		<menuOptionTag index="0">ADD_CREDITCARD</menuOptionTag>
+		<!--
+ <menuOptionTag index="1">MODIFY_CREDITCARD</menuOptionTag>
+		-->
+		<menuOptionTag index="2">REMOVE_CREDITCARD</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="view_addresses">
+		<!--
+menuOptionTag index="0">ADD_ADDRESS</menuOptionTag>
+        <menuOptionTag index="1">MODIFY_ADDRESS</menuOptionTag>
+        <menuOptionTag index="2">REMOVE_ADDRESS</menuOptionTag
+		-->
+		<menuOptionTag index="3">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="select_addresses">
+		<!--
+menuOptionTag index="0">ADD_ADDRESS</menuOptionTag>
+        <menuOptionTag index="1">MODIFY_ADDRESS</menuOptionTag>
+        <menuOptionTag index="2">REMOVE_ADDRESS</menuOptionTag
+		-->
+		<menuOptionTag index="3">USE_ADDRESS</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="view_comments">
+		<menuOptionTag index="0">ADD_COMMENTS</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="view_txn">
+		<menuOptionTag index="0">DISCOUNT</menuOptionTag>
+		<menuOptionTag index="1">TENDER</menuOptionTag>
+		<menuOptionTag index="2">SEND_SALE</menuOptionTag>
+		<menuOptionTag index="3">TRANSACTION</menuOptionTag>
+		<menuOptionTag index="4">CASHIER</menuOptionTag>
+		<menuOptionTag index="5">CUSTOMER</menuOptionTag>
+		<menuOptionTag index="6">ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="7">ALL</menuOptionTag>
+		<menuOptionTag index="8">ITEM_DETAILS</menuOptionTag>
+		<menuOptionTag index="9">OTHER</menuOptionTag>
+	</MENU>
+	<MENU id="void_transaction">
+		<menuOptionTag index="0">MODIFY_REASON</menuOptionTag>
+		<!--Vivek Mishra : Added for POST VOID AJB Offline changes-->
+		<menuOptionTag index="1">RETURN_ITEM</menuOptionTag>
+		<!--End-->
+	</MENU>
+	<MENU id="tax_exempt">
+		<menuOptionTag index="0">REMOVE_TAX_EXEMPT</menuOptionTag>
+		<menuOptionTag index="1">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="use_prev">
+		<menuOptionTag index="0">USE_ADDRESS</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="collections_menu">
+		<menuOptionTag index="0">ACCOUNT_LOOKUP</menuOptionTag>
+		<menuOptionTag index="1">CUST_LOOKUP</menuOptionTag>
+		<menuOptionTag index="2">ADD_CUSTOMER</menuOptionTag>
+		<menuOptionTag index="3">OK_COLLECTIONS</menuOptionTag>
+	</MENU>
+	<MENU id="SellReturnItemsSelectAll">
+		<menuOptionTag index="0">SELECT_ALL</menuOptionTag>
+		<menuOptionTag index="1">SELL</menuOptionTag>
+		<menuOptionTag index="2">RETURN</menuOptionTag>
+		<menuOptionTag index="3">ADD_ITEM_TENDER</menuOptionTag>
+		<menuOptionTag index="4">EMPLOYEE_SALE</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+		<menuOptionTag index="6">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="ConsSellReturnItemsDeSelectAll">
+		<menuOptionTag index="0">DE_SELECT_ALL</menuOptionTag>
+		<menuOptionTag index="1">SELL</menuOptionTag>
+		<menuOptionTag index="2">RETURN</menuOptionTag>
+		<menuOptionTag index="3">OK</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+		<menuOptionTag index="5">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="Aterations">
+		<menuOptionTag index="0">FITTER_ID</menuOptionTag>
+		<menuOptionTag index="1">TAILOR_ID</menuOptionTag>
+		<menuOptionTag index="2">COMMENTS</menuOptionTag>
+		<menuOptionTag index="3">CLEAR_COMMENTS</menuOptionTag>
+		<menuOptionTag index="4">OK</menuOptionTag>
+		<menuOptionTag index="5">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="PREV_CANCEL">
+		<menuOptionTag index="0">PREV</menuOptionTag>
+		<menuOptionTag index="1">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU_OPTION id="ACCOUNT_LOOKUP">
+		<menuoptionLabel>mnu_AccountLookup</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OK_COLLECTIONS">
+		<menuoptionLabel>mnu_OK</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU id="credit_card">
+		<menuOptionTag index="0">USE_CARD_ON_FILE</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+		<menuOptionTag index="2">MANUAL_KEY_ENTRY</menuOptionTag>
+	</MENU>
+	<MENU id="credit_card_presale_close">
+		<menuOptionTag index="0">USE_CARD_ON_FILE</menuOptionTag>
+		<menuOptionTag index="1">USE_CARD_FROM_TRANSACTION</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="Cust_referral_lookup">
+		<menuOptionTag index="0">SEARCH</menuOptionTag>
+		<menuOptionTag index="1">CUST_PHONE</menuOptionTag>
+		<menuOptionTag index="2">CUST_NO</menuOptionTag>
+		<menuOptionTag index="3">REWARD_CARD</menuOptionTag>
+		<menuOptionTag index="4">OK</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+	</MENU>
+	<MENU id="Reservation_Close">
+		<menuOptionTag index="0">CUST_LOOKUP</menuOptionTag>
+		<!--
+menuOptionTag index="1">NO_OPEN_TXN</menuOptionTag
+		-->
+		<menuOptionTag index="1">OK</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="SelectReservationItems">
+		<menuOptionTag index="0">SELECT_ALL</menuOptionTag>
+		<menuOptionTag index="1">SELL</menuOptionTag>
+		<menuOptionTag index="2">RETURN</menuOptionTag>
+		<menuOptionTag index="3">RESERVE</menuOptionTag>
+		<menuOptionTag index="4">OK</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+		<menuOptionTag index="6">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="DeSelectReservationItems">
+		<menuOptionTag index="0">DE_SELECT_ALL</menuOptionTag>
+		<menuOptionTag index="1">SELL</menuOptionTag>
+		<menuOptionTag index="2">RETURN</menuOptionTag>
+		<menuOptionTag index="3">RESERVE</menuOptionTag>
+		<menuOptionTag index="4">OK</menuOptionTag>
+		<menuOptionTag index="5">PREV</menuOptionTag>
+		<menuOptionTag index="6">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="next_color_and_prev_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="next_color_and_prev_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="next_and_previous_color_and_prev_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="2">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="next_and_previous_color_and_prev_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="2">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="previous_color_and_prev_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="previous_color_and_prev_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="2">PREV</menuOptionTag>
+		<menuOptionTag index="3">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_next_color_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_next_color_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_next_and_previous_color_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+		<menuOptionTag index="5">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_next_and_previous_color_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">NEXT_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="4">PREV</menuOptionTag>
+		<menuOptionTag index="5">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_previous_color_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_previous_color_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">ADD_ITEM</menuOptionTag>
+		<menuOptionTag index="2">PREVIOUS_COLOR</menuOptionTag>
+		<menuOptionTag index="3">PREV</menuOptionTag>
+		<menuOptionTag index="4">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_prev_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+		<menuOptionTag index="2">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="locate_with_prev_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+		<menuOptionTag index="2">STOCK_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="reservation_detail_report">
+		<menuOptionTag index="0">PRINT</menuOptionTag>
+		<menuOptionTag index="1">ALL_RESERVATION_DETAIL</menuOptionTag>
+		<menuOptionTag index="2">CLOSED_RESERVATION_DETAIL_ONLY</menuOptionTag>
+		<menuOptionTag index="3">OPEN_RESERVATION_DETAIL_ONLY</menuOptionTag>
+		<menuOptionTag index="4">ALL_RESERVATION_DETAIL_BY_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="5">CLOSED_RESERVATION_DETAIL_BY_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="6">OPEN_RESERVATION_DETAIL_BY_ASSOCIATE</menuOptionTag>
+	</MENU>
+	<MENU id="presale_detail_report">
+		<menuOptionTag index="0">PRINT</menuOptionTag>
+		<menuOptionTag index="1">ALL_PRESALE_DETAIL</menuOptionTag>
+		<menuOptionTag index="2">CLOSED_PRESALE_DETAIL_ONLY</menuOptionTag>
+		<menuOptionTag index="3">OPEN_PRESALE_DETAIL_ONLY</menuOptionTag>
+		<menuOptionTag index="4">ALL_PRESALE_DETAIL_BY_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="5">CLOSED_PRESALE_DETAIL_BY_ASSOCIATE</menuOptionTag>
+		<menuOptionTag index="6">OPEN_PRESALE_DETAIL_BY_ASSOCIATE</menuOptionTag>
+	</MENU>
+	<MENU id="VIEW_TXN_LIST">
+		<menuOptionTag index="0">PREV</menuOptionTag>
+		<menuOptionTag index="1">CANCEL</menuOptionTag>
+	</MENU>
+	<MENU id="send_request_and_item_unavailable">
+		<menuOptionTag index="0">TOGGLE_ITEM_UNAVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+		<menuOptionTag index="2">SEND_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="send_request_and_item_available">
+		<menuOptionTag index="0">TOGGLE_ITEM_AVAILABILITY</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+		<menuOptionTag index="2">SEND_REQUEST</menuOptionTag>
+	</MENU>
+	<MENU id="ok_override">
+		<menuOptionTag index="0">OK_OVERRIDE</menuOptionTag>
+		<menuOptionTag index="1">PREV</menuOptionTag>
+	</MENU>
+</CMS_OBJECT>

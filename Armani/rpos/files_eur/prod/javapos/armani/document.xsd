@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:simpleType name="intero">
+	<xs:restriction base="xs:positiveInteger"/>
+</xs:simpleType>
+
+<xs:simpleType name="decimale">
+	<xs:restriction base="xs:decimal"/>
+</xs:simpleType>
+
+<xs:simpleType name="percentuale">
+	<xs:restriction base="xs:decimal">
+	<xs:minInclusive value="0"/>
+	<xs:maxInclusive value="100"/>
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="DocID">
+	<xs:restriction base="xs:string">
+	<xs:enumeration value="SCF"/> 
+	<xs:enumeration value="DDT"/> 
+	<xs:enumeration value="FAT"/> 
+	<xs:enumeration value="NCR"/> 
+	<xs:enumeration value="TAX"/> 
+	<xs:enumeration value="OTH"/> 
+	</xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="anagraphic">
+	<xs:sequence>
+		<xs:element name="Type" 		type="xs:string" minOccurs="0"/>
+		<xs:element name="Code" 		type="xs:string"/>
+		<xs:element name="Descr" 		type="xs:string" minOccurs="0"/>
+		<xs:element name="Title" 		type="xs:string" minOccurs="0"/>
+		<xs:element name="Surname" 		type="xs:string"/>
+		<xs:element name="Name" 		type="xs:string"/>
+		<xs:element name="Address" 		type="xs:string"/>
+		<xs:element name="City" 		type="xs:string"/>
+		<xs:element name="Country" 		type="xs:string"/>
+		<xs:element name="CountryCode" 	type="xs:string"/>
+		<xs:element name="Zip" 			type="xs:string"/>
+		<xs:element name="State" 		type="xs:string" minOccurs="0"/>
+		<xs:element name="StateCode" 	type="xs:string" minOccurs="0"/>
+		<xs:element name="IdType" 		type="xs:string"/>
+		<xs:element name="IdNumber" 	type="xs:string"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="documentkey">
+<xs:sequence>
+	<xs:element name="DocType"   type="DocID"/>
+	<xs:element name="DocNumber" type="xs:string"/>
+	<xs:element name="DocDate"   type="xs:date"/>
+	<xs:element name="DocName"   type="xs:string"	minOccurs="0"/>
+	<xs:element name="OwnerCode" type="xs:string"/>
+	<xs:element name="DocNote"   type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="paymenttype">
+<xs:sequence>
+	<xs:element name="RowNo" 		type="intero"/> 
+	<xs:element name="Code" 		type="xs:string"/> 
+	<xs:element name="CodeDescr" 	type="xs:string"/> 
+	<xs:element name="Currency" 	type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Value" 		type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Date" 		type="xs:date" 		minOccurs="0"/> 
+	<xs:element name="Note" 		type="xs:string"/> 
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rowtype">
+<xs:sequence>
+	<xs:element name="RowNo"			type="intero"/> 
+	<xs:element name="Descr"			type="xs:string"/> 
+	<xs:element name="PackType" 		type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="PackDescr" 		type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Qty" 				type="decimale"/> 
+	<xs:element name="Currency" 		type="xs:string"/> 
+	<xs:element name="Price" 			type="decimale"/> 
+	<xs:element name="Vat" 				type="decimale"/> 
+	<xs:element name="VatPerc" 			type="percentuale"/> 
+	<xs:element name="VatNet" 			type="decimale"/> 
+	<xs:element name="Discount01" 		type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Discount02" 		type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Discount03" 		type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Discount01Desc" 	type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Discount02Desc" 	type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Discount03Desc" 	type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="FinalPrice" 		type="decimale"/> 
+	<xs:element name="TotalPrice" 		type="decimale"/> 
+	<xs:element name="Cost" 			type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Refund" 			type="decimale" 	minOccurs="0"/> 
+	<xs:element name="RefundType" 		type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="PackNo" 			type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Weight" 			type="decimale"		minOccurs="0"/> 
+	<xs:element name="Desc01" 			type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Desc02" 			type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Desc03" 			type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Desc04" 			type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Desc05" 			type="xs:string" 	minOccurs="0"/> 
+	<xs:element name="Value01" 			type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Value02" 			type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Value03" 			type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Value04" 			type="decimale" 	minOccurs="0"/> 
+	<xs:element name="Value05" 			type="decimale" 	minOccurs="0"/> 
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="expeditiontype">
+<xs:sequence>
+	<xs:element name="ExpeditionCode"  type="xs:string" minOccurs="0"/>
+	<xs:element name="ExpeditionDescr" type="xs:string"/>
+	<xs:element name="ExpeditionNo"    type="xs:string"/>
+	<xs:element name="ExpeditionDate"  type="xs:date"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="totaltype">
+<xs:sequence>
+	<xs:element name="TotalQty"        type="xs:string"/>
+	<xs:element name="Currency"        type="xs:string"/>
+	<xs:element name="TotalPrice"      type="decimale"/>
+	<xs:element name="TotalDiscount"   type="decimale"/>
+	<xs:element name="TotalFinalPrice" type="decimale"/>
+	<xs:element name="TotalVat"        type="decimale"/>
+	<xs:element name="TotalNet"        type="decimale"/>
+	<xs:element name="TotalCost"       type="decimale"	minOccurs="0"/>
+	<xs:element name="TotalRefund"     type="decimale"/>
+	<xs:element name="RefDocundType"   type="xs:string" minOccurs="0"/>
+	<xs:element name="DocPackType"     type="xs:string" minOccurs="0"/>
+	<xs:element name="DocPackDesc"     type="xs:string" minOccurs="0"/>
+	<xs:element name="DocPackNo"       type="intero"/>
+	<xs:element name="TotalWeight"     type="decimale"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:element name="Document">
+<xs:complexType>
+	<xs:sequence>
+		<xs:element name="Customer" 	type="anagraphic"	maxOccurs="1" />
+		<xs:element name="Owner" 		type="anagraphic"	maxOccurs="1" />
+		<xs:element name="refCustomer"	type="anagraphic"	maxOccurs="1" />
+		<xs:element name="refDocument"	type="documentkey"	maxOccurs="1" />
+		<xs:element name="Destination" 	type="anagraphic"	maxOccurs="1" />
+		<xs:element name="Carrier" 		type="anagraphic" 	maxOccurs="1" />
+		<xs:element name="key" 			type="documentkey"	maxOccurs="1" />
+		<xs:element name="Expedition"	type="expeditiontype" minOccurs="0" maxOccurs="1" />
+		<xs:element name="Totals"       type="totaltype"	maxOccurs="1" />
+		<xs:element name="DocDescr01"   type="xs:string"	minOccurs="0" />
+		<xs:element name="DocValue01"   type="decimale"		minOccurs="0" /> 
+		<xs:element name="DocDescr02"   type="xs:string" 	minOccurs="0" />
+		<xs:element name="DocValue02"   type="decimale" 	minOccurs="0" /> 
+		<xs:element name="DocDescr03"   type="xs:string" 	minOccurs="0" />
+		<xs:element name="DocValue03"   type="decimale" 	minOccurs="0" /> 
+		<xs:element name="DocDescr04"   type="xs:string" 	minOccurs="0" />
+		<xs:element name="DocValue04"   type="decimale" 	minOccurs="0" /> 
+		<xs:element name="DocDescr05"   type="xs:string" 	minOccurs="0" />
+		<xs:element name="DocValue05"   type="decimale" 	minOccurs="0" /> 
+		<xs:element name="Payment" 		type="paymenttype"	minOccurs="0" maxOccurs="unbounded" />		
+		<xs:element name="Row" 			type="rowtype"		minOccurs="0" maxOccurs="unbounded" />
+	</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>

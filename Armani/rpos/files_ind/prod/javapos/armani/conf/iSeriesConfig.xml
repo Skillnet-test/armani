@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE iSeries SYSTEM "iSeriesConfig.dtd">
+<!--Armani iSeries XML configuration -->
+<!--  (C) C.S.A. s.r.l. -->
+<!--  Author : Vincenzo Amoruso -->
+<iSeries>
+<signed>200503101520</signed>
+<address>172.27.1.50</address>
+<user>RETEK</user>
+<password>KETER123</password>
+<libraries>ARMANI,KLDADB</libraries>
+<timeout>10</timeout>
+<secure>false</secure>
+<procedure>{CALL KLDADB.GETNEWCOD(?)}</procedure>
+<proceduredefault>{CALL KLDADB.GETDFTCOD( ?, ?, ?, ?, ?)}</proceduredefault>
+<proxy>no</proxy>
+<proxyaddress>0.0.0.0</proxyaddress>
+</iSeries>

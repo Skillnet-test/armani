@@ -1,0 +1,17 @@
+Modifications to consider for 2.6.0.1
+
+1. New message monitor
+     msg_monitor script (already added to startemall.sh)
+     *_messages.ser in "files/prod/tmp" dir might need to be deleted for each new build
+     messageHolders.ser in "files/prod/tmp" dir might need to be deleted for each new build
+   It does require that the messaging.cfg file be pointed at a working SonicMQ JMS server - Mike A.
+
+2. Added field to CHELSEA_REDEEMABLE_BUYBACK either run:
+     ALTER TABLE CHELSEA_REDEEMABLE_BUYBACK ADD REDEEMABLE_BUYBACK_AMOUNT VARCHAR(75) NULL;
+   or rebuild entire db from scripts. - Mike A. 
+
+3. Added fields to CHELSEA_TXN_TYPE_SUMMARY either run:
+     ALTER TABLE CHELSEA_TXN_TYPE_SUMMARY ADD TXN_TYPE_SUMMARY_DEAL_TOTAL VARCHAR(75) NULL;
+     ALTER TABLE CHELSEA_TXN_TYPE_SUMMARY ADD TXN_TYPE_SUMMARY_MARKDOWN_TOT VARCHAR(75) NULL;
+     ALTER TABLE CHELSEA_TXN_TYPE_SUMMARY ADD TXN_TYPE_SUMMARY_DISCOUNT_TOT VARCHAR(75) NULL;
+   or rebuild entire db from scripts. - Mike A. 

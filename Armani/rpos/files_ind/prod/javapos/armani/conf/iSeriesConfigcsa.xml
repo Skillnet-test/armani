@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE iSeries SYSTEM "iSeriesConfig.dtd">
+<!--Armani iSeries XML configuration -->
+<!--  (C) C.S.A. s.r.l. -->
+<!--  Author : Vincenzo Amoruso -->
+<iSeries>
+<signed>200503101520</signed>
+<address>192.192.193.32</address>
+<user>VINCENZO</user>
+<password>mastro72</password>
+<libraries>ARMANI,QGPL</libraries>
+<timeout>10</timeout>
+<secure>false</secure>
+<procedure>{CALL ARMANI.GETNEWCOD(?)}</procedure>
+<proxy>no</proxy>
+<proxyaddress>192.192.194.217</proxyaddress>
+</iSeries>

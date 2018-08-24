@@ -1,0 +1,1 @@
+java com.chelseasystems.cs.dataaccess.codegen.DAOGenerator

@@ -1,0 +1,16 @@
+Refer to previous changelogs for previous build notes.
+
+
+VAT Information
+
+
+
+
+
+
+
+
+Promotions
+
+Database support for the new promotions. This  will allow for the maintenace of promotions and
+automatic download.

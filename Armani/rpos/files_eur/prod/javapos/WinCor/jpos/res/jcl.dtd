@@ -1,0 +1,51 @@
+<?xml encoding="UTF-8"?>
+
+<!-- Revision: 0 1.2 http://www.nrf-arts.com/JavaPOS/JCL/jcl.dtd, docs, xml4j2, xml4j2_0_13  -->
+
+<!ELEMENT JposEntries (JposEntry)*>
+
+<!ELEMENT JposEntry ( (creation, vendor, jpos, product, prop+)
+			| jposshortcut
+			| ( referenceentry, vendor, prop+ ) ) >
+<!ATTLIST JposEntry logicalName CDATA #REQUIRED>
+
+<!ELEMENT creation (#PCDATA)>
+<!ELEMENT vendor (#PCDATA)>
+<!ELEMENT jpos (#PCDATA)>
+<!ELEMENT product (#PCDATA)>
+<!ELEMENT prop (#PCDATA)>
+
+<!ATTLIST creation
+          factoryClass CDATA #REQUIRED
+          serviceClass CDATA #REQUIRED>
+
+<!ATTLIST vendor
+          name CDATA #REQUIRED
+          url CDATA #IMPLIED>
+
+<!ATTLIST jpos
+          version CDATA #REQUIRED
+          category ( BumpBar | CashChanger | CashDrawer | CoinDispenser | FiscalPrinter |
+                     HardTotals | Keylock | RemoteOrderDisplay | Scale | Scanner | SignatureCapture |
+                     ToneIndicator | LineDisplay | MICR | MSR | PinPad | POSKeyboard |
+                     POSPrinter | POSPower | PointCardRW ) #REQUIRED>
+
+<!ATTLIST product
+          name CDATA #REQUIRED
+          description CDATA #REQUIRED
+          url CDATA #IMPLIED>
+
+<!ATTLIST prop
+          name CDATA #REQUIRED
+          value CDATA #REQUIRED>
+
+<!ATTLIST referenceentry
+          referencedescription CDATA #REQUIRED>
+
+<!ATTLIST jposshortcut
+          category ( BumpBar | CashChanger | CashDrawer | CoinDispenser | FiscalPrinter |
+                     HardTotals | Keylock | RemoteOrderDisplay | Scale | Scanner | SignatureCapture |
+                     ToneIndicator | LineDisplay | MICR | MSR | PinPad | POSKeyboard |
+                     POSPrinter | POSPower | PointCardRW ) #REQUIRED
+          name CDATA #REQUIRED>
+

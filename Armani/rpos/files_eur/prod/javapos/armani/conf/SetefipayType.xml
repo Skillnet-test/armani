@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Payment>
+		<prop name="VISA"       setefivalue="4"	identity_bin_min="400000" identity_bin_max="499999"	typecode="148" />
+		<prop name="AMEX"	    setefivalue="5"	identity_bin_min="370000" identity_bin_max="379999" typecode="150" />
+		<prop name="DINERS"	    setefivalue="6"	identity_bin_min="304000" identity_bin_max="389999" typecode="152" />
+		<prop name="J.C.B."	    setefivalue="7"	identity_bin_min="352800" identity_bin_max="358999" typecode="154" />
+		<prop name="MASTERCARD" setefivalue="8"	identity_bin_min="500000" identity_bin_max="699999" typecode="162" />
+		<prop name="MONETA"     setefivalue="3"	identity_bin_min="000000" identity_bin_max="000000"	typecode="160" />
+		<prop name="DCRD"       setefivalue="1"	identity_bin_min="000000" identity_bin_max="000000" typecode="145" />
+</Payment>
+	

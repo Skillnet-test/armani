@@ -1,0 +1,12 @@
+@create_type.sql.sql
+@create_pkg.sql
+@create_item_soh_func
+@create_item_pkg.sql
+@create_item_dnld_pkg.sql
+@create_util_pkg.sql
+@create_cust_pkg.sql
+@create_rsvo_csgo_pkg.sql
+@create_txn_hist_pkg.sql
+@create_validate_pkg.sql
+@create_ga_pkg.sql
+@create_garpos_fiscal_pkg.sql

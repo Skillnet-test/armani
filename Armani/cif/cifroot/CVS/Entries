@@ -1,0 +1,26 @@
+D/Class////
+D/Color////
+D/CurrencyRT////
+D/Customer////
+D/Dept////
+D/Employee////
+D/Encrypt////
+D/Fiscal_Doc_No////
+D/Inventory////
+D/Item////
+D/Promotion////
+D/RSVO_CSGO////
+D/Redeemable////
+D/Register////
+D/Season////
+D/Size////
+D/Store////
+D/Subclass////
+D/Sups////
+D/Tax////
+D/Tax_Free////
+D/Txn_Hist////
+/CIFManager.properties/1.7/Wed Jul 06 23:12:55 2005/-ko/TGLOBAL_REL_2000
+/start_ccno_encryption.sh/1.1.2.1/Fri Mar 23 23:01:50 2007/-kb/TGLOBAL_REL_2000
+/startcif.bat/1.1/Sat Mar 05 21:55:17 2005/-ko/TGLOBAL_REL_2000
+/startcif.sh/1.2/Mon Mar 07 05:52:59 2005/-ko/TGLOBAL_REL_2000

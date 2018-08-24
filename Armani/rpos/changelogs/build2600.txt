@@ -1,0 +1,44 @@
+Modifications to consider for 2.6.0.0
+
+1. New field in database table "CHELSEA_STORE". - Mike A.
+2. Two new jars are required for the servers (jms.jar and sonicmq-client.jar).  
+   javaenvunix has been updated to reflect the new jars. - jrg
+3. Please see instruction below if Ingenico device is needed. - David
+
+
+
+
+Ingenico (ET1000) device installation Instructions
+==================================================
+
+System Administer Overview:
+
+1.	It is a JPOS device.
+2.	Configuration file chelsea_jpos.xml lives on chelsea_store/files/prod/jpos.  
+		Other JPOS devices should also be defined in this file.
+3.	DTD file jcl.dtd is also located in the directory chelsea_store/files/prod/javapos.
+4.	Properties file: jpos.properties should be in a directory jpos.res in the classpath.  
+		This file defines where the chelsea_jpos.xml configuration should be.
+5.	The following jar files are needed to be in classpath:  comm.jar, et1000jpos15201.jar, 
+		jclall.jar, jpos15.jar (or jpos14.jar), and xerces.jar.
+
+
+Configurations:
+
+1.	Config file: client_master.cfg.  A new boot strap class should be added to the 
+		parameter BOOT_STRAP - com.chelseasystems.cs.msr.ET1000BootStrap
+2.	Config file: payment.cfg.  Parameter CREDIT_CARD.BUILDER should points to the 
+		class: com.chelseasystems.cs.swing.builder.ET1000CreditCardBldr
+3.	Config file: msr.cfg.  MSR_DEVICE_TYPE, MSR_LOGICAL_NAME and other parameters 
+		should be properly defined.
+5.	.icf files are files define the layout of the screens (forms) display on the 
+		device found in /chelsea_store/files/prod/jpos/ingenico.  These configuration 
+		files allow user to change the message and company logo to be displayed.
+
+Issues:
+
+1.	The device is an MSR/PIN/SigCap device for the customer.  The application supports 
+		keyboard (non JPOS) MSR for consultant when the Ingenico device is present.
+2.	It does not work with epsonJpos4win.jar (an Epson jpos 1.4 jar file).
+
+==== End of Ingenico instruction =====

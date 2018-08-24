@@ -1,0 +1,6 @@
+Modifications to consider for 2.6.0.4
+
+1.  RNS.zip has changed in library - JG
+
+2.  In the server, set TXN_SUMMARY_AVAILABLE=false in txnposter.cfg.  
+    Please do this for every build.  - David

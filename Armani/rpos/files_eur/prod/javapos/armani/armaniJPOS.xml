@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "JposEntries" "../files/prod/javapos/armani/jcl.dtd">
+<JposEntries>
+	<JposEntry logicalName="ArmaniJPOSFP90">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonFPService"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="FiscalPrinter"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="PAYCASH"	value="1"		type="Integer"  />
+		<prop name="PAYCHEQ"	value="2"		type="Integer"  />
+		<prop name="PAYCARD"	value="3"		type="Integer"  />
+		<prop name="PAYCOUP"	value="4"		type="Integer"  />
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM5"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="portspeed"	value="19200"	type="Integer"	/>
+		<prop name="flowin"		value="RTS/CTS In"	type="String"   />
+		<prop name="flowout"	value="RTS/CTS out"	type="String"	/>
+		<prop name="timeout"	value="1000"	type="Integer"	/>
+		<prop name="databits"	value="8"		type="Integer"	/>
+		<prop name="stopbits"	value="1"		type="Integer"	/>
+		<prop name="parity"		value="none"	type="String"	/>		
+		<prop name="loglevel"	value="LOG_APPL_PDU"	type="String"  />
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+	</JposEntry>
+
+	<JposEntry logicalName="ArmaniJPOSFPDisplay">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonFPDisplayService"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="LineDisplay"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM5"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="portspeed"	value="19200"	type="Integer"	/>
+		<prop name="flowin"		value="RTS/CTS In"	type="String"   />
+		<prop name="flowout"	value="RTS/CTS out"	type="String"	/>
+		<prop name="timeout"	value="1000"	type="Integer"	/>
+		<prop name="databits"	value="8"		type="Integer"	/>
+		<prop name="stopbits"	value="1"		type="Integer"	/>
+		<prop name="parity"		value="none"	type="String"	/>		
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="loglevel"	value="LOG_APPL_PDU"	type="String"  />
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+	</JposEntry>
+	<JposEntry logicalName="ArmaniJPOSFPDrawer">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonFPDrawerService"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="CashDrawer"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM5"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="loglevel"	value="LOG_ERROR"	type="String"  />
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+	</JposEntry>
+
+	<JposEntry logicalName="ArmaniJPOSTM90">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonTM90Service"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="POSPrinter"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM5"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="portspeed"	value="9600"	type="Integer"	/>
+		<prop name="flowin"		value="RTS/CTS In"	type="String"   />
+		<prop name="flowout"	value="RTS/CTS out"	type="String"	/>
+		<prop name="timeout"	value="1000"	type="Integer"	/>
+		<prop name="databits"	value="8"		type="Integer"	/>
+		<prop name="stopbits"	value="1"		type="Integer"	/>
+		<prop name="parity"		value="none"	type="String"	/>
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String"/>
+		<prop name="charset"	value="1252" 	type="String"/>
+	</JposEntry>
+
+	<JposEntry logicalName="ArmaniJPOSDM110">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonDM110Service"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="LineDisplay"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM5"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+		<prop name="charset"	value="1252" 	type="String"/>
+	</JposEntry>
+
+	<JposEntry logicalName="ArmaniJPOSTMCashDrawer">
+		<creation
+			factoryClass="com.armani.jpos.EpsonJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.EpsonTMDrawerService"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="CashDrawer"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Giorgio Armani spa"
+				name="FP90/TM90 epson driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM5"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="logfile"	value="../files/prod/javapos/armani/JPOSLog.txt" type="String" />
+		<prop name="logrotate"  value="true"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+	</JposEntry>
+
+
+	<JposEntry logicalName="ArmaniJPOSSetefi">
+		<creation
+			factoryClass="com.armani.jpos.SetefiJposServiceInstanceFactory"
+			serviceClass="com.armani.jpos.SetefiCATService"
+		/>
+		<vendor
+			name="Giorgio Armani S.P.A."
+			url="http://www.giorgioarmani.com"
+		/>
+		<jpos
+			category="CAT"
+			version="1.7"
+		/>
+		<product
+				description="JavaPOS Service for Credit card Auth"
+				name="Setefi driver for JavaPOS(TM) Standard"
+				url="http://www.javapos.com">
+		</product>
+		
+		<prop name="archtype"	value="win32"	type="String"	/>
+		<prop name="porttype"	value="serial"	type="String"	/>
+		<prop name="portname"	value="COM6"	type="String" 	/>
+		<prop name="portshared"	value="true"	type="Boolean"	/>
+		<prop name="portspeed"	value="9600"	type="Integer"	/>
+		<prop name="timeout"	value="3600"	type="Integer"	/>
+		<prop name="databits"	value="8"		type="Integer"	/>
+		<prop name="stopbits"	value="1"		type="Integer"	/>
+		<prop name="parity"		value="none"	type="String"	/>
+		<prop name="loglevel"	value="LOG_NORMAL"	type="String"  />
+		<prop name="logfile"	value="../files/prod/javapos/armani/CATlog.txt" type="String" />
+		<prop name="logrotate"  value="false"	type="Boolean" />
+		<prop name="logformat"  value="%d{ISO8601} [%t - %-25.35c - %-5.10p] &quot;%m&quot;%n"	type="String" />
+		
+	</JposEntry>
+
+
+</JposEntries>
+

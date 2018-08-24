@@ -1,0 +1,2 @@
+create or replace TYPE T_COUNTER_TABLE IS TABLE OF NUMBER;
+/

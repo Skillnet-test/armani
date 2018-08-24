@@ -1,0 +1,1 @@
+java -Djava.security.policy=../../library/policy -DUSER_CONFIG=client_master.cfg com.ga.util.monitor.ProcessMonitor

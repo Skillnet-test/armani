@@ -1,0 +1,26 @@
+1. 	Demo/test data are now defined in XML files.  All the XML files are located at 
+    files/prod/database/demodata/.  Another file found here is loading.txt, it 
+    contains a list of data files to be loaded by createdb.bat.  Modify this file 
+    if you want to load your own data.
+
+2.  There is a new utility program to help you create the tables and load data: createdb.bat (or created.sh).
+ 
+		Here are the steps you may want to follow:
+		 
+		i.  Create an empty database.
+		ii.  Make sure your jdbc.cfg points to the empty database created.
+		iii.  Go to the bin directory, do javaenv.
+		iv.  Type createdb.bat (or createdb.sh). That is!
+		 
+		What does createdb do?
+		 
+		i. execute create_table.sql
+		ii. execute create_pk.sql
+		iii. execute create_view.sql
+		iv. execute create_chelsea_sequence.sql
+		v. execute chelsea_system_data
+		vi. load demo data defined in loading.txt
+		vii. execute create_fk.sql
+ 
+
+3.  There is new security in place as of this label.  All builds will be accompianied by ../../library/jssecerts, which contains a self-signed Retek certificate of authenticity for the clients and servers to use.  The only change to the build process will be to include the password to open that file (storepass) and the password to use the Retek certificate (keypass) found within it.  The passwords should be specified in build.properties read by the master Ant build.xml file.  See management for above passwords.

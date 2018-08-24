@@ -1,0 +1,7 @@
+=============================================================================
+HOWTO install a USB printer...
+=============================================================================
+1. Windows requires a USB printer driver.   A dialog window will open the
+	first time a USB printer is connected. 
+2. The device driver to install is located in the USBController folder.   It is OS specific.
+3. You  will also have to copy the DLL to the bin folder of rpos.

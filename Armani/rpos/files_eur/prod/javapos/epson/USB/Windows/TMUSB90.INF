@@ -1,0 +1,68 @@
+; Installation inf for the EPSON USB Controller for TM/BA/EU Printers
+;
+; Copyright(C) 1999-2000 SEIKO EPSON Corp.
+;
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%EPSON.Mfg%
+DriverVer=06/29/2000, 1.10.0.0
+
+[SourceDisksNames]
+1=%TMUSBDisk%,,,
+
+[SourceDisksFiles]
+tmusb90.sys = 1
+tmusb90.inf = 1
+
+[Manufacturer]
+%EPSON.Mfg%=TMUSB.Section
+
+[TMUSB.Section]
+%USB\VID_04B8&PID_0202.DeviceDesc%=TMUSB.Dev,USB\VID_04B8&PID_0202
+
+;[PreCopySection]
+;HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+TMUSB.Files.Ext = 10,System32\Drivers
+TMUSB.Files.Inf = 10,INF
+
+[TMUSB.Dev]
+CopyFiles=TMUSB.Files.Ext, TMUSB.Files.Inf
+AddReg=TMUSB.AddReg
+
+[TMUSB.Dev.NT]
+CopyFiles=TMUSB.Files.Ext, TMUSB.Files.Inf
+AddReg=TMUSB.AddReg
+
+[TMUSB.Dev.NT.Services]
+Addservice = TMUSB, 0x00000002, TMUSB.AddService
+
+[TMUSB.AddService]
+DisplayName    = %TMUSB.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\tmusb90.sys
+LoadOrderGroup = Base
+
+[TMUSB.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,tmusb90.sys
+
+[TMUSB.Files.Ext]
+tmusb90.sys
+
+[TMUSB.Files.Inf]
+tmusb90.Inf
+
+;---------------------------------------------------------------;
+
+[Strings]
+EPSON.Mfg="EPSON"
+USB\VID_04B8&PID_0202.DeviceDesc="EPSON USB Controller for TM/BA/EU Printers"
+TMUSB.SvcDesc="EPSON USB Device Driver for TM/BA/EU Printers"
+TMUSBDisk="EPSON USB Device Driver for TM/BA/EU Printers Installation Disk"

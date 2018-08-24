@@ -1,0 +1,1753 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="Invoice"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="609"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="0"
+		 rightMargin="0"
+		 topMargin="0"
+		 bottomMargin="0"
+		 whenNoDataType="NoPages"
+		 scriptletClass="com.armani.reports.CsaScriptlet"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.encoding" value="UTF-8" />
+	<property name="ireport.scriptlethandling" value="2" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+	<parameter name="FATTURA" isForPrompting="true" class="java.lang.String"/>
+	<field name="RROWNO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[RowNo]]></fieldDescription>
+	</field>
+	<field name="RDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[Descr]]></fieldDescription>
+	</field>
+	<field name="RPACKTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[PackType]]></fieldDescription>
+	</field>
+	<field name="RPACKDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[PackDescr]]></fieldDescription>
+	</field>
+	<field name="RQTY" class="java.lang.Float">
+		<fieldDescription><![CDATA[Qty]]></fieldDescription>
+	</field>
+	<field name="RCURRENCY" class="java.lang.String">
+		<fieldDescription><![CDATA[Currency]]></fieldDescription>
+	</field>
+	<field name="RPRICE" class="java.lang.Float">
+		<fieldDescription><![CDATA[Price]]></fieldDescription>
+	</field>
+	<field name="RVAT" class="java.lang.Float">
+		<fieldDescription><![CDATA[Vat]]></fieldDescription>
+	</field>
+	<field name="RVATPERC" class="java.lang.String">
+		<fieldDescription><![CDATA[VatPerc]]></fieldDescription>
+	</field>
+	<field name="RVATNET" class="java.lang.Float">
+		<fieldDescription><![CDATA[VatNet]]></fieldDescription>
+	</field>
+	<field name="RDISCOUNT01" class="java.lang.Float">
+		<fieldDescription><![CDATA[Discount01]]></fieldDescription>
+	</field>
+	<field name="RDISCOUNT02" class="java.lang.Float">
+		<fieldDescription><![CDATA[Discount02]]></fieldDescription>
+	</field>
+	<field name="RDISCOUNT03" class="java.lang.Float">
+		<fieldDescription><![CDATA[Discount03]]></fieldDescription>
+	</field>
+	<field name="RDISCOUNT01DESC" class="java.lang.String">
+		<fieldDescription><![CDATA[Discount01Desc]]></fieldDescription>
+	</field>
+	<field name="RDISCOUNT02DESC" class="java.lang.String">
+		<fieldDescription><![CDATA[Discount02Desc]]></fieldDescription>
+	</field>
+	<field name="RDISCOUNT03DESC" class="java.lang.String">
+		<fieldDescription><![CDATA[Discount03Desc]]></fieldDescription>
+	</field>
+	<field name="RFINALPRICE" class="java.lang.Float">
+		<fieldDescription><![CDATA[FinalPrice]]></fieldDescription>
+	</field>
+	<field name="RTOTALPRICE" class="java.lang.Float">
+		<fieldDescription><![CDATA[TotalPrice]]></fieldDescription>
+	</field>
+	<field name="RCOST" class="java.lang.Float">
+		<fieldDescription><![CDATA[Cost]]></fieldDescription>
+	</field>
+	<field name="RREFUND" class="java.lang.Float">
+		<fieldDescription><![CDATA[Refund]]></fieldDescription>
+	</field>
+	<field name="RREFUNDTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[RefundType]]></fieldDescription>
+	</field>
+	<field name="RPACKNO" class="java.lang.Float">
+		<fieldDescription><![CDATA[PackNo]]></fieldDescription>
+	</field>
+	<field name="RWEIGHT" class="java.lang.Float">
+		<fieldDescription><![CDATA[Weight]]></fieldDescription>
+	</field>
+	<field name="RDESC01" class="java.lang.String">
+		<fieldDescription><![CDATA[Desc01]]></fieldDescription>
+	</field>
+	<field name="RDESC02" class="java.lang.String">
+		<fieldDescription><![CDATA[Desc02]]></fieldDescription>
+	</field>
+	<field name="RDESC03" class="java.lang.String">
+		<fieldDescription><![CDATA[Desc03]]></fieldDescription>
+	</field>
+	<field name="RDESC04" class="java.lang.String">
+		<fieldDescription><![CDATA[Desc04]]></fieldDescription>
+	</field>
+	<field name="RDESC05" class="java.lang.String">
+		<fieldDescription><![CDATA[Desc05]]></fieldDescription>
+	</field>
+	<field name="RVALUE01" class="java.lang.Float">
+		<fieldDescription><![CDATA[Value01]]></fieldDescription>
+	</field>
+	<field name="RVALUE02" class="java.lang.Float">
+		<fieldDescription><![CDATA[Value02]]></fieldDescription>
+	</field>
+	<field name="RVALUE03" class="java.lang.Float">
+		<fieldDescription><![CDATA[Value03]]></fieldDescription>
+	</field>
+	<field name="RVALUE04" class="java.lang.Float">
+		<fieldDescription><![CDATA[Value04]]></fieldDescription>
+	</field>
+	<field name="RVALUE05" class="java.lang.Float">
+		<fieldDescription><![CDATA[Value05]]></fieldDescription>
+	</field>
+	<field name="CTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Type]]></fieldDescription>
+	</field>
+	<field name="CCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Code]]></fieldDescription>
+	</field>
+	<field name="CCODEDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/CodeDescr]]></fieldDescription>
+	</field>
+	<field name="CTITLE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Title]]></fieldDescription>
+	</field>
+	<field name="CSURNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Surname]]></fieldDescription>
+	</field>
+	<field name="CNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Name]]></fieldDescription>
+	</field>
+	<field name="CADDRESS" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Address]]></fieldDescription>
+	</field>
+	<field name="CCITY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/City]]></fieldDescription>
+	</field>
+	<field name="CCOUNTRY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Country]]></fieldDescription>
+	</field>
+	<field name="CCOUNTRYCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/CountryCode]]></fieldDescription>
+	</field>
+	<field name="CZIP" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/Zip]]></fieldDescription>
+	</field>
+	<field name="CSTATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/State]]></fieldDescription>
+	</field>
+	<field name="CSTATECODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/StateCode]]></fieldDescription>
+	</field>
+	<field name="CIDTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/IdType]]></fieldDescription>
+	</field>
+	<field name="CIDNUMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Customer/IdNumber]]></fieldDescription>
+	</field>
+	<field name="OTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Type]]></fieldDescription>
+	</field>
+	<field name="OCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Code]]></fieldDescription>
+	</field>
+	<field name="OCODEDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/CodeDescr]]></fieldDescription>
+	</field>
+	<field name="OTITLE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Title]]></fieldDescription>
+	</field>
+	<field name="ONAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Name]]></fieldDescription>
+	</field>
+	<field name="OSURNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Surname]]></fieldDescription>
+	</field>
+	<field name="OADDRESS" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Address]]></fieldDescription>
+	</field>
+	<field name="OCITY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/City]]></fieldDescription>
+	</field>
+	<field name="OCOUNTRY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Country]]></fieldDescription>
+	</field>
+	<field name="OCOUNTRYCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/CountryCode]]></fieldDescription>
+	</field>
+	<field name="OZIP" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/Zip]]></fieldDescription>
+	</field>
+	<field name="OSTATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/State]]></fieldDescription>
+	</field>
+	<field name="OSTATECODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/StateCode]]></fieldDescription>
+	</field>
+	<field name="OIDTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/IdType]]></fieldDescription>
+	</field>
+	<field name="OIDNUMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Owner/IdNumber]]></fieldDescription>
+	</field>
+	<field name="ETYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Type]]></fieldDescription>
+	</field>
+	<field name="ECODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Code]]></fieldDescription>
+	</field>
+	<field name="ECODEDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/CodeDescr]]></fieldDescription>
+	</field>
+	<field name="ETITLE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Title]]></fieldDescription>
+	</field>
+	<field name="ENAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Name]]></fieldDescription>
+	</field>
+	<field name="ESURNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Surname]]></fieldDescription>
+	</field>
+	<field name="EADDRESS" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Address]]></fieldDescription>
+	</field>
+	<field name="ECITY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/City]]></fieldDescription>
+	</field>
+	<field name="ECOUNTRY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Country]]></fieldDescription>
+	</field>
+	<field name="ECOUNTRYCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/CountryCode]]></fieldDescription>
+	</field>
+	<field name="EZIP" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/Zip]]></fieldDescription>
+	</field>
+	<field name="ESTATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/State]]></fieldDescription>
+	</field>
+	<field name="ESTATECODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/StateCode]]></fieldDescription>
+	</field>
+	<field name="EIDTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/IdType]]></fieldDescription>
+	</field>
+	<field name="EIDNUMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/IdNumber]]></fieldDescription>
+	</field>
+	<field name="EDOCTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/DocType]]></fieldDescription>
+	</field>
+	<field name="EDOCNUMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/DocNumber]]></fieldDescription>
+	</field>
+	<field name="EDOCDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/DocDate]]></fieldDescription>
+	</field>
+	<field name="EDOCNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/DocName]]></fieldDescription>
+	</field>
+	<field name="EDOCOWNERCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/DocOwnerCode]]></fieldDescription>
+	</field>
+	<field name="EDOCNOTE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Reference/DocNote]]></fieldDescription>
+	</field>
+	<field name="DTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Type]]></fieldDescription>
+	</field>
+	<field name="DCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Code]]></fieldDescription>
+	</field>
+	<field name="DCODEDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/CodeDescr]]></fieldDescription>
+	</field>
+	<field name="DTITLE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Title]]></fieldDescription>
+	</field>
+	<field name="DNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Name]]></fieldDescription>
+	</field>
+	<field name="DSURNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Surname]]></fieldDescription>
+	</field>
+	<field name="DADDRESS" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Address]]></fieldDescription>
+	</field>
+	<field name="DCITY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/City]]></fieldDescription>
+	</field>
+	<field name="DCOUNTRY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Country]]></fieldDescription>
+	</field>
+	<field name="DCOUNTRYCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/CountryCode]]></fieldDescription>
+	</field>
+	<field name="DZIP" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/Zip]]></fieldDescription>
+	</field>
+	<field name="DSTATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/State]]></fieldDescription>
+	</field>
+	<field name="DSTATECODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/StateCode]]></fieldDescription>
+	</field>
+	<field name="DIDTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/IdType]]></fieldDescription>
+	</field>
+	<field name="DIDNUMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Destination/IdNumber]]></fieldDescription>
+	</field>
+	<field name="VTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Type]]></fieldDescription>
+	</field>
+	<field name="VCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Code]]></fieldDescription>
+	</field>
+	<field name="VCODEDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/CodeDescr]]></fieldDescription>
+	</field>
+	<field name="VTITLE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Title]]></fieldDescription>
+	</field>
+	<field name="VNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Name]]></fieldDescription>
+	</field>
+	<field name="VSURNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Surname]]></fieldDescription>
+	</field>
+	<field name="VADDRESS" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Address]]></fieldDescription>
+	</field>
+	<field name="VCITY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/City]]></fieldDescription>
+	</field>
+	<field name="VCOUNTRY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Country]]></fieldDescription>
+	</field>
+	<field name="VCOUNTRYCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/CountryCode]]></fieldDescription>
+	</field>
+	<field name="VZIP" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/Zip]]></fieldDescription>
+	</field>
+	<field name="VSTATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/State]]></fieldDescription>
+	</field>
+	<field name="VSTATECODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/StateCode]]></fieldDescription>
+	</field>
+	<field name="VIDTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/IdType]]></fieldDescription>
+	</field>
+	<field name="VIDNUMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Carrier/IdNumber]]></fieldDescription>
+	</field>
+	<field name="HDOCTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocType]]></fieldDescription>
+	</field>
+	<field name="KDOCNUMBER" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/key/DocNumber]]></fieldDescription>
+	</field>
+	<field name="KDOCDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/key/DocDate]]></fieldDescription>
+	</field>
+	<field name="KDOCNAME" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/key/DocName]]></fieldDescription>
+	</field>
+	<field name="HOWNERCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/OwnerCode]]></fieldDescription>
+	</field>
+	<field name="KDOCNOTE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/key/DocNote]]></fieldDescription>
+	</field>
+	<field name="HEXPEDITIONCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/ExpeditionCode]]></fieldDescription>
+	</field>
+	<field name="HEXPEDITIONDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/ExpeditionDescr]]></fieldDescription>
+	</field>
+	<field name="HEXPEDITIONNO" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/ExpeditionNo]]></fieldDescription>
+	</field>
+	<field name="HEXPEDITIONDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/ExpeditionDate]]></fieldDescription>
+	</field>
+	<field name="HTOTALQTY" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Totals/TotalQty]]></fieldDescription>
+	</field>
+	<field name="HCURRENCY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Totals/Currency]]></fieldDescription>
+	</field>
+	<field name="HTOTALPRICE" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Totals/TotalPrice]]></fieldDescription>
+	</field>
+	<field name="HTOTALDISCOUNT" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/TotalDiscount]]></fieldDescription>
+	</field>
+	<field name="TTOTALFINALPRICE" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Totals/TotalFinalPrice]]></fieldDescription>
+	</field>
+	<field name="TTOTALVAT" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Totals/TotalVat]]></fieldDescription>
+	</field>
+	<field name="TTOTALNET" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Totals/TotalNet]]></fieldDescription>
+	</field>
+	<field name="HTOTALCOST" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Totals/TotalCost]]></fieldDescription>
+	</field>
+	<field name="HTOTALREFUND" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Totals/TotalRefund]]></fieldDescription>
+	</field>
+	<field name="HREFUNDTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/RefundType]]></fieldDescription>
+	</field>
+	<field name="HDOCPACKTYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocPackType]]></fieldDescription>
+	</field>
+	<field name="HDOCPACKDESC" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocPackDesc]]></fieldDescription>
+	</field>
+	<field name="HDOCPACKNO" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/DocPackNo]]></fieldDescription>
+	</field>
+	<field name="HTOTALWEIGHT" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/TotalWeight]]></fieldDescription>
+	</field>
+	<field name="HDOCDESCR01" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocDescr01]]></fieldDescription>
+	</field>
+	<field name="HDOCDVALUE01" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/DocValue01]]></fieldDescription>
+	</field>
+	<field name="HDOCDESCR02" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocDescr02]]></fieldDescription>
+	</field>
+	<field name="HDOCDVALUE02" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/DocValue02]]></fieldDescription>
+	</field>
+	<field name="HDOCDESCR03" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocDescr03]]></fieldDescription>
+	</field>
+	<field name="HDOCDVALUE03" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/DocValue03]]></fieldDescription>
+	</field>
+	<field name="HDOCDESCR04" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocDescr04]]></fieldDescription>
+	</field>
+	<field name="HDOCDVALUE04" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/DocValue04]]></fieldDescription>
+	</field>
+	<field name="HDOCDESCR05" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Header/DocDescr05]]></fieldDescription>
+	</field>
+	<field name="HDOCDVALUE05" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Header/DocValue05]]></fieldDescription>
+	</field>
+	<field name="PROWNO" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Payment/RowNo]]></fieldDescription>
+	</field>
+	<field name="PCODE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Payment/Code]]></fieldDescription>
+	</field>
+	<field name="PCODEDESCR" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Payment/CodeDescr]]></fieldDescription>
+	</field>
+	<field name="PCURRENCY" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Payment/Currency]]></fieldDescription>
+	</field>
+	<field name="PVALUE" class="java.lang.Float">
+		<fieldDescription><![CDATA[/Document/Payment/Value]]></fieldDescription>
+	</field>
+	<field name="PDATE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Payment/Date]]></fieldDescription>
+	</field>
+	<field name="PNOTE" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/Payment/Note]]></fieldDescription>
+	</field>
+	<field name="DDESCR01" class="java.lang.String">
+		<fieldDescription><![CDATA[/Document/DocDescr01]]></fieldDescription>
+	</field>
+	<variable name="TOTPAG" class="java.lang.Integer" resetType="Report" calculation="Nothing">
+		<variableExpression><![CDATA[$V{PAGE_NUMBER}]]></variableExpression>
+	</variable>
+	<variable name="NPAG" class="java.lang.Integer" resetType="Page" calculation="Count">
+		<variableExpression><![CDATA[$V{PAGE_NUMBER}]]></variableExpression>
+	</variable>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="1"  isSplitAllowed="true" >
+			</band>
+		</title>
+		<pageHeader>
+			<band height="84"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="9"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="26"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="79"
+						y="0"
+						width="183"
+						height="14"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="RDESCR"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RDESCR}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="453"
+						y="1"
+						width="68"
+						height="14"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="RTOTALPRICE"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1250" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{RTOTALPRICE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="264"
+						y="0"
+						width="30"
+						height="14"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="RQTY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{RQTY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="###0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="379"
+						y="0"
+						width="54"
+						height="14"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="RVAT"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{RVAT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="352"
+						y="0"
+						width="27"
+						height="14"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="RVARPERC"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RVATPERC}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="###0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="295"
+						y="0"
+						width="53"
+						height="14"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="RVATNET"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{RVATNET}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="538"
+						y="3"
+						width="53"
+						height="7"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-6"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[xxxxxxxxxxxxxxxxxxxx]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="79"
+						y="13"
+						width="182"
+						height="13"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="10" isBold="false" isItalic="true" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{RDESC01}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="540"  isSplitAllowed="true" >
+				<printWhenExpression><![CDATA[new Boolean(!(((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).gethidepagefooter()))]]></printWhenExpression>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="100"
+						y="33"
+						width="174"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCNUMBER"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{KDOCNUMBER})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="102"
+						y="57"
+						width="90"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCDATE"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{KDOCDATE})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="102"
+						y="98"
+						width="112"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCNAME"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{KDOCNAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="221"
+						y="0"
+						width="79"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="HTOTALQTY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{HTOTALQTY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="32"
+						y="189"
+						width="272"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CSURNAME"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CSURNAME}+" "+$F{CNAME},20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="33"
+						y="211"
+						width="271"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CADDRESS"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{CADDRESS}.length()<=20) ?((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CADDRESS}, 20):((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CADDRESS}.substring(0,20), 20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="32"
+						y="281"
+						width="272"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CCOUNTRY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CCOUNTRY} + " " + (($F{CSTATE}!=null)?$F{CSTATE}:""), 20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="32"
+						y="259"
+						width="273"
+						height="17"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CZIP"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CZIP} + " " + $F{CCITY}, 20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="327"
+						y="272"
+						width="184"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OADDRESS"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OADDRESS}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="387"
+						y="284"
+						width="123"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OCITY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OCITY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="327"
+						y="296"
+						width="110"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OCOUNTRY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OCOUNTRY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="327"
+						y="284"
+						width="50"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OZIP"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OZIP}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="440"
+						y="296"
+						width="68"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OSTATE"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OSTATE}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="103"
+						y="168"
+						width="353"
+						height="13"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-5"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[CONTRIBUTO AMBIENTALE CONAI ASSOLTO OVE  DOVUTO]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="201"
+						y="317"
+						width="112"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="DUMMY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[(((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).sethidepagefooteron())?" ":" "]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="103"
+						y="117"
+						width="305"
+						height="48"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-10"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="199"
+						y="56"
+						width="174"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCNOTE"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{KDOCNOTE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="329"
+						y="259"
+						width="179"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OSURNAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="33"
+						y="234"
+						width="71"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField-4"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CZIP}, 20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="111"
+						y="234"
+						width="192"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField-5"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CCITY},20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="31"
+						y="351"
+						width="272"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CCOUNTRY-2"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CIDNUMBER},20)]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="554"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="90"
+						y="33"
+						width="174"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCNUMBER"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{KDOCNUMBER})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="90"
+						y="57"
+						width="90"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCDATE"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{KDOCDATE})]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="87"
+						y="79"
+						width="112"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCNAME"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{KDOCNAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="###0" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="221"
+						y="0"
+						width="79"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="HTOTALQTY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{HTOTALQTY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="360"
+						y="34"
+						width="76"
+						height="15"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="TTOTALVAT"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{TTOTALVAT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="#,##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="280"
+						y="34"
+						width="69"
+						height="15"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="TTOTALNET"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.Float"><![CDATA[$F{TTOTALNET}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="26"
+						y="186"
+						width="272"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CSURNAME"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CSURNAME}+" "+$F{CNAME},20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="26"
+						y="209"
+						width="271"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CADDRESS"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{CADDRESS}.length()<=20) ?((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CADDRESS}, 20):((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CADDRESS}.substring(0,20), 20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="27"
+						y="281"
+						width="272"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CCOUNTRY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CCOUNTRY} + " " + (($F{CSTATE}!=null)?$F{CSTATE}:""), 20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="322"
+						y="262"
+						width="184"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OADDRESS"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OADDRESS}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="382"
+						y="274"
+						width="123"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OCITY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OCITY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="322"
+						y="286"
+						width="110"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OCOUNTRY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OCOUNTRY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="322"
+						y="274"
+						width="50"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OZIP"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OZIP}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="435"
+						y="286"
+						width="68"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="OSTATE"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OSTATE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="51"
+						y="233"
+						width="244"
+						height="16"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CADDRESS-1"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[($F{CADDRESS}.length()>20) ?((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CADDRESS}.substring(19,$F{CADDRESS}.length()), 18):" "]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="103"
+						y="146"
+						width="353"
+						height="17"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-5"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[CONTRIBUTO AMBIENTALE CONAI ASSOLTO OVE  DOVUTO]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="201"
+						y="317"
+						width="112"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="DUMMY"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[(((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).sethidepagefooteron())?" ":" "]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="455"
+						y="130"
+						width="121"
+						height="14"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-7"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[XXXXXXXXXXXX]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="89"
+						y="102"
+						width="216"
+						height="39"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-8"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						mode="Opaque"
+						x="307"
+						y="124"
+						width="131"
+						height="17"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="staticText-9"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Arial" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<text><![CDATA[XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="197"
+						y="57"
+						width="201"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="KDOCNOTE"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{KDOCNOTE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="322"
+						y="250"
+						width="179"
+						height="12"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField-1"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="9" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{OSURNAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="26"
+						y="256"
+						width="71"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField-4"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CZIP}, 18)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="100"
+						y="256"
+						width="197"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField-5"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CCITY},18)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="25"
+						y="353"
+						width="272"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="CCOUNTRY-1"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Courier" size="12" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[((com.armani.reports.CsaScriptlet)$P{REPORT_SCRIPTLET}).separa($F{CIDNUMBER},20)]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="401"
+						y="57"
+						width="100"
+						height="18"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="textField"
+						stretchType="NoStretch"
+						positionType="FixRelativeToTop"
+						isPrintRepeatedValues="true"
+						isRemoveLineWhenBlank="false"
+						isPrintInFirstWholeBand="false"
+						isPrintWhenDetailOverflows="false"/>
+					<box topBorder="None" topBorderColor="#000000" leftBorder="None" leftBorderColor="#000000" rightBorder="None" rightBorderColor="#FFFFFF" bottomBorder="None" bottomBorderColor="#000000"/>
+					<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
+						<font fontName="Courier New" pdfFontName="Helvetica" size="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded ="false" pdfEncoding ="Cp1252" isStrikeThrough="false" />
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{DDESCR01}]]></textFieldExpression>
+				</textField>
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

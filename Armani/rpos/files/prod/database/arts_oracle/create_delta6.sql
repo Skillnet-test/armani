@@ -1,0 +1,92 @@
+create table ARM_LOYALTY_RULE
+(
+    ID_RULE  varchar2(128) not null,
+    DC_START  date not null,
+    DC_END  date,
+    ID_STR_RT varchar2(128) not null,
+    TY_CT varchar2(10) not null,
+    POINTS number not null,
+    ID_DPT_POS varchar2(128),
+    ID_CLSS varchar2(128),
+    ID_SBCL varchar2(128),
+    STYLE_NUM varchar2(10)
+);
+
+create table ARM_LOYALTY
+(
+    ID_CT  varchar2(128) not null,
+    LOYALTY_NUM varchar2(20) not null,
+    TY_STR_RT varchar2(30) not null,
+    DC_ISSUED  date not null,
+    ISSUED_BY  varchar2(128) not null,
+    CURRENT_BAL number default 0 not null,
+    LIFETIME_BAL number default 0 not null,
+    FL_STATUS char(1) default 'Y' not null
+);
+
+create table ARM_LOYALTY_HIST
+(
+    LOYALTY_NUM varchar2(20) not null,
+    DC_TRANSACTION date not null,
+    ID_STR_RT varchar2(128) not null,
+    AI_TRN varchar2(128) not null,
+    POINTS number not null,
+    TY_TRN varchar2(60) not null,
+    CD_REASON varchar2(200)
+);
+
+alter table RK_POS_LN_ITM_DTL
+add (
+    LOYALTY_PT number default 0
+);
+
+alter table DO_CF_GF
+add (
+    LOYALTY_NUM varchar2(20)
+);
+
+alter table ARM_LOYALTY_RULE
+    add CONSTRAINT ARM_LOYALTY_RULE_PK PRIMARY KEY (ID_RULE);
+
+alter table ARM_LOYALTY
+    add CONSTRAINT ARM_LOYALTY_PK PRIMARY KEY (LOYALTY_NUM);
+
+alter table TR_TRN add (TRN_SEQ_NUM number(12,0));
+
+update tr_trn set TRN_SEQ_NUM = substr(ai_trn, length(ai_trn) - 3);
+
+CREATE OR REPLACE VIEW "RK_TXN_HEADER" ("CUST_ID",
+    "TY_TRN","ID_STR_RT","TY_STR_RT","ID_OPR","TS_TRN_PRC",
+    "TS_TRN_SBM","TY_GUI_TRN","PAY_TYPES","TOTAL_AMT","AI_TRN",
+    "CONSULTANT_ID","REDUCTION_AMOUNT","NET_AMOUNT",
+    "DISCOUNT_TYPES","ITEMS_IDS","REGISTER_ID","FN_PRS","LN_PRS",
+    "EXP_DT","REF_ID","CURRENCY_CD","IS_SHIPPING") AS 
+    SELECT RK_PAY_TRN.CUST_ID, TR_TRN.TY_TRN, TR_TRN.ID_STR_RT, 
+    PA_STR_RTL.ID_BRAND,  
+TR_TRN.ID_OPR, TR_TRN.TS_TRN_PRC, TR_TRN.TS_TRN_SBM,  
+TR_TRN.TY_GUI_TRN, RK_PAY_TRN.PAY_TYPES, RK_PAY_TRN.TOTAL_AMT,  
+RK_PAY_TRN.AI_TRN, TR_RTL.CONSULTANT_ID, TR_RTL.REDUCTION_AMOUNT,  
+TR_RTL.NET_AMOUNT, TR_RTL.DISCOUNT_TYPES, TR_RTL.ITEMS_IDS,  
+TR_RTL.REGISTER_ID, PA_PRS.FN_PRS, PA_PRS.LN_PRS,  
+DECODE(RK_PAY_TRN.TYPE_ID, 'TRNPSO', ARM_POS_PRS.EXP_DT, 'TRNCGO', ARM_POS_CSG.EXP_DT, NULL) EXP_DT,  
+DECODE(RK_PAY_TRN.TYPE_ID, 'TRNPSO', ARM_POS_PRS.ID_PRESALE, 'TRNCGO', ARM_POS_CSG.ID_CONSIGNMENT, NULL) REF_ID,  
+PA_STR_RTL.TY_CNY CURRENCY_CD,  
+DECODE(RK_SHIP_REQ.SEQ_NUM, NULL, 0, 1) IS_SHIPPING  
+FROM TR_TRN INNER JOIN  
+(  
+ 	 RK_PAY_TRN LEFT OUTER JOIN  
+	 (  
+	 	 TR_RTL LEFT OUTER JOIN PA_PRS ON TR_RTL.CONSULTANT_ID = PA_PRS.ID_PRTY_PRS  
+		 LEFT OUTER JOIN RK_SHIP_REQ ON (RK_SHIP_REQ.AI_TRN=TR_RTL.AI_TRN AND RK_SHIP_REQ.SEQ_NUM=0)  
+		 LEFT OUTER JOIN ARM_POS_PRS ON TR_RTL.AI_TRN = ARM_POS_PRS.AI_TRN  
+		 LEFT OUTER JOIN ARM_POS_CSG ON TR_RTL.AI_TRN = ARM_POS_CSG.AI_TRN  
+	 )  
+	 ON RK_PAY_TRN.AI_TRN = TR_RTL.AI_TRN  
+)  
+ON TR_TRN.AI_TRN=RK_PAY_TRN.AI_TRN AND TR_TRN.TY_TRN IN ('TRNPAY')  
+INNER JOIN PA_STR_RTL ON TR_TRN.ID_STR_RT=PA_STR_RTL.ID_STR_RT;
+
+ALTER TABLE ARM_CT_COMMENTS DROP PRIMARY KEY;
+
+alter table TR_LTM_DSC add (AUTH_CODE VARCHAR2(50));
+

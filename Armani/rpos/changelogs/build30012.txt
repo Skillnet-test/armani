@@ -1,0 +1,26 @@
+Refer to previous changelog for previous build notes.
+
+
+1. Issues around setting appropriate security permissions.
+    -Printing to a receipt printer will not work.
+     This is the result of permissions not assigned in policy file.
+
+    -Messaging is not allowed access to secure sockets.
+     This is the result of permissions not assigned in policy file.
+
+    -Application will not start. An access denied, security exception is thrown.
+     This is the result of an unsigned jar.
+
+These issues are currently being taken care of. IF these issues arise, fall back to previous(weak) policy 
+policy files.
+
+
+2. If IBM JRE is being used. The security has to be configured:
+
+Edit the java.security file in your JRE ( ..\java\jre\lib\security\)
+
+Comment out (i.e. add "#") the following entry:
+security.provider.2=com.ibm.crypto.provider.IBMJCA
+
+Change the following entry: From ".3" to ".2"
+security.provider.2=com.ibm.crypto.provider.IBMJCE

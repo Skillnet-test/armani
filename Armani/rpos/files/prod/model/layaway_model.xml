@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <APPLET_MODEL id="Layaway">
+        <appletModelHome>com.chelseasystems.cs.swing.login.InitialLoginApplet</appletModelHome>
+        <appletModelLocation>255,30</appletModelLocation>
+        <appletModelDesc>Applet navigation model of layaway related screens.</appletModelDesc>
+        <appletModelCreated>08/07/2001 12:37:36.396 CDT</appletModelCreated>
+        <appletModelModified></appletModelModified>
+        <APPLET appletId="com.chelseasystems.cs.swing.layaway.LayPhoneApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.layaway.LayawayReturnApplet</appletModelHolderClass>
+                <appletModelHolderPoint>210,930</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.layaway.LayawayPaymentApplet</appletModelHolderClass>
+                <appletModelHolderPoint>570,930</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.customer.CustomerListApplet</appletModelHolderClass>
+                <appletModelHolderPoint>750,930</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.menu.InitialLayawayMenuApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</appletModelHolderClass>
+                <appletModelHolderPoint>30,570</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.layaway.LayawayReturnApplet</appletModelHolderClass>
+                <appletModelHolderPoint>480,570</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.menu.InitialLayawayMenuApplet</appletModelHolderClass>
+                <appletModelHolderPoint>255,390</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.login.InitialLoginApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.menu.InitialMgmtMenuApplet</appletModelHolderClass>
+                <appletModelHolderPoint>255,210</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.layaway.LayawayPaymentApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.login.InitialLoginApplet</appletModelHolderClass>
+                <appletModelHolderPoint>390,1110</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.layaway.LayPhoneApplet</appletModelHolderClass>
+                <appletModelHolderPoint>570,1110</appletModelHolderPoint>
+                <appletModelHolderType>2</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.pos.PaymentApplet</appletModelHolderClass>
+                <appletModelHolderPoint>750,1110</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+        <APPLET appletId="com.chelseasystems.cs.swing.layaway.LayawayReturnApplet">
+            <APPLET_MODEL_HOLDER>
+                <appletModelHolderClass>com.chelseasystems.cs.swing.layaway.LayPhoneApplet</appletModelHolderClass>
+                <appletModelHolderPoint>480,750</appletModelHolderPoint>
+                <appletModelHolderType>0</appletModelHolderType>
+            </APPLET_MODEL_HOLDER>
+        </APPLET>
+    </APPLET_MODEL>
+</CMS_OBJECT>

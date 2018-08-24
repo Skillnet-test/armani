@@ -1,0 +1,4 @@
+/call_load_txn_hist.sql/1.1/Fri May 13 22:35:05 2005/-ko/TGLOBAL_REL_2000
+/stg_txn_hist.ctl/1.2.2.1/Wed Mar 21 02:31:46 2007/-ko/TGLOBAL_REL_2000
+/stg_txn_hist.log/1.1/Fri May 13 22:35:05 2005/-ko/TGLOBAL_REL_2000
+/txnhistloader.sh/1.1.2.1/Thu Jun 14 00:57:16 2007/-ko/TGLOBAL_REL_2000

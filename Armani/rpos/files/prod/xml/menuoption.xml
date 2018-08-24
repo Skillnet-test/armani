@@ -1,0 +1,2293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+	<MENU_OPTION id="ADD_ADDRESS">
+		<menuoptionLabel>mnu_AddAddress</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_CUST_DETAILS">
+		<menuoptionLabel>mnu_ViewCustomerDetails</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_ROLE_BACKUP">
+		<menuoptionLabel>Add BACKUP Role</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_BENEFIT">
+		<menuoptionLabel>Add Benefit</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_CONSTRAINT">
+		<menuoptionLabel>mnu_AddConstraint</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_EMPL_HIST">
+		<menuoptionLabel>Add Employee\nHistory</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_IN">
+		<menuoptionLabel>Add IN</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NOT_AVAILABLE">
+		<menuoptionLabel>Add NOT Available</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_OUT">
+		<menuoptionLabel>Add OUT</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_PREFER">
+		<menuoptionLabel>Add PREFER Available</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_ROLE_PREFER">
+		<menuoptionLabel>Add PREFERRED Role</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_PRIOR_BENEFIT">
+		<menuoptionLabel>Add Prior\nPeriod Benefit</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_REFERENCE">
+		<menuoptionLabel>Add Reference</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_RELATED">
+		<menuoptionLabel>Add Related\nEmployee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_REQUEST">
+		<menuoptionLabel>Add Request</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_ROLE">
+		<menuoptionLabel>Add Role</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_SHIFT">
+		<menuoptionLabel>Add Shift</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_TIME">
+		<menuoptionLabel>Add Time</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_COMMENTS">
+		<menuoptionLabel>mnu_AddComments</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADDITIONAL_EMP_INFO">
+		<menuoptionLabel>Additional\nInformation</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADHOC_QUERY">
+		<menuoptionLabel>mnu_AdhocQuery</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="AMOUNT">
+		<menuoptionLabel>mnu_Amount</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BENEFIT">
+		<menuoptionLabel>Benefit Time</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CASHIER_EOS">
+		<menuoptionLabel>mnu_CashierEndOfSession</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CASHIER_SESSION">
+		<menuoptionLabel>mnu_CashierSession</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHANGE_QTY">
+		<menuoptionLabel>Change\nQuantity</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHANGE_DEPOSIT">
+		<menuoptionLabel>Change Deposit</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHECK_LOCAL">
+		<menuoptionLabel>Check_Local</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>4</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLEAR">
+		<menuoptionLabel>mnu_Clear</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLEAR_ALL">
+		<menuoptionLabel>mnu_ClearAllConstraints</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLEAR_TOTALS">
+		<menuoptionLabel>mnu_ClearTotals</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOCK_IN">
+		<menuoptionLabel>Clock In</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOCK_OUT">
+		<menuoptionLabel>Clock Out</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COMPLETE_EOD">
+		<menuoptionLabel>Complete Register Closeout</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COMPLETE">
+		<menuoptionLabel>Complete Transfer In</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHANGE_CONS">
+		<menuoptionLabel>mnu_Consultant</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CONSULTANT">
+		<menuoptionLabel>Consultant</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CONTINUE">
+		<menuoptionLabel>Continue</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLONE">
+		<menuoptionLabel>Copy\nSchedule</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CREATE_NEW">
+		<menuoptionLabel>Create New</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CREDIT_APP">
+		<menuoptionLabel>Credit Application</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CW_TIME">
+		<menuoptionLabel>Current Timecard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHANGE_CUST">
+		<menuoptionLabel>Customer</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CUST_MENU">
+		<menuoptionLabel>Customer\nMenu</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CUST_MERGE">
+		<menuoptionLabel>Customer Merge</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DATE">
+		<menuoptionLabel>Date</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELECT_ALL">
+		<menuoptionLabel>mnu_Select_All</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DE_SELECT_ALL">
+		<menuoptionLabel>mnu_De_Select_All</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_SCHEDULE">
+		<menuoptionLabel>Delete\nSchedule</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_ALL_SUSPENDED_TRANSACTIONS">
+		<menuoptionLabel>mnu_DeleteAllTransactions</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_AVAILABLE">
+		<menuoptionLabel>Delete Available</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_BENEFIT">
+		<menuoptionLabel>Delete Benefit</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_GOAL">
+		<menuoptionLabel>Delete Employee\nGoal</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DEL_IN_OUT">
+		<menuoptionLabel>Delete IN/OUT</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESTORE_CONS">
+		<menuoptionLabel>mnu_DeleteLineItemConsultant</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESTORE_TAX">
+		<menuoptionLabel>mnu_DeleteManualTax</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DEL_PAY">
+		<menuoptionLabel>mnu_DeleteTender</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_QUERY">
+		<menuoptionLabel>mnu_DeleteQuery</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_REQUEST">
+		<menuoptionLabel>Delete Request</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_ROLE">
+		<menuoptionLabel>Delete Role</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DEL_ROW">
+		<menuoptionLabel>Delete Row</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_SHIFT">
+		<menuoptionLabel>Delete Shift</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NET_SALES_DEPT">
+		<menuoptionLabel>Department Net Sales</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EDIT_CONSTRAINT">
+		<menuoptionLabel>mnu_EditConstraint</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="GOAL_ENTRY">
+		<menuoptionLabel>Employee\nGoals</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EMP_MGMT">
+		<menuoptionLabel>Employee\nManagement</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EMP_SECURITY">
+		<menuoptionLabel>Employee\nSecurity</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EMPLOYEE_SHORTNAME">
+		<menuoptionLabel>Employee\nShort Name</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SCHEDULE_RESOURCE">
+		<menuoptionLabel>Employee Scheduling\nInformation</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EMPLOYEE_SEARCH">
+		<!--
+<menuoptionLabel>Employee Search</menuoptionLabel>
+		-->
+		<menuoptionLabel>mnu_SelectUser</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EMP_APPLICATION">
+		<menuoptionLabel>Employment\nApplication</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="END_SESSION">
+		<menuoptionLabel>mnu_EndofSession</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ENDORSE_CHECK">
+		<menuoptionLabel>Endorse Check</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ENTER_DATE">
+		<menuoptionLabel>Enter\nDate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ENTER_EMPLOYEE">
+		<menuoptionLabel>Enter\nEmployee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MEDIA_TOTALS">
+		<menuoptionLabel>Enter\nMedia Totals</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COMMENT">
+		<menuoptionLabel>Enter Comment</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ENTER_COMMENT">
+		<menuoptionLabel>Enter Comment</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ENTER_GOAL">
+		<menuoptionLabel>Enter Employee\nGoal</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ENTER_STORE_ID">
+		<menuoptionLabel>Enter Store Id</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EVEN_EXCHANGE">
+		<menuoptionLabel>Even Exchange</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FINALIZE">
+		<menuoptionLabel>Finalize\nTimecards</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FIND_DATE">
+		<menuoptionLabel>Find Date</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FIND_ITEM">
+		<menuoptionLabel>Find Item</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FIND_IT">
+		<menuoptionLabel>Find Item\nIn Stock</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FIND_TXN">
+		<menuoptionLabel>Find Transaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FIND_NAME">
+		<menuoptionLabel>Find by Name</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FIND_PHONE">
+		<menuoptionLabel>Find by Phone</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="I9">
+		<menuoptionLabel>Form I-9</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="W4">
+		<menuoptionLabel>Form W-4</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BENEFIT_FUNERAL">
+		<menuoptionLabel>Funeral</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="GENERATE">
+		<menuoptionLabel>Generate\nAssignements</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="HOUSE_ID">
+		<menuoptionLabel>House ID</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ID">
+		<menuoptionLabel>ID</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="INS_IN_OUT">
+		<menuoptionLabel>Insert IN/OUT</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="INVENTORY_MENU">
+		<menuoptionLabel>Inventory\nMenu</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ITEM">
+		<menuoptionLabel>Item</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ITEMS">
+		<menuoptionLabel>Items</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BENEFIT_JURY">
+		<menuoptionLabel>Jury Duty</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LAYAWAY">
+		<menuoptionLabel>Layaway</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LAY_MGMT">
+		<menuoptionLabel>Layaway\nManagement</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LAY_PAYMENT">
+		<menuoptionLabel>Layaway Payment</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LOG_OFF">
+		<menuoptionLabel>Log Off</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MAIN_LOG_OFF">
+		<menuoptionLabel>Log Off</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LOOK_UP">
+		<menuoptionLabel>Look Up\nAnother</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SCHEDULE">
+		<menuoptionLabel>Maintain\nSchedule</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="AVAILABILITY">
+		<menuoptionLabel>Maintain Availability</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MAINTAIN_HOURS">
+		<menuoptionLabel>Maintain Hours</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REQUESTS">
+		<menuoptionLabel>Maintain Requests</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ROLE">
+		<menuoptionLabel>Maintain Roles</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY">
+		<menuoptionLabel>Manage\nShifts</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MANAGEMENT">
+		<menuoptionLabel>mnu_Management</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MANAGEMENT_LOGIN">
+		<menuoptionLabel>mnu_Management</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<!--
+ <MENU_OPTION id="MGMT_MENU">
+        <menuoptionLabel>Management Menu</menuoptionLabel>
+        <menuoptionOffLine>true</menuoptionOffLine>
+        <menuoptionAssignedRoles>3</menuoptionAssignedRoles>
+    </MENU_OPTION> 
+	-->
+	<MENU_OPTION id="MAN_OVERRIDE">
+		<menuoptionLabel>Manual Override</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ASSIGN_SHIFT">
+		<menuoptionLabel>Manually Assign\nEmployee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_PRICE">
+		<menuoptionLabel>Markdown\nPrice</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MARK_AMT">
+		<menuoptionLabel>Markdown $</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MARK_PCT">
+		<menuoptionLabel>Markdown %</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MARKDOWNS">
+		<menuoptionLabel>Markdowns</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MERCH_LOOKUP">
+		<menuoptionLabel>Merchandise\nLookup</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MERCH_MENU">
+		<menuoptionLabel>Merchandise Menu</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MERCH_RETURN">
+		<menuoptionLabel>Merchandise Return</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MISC_RET">
+		<menuoptionLabel>Miscellaneous\nReturn</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_FUND">
+		<menuoptionLabel>Modify\nDrawer Fund</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_GOAL">
+		<menuoptionLabel>Modify\nEmployee Goal</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_INFO">
+		<menuoptionLabel>Modify\nInformation</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_RESTOCK_FEE">
+		<menuoptionLabel>Modify\nRestocking Fee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_UNIT_PRICE">
+		<menuoptionLabel>Modify\nUnit Price</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_ADDRESS">
+		<menuoptionLabel>Modify Address</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_BENEFIT">
+		<menuoptionLabel>Modify Benefit</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_DEP">
+		<menuoptionLabel>Modify Deposit</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_EMPLOYEE">
+		<menuoptionLabel>Modify Employee\nInformation</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_FORM">
+		<menuoptionLabel>Modify Form</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_IN">
+		<menuoptionLabel>Modify IN</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHANGE_LINE_CONS">
+		<menuoptionLabel>mnu_ModifyLineItemConsultant</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_TAX">
+		<menuoptionLabel>Modify Line\nItem Tax</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_TAX_PERCENT">
+		<menuoptionLabel>Modify Line\nItem Tax %</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_OUT">
+		<menuoptionLabel>Modify OUT</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_REASON">
+		<menuoptionLabel>Modify Reason</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_SHIFT">
+		<menuoptionLabel>Modify Shift</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_TOTALS">
+		<menuoptionLabel>Modify Totals</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NAME_LOOKUP">
+		<menuoptionLabel>Name Lookup</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NET_SALES_PROJ">
+		<menuoptionLabel>Net Sales / Projections</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NET_SALES_COMP">
+		<menuoptionLabel>Net Sales Comparisons</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NEW_CUST">
+		<menuoptionLabel>mnu_NewCustomer</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REFRESH">
+		<menuoptionLabel>mnu_Refresh</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NEW_EMPLOYEE">
+		<!--
+<menuoptionLabel>New Employee</menuoptionLabel>
+		-->
+		<menuoptionLabel>mnu_NewUser</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NEW_FORM">
+		<menuoptionLabel>New Form</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NEW_QUERY">
+		<menuoptionLabel>mnu_NewQuery</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NEW_SEARCH">
+		<menuoptionLabel>mnu_NewSearch</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPERATOR">
+		<menuoptionLabel>Operator</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPERATOR_SEARCH">
+		<menuoptionLabel>Operator\nPick List</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPERATOR_SHORT_NAME">
+		<menuoptionLabel>Operator\nShort Name</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NET_SALES_OPER">
+		<menuoptionLabel>Operator Net Sales</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OTHER">
+		<menuoptionLabel>Other</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BENEFIT_OTHER">
+		<menuoptionLabel>Other Benefit</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OUTSTANDING">
+		<menuoptionLabel>Outstanding</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OVERDUE">
+		<menuoptionLabel>Overdue</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="POS_MENU">
+		<menuoptionLabel>P.O.S. Menu</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PARTIAL">
+		<menuoptionLabel>Partial Transfer In</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PAYMENT">
+		<menuoptionLabel>Payment</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PMT_TYPE">
+		<menuoptionLabel>Payment Type</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="POST_TXN">
+		<menuoptionLabel>Post\nTransaction</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="POST_AND_PACK">
+		<menuoptionLabel>Post and\nPack</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RETURN_TO_PAYMENTS">
+		<menuoptionLabel>Previous\nMenu</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PW_TIME">
+		<menuoptionLabel>Previous Week&apos;s\nTimecard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT">
+		<menuoptionLabel>mnu_Print</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_EMPLOYEE">
+		<menuoptionLabel>Print\nEmployee</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_STUB">
+		<menuoptionLabel>Print Alteration Stub</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_CHART">
+		<menuoptionLabel>Print Chart</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_PREVIEW">
+		<menuoptionLabel>Print Chart\nPreview</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_EXPORT">
+		<menuoptionLabel>Print Retail\nExport Receipt</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_TRIAL">
+		<menuoptionLabel>Print Trial</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PROCESS">
+		<menuoptionLabel>Process</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RE_ENTRY">
+		<menuoptionLabel>Re-Entry Mode</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REGISTER">
+		<menuoptionLabel>Register</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REGISTER_FINGERPRINT">
+		<menuoptionLabel>Register Fingerprint</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_CONSTRAINTS">
+		<menuoptionLabel>mnu_RemoveConstraint</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_TAX_EXEMPT">
+		<menuoptionLabel>mnu_RemoveTaxExempt</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_ADDRESS">
+		<menuoptionLabel>mnu_RemoveAddress</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_EXISTING">
+		<menuoptionLabel>Remove Existing</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_PRIOR_BENEFIT">
+		<menuoptionLabel>Remove Prior\nBenefit</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESET_PASSWORD">
+		<menuoptionLabel>Reset\nPassword</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESTORE_GOAL">
+		<menuoptionLabel>Restore Deleted\nGoal</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RETURN_TXN">
+		<menuoptionLabel>mnu_ReturnTransaction</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RETURN_STOCK">
+		<menuoptionLabel>mnu_ReturnToStock</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RETURN_TRANS">
+		<menuoptionLabel>mnu_ReturnToTransaction</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RING_SALE">
+		<menuoptionLabel>Ring a Sale</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALE">
+		<menuoptionLabel>Sale</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALE_EXPRESS">
+		<menuoptionLabel>Sale Express</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_PER_PERIOD">
+		<menuoptionLabel>Sales Per\nPeriod</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SAVE">
+		<menuoptionLabel>Save</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SEARCH_AGAIN">
+		<menuoptionLabel>mnu_SearchAgain</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELECT_ALL">
+		<menuoptionLabel>mnu_SelectAll</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELECT_EMPLOYEE">
+		<menuoptionLabel>Select Employee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELECT_EXISTING">
+		<menuoptionLabel>Select Existing</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OTHER_EMPLOYEE">
+		<menuoptionLabel>Select Other\nEmployee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OTHER_TIMECARD">
+		<menuoptionLabel>Select Other\nTimecard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELECT_SCHEDULE">
+		<menuoptionLabel>Select Schedule</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SHIPPING">
+		<menuoptionLabel>mnu_Shipping</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANSFERS_IN">
+		<menuoptionLabel>Show Incoming\nTransfers</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SHOW_MISC_ITEMS">
+		<menuoptionLabel>Show Misc\nItems</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANSFERS_OUT">
+		<menuoptionLabel>Show Outgoing\nTransfers</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BENEFIT_SICK">
+		<menuoptionLabel>Sick</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SKIP">
+		<menuoptionLabel>mnu_Skip</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SPECIAL_ORDER">
+		<menuoptionLabel>Special\nOrder</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADDITIONAL_EMP_INFO_PREV">
+		<menuoptionLabel>Standard\nInformation</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="START_EOD">
+		<menuoptionLabel>Start Register Closeout</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SHUTDOWN">
+		<menuoptionLabel>mnu_StartOfDay</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="STORE_CLOSEOUT">
+		<menuoptionLabel>Store\nCloseout</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="STORE_INFO">
+		<menuoptionLabel>Consolidated</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NET_SALES">
+		<menuoptionLabel>Store Net Sales</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SUBMIT">
+		<menuoptionLabel>mnu_Submit</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SUSPEND">
+		<menuoptionLabel>mnu_Suspend</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TOTAL">
+		<menuoptionLabel>TOTAL</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TENDER_TYPE">
+		<menuoptionLabel>mnu_TenderType</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_EMPLOYEE">
+		<menuoptionLabel>Terminate Employee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TIME_OF_DAY">
+		<menuoptionLabel>Time</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VAC_REQUEST">
+		<menuoptionLabel>Time Off\nRequest</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TXN_TYPE">
+		<menuoptionLabel>mnu_TransactionType</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANSFER_IN">
+		<menuoptionLabel>Transfer In</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANSFER_OUT">
+		<menuoptionLabel>TransferOut</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="UNASSIGN_ALL_EMPLOYEES">
+		<menuoptionLabel>Unassign ALL\nEmployees</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="UNASSIGN_SHIFT">
+		<menuoptionLabel>Unassign Employee</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MAX">
+		<menuoptionLabel>Update Maximum</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="UPDATE_STRENGTH">
+		<menuoptionLabel>Update Role Strength</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TARGET">
+		<menuoptionLabel>Update Target</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BENEFIT_VACATION">
+		<menuoptionLabel>Vacation</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VERIFY_DEPOSIT">
+		<menuoptionLabel>mnu_VerifyDeposit</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_ADJUSTMENTS">
+		<menuoptionLabel>View\nAdjustments</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPERATOR_VIEW">
+		<menuoptionLabel>View\nby Operator</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="STORE_VIEW">
+		<menuoptionLabel>View\nby Store</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_GRAPH">
+		<menuoptionLabel>View Graph</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_PENDING_TRANSFERS">
+		<menuoptionLabel>View Pending\nTransfers</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VOID_TXN">
+		<menuoptionLabel>mnu_VoidTransaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VOID_REWARD">
+		<menuoptionLabel>Void Reward</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>4</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VOID_TRANSFER">
+		<menuoptionLabel>Void Transfer</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ZOOM_IN">
+		<menuoptionLabel>Zoom In</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ZOOM_OUT">
+		<menuoptionLabel>Zoom Out</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ACCOUNT_MAINTENANCE">
+		<menuoptionLabel>mnu_AccountMaintenance</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_CUSTOMER">
+		<menuoptionLabel>mnu_AddCustomer</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_ITEM">
+		<menuoptionLabel>Add Item</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_POINTS">
+		<menuoptionLabel>mnu_AddPoints</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADVANCED_SEARCH">
+		<menuoptionLabel>mnu_AdvancedSearch</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALL">
+		<menuoptionLabel>mnu_All</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPTIONS_ALTERATIONS">
+		<menuoptionLabel>mnu_Alterations</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRICING_ALTERATIONS">
+		<menuoptionLabel>mnu_Alterations</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALTERATIONS">
+		<menuoptionLabel>mnu_Alterations</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRICE_OVERRIDE">
+		<menuoptionLabel>mnu_PriceOverride</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ASSOCIATE">
+		<menuoptionLabel>mnu_Associate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BUY_BACK">
+		<menuoptionLabel>mnu_BuyBacks</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CALIBRATE_SCREEN">
+		<menuoptionLabel>mnu_CalibrateScreen</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CANCEL">
+		<menuoptionLabel>mnu_Cancel</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CANCEL_ACTION">
+		<menuoptionLabel>mnu_CancelAction</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CANCEL_TXN">
+		<menuoptionLabel>mnu_CancelTxn</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CASH">
+		<menuoptionLabel>mnu_Cash</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CASHIER">
+		<menuoptionLabel>mnu_Cashier</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHANGE_ASSOCIATE">
+		<menuoptionLabel>mnu_ChangeAssociate</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHECK">
+		<menuoptionLabel>mnu_Check</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHECK_OUT_OF_AREA">
+		<menuoptionLabel>mnu_Check_OutofArea</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOCK_IN_OUT">
+		<menuoptionLabel>mnu_ClockInOut</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CONSIGNMENTS">
+		<menuoptionLabel>mnu_Consignments</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CONSIGNMENTS_IN">
+		<menuoptionLabel>mnu_ConsignmentsIn</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CONSIGNMENTS_OUT">
+		<menuoptionLabel>mnu_ConsignmentsOut</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COUPON">
+		<menuoptionLabel>mnu_Coupon</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CREDIT_CARD">
+		<menuoptionLabel>mnu_CreditCard</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CREDIT_NOTE">
+		<menuoptionLabel>mnu_CreditNote</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CUST_LOOKUP">
+		<menuoptionLabel>mnu_CustomerLookup</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CUSTOMER">
+		<menuoptionLabel>mnu_Customer</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CUST_NAME">
+		<menuoptionLabel>mnu_CustomerName</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CUST_NO">
+		<menuoptionLabel>mnu_CustomerNumber</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CUST_PHONE">
+		<menuoptionLabel>mnu_CustomerPhone</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DDT">
+		<menuoptionLabel>mnu_DDT</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DEBIT_CARD">
+		<menuoptionLabel>mnu_DebitCard</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DEL_ITEM">
+		<menuoptionLabel>mnu_DeleteItem</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DELETE_TENDER">
+		<menuoptionLabel>mnu_DeleteTender</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LOYALTY_DETAILS">
+		<menuoptionLabel>mnu_Details</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DISCOUNT">
+		<menuoptionLabel>mnu_Discount</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DISCOUNT_AMOUNT">
+		<menuoptionLabel>mnu_DiscountAmount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DISCOUNT_PERCENTAGE">
+		<menuoptionLabel>mnu_DiscountPercentage</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DISCOUNT_PRICE">
+		<menuoptionLabel>mnu_DiscountPrice</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EMPLOYEE_SALE">
+		<menuoptionLabel>mnu_EmployeeSale</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LOYALTY_ENROLL">
+		<menuoptionLabel>mnu_Enroll</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FOREIGN_CASH">
+		<menuoptionLabel>mnu_ForeignCash</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="GIFT_CARD">
+		<menuoptionLabel>mnu_GiftCard</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="HOUSE_ACCOUNT">
+		<menuoptionLabel>mnu_HouseAccount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="INQUIRIES">
+		<menuoptionLabel>mnu_INQUIRIES</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ISSUE_LOYALTY_REWARD">
+		<menuoptionLabel>mnu_IssueLoyaltyReward</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ISSUE_REWARD">
+		<menuoptionLabel>mnu_IssueReward</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ISSUE_REWARD_NORULE">
+		<menuoptionLabel>mnu_IssueReward</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ITEM_DETAILS">
+		<menuoptionLabel>mnu_ItemDetails</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ITEM_LOOKUP">
+		<menuoptionLabel>mnu_ItemLookup</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="JPY_CASH">
+		<menuoptionLabel>mnu_JPYCash</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LINE_DISCOUNT">
+		<menuoptionLabel>mnu_LineDiscount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ITEM_DETAIL">
+		<menuoptionLabel>mnu_LineItemDetail</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LOCATE">
+		<menuoptionLabel>mnu_Locate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LOYALTY">
+		<menuoptionLabel>mnu_Loyalty</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MAGSTRIPE_TEST">
+		<menuoptionLabel>mnu_MagstripeTest</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MALL_CERT">
+		<menuoptionLabel>mnu_MallCertificate</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_CUST">
+		<menuoptionLabel>mnu_ModifyCustomer</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MOD_QTY">
+		<menuoptionLabel>mnu_ModifyQuantity</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NET_SALES_TENDER">
+		<menuoptionLabel>mnu_NetSalesbyTender</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NEXT_TXN">
+		<menuoptionLabel>mnu_NextTransaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NO_SALE">
+		<menuoptionLabel>mnu_NoSale</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OK">
+		<menuoptionLabel>mnu_OK</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPTIONS">
+		<menuoptionLabel>mnu_Options</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OTHER_TXN">
+		<menuoptionLabel>mnu_OtherTransactions</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COLLECTIONS">
+		<menuoptionLabel>mnu_Paidins</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PAIDOUTS">
+		<menuoptionLabel>mnu_Paidouts</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="POST_VOID">
+		<menuoptionLabel>mnu_PostVoids</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRESALE_OPEN">
+		<menuoptionLabel>mnu_PreSaleOpen</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALE_TXN">
+		<menuoptionLabel>mnu_Sale_Txn</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALE_TXN_RESERVATIONS">
+		<menuoptionLabel>mnu_Sale_Txn</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRESALE_CLOSE">
+		<menuoptionLabel>mnu_PreSaleClose</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRESALES">
+		<menuoptionLabel>mnu_PreSales</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PREV">
+		<menuoptionLabel>mnu_Previous</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PREV_DETAIL">
+		<menuoptionLabel>mnu_Previous</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PREV_TXN">
+		<menuoptionLabel>mnu_PreviousTransaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRICE_OVERRIDE">
+		<menuoptionLabel>mnu_PriceOverride</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRICING">
+		<menuoptionLabel>mnu_Pricing</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_ALL_GIFT">
+		<menuoptionLabel>mnu_PrintAllGiftItems</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_DDT">
+		<menuoptionLabel>mnu_PrintDDT</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_DUPLICATE_RECEIPT">
+		<menuoptionLabel>mnu_PrintDuplicateReceipt</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_FISCAL">
+		<menuoptionLabel>mnu_PrintFiscal</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_GIFT">
+		<menuoptionLabel>mnu_PrintGiftReceipt</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_RECEIPT">
+		<menuoptionLabel>mnu_PrintReceipt</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_SELECT_ITEMS">
+		<menuoptionLabel>mnu_PrintSelectedGiftItems</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_TAX_FREE">
+		<menuoptionLabel>mnu_PrintTaxFree</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINT_VAT">
+		<menuoptionLabel>mnu_PrintVATInvoice</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRINTER_TEST">
+		<menuoptionLabel>mnu_PrinterTest</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PURCHASE_HISTORY">
+		<menuoptionLabel>mnu_PurchaseHistory</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RECALL_TXN">
+		<menuoptionLabel>mnu_RecallTransaction</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REDEEMABLE_INQUIRY">
+		<menuoptionLabel>mnu_RedeemableInquiry</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="END_DAY">
+		<menuoptionLabel>mnu_RegisterCloseout</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REGISTER_SALES_PER_PERIOD">
+		<menuoptionLabel>mnu_RegisterSalesperPeriod</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_POINTS">
+		<menuoptionLabel>mnu_RemovePoints</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REISSUE_LOYALTY_CARD">
+		<menuoptionLabel>mnu_ReIssueLoyaltyCard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REPORT_MENU">
+		<menuoptionLabel>mnu_Reports</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESEND_BROKEN_TXNS">
+		<menuoptionLabel>mnu_ResendBrokenTransactions</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESERVATIONS">
+		<menuoptionLabel>mnu_Reservations</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESERVATIONS_CLOSE">
+		<menuoptionLabel>mnu_ReservationsIn</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESERVATIONS_OPEN">
+		<menuoptionLabel>mnu_ReservationsOut</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RETURN_ITEM">
+		<menuoptionLabel>mnu_ReturnItem</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REWARD_CARD">
+		<menuoptionLabel>mnu_RewardCard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ROUND_PAYMENT">
+		<menuoptionLabel>mnu_RoundPayment</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SKU_NET_SALES">
+		<menuoptionLabel>mnu_SKUNetSales</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SCRIPTS">
+		<menuoptionLabel>mnu_Scripts</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SEARCH">
+		<menuoptionLabel>mnu_Search</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SECURITY">
+		<menuoptionLabel>mnu_Security</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SEND_SALE">
+		<menuoptionLabel>mnu_SendSale</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SEND_SALE_DETAILS">
+		<menuoptionLabel>mnu_SendSaleDetails</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SERVICES">
+		<menuoptionLabel>mnu_Services</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="STORE_LOCATOR">
+		<menuoptionLabel>mnu_StoreLocator</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SUBTOTAL_DISCOUNT">
+		<menuoptionLabel>mnu_SubTotalDiscount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SUSPEND_TXN">
+		<menuoptionLabel>mnu_SuspendTxn</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SYSTEM_UTILS">
+		<menuoptionLabel>mnu_SystemUtilities</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TAX_EXEMPT">
+		<menuoptionLabel>mnu_TaxExempt</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TAX_FREE_FORM">
+		<menuoptionLabel>mnu_TaxFreeForm</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TENDER">
+		<menuoptionLabel>mnu_Tender</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TIMECARD_MGMT">
+		<menuoptionLabel>mnu_TimecardManagement</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TOGGLE_DETAIL">
+		<menuoptionLabel>mnu_ToggleItemDetails</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANSACTION">
+		<menuoptionLabel>mnu_Transaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANSACTION_ACTIVITY">
+		<menuoptionLabel>mnu_TransactionActivity</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANS_DISCOUNT">
+		<menuoptionLabel>mnu_TransactionDiscount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REWARD_DISCOUNT">
+		<menuoptionLabel>mnu_RewardDiscount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MERCH_RETURN">
+		<!--
+menuoptionLabel>Merchandise Return</menuoptionLabel
+		-->
+		<menuoptionLabel>mnu_MerchReturn</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRICING_PRICE_OVERRIDE">
+		<menuoptionLabel>mnu_PriceOverride</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TXN_HIST">
+		<menuoptionLabel>mnu_TransactionHistory</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANS_MGMT">
+		<menuoptionLabel>mnu_TransactionManagement</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRANS_MGMT_LOGIN">
+		<menuoptionLabel>mnu_TransactionManagement</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TRAVEL_CHECKS">
+		<menuoptionLabel>mnu_TravelChecks</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="UPDATE_EMPLOYEE_FILE">
+		<menuoptionLabel>mnu_UpdateEmployeeFile</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="UPDATE_ITEM_FILE">
+		<menuoptionLabel>mnu_UpdateItemFile</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VAT_INVOICE">
+		<menuoptionLabel>mnu_VATInvoice</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>11</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_PRESALES">
+		<menuoptionLabel>mnu_ViewPreSales</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CANCEL_PRE_SALE">
+		<menuoptionLabel>mnu_CancelPre-Sale</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_CARD_DETAILS">
+		<menuoptionLabel>mnu_ViewCardDetails</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_ADDRESSES">
+		<menuoptionLabel>mnu_ViewAddresses</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_COMMENTS">
+		<menuoptionLabel>mnu_ViewComments</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_RECEIPT_LOG">
+		<menuoptionLabel>mnu_ViewReceiptLog</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_TXN">
+		<menuoptionLabel>mnu_ViewTransaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="USE_ADDRESS">
+		<menuoptionLabel>mnu_useAddress</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLEAR">
+		<menuoptionLabel>mnu_clear</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CHANGE_ADDRESS">
+		<menuoptionLabel>mnu_changeAddress</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SPECIAL_INSTRUCTIONS">
+		<menuoptionLabel>mnu_specialInstructions</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELL_RETURN_ITEMS">
+		<menuoptionLabel>mnu_SELL_RETURN_ITEMS</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELL">
+		<menuoptionLabel>mnu_Sell</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RETURN">
+		<menuoptionLabel>mnu_Return</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_ITEM_TENDER">
+		<menuoptionLabel>mnu_AddItem_Tender</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="EXPIRE_DATE">
+		<menuoptionLabel>mnu_Expire_Date</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="FITTER_ID">
+		<menuoptionLabel>mnu_Fitter_id</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LAUNCH_BACKOFFICE">
+		<menuoptionLabel>mnu_launch_backoffice</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLEAR_COMMENTS">
+		<menuoptionLabel>mnu_Clear_comments</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COMMENTS">
+		<menuoptionLabel>mnu_Comments</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TAILOR_ID">
+		<menuoptionLabel>mnu_Tailor_id</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CONTINUE_PROCESSING">
+		<menuoptionLabel>mnu_continue_processing</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ACCOUNT_LOOKUP">
+		<menuoptionLabel>mnu_AccountLookup</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OK_COLLECTIONS">
+		<menuoptionLabel>mnu_OK</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_BY_CONS_REPORT">
+		<menuoptionLabel>mnu_AssociateNetSales</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_BY_DEPT_REPORT">
+		<menuoptionLabel>mnu_DepartmentSale</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_BY_CLASS_REPORT">
+		<menuoptionLabel>mnu_SalesByClass</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_BY_ITEM_REPORT">
+		<menuoptionLabel>mnu_SalesByItem</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_BY_MEDIA_REPROT">
+		<menuoptionLabel>mnu_SaleByMedia</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OVER_SHORT_REPORT">
+		<menuoptionLabel>mnu_OverShort</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_BY_PERIOD_REPORT">
+		<menuoptionLabel>mnu_SalesByPeriod</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SALES_BY_TXN_TYPE_REPROT">
+		<menuoptionLabel>mnu_NetSalesbyTransaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COSIGNMENT_DETAIL_REPORT">
+		<menuoptionLabel>mnu_ConsignmetDetail</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="COSIGNMENT_AGEING_REPORT">
+		<menuoptionLabel>mnu_ConsignmentAgeing</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADD_CREDITCARD">
+		<menuoptionLabel>mnu_AddCreditCard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MODIFY_CREDITCARD">
+		<menuoptionLabel>mnu_ModifyCreditCard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_CREDITCARD">
+		<menuoptionLabel>mnu_RemoveCreditCard</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="MULTI_DISCOUNT">
+		<menuoptionLabel>mnu_MultiDiscount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="BY_PRICE_DISCOUNT">
+		<menuoptionLabel>mnu_ByPriceDiscount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OVERRIDE_EMPLOYEE_DISCOUNT">
+		<menuoptionLabel>mnu_OverrideEmployeeDiscount</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="USE_CARD_ON_FILE">
+		<menuoptionLabel>mnu_UseCardOnFile</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="USE_CARD_FROM_TRANSACTION">
+		<menuoptionLabel>mnu_UseCardFromTransaction</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DEPOSIT">
+		<menuoptionLabel>mnu_Deposit</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESERVE">
+		<menuoptionLabel>mnu_Reserve</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ADJUST_DEPOSIT">
+		<menuoptionLabel>mnu_AdjustDeposit</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALL_CONSIGNMENT_DETAIL">
+		<menuoptionLabel>mnu_All</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOSED_CONSIGNMENT_DETAIL_ONLY">
+		<menuoptionLabel>mnu_ClosedOnly</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPEN_CONSIGNMENT_DETAIL_ONLY">
+		<menuoptionLabel>mnu_OpenOnly</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALL_CONSIGNMENT_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_AllByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOSED_CONSIGNMENT_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_ClosedByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPEN_CONSIGNMENT_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_OpenByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELL_THROUGH">
+		<menuoptionLabel>mnu_SellThrough</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SELL_THROUGH_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_SellThroughByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="VIEW_DEPOSITS">
+		<menuoptionLabel>mnu_ViewDeposits</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DEPOSIT_DETAILS">
+		<menuoptionLabel>mnu_DepositDetails</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="REMOVE_PROMOTION">
+		<menuoptionLabel>mnu_RemovePromotion</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="NEXT_COLOR">
+		<menuoptionLabel>mnu_NextColor</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PREVIOUS_COLOR">
+		<menuoptionLabel>mnu_PreviousColor</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="RESERVATION_DETAIL_REPORT">
+		<menuoptionLabel>mnu_ReservationDetail</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALL_RESERVATION_DETAIL">
+		<menuoptionLabel>mnu_All</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOSED_RESERVATION_DETAIL_ONLY">
+		<menuoptionLabel>mnu_ClosedOnly</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPEN_RESERVATION_DETAIL_ONLY">
+		<menuoptionLabel>mnu_OpenOnly</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALL_RESERVATION_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_AllByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOSED_RESERVATION_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_ClosedByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPEN_RESERVATION_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_OpenByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="PRESALE_DETAIL_REPORT">
+		<menuoptionLabel>mnu_PresaleDetail</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALL_PRESALE_DETAIL">
+		<menuoptionLabel>mnu_All</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOSED_PRESALE_DETAIL_ONLY">
+		<menuoptionLabel>mnu_ClosedOnly</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPEN_PRESALE_DETAIL_ONLY">
+		<menuoptionLabel>mnu_OpenOnly</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ALL_PRESALE_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_AllByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="CLOSED_PRESALE_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_ClosedByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OPEN_PRESALE_DETAIL_BY_ASSOCIATE">
+		<menuoptionLabel>mnu_OpenByAssociate</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TOGGLE_ITEM_AVAILABILITY">
+		<menuoptionLabel>mnu_ToggleItemAvailability</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="TOGGLE_ITEM_UNAVAILABILITY">
+		<menuoptionLabel>mnu_ToggleItemUnAvailability</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="LAUNCH_BROWSER">
+		<menuoptionLabel>mnu_LaunchBrowser</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="STOCK_REQUEST">
+		<menuoptionLabel>mnu_StockRequest</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="SEND_REQUEST">
+		<menuoptionLabel>mnu_SendRequest</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="DOLCI">
+		<menuoptionLabel>mnu_Dolci</menuoptionLabel>
+		<menuoptionOffLine>true</menuoptionOffLine>
+		<menuoptionAssignedRoles>0</menuoptionAssignedRoles>
+   <MENU_OPTION id="MANUAL_KEY_ENTRY">
+		<menuoptionLabel>Manual Key Entry</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="ok_REFUND">
+		<menuoptionLabel>Refund</menuoptionLabel>
+		<menuoptionOffLine>false</menuoptionOffLine>
+		<menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+	</MENU_OPTION>
+	<MENU_OPTION id="OK_OVERRIDE">
+		<menuoptionLabel>OVERRIDE</menuoptionLabel>
+        <menuoptionOffLine>false</menuoptionOffLine>
+        <menuoptionAssignedRoles>1</menuoptionAssignedRoles>
+   </MENU_OPTION>
+</CMS_OBJECT>

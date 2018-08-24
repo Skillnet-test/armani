@@ -1,0 +1,1428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE JposEntries PUBLIC "-//JavaPOS//DTD//EN"
+                             "../files/prod/javapos/jcl.dtd">
+<JposEntries>
+<!--Saved by JavaPOS jpos.config/loader (JCL) version 1.2 on 26.10.01 19:05-->
+    
+    <JposEntry logicalName="drawer8">
+        <jposshortcut category="CashDrawer" name="EPSON_TM_T88II_CD"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="drawer7">
+        <jposshortcut category="CashDrawer" name="WN_CD2_A794"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="drawer6">
+        <jposshortcut category="CashDrawer" name="WN_CD1_A794"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="drawer5">
+        <jposshortcut category="CashDrawer" name="EPSON_TM_H6000_CD"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="drawer4">
+        <jposshortcut category="CashDrawer" name="WN_CD2_ND77"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="drawer3">
+        <jposshortcut category="CashDrawer" name="WN_CD1_ND77"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.nd77Conf">
+        <referenceentry referencedescription="port configuration for nd77 POSPrinter usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="bits" value="8"/>
+        <prop name="port" value="/dev/ttyS1"/>
+        <prop name="setDTR" value="true"/>
+        <prop name="readTimeout" value="5000"/>
+        <prop name="stopbits" value="1"/>
+        <prop name="protocol" value="ctsout"/>
+        <prop name="dsrControl" value="true"/>
+        <prop name="baudrate" value="9600"/>
+        <prop name="parity" value="odd"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="drawer2">
+        <jposshortcut category="CashDrawer" name="WN_CD2_PORT"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="scanner2">
+        <jposshortcut category="Scanner" name="WN_EL16_COM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="MyCashDraw">
+    <!-- <JposEntry logicalName="drawer1"> -->
+        <jposshortcut category="CashDrawer" name="WN_CD1_PORT"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="scanner1">
+        <jposshortcut category="Scanner" name="WN_ELxx_COM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_H6000_CD">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PinNO" value="0"/>
+        <prop name="Uses" value="TM-H6000"/>
+        <prop name="PulseOFFTime" value="400"/>
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="ClosedStatusPhase" value="0"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="DeviceDesc" value="EPSON Standard CashDrawer Device Service"/>
+        <prop name="BaudRate" value="7"/>
+        <prop name="PulseONTime" value="100"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="Standard"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_Printer7194">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.posprinter.POSPrinterService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="Axiohm IPB POS Printer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="/dev/ttyS1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="115200"/>
+        <prop name="sModel" value="7194"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="parity" value="N"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_Printer7193">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.posprinter.POSPrinterService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="Axiohm IPB POS Printer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="/dev/ttyS1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="9600"/>
+        <prop name="sModel" value="7193"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="parity" value="N"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_U210B_PRT">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.ptr.U210B"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="EPSON TM-U210B Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="BufferSize" value="2"/>
+        <prop name="InputWait" value="1"/>
+        <prop name="Supported58Paper" value="0"/>
+        <prop name="TwoByteCharacter" value="0"/>
+        <prop name="DeviceDesc" value="EPSON TM-U210B Printer Device Service"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="BaudRate" value="6"/>
+        <prop name="ErrorOption" value="1"/>
+        <prop name="ReverseEject" value="0"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="TM-U210B"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+        <prop name="U375Compatible" value="0"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_EL16_COM_bnq">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNScanner"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="EL 16 scanner" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="queuingMode" value="off"/>
+        <prop name="port" value="scannerConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.SimpleCommDevice, asyncRead"/>
+        <prop name="scannerMode" value="B"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_H5000II_PRT">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.ptr.H5000II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="EPSON TM-H5000II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="BufferSize" value="2"/>
+        <prop name="InputWait" value="1"/>
+        <prop name="Supported58Paper" value="0"/>
+        <prop name="TwoByteCharacter" value="0"/>
+        <prop name="DeviceDesc" value="EPSON TM-H5000II Printer Device Service"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="BaudRate" value="6"/>
+        <prop name="ErrorOption" value="1"/>
+        <prop name="ReverseEject" value="0"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="TM-H5000II"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+        <prop name="U375Compatible" value="0"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.KeyTranslation.TableTA61">
+        <referenceentry referencedescription="key table definition for TA61 (POSKeyboard)"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="29" value="2097209=0x00001018"/>
+        <prop name="28" value="2425163=0x00001017"/>
+        <prop name="27" value="4587553=0x00001015"/>
+        <prop name="26" value="4522002=0x00001014"/>
+        <prop name="25" value="4456480=0x00001013"/>
+        <prop name="24" value="4390958=0x00001012"/>
+        <prop name="23" value="4325424=0x00001011"/>
+        <prop name="22" value="4259870=0x00001010"/>
+        <prop name="59" value="7143498=0x0000102c"/>
+        <prop name="21" value="6881353=0x00000039"/>
+        <prop name="58" value="7012430=0x0000102b"/>
+        <prop name="20" value="2162761=0x00000039"/>
+        <prop name="57" value="5308432=0x00001029"/>
+        <prop name="56" value="5242905=0x00001028"/>
+        <prop name="55" value="5177368=0x00001027"/>
+        <prop name="54" value="5832748=0x00001026"/>
+        <prop name="53" value="5046322=0x00001025"/>
+        <prop name="52" value="851996=0x00001024"/>
+        <prop name="51" value="6488145=0x00000033"/>
+        <prop name="50" value="2228305=0x00000033"/>
+        <prop name="19" value="6815816=0x00000038"/>
+        <prop name="18" value="2490440=0x00000038"/>
+        <prop name="17" value="6750279=0x00000037"/>
+        <prop name="16" value="2359367=0x00000037"/>
+        <prop name="15" value="2163017=0x0000100f"/>
+        <prop name="9" value="7733313=0x00001009"/>
+        <prop name="14" value="2490696=0x0000100e"/>
+        <prop name="8" value="7667776=0x00001008"/>
+        <prop name="13" value="2359623=0x0000100d"/>
+        <prop name="7" value="7602239=0x00001007"/>
+        <prop name="12" value="7929924=0x0000100c"/>
+        <prop name="6" value="7536702=0x00001006"/>
+        <prop name="49" value="6422608=0x00000032"/>
+        <prop name="11" value="7864387=0x0000100b"/>
+        <prop name="5" value="7471165=0x00001005"/>
+        <prop name="48" value="2621520=0x00000032"/>
+        <prop name="10" value="7798850=0x0000100a"/>
+        <prop name="4" value="7405628=0x00001004"/>
+        <prop name="47" value="6357071=0x00000031"/>
+        <prop name="3" value="7340091=0x00001003"/>
+        <prop name="46" value="2293839=0x00000031"/>
+        <prop name="2" value="524302=0x00001002"/>
+        <prop name="45" value="2228561=0x00001023"/>
+        <prop name="1" value="1769473=0x00001001"/>
+        <prop name="44" value="2621776=0x00001022"/>
+        <prop name="43" value="2294095=0x00001021"/>
+        <prop name="42" value="4980774=0x0000101f"/>
+        <prop name="41" value="4915237=0x0000101e"/>
+        <prop name="40" value="4849700=0x0000101d"/>
+        <prop name="71" value="5111857=0x00001035"/>
+        <prop name="70" value="5898261=0x00001034"/>
+        <prop name="39" value="4784151=0x0000101c"/>
+        <prop name="38" value="4718627=0x0000101b"/>
+        <prop name="37" value="4653090=0x0000101a"/>
+        <prop name="36" value="6684749=0x00000036"/>
+        <prop name="35" value="2555981=0x00000036"/>
+        <prop name="34" value="6619212=0x00000035"/>
+        <prop name="33" value="786508=0x00000035"/>
+        <prop name="32" value="6553675=0x00000034"/>
+        <prop name="69" value="5767213=0x00001033"/>
+        <prop name="31" value="2424907=0x00000034"/>
+        <prop name="68" value="5701649=0x00001032"/>
+        <prop name="30" value="2556237=0x00001019"/>
+        <prop name="67" value="5636143=0x00001031"/>
+        <prop name="66" value="5570582=0x00001030"/>
+        <prop name="65" value="7209043=0x0000102f"/>
+        <prop name="64" value="3014739=0x0000102f"/>
+        <prop name="63" value="5439519=0x0000102e"/>
+        <prop name="62" value="5373971=0x0000102d"/>
+        <prop name="61" value="6291538=0x00000030"/>
+        <prop name="60" value="2949202=0x00000030"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer17194">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawersService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="0"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7194"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer17193">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="0"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7193"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_H6000_MICR">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.micr.TMH6000MICR"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="EPSON TM-H6000 MICR Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="DeviceDesc" value="EPSON TM-H6000 MICR Device Service"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="BaudRate" value="7"/>
+        <prop name="ErrorOption" value="0"/>
+        <prop name="CheckDeviceEnabled" value="0"/>
+        <prop name="VerifyCheckDigit" value="0"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="TM-H6000"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+        <prop name="MICRType" value="0"/>
+        <prop name="ResponseTime" value="40000"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_CD2_ND77">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNCashDrawer"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Wincor Nixdorf cash drawers at ND77 printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="pulseOffTime" value="2550"/>
+        <prop name="port" value="nd77Conf"/>
+        <prop name="pulseOnTime" value="50"/>
+        <prop name="invertedStatusPolarity" value="false"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, CD2"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.axiohmA794Conf">
+        <referenceentry referencedescription="port configuration for axiohm POSPrinter usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="bits" value="8"/>
+        <prop name="port" value="/dev/ttyS1"/>
+        <prop name="setDTR" value="true"/>
+        <prop name="readTimeout" value="5000"/>
+        <prop name="stopbits" value="1"/>
+        <prop name="protocol" value="ctsout"/>
+        <prop name="dsrControl" value="true"/>
+        <prop name="baudrate" value="9600"/>
+        <prop name="parity" value="odd"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_CD2_A794">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNCashDrawer"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Wincor Nixdorf cash drawers at Axiohm A794 printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="pulseOffTime" value="2550"/>
+        <prop name="port" value="axiohmA794Conf"/>
+        <prop name="pulseOnTime" value="500"/>
+        <prop name="invertedStatusPolarity" value="false"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, CD2"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.KeyTranslation.TableTA57">
+        <referenceentry referencedescription="key table definition for TA57 (POSKeyboard)"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="29" value="0x16D=0x26D"/>
+        <prop name="28" value="0x13C=0x23C"/>
+        <prop name="27" value="0x16C=0x26C"/>
+        <prop name="26" value="0x16B=0x26B"/>
+        <prop name="25" value="0x16A=0x26A"/>
+        <prop name="24" value="0x169=0x269"/>
+        <prop name="23" value="0x166=0x266"/>
+        <prop name="22" value="0x13E=0x23E"/>
+        <prop name="21" value="0x140=0x240"/>
+        <prop name="20" value="0x13B=0x23B"/>
+        <prop name="19" value="0x141=0x241"/>
+        <prop name="18" value="0x13D=0x23D"/>
+        <prop name="17" value="0x13F=0x23F"/>
+        <prop name="16" value="0x143=0x243"/>
+        <prop name="15" value="0x14A=0x24A"/>
+        <prop name="153" value="0x11C=0x0d"/>
+        <prop name="14" value="0x58=0x158"/>
+        <prop name="152" value="0x4E=0x2b"/>
+        <prop name="13" value="0x57=0x157"/>
+        <prop name="151" value="0x4A=0x2d"/>
+        <prop name="12" value="0x44=0x144"/>
+        <prop name="150" value="0x53=0x2e"/>
+        <prop name="11" value="0x43=0x143"/>
+        <prop name="10" value="0x42=0x142"/>
+        <prop name="149" value="0x52=0x30"/>
+        <prop name="148" value="0x51=0x33"/>
+        <prop name="147" value="0x50=0x32"/>
+        <prop name="146" value="0x4F=0x31"/>
+        <prop name="145" value="0x4D=0x36"/>
+        <prop name="144" value="0x4C=0x35"/>
+        <prop name="143" value="0x4B=0x34"/>
+        <prop name="142" value="0x49=0x39"/>
+        <prop name="141" value="0x48=0x38"/>
+        <prop name="140" value="0x47=0x37"/>
+        <prop name="139" value="0x37=0x2a"/>
+        <prop name="138" value="0x135=0x2f"/>
+        <prop name="137" value="s-0x39=0x20"/>
+        <prop name="136" value="S-0x35=0x3f"/>
+        <prop name="135" value="s-0x35=0x2f"/>
+        <prop name="134" value="S-0x34=0x3e"/>
+        <prop name="133" value="s-0x34=0x2e"/>
+        <prop name="132" value="S-0x33=0x3c"/>
+        <prop name="131" value="s-0x33=0x2c"/>
+        <prop name="130" value="S-0x32=0x4d"/>
+        <prop name="129" value="s-0x32=0x6d"/>
+        <prop name="128" value="S-0x31=0x4e"/>
+        <prop name="127" value="s-0x31=0x6e"/>
+        <prop name="126" value="S-0x30=0x42"/>
+        <prop name="125" value="s-0x30=0x62"/>
+        <prop name="124" value="S-0x2F=0x56"/>
+        <prop name="123" value="s-0x2F=0x76"/>
+        <prop name="122" value="S-0x2E=0x43"/>
+        <prop name="121" value="s-0x2E=0x63"/>
+        <prop name="120" value="S-0x2D=0x58"/>
+        <prop name="119" value="s-0x2D=0x78"/>
+        <prop name="118" value="S-0x2C=0x5a"/>
+        <prop name="117" value="s-0x2C=0x7a"/>
+        <prop name="116" value="s-0x1C=0x0d"/>
+        <prop name="115" value="S-0x28=0x22"/>
+        <prop name="114" value="s-0x28=0x27"/>
+        <prop name="113" value="S-0x27=0x3a"/>
+        <prop name="112" value="s-0x27=0x3b"/>
+        <prop name="111" value="S-0x26=0x4c"/>
+        <prop name="110" value="s-0x26=0x6c"/>
+        <prop name="109" value="S-0x25=0x4b"/>
+        <prop name="108" value="s-0x25=0x6b"/>
+        <prop name="107" value="S-0x24=0x4a"/>
+        <prop name="106" value="s-0x24=0x6a"/>
+        <prop name="105" value="S-0x23=0x48"/>
+        <prop name="104" value="s-0x23=0x68"/>
+        <prop name="99" value="S-0x20=0x44"/>
+        <prop name="103" value="S-0x22=0x47"/>
+        <prop name="98" value="s-0x20=0x64"/>
+        <prop name="102" value="s-0x22=0x67"/>
+        <prop name="97" value="S-0x1F=0x53"/>
+        <prop name="101" value="S-0x21=0x46"/>
+        <prop name="96" value="s-0x1F=0x73"/>
+        <prop name="100" value="s-0x21=0x66"/>
+        <prop name="95" value="S-0x1E=0x41"/>
+        <prop name="94" value="s-0x1E=0x61"/>
+        <prop name="93" value="S-0x2B=0x7c"/>
+        <prop name="92" value="s-0x2B=0x5c"/>
+        <prop name="91" value="S-0x1B=0x7d"/>
+        <prop name="90" value="s-0x1B=0x5d"/>
+        <prop name="89" value="S-0x1A=0x7b"/>
+        <prop name="88" value="s-0x1A=0x5b"/>
+        <prop name="87" value="S-0x19=0x50"/>
+        <prop name="86" value="s-0x19=0x70"/>
+        <prop name="85" value="S-0x18=0x4f"/>
+        <prop name="84" value="s-0x18=0x6f"/>
+        <prop name="83" value="S-0x17=0x49"/>
+        <prop name="82" value="s-0x17=0x69"/>
+        <prop name="81" value="S-0x16=0x55"/>
+        <prop name="80" value="s-0x16=0x75"/>
+        <prop name="79" value="S-0x15=0x59"/>
+        <prop name="78" value="s-0x15=0x79"/>
+        <prop name="77" value="S-0x14=0x54"/>
+        <prop name="76" value="s-0x14=0x74"/>
+        <prop name="75" value="S-0x13=0x52"/>
+        <prop name="74" value="s-0x13=0x72"/>
+        <prop name="73" value="S-0x12=0x45"/>
+        <prop name="72" value="s-0x12=0x65"/>
+        <prop name="71" value="S-0x11=0x57"/>
+        <prop name="70" value="s-0x11=0x77"/>
+        <prop name="69" value="S-0x10=0x51"/>
+        <prop name="68" value="s-0x10=0x71"/>
+        <prop name="67" value="0x0F=0x09"/>
+        <prop name="66" value="0x0E=0x08"/>
+        <prop name="65" value="S-0x0B=0x20"/>
+        <prop name="64" value="s-0x0B=0x30"/>
+        <prop name="63" value="S-0x0A=0x29"/>
+        <prop name="62" value="s-0x0A=0x39"/>
+        <prop name="61" value="S-0x09=0x28"/>
+        <prop name="60" value="s-0x09=0x38"/>
+        <prop name="59" value="S-0x08=0x27"/>
+        <prop name="58" value="s-0x08=0x37"/>
+        <prop name="57" value="S-0x07=0x26"/>
+        <prop name="56" value="s-0x07=0x36"/>
+        <prop name="55" value="S-0x06=0x25"/>
+        <prop name="54" value="s-0x06=0x35"/>
+        <prop name="53" value="S-0x05=0x24"/>
+        <prop name="52" value="s-0x05=0x34"/>
+        <prop name="51" value="S-0x04=0x23"/>
+        <prop name="50" value="s-0x04=0x33"/>
+        <prop name="9" value="0x41=0x141"/>
+        <prop name="8" value="0x40=0x140"/>
+        <prop name="7" value="0x3F=0x13F"/>
+        <prop name="6" value="0x3E=0x13E"/>
+        <prop name="5" value="0x3D=0x13d"/>
+        <prop name="4" value="0x3C=0x13c"/>
+        <prop name="3" value="0x3B=0x13b"/>
+        <prop name="2" value="0x142=0x242"/>
+        <prop name="1" value="0x01=0x1b"/>
+        <prop name="49" value="S-0x03=0x22"/>
+        <prop name="48" value="s-0x03=0x32"/>
+        <prop name="47" value="S-0x02=0x21"/>
+        <prop name="46" value="s-0x02=0x31"/>
+        <prop name="45" value="S-0x29=0x7e"/>
+        <prop name="44" value="s-0x29=0x60"/>
+        <prop name="43" value="0x151=0x251"/>
+        <prop name="42" value="0x14F=0x24F"/>
+        <prop name="41" value="0x153=0x253"/>
+        <prop name="40" value="0x149=0x249"/>
+        <prop name="39" value="0x147=0x247"/>
+        <prop name="38" value="0x152=0x252"/>
+        <prop name="37" value="0x14D=0x24D"/>
+        <prop name="36" value="0x150=0x250"/>
+        <prop name="35" value="0x14B=0x24B"/>
+        <prop name="34" value="0x148=0x248"/>
+        <prop name="33" value="0x154=0x254"/>
+        <prop name="32" value="0x157=0x257"/>
+        <prop name="31" value="0x144=0x244"/>
+        <prop name="30" value="0x173=0x273"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_BA66_COM">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNLineDisplay"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="BA66 line display at COM" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="linedisplayConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.SimpleCommDevice"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.cashdrawerConf2">
+        <referenceentry referencedescription="port configuration for CashDrawer usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="upioName" value="WNUPIO1"/>
+        <prop name="pollInterval" value="300"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.cashdrawerConf1">
+        <referenceentry referencedescription="port configuration for CashDrawer usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="upioName" value="WNUPIO0"/>
+        <prop name="pollInterval" value="300"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="MyPrinter">
+        <jposshortcut category="POSPrinter" name="EPSON_TM_T88II_PRT"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_WKL">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNKeylock"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="Keylock" version="1.5"/>
+        <product description="Waiter Keylock of TAxx POS Keyboard" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="kbConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.KBDDevice, WKL"/>
+        <prop name="keylocktype" value="wkl"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_CD2_PORT">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNCashDrawer"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Wincor Nixdorf cash drawers at BEETLE port" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="pulseOffTime" value="2550"/>
+        <prop name="port" value="cashdrawerConf2"/>
+        <prop name="pulseOnTime" value="50"/>
+        <prop name="invertedStatusPolarity" value="false"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.CDPortDevice, CD2"/>
+</JposEntry>
+    
+    <JposEntry logicalName="MyLineDisp">
+    <!-- <JposEntry logicalName="WN_BA63_COM"> -->
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNLineDisplay"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="BA63 line display at COM" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="linedisplayConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.SimpleCommDevice"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_MICR7158">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.micr.MICRService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="Axiohm IPB MICR Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7158"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_MICR7156">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.micr.MICRService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="Axiohm IPB MICR Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7156"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_T88II_PRT">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.ptr.T88II"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="EPSON TM-T88II Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS0"/>
+        <prop name="BufferSize" value="2"/>
+        <prop name="InputWait" value="1"/>
+        <prop name="Supported58Paper" value="0"/>
+        <prop name="TwoByteCharacter" value="0"/>
+        <prop name="DeviceDesc" value="EPSON TM-T88II Printer Device Service"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="BaudRate" value="7"/>
+        <prop name="ErrorOption" value="1"/>
+        <prop name="ReverseEject" value="0"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="TM-T88II"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+        <prop name="U375Compatible" value="0"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_SCALE">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNScale"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="Scale" version="1.5"/>
+        <product description="Bizerba Scale at COM" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="weightUnit" value="KILOGRAM"/>
+        <prop name="port" value="scaleConf"/>
+        <prop name="maximumWeight" value="6"/>
+        <prop name="maxDisplayTextChars" value="13"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.SimpleCommDevice"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="hardtotals1">
+        <jposshortcut category="HardTotals" name="WN_HARDTOTALS_DISK"/>
+</JposEntry>
+    
+    <JposEntry logicalName="MyMSR">
+    <!-- <JposEntry logicalName="WN_MSR"> -->
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNMSR"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="MSR" version="1.5"/>
+        <product description="MSR of TAxx POS Keyboard" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="kbConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.KBDDevice, MSR"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer27158">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="1"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7158"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer27156">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="1"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7156"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.kbConf1">
+        <referenceentry referencedescription="port configuration for POSKeyboard usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="kybd"/>
+        <prop name="openMode" value="process"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_Printer714">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.posprinter.POSPrinterService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="Axiohm IPB POS Printer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="/dev/ttyS1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="19200"/>
+        <prop name="sModel" value="714"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="parity" value="N"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="keylock2">
+        <jposshortcut category="Keylock" name="WN_WKL"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_U210B_CD">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PinNO" value="0"/>
+        <prop name="Uses" value="TM-U210B"/>
+        <prop name="PulseOFFTime" value="400"/>
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="ClosedStatusPhase" value="0"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="DeviceDesc" value="EPSON Standard CashDrawer Device Service"/>
+        <prop name="BaudRate" value="6"/>
+        <prop name="PulseONTime" value="100"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="Standard"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="scale1">
+        <jposshortcut category="Scale" name="WN_SCALE"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="keylock1">
+        <jposshortcut category="Keylock" name="WN_KL"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.linedisplayConf2">
+        <referenceentry referencedescription="port configuration for LineDisplay2 usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="bits" value="8"/>
+        <prop name="port" value="/dev/ttyS5"/>
+        <prop name="stopbits" value="1"/>
+        <prop name="protocol" value="cts"/>
+        <prop name="dsrControl" value="notused"/>
+        <prop name="baudrate" value="9600"/>
+        <prop name="parity" value="odd"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.linedisplayConf1">
+        <referenceentry referencedescription="port configuration for LineDisplay1 usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="bits" value="8"/>
+        <prop name="port" value="/dev/ttyS2"/>
+        <prop name="stopbits" value="1"/>
+        <prop name="protocol" value="cts"/>
+        <prop name="dsrControl" value="notused"/>
+        <prop name="baudrate" value="9600"/>
+        <prop name="parity" value="odd"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_CD1_ND77">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNCashDrawer"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Wincor Nixdorf cash drawers at ND77 printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="pulseOffTime" value="2550"/>
+        <prop name="port" value="nd77Conf"/>
+        <prop name="pulseOnTime" value="50"/>
+        <prop name="invertedStatusPolarity" value="false"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, CD1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="display4">
+        <jposshortcut category="LineDisplay" name="WN_BA63_ND77"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="display3">
+        <jposshortcut category="LineDisplay" name="WN_BA66_ND77"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="display2">
+        <jposshortcut category="LineDisplay" name="WN_BA63_COM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="display1">
+        <jposshortcut category="LineDisplay" name="WN_BA66_COM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.scaleConf">
+        <referenceentry referencedescription="port configuration for Scale usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="bits" value="7"/>
+        <prop name="port" value="/dev/ttyS7"/>
+        <prop name="stopbits" value="1"/>
+        <prop name="protocol" value="none"/>
+        <prop name="dsrControl" value="notused"/>
+        <prop name="baudrate" value="9600"/>
+        <prop name="parity" value="odd"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_CD1_A794">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNCashDrawer"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Wincor Nixdorf cash drawers at Axiohm A794 printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="pulseOffTime" value="2550"/>
+        <prop name="port" value="axiohmA794Conf"/>
+        <prop name="pulseOnTime" value="500"/>
+        <prop name="invertedStatusPolarity" value="false"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, CD1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_ELxx_COM">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNScanner"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="EL xx generic scanner" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="queuingMode" value="on"/>
+        <prop name="port" value="scannerConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.SimpleCommDevice, asyncRead"/>
+        <prop name="scannerMode" value="A"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_KB3">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNPOSKeyboard"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="POSKeyboard" version="1.5"/>
+        <product description="TAxx POS Keyboard with table" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="keyTable" value="TableTA57"/>
+        <prop name="port" value="kbConf1"/>
+        <prop name="posKeyDataMode" value="0"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.KBDDevice, KBD"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_KB2">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNPOSKeyboard"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="POSKeyboard" version="1.5"/>
+        <product description="TA61 POS Keyboard" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="keyTable" value="TableTA61"/>
+        <prop name="port" value="kbConf1"/>
+        <prop name="posKeyDataMode" value="0"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.KBDDevice, KBD"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_ND77_COM">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNPOSPrinterND77"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="ND77 printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="code39WithCD" value="off"/>
+        <prop name="queuingMode" value="on"/>
+        <prop name="itfWithCD" value="off"/>
+        <prop name="codabarWithCD" value="off"/>
+        <prop name="port" value="nd77Conf"/>
+        <prop name="slipLineChars" value="88"/>
+        <prop name="receiptLineChars" value="40"/>
+        <prop name="waitDocStart" value="10"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, ND77"/>
+        <prop name="journalLineChars" value="40"/>
+        <prop name="tfWithCD" value="off"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_BA63_ND77">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNLineDisplay"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="BA63 line display at ND77 printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="nd77Conf"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, EXTERNALCOM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_KB1">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNPOSKeyboard"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="POSKeyboard" version="1.5"/>
+        <product description="TAxx POS Keyboard - transparent" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="keyTable" value="notused"/>
+        <prop name="port" value="kbConf1"/>
+        <prop name="posKeyDataMode" value="0"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.KBDDevice, KBD"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_HARDTOTALS_DISK">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNHardTotals"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="HardTotals" version="1.5"/>
+        <product description="non volatile memory mapped on hard drive or flash ram" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="maxNumberOfFiles" value="10"/>
+        <prop name="diskFileName" value="/etc/HTotals.dat"/>
+        <prop name="totalsSize" value="32768"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_CD1_PORT">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNCashDrawer"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Wincor Nixdorf cash drawers at BEETLE port" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="pulseOffTime" value="2550"/>
+        <prop name="port" value="cashdrawerConf1"/>
+        <prop name="pulseOnTime" value="50"/>
+        <prop name="invertedStatusPolarity" value="false"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.CDPortDevice, CD1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_Printer7158">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.posprinter.POSPrinterService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="Axiohm IPB POS Printer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="/dev/ttyS1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="115200"/>
+        <prop name="sModel" value="7158"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="parity" value="N"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_Printer7156">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.posprinter.POSPrinterService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="Axiohm IPB POS Printer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="stopBits" value="1"/>
+        <prop name="portName" value="/dev/ttyS1"/>
+        <prop name="dataBits" value="8"/>
+        <prop name="baudRate" value="9600"/>
+        <prop name="sModel" value="7156"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="parity" value="N"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="HY_MSR">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory2" serviceClass="com.hypercom.jpos.ice6000.service.msr.MSR"/>
+        <vendor name="Hypercom, Inc." url="http://www.hypercom.com"/>
+        <jpos category="MSR" version="1.4"/>
+        <product description="POS Terminal MSR JavaPOS Service from Hypercom Inc" name="Hypercom ICE6000 Terminal Magnetic Stripe Reader JavaPOS Service" url="http://www.hypercom.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="properties_file" value="/usr/local/javapos/wn/properties/com.hypercom.jpos.properties"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_BA66_ND77">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNLineDisplay"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="LineDisplay" version="1.5"/>
+        <product description="BA66 line display at ND77 printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="nd77Conf"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, EXTERNALCOM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer1714">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="0"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer714"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.scannerConf2">
+        <referenceentry referencedescription="port configuration for Scanner2 usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="bits" value="8"/>
+        <prop name="port" value="/dev/ttyS6"/>
+        <prop name="setDTR" value="true"/>
+        <prop name="readTimeout" value="3000"/>
+        <prop name="stopbits" value="1"/>
+        <prop name="protocol" value="ctsout"/>
+        <prop name="dsrControl" value="true"/>
+        <prop name="baudrate" value="9600"/>
+        <prop name="parity" value="odd"/>
+        <prop name="setRTS" value="true"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_H5000II_CD">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PinNO" value="0"/>
+        <prop name="Uses" value="TM-H5000II"/>
+        <prop name="PulseOFFTime" value="400"/>
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="ClosedStatusPhase" value="0"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="DeviceDesc" value="EPSON Standard CashDrawer Device Service"/>
+        <prop name="BaudRate" value="6"/>
+        <prop name="PulseONTime" value="100"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="Standard"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.Ports.scannerConf1">
+        <referenceentry referencedescription="port configuration for Scanner1 usage"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="bits" value="8"/>
+        <prop name="port" value="/dev/ttyS2"/>
+        <prop name="setDTR" value="true"/>
+        <prop name="readTimeout" value="3000"/>
+        <prop name="stopbits" value="1"/>
+        <prop name="protocol" value="ctsout"/>
+        <prop name="dsrControl" value="true"/>
+        <prop name="baudrate" value="9600"/>
+        <prop name="parity" value="odd"/>
+        <prop name="setRTS" value="true"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="msr2">
+        <jposshortcut category="MSR" name="HY_MSR"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer17158">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="0"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7158"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="msr1">
+        <jposshortcut category="MSR" name="WN_MSR"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer17156">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="0"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7156"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="micr1">
+        <jposshortcut category="MICR" name="EPSON_TM_H6000_MICR"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_EL16_COM">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNScanner"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="EL 16 scanner" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="queuingMode" value="on"/>
+        <prop name="port" value="scannerConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.SimpleCommDevice, asyncRead"/>
+        <prop name="scannerMode" value="A"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer27194">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="1"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7194"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer27193">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="1"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer7193"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_H6000_PRT">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.ptr.H6000"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="EPSON TM-H6000 Printer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="BufferSize" value="2"/>
+        <prop name="InputWait" value="1"/>
+        <prop name="Supported58Paper" value="0"/>
+        <prop name="TwoByteCharacter" value="0"/>
+        <prop name="DeviceDesc" value="EPSON TM-H6000 Printer Device Service"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="BaudRate" value="7"/>
+        <prop name="ErrorOption" value="1"/>
+        <prop name="ReverseEject" value="0"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="TM-H6000"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+        <prop name="U375Compatible" value="0"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="printer5">
+        <jposshortcut category="POSPrinter" name="EPSON_TM_T88II_PRT"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_EL16_COM_anq">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNScanner"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="Scanner" version="1.5"/>
+        <product description="EL 16 scanner" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="queuingMode" value="off"/>
+        <prop name="port" value="scannerConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.SimpleCommDevice, asyncRead"/>
+        <prop name="scannerMode" value="A"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="printer4">
+        <jposshortcut category="POSPrinter" name="EPSON_TM_H6000_PRT"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="printer3">
+        <jposshortcut category="POSPrinter" name="WN_A794_COM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN.KeyTranslation.TableWNKey">
+        <referenceentry referencedescription="key table definition for education purpose (POSKeyboard)"/>
+        <vendor name="WincorNixdorf" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="4" value="0x020=0x00001003"/>
+        <prop name="shiftLockKey" value="0x002"/>
+        <prop name="3" value="0x02e=0x00001003"/>
+        <prop name="2" value="0x030=0x00001002"/>
+        <prop name="1" value="S-0x01e=0x00001001"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_T88II_CD">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.drw.CashDrawerService"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="EPSON Standard CashDrawer Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="PinNO" value="0"/>
+        <prop name="Uses" value="TM-T88II"/>
+        <prop name="PulseOFFTime" value="400"/>
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="ClosedStatusPhase" value="0"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="DeviceDesc" value="EPSON Standard CashDrawer Device Service"/>
+        <prop name="BaudRate" value="6"/>
+        <prop name="PulseONTime" value="100"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="Standard"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="printer2">
+        <jposshortcut category="POSPrinter" name="WN_ND77_COM_2"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="printer1">
+        <jposshortcut category="POSPrinter" name="WN_ND77_COM"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="keyboard2">
+        <jposshortcut category="POSKeyboard" name="WN_KB2"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="keyboard1">
+        <jposshortcut category="POSKeyboard" name="WN_KB1"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="EPSON_TM_H5000II_MICR">
+        <creation factoryClass="jp.co.epson.jpos.util.EpsonJposServiceInstanceFactory" serviceClass="jp.co.epson.jpos.micr.TMH50002MICR"/>
+        <vendor name="SEIKO EPSON" url="http://www.epson.co.jp"/>
+        <jpos category="MICR" version="1.5"/>
+        <product description="EPSON TM-H5000II MICR Device Service" name="EPSON Services for JavaPOS(TM) Standard" url=""/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="ReceiveTimeout" value="10"/>
+        <prop name="PortType" value="0"/>
+        <prop name="OutputLength" value="10"/>
+        <prop name="PortName" value="/dev/ttyS1"/>
+        <prop name="DeviceDesc" value="EPSON TM-H5000II MICR Device Service"/>
+        <prop name="RetryTime" value="100"/>
+        <prop name="BaudRate" value="6"/>
+        <prop name="ErrorOption" value="0"/>
+        <prop name="CheckDeviceEnabled" value="0"/>
+        <prop name="VerifyCheckDigit" value="0"/>
+        <prop name="TimeoutTime" value="5000"/>
+        <prop name="PhysicalDevice" value="TM-H5000II"/>
+        <prop name="DataLen" value="1"/>
+        <prop name="Parity" value="0"/>
+        <prop name="StopBit" value="1"/>
+        <prop name="FlowControl" value="1"/>
+        <prop name="MICRType" value="0"/>
+        <prop name="ResponseTime" value="40000"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_A794_COM">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNPOSPrinterA794"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="POSPrinter" version="1.5"/>
+        <product description="Axiohm A794 receipt printer" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="code39WithCD" value="off"/>
+        <prop name="queuingMode" value="on"/>
+        <prop name="itfWithCD" value="off"/>
+        <prop name="codabarWithCD" value="off"/>
+        <prop name="port" value="axiohmA794Conf"/>
+        <prop name="receiptLineChars" value="44"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.ND77CommDevice, ND77"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="WN_KL">
+        <creation factoryClass="com.wn.retail.jpos.WNJposServiceInstanceFactory" serviceClass="com.wn.retail.jpos.WNKeylock"/>
+        <vendor name="Wincor Nixdorf" url="http://www.wincor-nixdorf.com"/>
+        <jpos category="Keylock" version="1.5"/>
+        <product description="Keylock of TAxx POS Keyboard" name="Wincor Nixdorf Services for JavaPOS(TM) Standard" url="http://www.wincor-nixdorf.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="port" value="kbConf1"/>
+        <prop name="dcalClass" value="com.wn.retail.jpos.dcal.KBDDevice, LOCK"/>
+        <prop name="keylocktype" value="lock"/>
+</JposEntry>
+    
+    
+    <JposEntry logicalName="AXIOHM_CashDrawer2714">
+        <creation factoryClass="com.axiohm.ipb.JavaPOS.jpos.AxiohmIPBJposServiceInstanceFactory" serviceClass="com.axiohm.ipb.JavaPOS.jpos.services.cashdrawer.CashDrawerService"/>
+        <vendor name="Axiohm IPB" url="http://www.axiohm.com"/>
+        <jpos category="CashDrawer" version="1.5"/>
+        <product description="Axiohm IPB Cash Drawer Service" name="Axiohm IPB Services for JavaPOS(TM) Standard" url="http://www.axiohm.com"/>
+
+        <!--Other non JavaPOS required property (mostly vendor properties and bus specific properties i.e. RS232 )-->
+        <prop name="nDeviceNumber" value="1"/>
+        <prop name="sModelClassName" value="com.axiohm.ipb.JavaPOS.models.hydra.ptr_cd_micr.axiohm7xx.Axiohm7xxPtrCDMICRModelLoader"/>
+        <prop name="sHydraProfileName" value="Printer714"/>
+</JposEntry>
+    
+</JposEntries>

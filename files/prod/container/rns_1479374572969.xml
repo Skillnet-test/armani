@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMS_OBJECT>
+    <com.chelseasystems.cr.node.ContainerVitalsHolder>
+        <UID>1479374572969</UID>
+        <componentVitals length="2">
+            <com.chelseasystems.cr.node.ComponentVitals>
+                <UID>3001</UID>
+                <available>true</available>
+                <componentName>rns</componentName>
+                <createDate>2016-11-17T14:52:53.357 IST</createDate>
+                <currentConnection>0</currentConnection>
+                <maxConnection>0</maxConnection>
+                <maxConnectionTime/>
+                <millisUp>574</millisUp>
+                <performanceVitals length="0"/>
+                <totalTxnCount>0</totalTxnCount>
+                <txnPerPeriod>0</txnPerPeriod>
+            </com.chelseasystems.cr.node.ComponentVitals>
+            <com.chelseasystems.cr.node.ComponentVitals>
+                <UID>3001</UID>
+                <available>true</available>
+                <componentName>rns</componentName>
+                <createDate>2016-11-17T14:57:53.599 IST</createDate>
+                <currentConnection>0</currentConnection>
+                <maxConnection>1</maxConnection>
+                <maxConnectionTime>2016-11-17T14:57:53.169 IST</maxConnectionTime>
+                <millisUp>300624</millisUp>
+                <performanceVitals length="1">
+                    <com.chelseasystems.cr.node.PerformanceVital>
+                        <maxTime>1</maxTime>
+                        <methodCount>30</methodCount>
+                        <methodName>getRemoteStubNameList</methodName>
+                        <minTime>0</minTime>
+                        <totalTime>1</totalTime>
+                    </com.chelseasystems.cr.node.PerformanceVital>
+                </performanceVitals>
+                <totalTxnCount>30</totalTxnCount>
+                <txnPerPeriod>30</txnPerPeriod>
+            </com.chelseasystems.cr.node.ComponentVitals>
+        </componentVitals>
+        <containerName>rns</containerName>
+        <containerVitals length="2">
+            <com.chelseasystems.cr.node.ContainerVitals>
+                <PID>0</PID>
+                <UID>1479374572969</UID>
+                <actualMemory>0</actualMemory>
+                <componentInstanceCount>0</componentInstanceCount>
+                <containerName>rns</containerName>
+                <cpuPercent>0.0</cpuPercent>
+                <createDate>2016-11-17T14:52:53.357 IST</createDate>
+                <exceptionOccured>false</exceptionOccured>
+                <freeHeapMemory>13882184</freeHeapMemory>
+                <memoryPercent>0.0</memoryPercent>
+                <millisUp>572</millisUp>
+                <totalHeapMemory>16318464</totalHeapMemory>
+                <totalTxns>0</totalTxns>
+            </com.chelseasystems.cr.node.ContainerVitals>
+            <com.chelseasystems.cr.node.ContainerVitals>
+                <PID>0</PID>
+                <UID>1479374572969</UID>
+                <actualMemory>0</actualMemory>
+                <componentInstanceCount>0</componentInstanceCount>
+                <containerName>rns</containerName>
+                <cpuPercent>0.0</cpuPercent>
+                <createDate>2016-11-17T14:57:53.599 IST</createDate>
+                <exceptionOccured>false</exceptionOccured>
+                <freeHeapMemory>12881256</freeHeapMemory>
+                <memoryPercent>0.0</memoryPercent>
+                <millisUp>300622</millisUp>
+                <totalHeapMemory>16318464</totalHeapMemory>
+                <totalTxns>30</totalTxns>
+            </com.chelseasystems.cr.node.ContainerVitals>
+        </containerVitals>
+        <hoursOfVitalsHistory>4.0</hoursOfVitalsHistory>
+    </com.chelseasystems.cr.node.ContainerVitalsHolder>
+</CMS_OBJECT>

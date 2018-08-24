@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META content="text/html; charset=shift_jis" http-equiv=Content-Type></HEAD>
+<BODY><XMP>
+================================================================================
+                     EPSON JavaPOS ADK 1.52L Release note
+                                 Apr 30, 2002
+================================================================================
+
+
+1. Manuals
+
+  This section describes the manuals stored in each directory.
+
+  1. /docs_en 
+
+    This directory contains the following English manuals.
+
+      JposUsers_en.pdf        : Users reference
+      JposOperation_en.pdf    : Operation manual
+      JposCashDrawer_en.pdf   : Reference manual for CashDrawer
+      JposCheckScanner_en.pdf : Reference manual for CheckScanner
+      JposKeylock_en.pdf      : Reference manual for Keylock
+      JposLineDisplay_en.pdf  : Reference manual for LineDisplay
+      JposMICR_en.pdf         : Reference manual for MICR
+      JposMSR_en.pdf          : Reference manual for MSR
+      JposPOSPrinter_en.pdf   : Reference manual for POSPrinter
+      JposScanner_en.pdf      : Reference manual for Scanner
+      PG_CheckScanner_en.pdf  : Programming guide for CheckScanner
+
+    The Users reference describes the operation environment, as well as the
+    installation and configuration of EPSON JavaPOS ADK.
+    The Operation manual describes how to use the sample programs and the 
+    dilectIO method.
+
+
+2. Operating environment
+
+  (1) Hardware environment
+
+      PC/AT compatible PCs
+      IM-310
+      IM-600
+
+  (2) Operating system
+
+      Red Hat Linux 6.2
+      Red Hat Linux 7.1
+
+  (3) Java operating environment
+
+      Sun Java2 SDK Version 1.3.1_02
+
+  (4) Serial port driver
+
+      RxTx Version 1.4-9
+
+  (5) USB device driver
+
+      TMUSB for Linux 1.1
+
+
+3. Supported models
+
+  The following devices are supported in the operation environments above mentioned.
+  (*1:Supported by IM-310 only  *2:Supported by IM-600 only)
+
+  (1) POS printer
+
+    ANK specification
+      TM-H5000II (Serial/ USB/ Ethernet)
+      TM-H5200 (Serial/ Ethernet)
+      TM-H6000 (Serial/ USB/ Ethernet)
+      TM-H6000II (Serial/ USB/ Ethernet)
+      TM-J2000 (Serial/ Ethernet)
+      TM-J2100 (Serial/ Ethernet)
+      TM-L90 (Serial/ Ethernet)
+      TM-T88II (Serial/ USB/ Ethernet)
+      TM-T88IIR (Serial) *1
+      TM-T88III (Serial/ USB/ Ethernet)
+      TM-T90 (Serial/ USB/ Ethernet)
+      TM-U210A (Serial/ Ethernet)
+      TM-U230 (Serial/ Ethernet)
+      TM-U950 (Serial)
+
+    Simplified Chinese/Traditional Chinese specification
+      TM-H5000II (Serial/ Ethernet)
+      TM-H6000 (Serial/ Ethernet)
+      TM-J2000 (Serial/ Ethernet)
+      TM-J2100 (Serial/ Ethernet)
+      TM-L90 (Serial/ Ethernet)
+      TM-T88II (Serial/ Ethernet)
+      TM-T88IIR (Serial) *1
+      TM-T88III (Serial/ Ethernet)
+      TM-T90 (Serial/ Ethernet)
+      TM-U210A (Serial/ Ethernet)
+      TM-U230 (Serial/ Ethernet)
+
+  (2) Line display
+
+      DM-D110 (Serial/ USB)
+      DM-D210 (Serial/ USB)
+      DM-D500 (Serial/ USB)
+
+  (3) Cash drawer
+
+      TM standard (Serial/ Ethernet/ USB)
+      DM-Z460 (Serial/ Ethernet)
+      DM-Z461 (Serial/ Ethernet)
+      IM-600 *2
+
+  (4) MICR
+
+    ANK specification
+      TM-H5000II (Serial/ USB/ Ethernet)
+      TM-H5200 (Serial/ Ethernet)
+      TM-H6000 (Serial/ USB/ Ethernet)
+      TM-H6000II (Serial/ USB/ Ethernet)
+
+  (5) CheckScanner
+
+    ANK specification
+      TM-H6000II (Serial/ USB)
+
+  (6) Bar code scanner
+
+      ZE-84RMSMV (Serial)
+
+  (7) Magnetic stripe reader
+
+      DM-MR112 (K/B I/F) *1
+      DM-MR123 (K/B I/F) *1
+      DM-MS112 (K/B I/F) *2
+      DM-MS123 (K/B I/F) *2
+
+  (8) Keylock
+
+      IM-310 (K/B I/F) *1
+
+
+4. Verified firmware versions 
+
+    The following firmware versions are verified for operation in POS printer
+    and MICR.
+
+  (1) POS printer
+
+    TM-H5000II (ANK)                                        : 5.05 ESC/POS
+    TM-H5000II (Simplified Chinese/Traditional Chinese)     : 3.46 ESC/POS
+    TM-H5200 (ANK)                                          : 1.04 ESC/POS
+    TM-H6000 (ANK/Simplified Chinese/Traditional Chinese)   : 1.40 ESC/POS
+    TM-H6000II (ANK)                                        : 3.02 ESC/POS
+    TM-J2000 (ANK/Simplified Chinese/Traditional Chinese)   : 2.10 ESC/POS
+    TM-J2100 (ANK/Simplified Chinese/Traditional Chinese)   : 2.10 ESC/POS 
+    TM-L90 (ANK)                                            : 1.03 ESC/POS
+    TM-L90 (Simplified Chinese/Traditional Chinese)         : 1.02 ESC/POS
+    TM-T88II (ANK/Simplified Chinese/Traditional Chinese)   : 3.42 ESC/POS
+    TM-T88IIR (ANK/Simplified Chinese/Traditional Chinese)  : 3.44 ESC/POS(R)
+    TM-T88III (ANK)                                         : 7.00 ESC/POS
+    TM-T88III (Simplified Chinese/Traditional Chinese)      : 7.01 ESC/POS
+    TM-T90 (ANK)                                            : 1.05 ESC/POS
+    TM-T90 (Simplified Chinese/Traditional Chinese)         : 1.02 ESC/POS
+    TM-U210A (ANK/Simplified Chinese/Traditional Chinese)   : 1.24 ESC/POS
+    TM-U230 (ANK/Simplified Chinese/Traditional Chinese)    : 1.02 ESC/POS
+    TM-U950 (ANK)                                           : 1.09 ESC/POS
+
+  (2) MICR
+
+    TM-H5000II (ANK)                                        : 5.05 ESC/POS
+    TM-H5200 (ANK)                                          : 1.04 ESC/POS
+    TM-H6000 (ANK)                                          : 1.40 ESC/POS
+    TM-H6000II (ANK)                                        : 3.02 ESC/POS
+    TM-U950 (ANK)                                           : 1.09 ESC/POS
+
+  (3) Check scanner
+    TM-H6000II (ANK)                                        : 5.01 ESC/POS
+
+
+5. Recommended hardware environment
+
+  The following hardware specification is recommended for using EPSON JavaPOS.
+
+    CPU:Celeron 366MHz or higher
+    RAM:64 MB (128 MB or more is recommended)
+
+
+6. Special notes on handling UNICODE
+
+  The following encode tables are required for code pages used in EPSON JavaPOS.
+
+    Code page          Encode table
+    ----------------------------------
+        437               Cp437
+        850               Cp850
+        858               Cp850
+        860               Cp860
+        863               Cp863
+        865               Cp865
+        932               EUC_JP
+        936               EUC_CN
+        950               Big5
+        852               Cp852
+        866               Cp866
+       1252               Cp1252
+
+
+7. Special notes on serial communication
+
+  Devices connected to serial ports can be controlled by serial port driver in
+  JavaPOS.
+  Such control is permitted only when you log on as root (as a default status).
+  Use the following procedure to enable users, in addition to root, to control
+  the devices.
+
+  (1) Procedure common to Red Hat 6.2 and Red Hat 7.1
+
+    (a) Add a user to the group that the /var/lock directory belongs to.
+
+      After opening a serial port, the serial port driver creates a lock file in
+      the /var/lock directory. General users do not have authority to access
+      this file using the default configuration. Therefore, users who want to
+      use the serial port must be added to the group that this lock directory
+      belongs to. To add a user to the group, edit the /etc/group file. The
+      /var/lock directory belongs to the uucp group.
+
+        [Example on modifying the /etc/group file]
+        The following example shows how to add a user jpos to the group by
+        modifying the /etc/group file.
+
+        Before modification            After modification
+        uucp:x:14:uucp                 uucp:x:14:uucp,jpos
+
+      To add more users, use a comma "," to separate the names. The following
+      example shows how to add another user jpos2 in addition to jpos.
+
+        Before modification            After modification
+        uucp:x:14:uucp              uucp:x:14:uucp,jpos,jpos2
+
+  (2) Procedure applicable to Red Hat 6.2 only
+
+    For Red Hat 6.2, perform also the following procedure in addition to the
+    procedure described above. Do not perform this procedure for Red Hat 7.1.
+
+      (a) Change the authority to access serial ports.
+
+        Use the chmod command to enable the write and read authorities to owner
+        and group of serial ports.
+
+          [Example]
+          # chmod 0660 /dev/ttySX
+
+        Note: Substitute the "X" with the number of the port that the device is
+        connected to. When using two or more serial ports, run this command for
+        each of the ports. 
+
+      (b) Add users to the group that the serial ports belong to.
+
+        After adding the group to the authority of serial ports, now add a user
+        who uses serial ports to the group that the serial ports belong to. You
+        can add a user to the group by editing the /etc/group file. Serial
+        ports belong to the tty group.
+
+          [Example on modifying the /etc/group file]
+          The following example shows how to add the user "jpos".
+
+            Before modification            After modification
+            tty:x:5:                        tty:x:5:jpos
+
+          To add more users, use a comma "," to separate the names. The
+          following example shows how to add another user "jpos2" in addition
+          to "jpos".
+
+            Before modification            After modification
+            tty:x:5:                       tty:x:5:jpos,jpos2
+
+  (3) Restarting the PC
+
+    Now, users in addition to root can access the serial ports.
+
+
+8. Special notes on usage of USB device
+
+  (1) Operating environment to use USB devices
+
+    Use Red Hat 7.1 as the operating environment to use USB devices. USB
+    devices are not available on Red Hat 6.2.
+
+  (2) Usage of USB devices for general users
+
+    Devices connected to USB ports can be controlled by USB port driver in
+    JavaPOS. Such control is permitted only when you log on as root (as a
+    default status).
+    Use the following procedure to enable users, in addition to root, to control
+    the devices.
+
+
+      (a) Create a group to access USB. 
+
+        Add a group to access USB.
+
+          [Example]
+          The following example shows how to add the user "jpos".
+          # /usr/sbin/groupadd javapos
+
+      (b) Add users to the group to access USB.
+
+        After adding the group to access USB ports in (a), now add users who
+        need to access USB ports to the group. To add a user to the group, edit
+        the /etc/group file. The group ID for javapos is 501 in this example. 
+
+          [Example on modifying the /etc/group file]
+          The following example shows how to add a user jpos to the group by
+          modifying the /etc/group file.
+
+            Before modification            After modification
+            javapos:x:501:                 javapos:x:501:jpos
+
+          To add more users, use a comma "," to separate the names. The
+          following example shows how to add another user jpos2 in addition to
+          jpos.
+
+            Before modification            After modification
+            javapos:x:501:              javapos:x:501:jpos,jpos2
+
+      (c) Modify /etc/fstab
+
+        Add the following line to the /etc/fstab file to enable the defined
+        group to access USB ports. Write the group ID of the group that access
+        USB ports in devgid. The group ID is 501 in this example.
+
+          [Example on modifying the /etc/fstab file]
+          none    /proc/bus/usb    usbdevfs defaults,devmode=0660,devgid=501 0 0
+
+      (d) Restart the PC
+
+        Now, users in addition to root can access the USB ports.
+
+
+9. Restriction
+
+  (1) Controlling devices connected to Ethernet
+
+    If a POS printer that is performing open and claim is turned off and on,
+    JavaPOS tries to connect the PC and the POS printer automatically. However
+    the re-connection is not guaranteed for the following reason. 
+
+    After a POS printer is turned off and on, it can be connected from any PC
+    on the network. At this moment, JavaPOS on the PC making the claim tries to
+    reconnect automatically. However, if other PCs also try to make the claim,
+    the first PC that sends connection request can connect to the PC. 
+
+    When you connect the POS printer to Ethernet, the UB-E01 of EPSON's
+    interface board is used. Because of its specification, the UB-E01 takes
+    about 20 seconds to start network operation when the PC is turned on or
+    reset. 
+
+  (2) About the directIO method of POS printer
+
+    Do not use command number POS PTR_DI_OUTPUT_REALTIME (101) and
+    PTR_DI_RECOVER_ERROR (300) of the directIO method of a POS printer unless
+    for emergency purposes such as canceling an error. This is because they
+    output data to printer without any flow control. PTR_DI_OUTPUT_REALTIME and
+    PTR_DI_RECOVER_ERROR may not be available for devices connected to Ethernet.
+
+  (3) Using displayText(At) for line display
+
+    When data is output to the line display in JavaPOS, a timeout period
+    applies. Therefore, be sure to specify an amount of data that can fit in a
+    screen. If too much data is specified, an error (JPOS_E_FAILURE) may occur.
+    However, a logical window does not have this restriction.
+
+  (4) Printing an image on a POS printer
+
+    An image is scaled, in all cases, when printed on a POS printer. However,
+    sometimes the image is converted inaccurately because of the function that
+    Java2 SDK uses.
+
+  (5) Keyboard hook driver
+
+    Please note that the keyboard hook driver cannot be unloaded. However, the
+    hook process can be stopped and restarted. Because the ScrollLock key
+    process is not performed, be sure not to push it.
+
+  (6) Serial port of COM5 and above
+
+    Serial ports of COM5 and above have not been verified for operation at
+    present. Please note that they cannot be used in certain environments.
+
+  (7) Using TM-T90 or TM-L90
+    When you use TM-T90/TM-L90, set the memory switch 8-5 off (2mm margin setting
+    from right and left of the paper). When you use it with the memory switch 8-5
+    turned on, 90-degree rotation print of the bar code cannot be done.
+
+
+10. Others
+
+  (1) About the "Segmentation Fault" error when the open method is executed:
+
+    There is a possibility that the "Segmentation Fault" error may occur, depending
+    on the PC environment, when the open method is executed.  The "Segmentation
+    Fault" error is an error that is caused in the PC environment.
+
+    If this error occurs, please change the Java environment as follows; however,
+    if this error does not occur, it is not necessary to make this change.
+
+    [Countermeasure]
+      The stack size when it is default is limited to 2MB.
+
+    [Procedure]
+      When using bash: "ulimit -s 2048"
+      When using tcsh: "limit stacksize 2048"
+
+  (2) Status transmission from the printer at power on
+
+    Some  printers are set to transmit three bytes of printer status to the host
+    PC when the power is turned on again once JavaPOS is used. These data are
+    used for telling the printer's power on to JavaPOS.
+
+
+(C) Copyright SEIKO EPSON Corporation, 1999-2002
+</XMP></BODY></HTML>

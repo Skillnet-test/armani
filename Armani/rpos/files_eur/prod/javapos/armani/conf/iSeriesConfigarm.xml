@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE iSeries SYSTEM "iSeriesConfig.dtd">
+<!--Armani iSeries XML configuration -->
+<!--  (C) C.S.A. s.r.l. -->
+<!--  Author : Vincenzo Amoruso -->
+<iSeries>
+<signed>200503101520</signed>
+<address>192.192.194.50</address>
+<user>JAVAWEB</user>
+<password>5NYQ2KP/uO8=</password>
+<libraries>MODARM,KLDADB</libraries>
+<timeout>10</timeout>
+<secure>false</secure>
+<procedure>{CALL KLDADB.GETNEWCOD(?)}</procedure>
+<proxy>no</proxy>
+<proxyaddress>0.0.0.0</proxyaddress>
+</iSeries>
