@@ -137,6 +137,7 @@ public class AJBCreditDebitFormatter implements AJBRequestResponseConstants {
 		request.setValue(16, sequence);
 		}
 		//Ends
+		log.info("DEBUG-PROD-ISSUE:::: sale request created "+request);
 		return request;
 		
 	}
@@ -189,7 +190,7 @@ if(cc.isManuallyKeyed()){
 		if(cc.isReturnWithReceipt()){
 		//request.setValue(12, cc.getTokenNo()); 	
 		//Vivek Mishra : Added as asked by Enrique on 01-DEC-15
-		request.setValue(12, cc.getAccountNumber());	
+		request.setValue(12, cc.getAccountNumber());
 		if(cc.getTokenNo()!=null)
 		request.setValue(33, cc.getTokenNo());
 		//Vivek Mishra : Added as asked by Justin on 07-DEC-15
@@ -207,6 +208,7 @@ if(cc.isManuallyKeyed()){
 		request.setValue(16, sequence);
 		//Ends
 		}
+     log.info("DEBUG-PROD-ISSUE::::refund request created");
 		return request;
 	}
 	
@@ -243,7 +245,7 @@ if(cc.isManuallyKeyed()){
 			//As per Enrique's email everywhere commenting request[1] and adding the sequence directly to feild17 
 			request.setValue(16, sequence);
 			//Ends
-
+			log.info("DEBUG-PROD-ISSUE:::: refund request created "+request);
 			return request;
 		}
 	
@@ -279,7 +281,7 @@ if(cc.isManuallyKeyed()){
 		// Vivek Mishra : Setting the unique sequence number here as asked by
 		// Danny.
 		request.setValue(16, sequence);
-
+		log.info("DEBUG-PROD-ISSUE:::: CreditReversal created "+request);
 		return request;
 	}
 
@@ -304,7 +306,7 @@ if(cc.isManuallyKeyed()){
 		request.setValue(15, formatCurrency(cc.getAmount().absoluteValue()
 				.stringValue()));
 		request.setValue(16, sequence);
-
+		log.info("DEBUG-PROD-ISSUE:::: CreditReversal created "+request);
 		return request;
 	}
 
@@ -383,6 +385,7 @@ if(cc.isManuallyKeyed()){
 		request.setValue(45, formatSequence(transactionNumber
 				.getSequenceNumber().intValue()));
 
+		log.info("DEBUG-PROD-ISSUE:::: debit request created "+request);
 		return request;
 	}
 
@@ -425,7 +428,7 @@ if(cc.isManuallyKeyed()){
 		//Vivek Mishra : Setting unique AJB Sequence instead of invoice number in order to make every request unique
 		request.setValue(16, sequence);
 		//Ends
-
+		log.info("DEBUG-PROD-ISSUE:::: debit reversal  created "+request);
 		return request;
 
 	}
@@ -805,9 +808,7 @@ if(cc.isManuallyKeyed()){
 			request.setValue(20, AJBMessageCodes.IX_OPTIONS_TELEAUTH.getValue()+" "+ IxOptions);
 			
 			log.info("request >>> for SAF >>>>> " + request + "<<<<<<<<<<<<<");
-			/*if(request.toString().contains("*AcquirerBackup"))
-			request.toString().replace("*AcquirerBackup", "");
-*/
+
 			return request;
 		}
 		
@@ -816,7 +817,7 @@ if(cc.isManuallyKeyed()){
 	 * */
 		public AJBRequestResponseMessage formatAJBTimeoutReversalReq(CreditCard cc) {
 
-			//Vivek Mishra : Added to remove *AcquirerBackup from SAF request as suggested by Eric Taskiran on 12-OCT-2016
+            //Vivek Mishra : Added to remove *AcquirerBackup from timeout reversal request as suggested by Eric Taskiran on 12-OCT-2016
 			AJBRequestResponseMessage request = new AJBRequestResponseMessage(cc.getRespObject().toString().replace("*AcquirerBackup", ""));
 			//Ends here 12-OCT-2016
 			request.setValue(0, AJBMessageCodes.IX_CMD_SAF_REQUEST.getValue());
