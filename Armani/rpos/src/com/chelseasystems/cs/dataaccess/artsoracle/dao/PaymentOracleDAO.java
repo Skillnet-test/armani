@@ -417,7 +417,7 @@ public class PaymentOracleDAO extends BaseOracleDAO
     //Ruchi Canada changes
     else if ((object instanceof CreditCard)&& (!((CreditCard)object).getAccountNumber().equalsIgnoreCase("4444333322221111"))) {
     	// start-bug no:-28361-saptarshi-check for japan region-credit card should go in tr_ltm_tnd insteadof merchant name 
-    	if(!object.isUSRegion() && object.getIsJapanRegion())
+    	if(!object.isUSRegion())//&& object.getIsJapanRegion()
     	{      		
     		return type=PAYMENT_TYPE_CREDIT_CARD;
     	}//end-bug no:-28361-saptarshi--check for japan region-credit card should go in tr_ltm_tnd insteadof merchant name
@@ -474,7 +474,7 @@ if(object.getGUIPaymentName()!=null && (!object.getGUIPaymentName().equals("")))
     	  
     }else if ((object instanceof CreditCard)){
     	// start-bug no:-28361-saptarshi-check for japan region-credit card should go in tr_ltm_tnd insteadof merchant name
-    	 if(!object.isUSRegion() && object.getIsJapanRegion()){
+    	 if(!object.isUSRegion()){ //&& object.getIsJapanRegion()
     		 return type=PAYMENT_TYPE_CREDIT_CARD;
     	 }//end-bug no:-28361-saptarshi--check for japan region-credit card should go in tr_ltm_tnd insteadof merchant name
     	if((object.getGUIPaymentName().equalsIgnoreCase("MASTER_CARD"))&&((CreditCard)object).getAccountNumber().equalsIgnoreCase("4444333322221111")){
