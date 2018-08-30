@@ -1346,12 +1346,15 @@ public abstract class POSLineItem extends BusinessObject implements Comparable {
 	 */
 	public ArmCurrency getTotalAmountDue() {
 		try {
-		ArmCurrency total = new ArmCurrency(this.getBaseCurrencyType(), 0.0);
-				Enumeration aLineItemDetailList = this.getLineItemDetails();
+			ArmCurrency total = new ArmCurrency(this.getBaseCurrencyType(), 0.0);
+			Enumeration aLineItemDetailList = this.getLineItemDetails();
 			while(aLineItemDetailList.hasMoreElements()) {
-			ArmCurrency aTotalAmountDue = ((POSLineItemDetail) aLineItemDetailList.nextElement()).getTotalAmountDue();
-			//Anjana modified the below to fix presale total maount due zero issue
-				total = total.add(getNetAmount().add(getTaxAmount()).add(getRegionalTaxAmount()));
+				ArmCurrency aTotalAmountDue = ((POSLineItemDetail) aLineItemDetailList.nextElement()).getTotalAmountDue();
+				total = total.add(aTotalAmountDue);
+				//Anjana modified the below to fix presale total maount due zero issue
+				if("US".equalsIgnoreCase(Version.CURRENT_REGION)  ){
+					total = total.add(getNetAmount().add(getTaxAmount()).add(getRegionalTaxAmount()));
+				}
 			}			
 			return (total);			
 		} catch (CurrencyException anException) {
@@ -1359,6 +1362,8 @@ public abstract class POSLineItem extends BusinessObject implements Comparable {
 			return (null);
 		}	
 	}
+	
+
 
 	/**
 	 * Gets the extended vat amount for the line item by adding the vat amount
