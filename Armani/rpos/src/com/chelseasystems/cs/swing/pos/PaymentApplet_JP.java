@@ -1429,7 +1429,7 @@ public class PaymentApplet_JP extends CMSApplet
 						payment[i].setGuiPaymentType(payment[i].getGUIPaymentName());
 						payment[i].setGUIPaymentName("CREDIT_CARD");
 						payment[i].setRegion(false); // us
-						payment[i].setIsJapanRegion(true); // japan
+						//payment[i].setIsJapanRegion(true); // japan
 		            	//This is to show merchant name on payment screen
 		            	if(model!=null){
 					        int rows=model.getRowCount();
