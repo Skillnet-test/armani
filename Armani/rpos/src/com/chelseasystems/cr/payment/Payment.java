@@ -90,21 +90,7 @@ public abstract class Payment extends BusinessObject implements java.io.Serializ
 	  return isUSRegion;
   }
   //end Vishal yevale : 6 march 2017
-  
-  //start-bug no:-28361-saptarshi--check for japan region-saving credit card in tr_ltm_tnd insteadof merchant name
-  private Boolean isJapanRegion=false;
-  
-  
-  public Boolean getIsJapanRegion() {
-	return isJapanRegion;
-  }
-
-  public void setIsJapanRegion(Boolean isJapanRegion) {
-	this.isJapanRegion = isJapanRegion;
-  }
- //end-bug no:-28361-saptarshi--check for japan region-saving credit card in tr_ltm_tnd insteadof merchant name
-
-/**
+  /**
    * @param transactionPaymentName a key representing this payment
    */
   public Payment(String transactionPaymentName) {
@@ -113,8 +99,12 @@ public abstract class Payment extends BusinessObject implements java.io.Serializ
 
   /**
    * @param transactionPaymentName a key representing this payment
+   * bug#29959
    */
   public void setTransactionPaymentName(String transactionPaymentName) {
+	 if(transactionPaymentName!=null && (transactionPaymentName.contains("DCRD"))){
+		 transactionPaymentName = "DEBIT_CARD";
+	 }
     this.transactionPaymentName = transactionPaymentName;
   }
 
@@ -187,6 +177,7 @@ public abstract class Payment extends BusinessObject implements java.io.Serializ
    *    by the gui.
    */
   public void setGUIPaymentName(String guiPaymentName) {
+	  
   	   this.guiPaymentName = guiPaymentName;
   }
 
@@ -289,33 +280,19 @@ public abstract class Payment extends BusinessObject implements java.io.Serializ
    * @return the name on the screen
    */
   public String getGUIPaymentName() {
-	  
-	 /* System.out.println("on the above of method:-"+guiPaymentName); 
-	  System.out.println("on the above of method-getGUIPaymentNameForDulicateReceipt:-"+getGUIPaymentNameForDulicateReceipt());
-	  if(!isUSRegion && isJapanRegion){
-	    	System.out.println("only in case region is japan");
-	    	//return getGUIPaymentNameForDulicateReceipt(); //???
-	    	return "JCB";
-	  }*/
-
-	    
     if (guiPaymentName == null) {
       guiPaymentName = PaymentMgr.getPaymentDescriptionKey(getTransactionPaymentName());
-      
     }
-    if((guiPaymentName == null)||("CREDIT_CARD".equalsIgnoreCase(guiPaymentName)) 
+ //   guiPaymentName = PaymentMgr.getPaymentDescriptionKey(getTransactionPaymentName());
+     if((guiPaymentName == null)||("CREDIT_CARD".equalsIgnoreCase(guiPaymentName)) 
     		  ||("Credit Card".equalsIgnoreCase(guiPaymentName))) {
   	  //Vishal Yevale : Added for saving CREDIT_CARD rather than it's Merchant name : 6 March 2017
     		if(!isUSRegion && "CREDIT_CARD".equalsIgnoreCase(guiPaymentName)){
-    			
     			return guiPaymentName;
     		}
     		//end Vishal Yevale 
-    		
     	 	return getGUIPaymentNameForDulicateReceipt();
     }
-        
-    
     return (guiPaymentName);
   }
  
