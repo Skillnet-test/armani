@@ -393,5 +393,10 @@ public class ItemDetailsMap {
   public static Map getBarcodeMap() {
 	 return barCodeMap; 
   }
+  
+  public void getName(){
+	  System.out.println("here i am");
+  }
+  
 }
 
