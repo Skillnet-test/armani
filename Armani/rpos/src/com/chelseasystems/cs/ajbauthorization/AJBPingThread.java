@@ -301,7 +301,7 @@ public class AJBPingThread{
 	
 	private boolean iscurrentParenthostconnnected()
 	{
-			
+		log.info("DEBUG-PROD-ISSUE::::parentSocket is : "+parentSocket);
 		if (this.parentSocket  != null )
 		{
 			return parentSocket.isConnected();
@@ -319,6 +319,7 @@ public class AJBPingThread{
 		{
 			try {
 				//Vivek Mishra : Added in order to avoid null current host.
+				log.info("DEBUG-PROD-ISSUE::::parentSocket initialized");
 				current_host = hosts[i];
 				parentSocket = new Socket(hosts[i], port);
 				isConnected = true;
@@ -341,6 +342,7 @@ public class AJBPingThread{
 	private Socket connectCurrenthost() {
 		
 		try {
+			log.info("DEBUG-PROD-ISSUE::::parentSocket initialized");
 			parentSocket = null;
 			parentSocket = new Socket(current_host, port);
 			return parentSocket;
@@ -408,7 +410,7 @@ public class AJBPingThread{
 	//Vivek Mishra : Changed the implementation of Ping Thread as it is no longer required to run as a thread 29-OCT-2015 status call.
 	public boolean ping() 
 	{
-		
+		log.info("DEBUG-PROD-ISSUE::::Ping method called");
 			if(error_message!=null)
 				prev_error_message=error_message;
 			
