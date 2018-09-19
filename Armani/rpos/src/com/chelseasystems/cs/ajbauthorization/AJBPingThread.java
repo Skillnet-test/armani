@@ -607,4 +607,9 @@ public class AJBPingThread{
 		
 		return parentSocket;
 	}
+	
+	public void test(){
+		System.out.print("i am here");
+		
+	}
 }
