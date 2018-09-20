@@ -609,7 +609,7 @@ public class AJBPingThread{
 	}
 	
 	public void test(){
-		System.out.print("i am hereadad-sdfdsfds");
+		System.out.print("i am here--- vishal is here");
 		
 	}
 }
